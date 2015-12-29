@@ -1,0 +1,100 @@
+body {
+    background-color: #082f39;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 100;
+}
+
+.codeStyle {
+    background-color: black;
+    font-family: "Courier", serif;
+    font-weight: bold;
+    color: #026c00;
+}
+
+.largeTextField {
+    position: absolute;
+    top: 130px;
+    width: 34%;
+    height: 200px;
+    resize: none;
+    border: 2px inset white;
+}
+
+.textBoxLabels {
+    position: relative;
+    color: white;
+    font-family: "Courier", serif;
+}
+
+.ancillaryInput {
+    position: relative;
+    width: 15%;
+    left: 42%;
+}
+
+#textInput {
+    left: 11%;
+}
+
+#textOutput {
+    left: 55%;
+}
+
+#inputLabel {
+    position: absolute;
+    left: 26%;
+    font-weight: 100;
+}
+
+#outputLabel {
+    position: absolute;
+    left: 70%;
+    font-weight: 100;
+}
+
+#ancillaryInputContainer {
+    position: absolute;
+    top: 380px;
+    width: 99%;
+}
+
+#encryptButton {
+    border: 2px outset white;
+    position: absolute;
+    width: 7%;
+    left: 46.85%;
+    top: 210px;
+}
+
+#decryptButton {
+    border: 2px outset white;
+    position: absolute;
+    width: 7%;
+    left: 46.85%;
+    top: 240px
+}
+
+#encryptButton:active {
+    border: 2px inset white;
+}
+
+#decryptButton:active {
+    border: 2px inset white;
+}
+
+#encryptionMethod {
+    position: absolute;
+    left: 42.5%;
+    background-color: white;
+    color: black;
+    border: 2px inset white;
+}
+
+textarea:focus {outline:0}
+input:focus {outline:0}
+button:focus {outline:0}

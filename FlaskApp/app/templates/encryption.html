@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/encryption.css') }}">
+    <title>Encryption Methods by JMackDev</title>
+</head>
+<body>
+    <h1 class="header">Encryption Methods</h1>
+    <div class="textBoxLabels">
+        <h3 id="inputLabel">Input</h3>
+        <select id="encryptionMethod" class="codeStyle">
+            <option>Please select method...</option>
+            <option>Simple Keyword Cipher</option>
+        </select>
+        <h3 id="outputLabel">Output</h3>
+    </div>
+    <div id="textInputContainer">
+        <textarea id="textInput" class="largeTextField codeStyle">Text to be encrypted</textarea>
+        <textarea id="textOutput" class="largeTextField codeStyle">Text to be decrypted</textarea>
+        <button id="encryptButton" class="codeStyle">Encrypt ></button>
+        <button id="decryptButton" class="codeStyle">< Decrypt</button>
+    </div>
+    <div id="ancillaryInputContainer">
+    </div>
+</body>
+<script src="{{ url_for('static', filename='scripts/simpleKeywordCipher.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/encryptionMethods.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/mainHandler.js') }}"></script>
+</html>
