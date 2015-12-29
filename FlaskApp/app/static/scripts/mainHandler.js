@@ -5,6 +5,12 @@
 var ancillaryInputContainer = document.querySelector("#ancillaryInputContainer");
 var encryptionMethodList = document.querySelector("#encryptionMethod");
 encryptionMethodList.addEventListener("change", function () {
+    // Clears any old ancillary inputs
+    while (ancillaryInputContainer.firstChild) {
+        ancillaryInputContainer.removeChild(ancillaryInputContainer.firstChild);
+    }
+
+    // Parses encryptionMethods object and creates specified ancillary input fields
     var selectedMethod = encryptionMethodList.value;
     var options = encryptionMethods[selectedMethod];
     for (var ancillary in options.ancillaries) {
