@@ -16,5 +16,13 @@ var encryptionMethods = {
         ancillaries: null,
         encryptFunction: function () {alert("Please select method")},
         decryptFunction: function () {alert("Please select method")}
+    },
+
+    "Vigenère Cipher": {
+        ancillaries: {
+            ancillaryInput1: "Input keyword"
+        },
+        encryptFunction: vigenereCipherEncrypt,
+        decryptFunction: vigenereCipherDecrypt
     }
 };

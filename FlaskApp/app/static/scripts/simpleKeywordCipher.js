@@ -3,20 +3,8 @@
  */
 
 function simpleKeywordCipherEncrypt () {
-    var inputText = document.querySelector("#textInput").value;
-    inputText = inputText.trim();
-    if (!inputText || inputText === "Input message here.") {
-        alert("Please enter message to be encrypted.");
-        return 88;
-    }
-
-    var keyword = document.querySelector("#ancillaryInput0").value;
-    keyword = keyword.trim();
-    keyword = keyword.toUpperCase();
-    if (!inputText || keyword === "INPUT KEYWORD") {
-        alert("Please enter a key word or phrase.");
-        return 88;
-    }
+    var inputText = getText(true);
+    var keyword = getKeyword(0, true, false);
 
     var originalAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
                     'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
@@ -35,8 +23,8 @@ function simpleKeywordCipherEncrypt () {
             return 88;
         }
     }
-    for (var i = 0; i < originalAlphabet.length; i++) {
-        var letter = originalAlphabet[i];
+    for (i = 0; i < originalAlphabet.length; i++) {
+        letter = originalAlphabet[i];
         if (transformedAlphabet.indexOf(letter) === -1) {
             transformedAlphabet.push(letter);
         }
@@ -48,8 +36,8 @@ function simpleKeywordCipherEncrypt () {
     }
 
     var output = "";
-    for (var i = 0; i < inputText.length; i++) {
-        var letter = inputText.slice(i, i + 1);
+    for (i = 0; i < inputText.length; i++) {
+        letter = inputText.slice(i, i + 1);
         var letterNumber = originalAlphabet.indexOf(letter.toUpperCase());
         if (letterNumber === -1) {
             output += letter;
@@ -63,26 +51,12 @@ function simpleKeywordCipherEncrypt () {
         }
     }
 
-    var textOutput = document.querySelector("#textOutput");
-    textOutput.value = output;
-    return 0;
+    return output;
 }
 
 function simpleKeywordCipherDecrypt () {
-    var inputText = document.querySelector("#textOutput").value;
-    inputText = inputText.trim();
-    if (!inputText) {
-        alert("Please enter text to be decrypted in right box");
-        return 88;
-    }
-
-    var keyword = document.querySelector("#ancillaryInput0").value;
-    keyword = keyword.trim();
-    keyword = keyword.toUpperCase();
-    if (!keyword || keyword === "INPUT KEYWORD") {
-        alert("Please enter keyword");
-        return 88;
-    }
+    var inputText = getText(false);
+    var keyword = getKeyword(0, true, false);
 
     var originalAlphabet = [];
     var transformedAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
@@ -99,16 +73,16 @@ function simpleKeywordCipherDecrypt () {
         }
     }
 
-    for (var i = 0; i < transformedAlphabet.length; i++) {
-        var letter = transformedAlphabet[i];
+    for (i = 0; i < transformedAlphabet.length; i++) {
+        letter = transformedAlphabet[i];
         if (originalAlphabet.indexOf(letter) === -1) {
             originalAlphabet.push(letter);
         }
     }
 
     var output = '';
-    for (var i = 0; i < inputText.length; i++) {
-        var letter = inputText.slice(i, i + 1);
+    for (i = 0; i < inputText.length; i++) {
+        letter = inputText.slice(i, i + 1);
         var letterNumber = originalAlphabet.indexOf(letter.toUpperCase());
         if (letterNumber > -1) {
             if (letter.toUpperCase() === letter) {
@@ -123,6 +97,5 @@ function simpleKeywordCipherDecrypt () {
         }
     }
 
-    var textOutput = document.querySelector("#textInput");
-    textOutput.value = output;
+    return output;
 }

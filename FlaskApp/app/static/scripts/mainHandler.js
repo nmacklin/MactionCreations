@@ -37,11 +37,15 @@ encryptionMethodList.addEventListener("change", function () {
 var encryptButton = document.querySelector("#encryptButton");
 encryptButton.addEventListener("click", function () {
     var encryptFunction = encryptionMethods[encryptionMethodList.value].encryptFunction;
-    encryptFunction();
+    var encryptedText = encryptFunction();
+    var textOutput = document.querySelector("#textOutput");
+    textOutput.value = encryptedText;
 });
 
 var decryptButton = document.querySelector("#decryptButton");
 decryptButton.addEventListener("click", function () {
     var decryptFunction = encryptionMethods[encryptionMethodList.value].decryptFunction;
-    decryptFunction();
+    var decryptedText = decryptFunction();
+    var textInput = document.querySelector("#textInput");
+    textInput.value = decryptedText;
 });
