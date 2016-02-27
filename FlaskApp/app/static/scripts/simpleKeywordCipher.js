@@ -13,8 +13,8 @@ function simpleKeywordCipherEncrypt () {
     var keyword = document.querySelector("#ancillaryInput0").value;
     keyword = keyword.trim();
     keyword = keyword.toUpperCase();
-    if (!inputText || keyword === "Input keyword") {
-        alert("Please enter a keyword.");
+    if (!inputText || keyword === "INPUT KEYWORD") {
+        alert("Please enter a key word or phrase.");
         return 88;
     }
 
@@ -25,13 +25,13 @@ function simpleKeywordCipherEncrypt () {
 
     for (var i = 0; i < keyword.length; i++) {
         var letter = keyword.slice(i, i + 1);
-        if (originalAlphabet.indexOf(letter) > -1) {
-            if (transformedAlphabet.indexOf(letter) === -1) {
+        if (originalAlphabet.indexOf(letter) > -1 || letter === " ") {
+            if (transformedAlphabet.indexOf(letter) === -1 && letter !== " ") {
                 transformedAlphabet.push(letter);
             }
         }
         else {
-            alert("Keyword must contain only letters.");
+            alert("Keyword/phrase may only contain letters and spaces.");
             return 88;
         }
     }
@@ -79,7 +79,7 @@ function simpleKeywordCipherDecrypt () {
     var keyword = document.querySelector("#ancillaryInput0").value;
     keyword = keyword.trim();
     keyword = keyword.toUpperCase();
-    if (!keyword || keyword === "Input keyword") {
+    if (!keyword || keyword === "INPUT KEYWORD") {
         alert("Please enter keyword");
         return 88;
     }
@@ -90,11 +90,11 @@ function simpleKeywordCipherDecrypt () {
                     'Y', 'Z'];
     for (var i = 0; i < keyword.length; i++) {
         var letter = keyword.slice(i, i + 1);
-        if (transformedAlphabet.indexOf(letter) === -1) {
-            alert("Keyword must contain only letters");
+        if (transformedAlphabet.indexOf(letter) === -1 && letter !== " ") {
+            alert("Keyword/phrase must contain only letters and spaces");
             return 88;
         }
-        if (originalAlphabet.indexOf(letter) === -1) {
+        if (originalAlphabet.indexOf(letter) === -1 && letter !== " ") {
             originalAlphabet.push(letter);
         }
     }

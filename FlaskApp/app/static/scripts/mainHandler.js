@@ -22,6 +22,7 @@ encryptionMethodList.addEventListener("change", function () {
             ancillaryInput.id = "ancillaryInput" + String(ancillaryCount);
             console.log(ancillaryInput.id);
             ancillaryInput.value = options.ancillaries.ancillaryInput1;
+            ancillaryInput.setAttribute("onClick", "this.setSelectionRange(0, this.value.length)");
             ancillaryInputContainer.appendChild(ancillaryInput);
             ancillaryCount++;
 

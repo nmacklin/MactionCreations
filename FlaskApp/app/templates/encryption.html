@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/encryption.css') }}">
+    <link rel="stylesheet" type="text/css" href="/static/stylesheets/encryption.css">
     <title>Encryption Methods by JMackDev</title>
 </head>
 <body>
@@ -16,15 +16,15 @@
         <h3 id="outputLabel">Output</h3>
     </div>
     <div id="textInputContainer">
-        <textarea id="textInput" class="largeTextField codeStyle">Text to be encrypted</textarea>
-        <textarea id="textOutput" class="largeTextField codeStyle">Text to be decrypted</textarea>
+        <textarea id="textInput" class="largeTextField codeStyle" onclick="this.setSelectionRange(0, this.value.length)">Text to be encrypted</textarea>
+        <textarea id="textOutput" class="largeTextField codeStyle" onclick="this.setSelectionRange(0, this.value.length)">Text to be decrypted</textarea>
         <button id="encryptButton" class="codeStyle">Encrypt ></button>
         <button id="decryptButton" class="codeStyle">< Decrypt</button>
     </div>
     <div id="ancillaryInputContainer">
     </div>
 </body>
-<script src="{{ url_for('static', filename='scripts/simpleKeywordCipher.js') }}"></script>
-<script src="{{ url_for('static', filename='scripts/encryptionMethods.js') }}"></script>
-<script src="{{ url_for('static', filename='scripts/mainHandler.js') }}"></script>
+<script src="/static/scripts/simpleKeywordCipher.js"></script>
+<script src="/static/scripts/encryptionMethods.js"></script>
+<script src="/static/scripts/mainHandler.js"></script>
 </html>
