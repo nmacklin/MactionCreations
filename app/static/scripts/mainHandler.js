@@ -20,7 +20,6 @@ encryptionMethodList.addEventListener("change", function () {
             ancillaryInput.type = "text";
             ancillaryInput.className = "codeStyle ancillaryInput";
             ancillaryInput.id = "ancillaryInput" + String(ancillaryCount);
-            console.log(ancillaryInput.id);
             ancillaryInput.value = options.ancillaries.ancillaryInput1;
             ancillaryInput.setAttribute("onClick", "this.setSelectionRange(0, this.value.length)");
             ancillaryInputContainer.appendChild(ancillaryInput);
@@ -31,6 +30,18 @@ encryptionMethodList.addEventListener("change", function () {
                 ancillaryInputContainer.appendChild(lineBreak);
             }
         }
+    }
+    if (options.attemptCrack) {
+        var checkBox = document.createElement("INPUT");
+        checkBox.type = "checkbox";
+        checkBox.className = "codeStyle ancillaryInput";
+        checkBox.id = "attemptCrack";
+        ancillaryInputContainer.appendChild(checkBox);
+        var checkBoxLabel = document.createElement("SPAN");
+        checkBoxLabel.className = "codeStyle";
+        checkBoxLabel.id = "attemptCrackLabel";
+        checkBoxLabel.innerHTML = "Attempt to crack cipher without keyword";
+        ancillaryInputContainer.appendChild(checkBoxLabel);
     }
 });
 
@@ -44,7 +55,14 @@ encryptButton.addEventListener("click", function () {
 
 var decryptButton = document.querySelector("#decryptButton");
 decryptButton.addEventListener("click", function () {
-    var decryptFunction = encryptionMethods[encryptionMethodList.value].decryptFunction;
+    var decryptFunction;
+    var attemptCrack = document.querySelector("#attemptCrack");
+    if (!attemptCrack.checked) {
+        decryptFunction = encryptionMethods[encryptionMethodList.value].decryptFunction;
+    }
+    else {
+        decryptFunction = encryptionMethods[encryptionMethodList.value].crackFunction;
+    }
     var decryptedText = decryptFunction();
     var textInput = document.querySelector("#textInput");
     textInput.value = decryptedText;

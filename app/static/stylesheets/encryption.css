@@ -96,6 +96,23 @@ body {
     width: 15%;
 }
 
+#attemptCrack {
+    left: 34.7%;
+}
+
+#attemptCrackLabel {
+    font-size: small;
+    left: 43.5%;
+    position: absolute;
+    background-color: #082f39;
+    top: 68.7%;
+    font-family: "Helvetica", sans-serif;
+    color: gray;
+}
+
+#longCrackModal {
+}
+
 textarea:focus {outline:0}
 input:focus {outline:0}
 button:focus {outline:0}

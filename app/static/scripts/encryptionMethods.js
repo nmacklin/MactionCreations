@@ -8,12 +8,16 @@ var encryptionMethods = {
         ancillaries: {
             ancillaryInput1: "Input keyword"
         },
+        attemptCrack: true,
+        crackFunction: simpleKeywordCipherCrack,
         encryptFunction: simpleKeywordCipherEncrypt,
         decryptFunction: simpleKeywordCipherDecrypt
     },
 
     "Please select method...": {
         ancillaries: null,
+        attemptCrack: false,
+        crackFunction: null,
         encryptFunction: function () {alert("Please select method")},
         decryptFunction: function () {alert("Please select method")}
     },
@@ -22,6 +26,8 @@ var encryptionMethods = {
         ancillaries: {
             ancillaryInput1: "Input keyword"
         },
+        attemptCrack: false,
+        crackFunction: null,
         encryptFunction: vigenereCipherEncrypt,
         decryptFunction: vigenereCipherDecrypt
     }
