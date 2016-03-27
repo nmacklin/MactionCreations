@@ -2,16 +2,16 @@
  * Created by Nick on 2/26/2016.
  */
 
-function getText (inputBoolean) {
-    var inputOutputSelector;
-    if (inputBoolean) {
-        inputOutputSelector = "#textInput"
+function getText () {
+    var inputSelector;
+    if (lastScreenWide) {
+        inputSelector = "#textInput";
     }
     else {
-        inputOutputSelector = "#textOutput"
-    }
+        inputSelector = "#textInputNarrow";
+    }        
 
-    var inputText = document.querySelector(inputOutputSelector).value;
+    var inputText = document.querySelector(inputSelector).value;
     inputText = inputText.trim();
     if (!inputText) {
         alert("Please enter message to be encrypted.");
@@ -42,7 +42,9 @@ function getKeyword (inputNumber, toUpper, removeSpaces) {
         keyword = tempKeyword;
     }
 
-    if (!keyword || keyword.toUpperCase() === "INPUT KEYWORD" || keyword.toUpperCase() === "INPUTKEYWORD") {
+    if (!keyword
+        || keyword.toUpperCase() === "INPUT KEY WORD OR PHRASE"
+        || keyword.toUpperCase() === "INPUTKEYWORDORPHRASE") {
         alert("Please enter a key word or phrase.");
         return 89;
     }

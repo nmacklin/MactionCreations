@@ -6,7 +6,7 @@ var encryptionMethods = {
     // and encrypt/decrypt functions
     "Simple Keyword Cipher": {
         ancillaries: {
-            ancillaryInput1: "Input keyword"
+            ancillaryInput1: "Input key word or phrase"
         },
         attemptCrack: true,
         crackFunction: simpleKeywordCipherCrack,
@@ -24,7 +24,7 @@ var encryptionMethods = {
 
     "Vigenère Cipher": {
         ancillaries: {
-            ancillaryInput1: "Input keyword"
+            ancillaryInput1: "Input key word or phrase"
         },
         attemptCrack: false,
         crackFunction: null,

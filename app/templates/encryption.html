@@ -6,52 +6,107 @@
     <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Page specific CSS -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/encryption.css') }}">
+    <!-- Inconsolata Font from Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-    <title>Encryption Methods by JMackDev</title>
+    <title>Encryption Methods by Nick Macklin</title>
 </head>
 <body>
-    <!-- Cracking Modal -->
+   <!-- Cracking Modal -->
     <div id="longCrackModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
+            <h4 class="modal-title">Attempting to crack cipher...</h4>
           </div>
         </div>
       </div>
     </div>
-    <h1 class="header">Encryption Methods</h1>
-    <div class="textBoxLabels">
-        <h3 id="inputLabel">Input</h3>
-        <select id="encryptionMethod" class="codeStyle">
-            <option>Please select method...</option>
-            <option>Simple Keyword Cipher</option>
-            <option>Vigenère Cipher</option>
-        </select>
-        <h3 id="outputLabel">Output</h3>
+    <div id="wideScreenContainer" style="display: none">
+        <div class="container-fluid">
+            <div class="row">
+                <span class="header"><h1>Encryption Methods</h1></span>
+            </div>
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-4 text-center textBoxLabels">
+                    <h3>Input</h3>
+                </div>
+                <div class="col-xs-2" style="padding: 0">
+                    <select id="encryptionMethod" class="codeStyle methodSelect">
+                        <option>Please select method...</option>
+                        <option>Simple Keyword Cipher</option>
+                        <option>Vigenère Cipher</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 text-center textBoxLabels">
+                    <h3>Output</h3>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+            <div class="row" style="height: 200px">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-4 largeTextFieldContainer">
+                    <textarea id="textInput" class="largeTextField codeStyle"
+                      onclick="if (this.value === 'Text to be encrypted/decrypted here') this.setSelectionRange(0, this.value.length)">Text to be encrypted/decrypted here</textarea>
+                </div>
+                <div class="col-xs-2 largeTextFieldContainer">
+                    <div class="row buttonContainer">
+                        <button id="encryptButton" class="codeStyle centerButton">Encrypt ></button>
+                    </div>
+                    <div class="row buttonContainer">
+                        <button id="decryptButton" class="codeStyle centerButton">Decrypt ></button>
+                    </div>
+                </div>
+                <div class="col-xs-4 largeTextFieldContainer">
+                    <textarea readonly id="textOutput" class="largeTextField codeStyle"
+                      onclick="this.setSelectionRange(0, this.value.length)"></textarea>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center" id="ancillaryInputContainer"></div>
+        </div>
     </div>
-    <div id="textInputContainer">
-        <textarea id="textInput" class="largeTextField codeStyle"
-                  onclick="if (this.value === 'Text to be encrypted') this.setSelectionRange(0, this.value.length)">Text to be encrypted</textarea>
-        <textarea id="textOutput" class="largeTextField codeStyle"
-                  onclick="if (this.value === 'Text to be decrypted') this.setSelectionRange(0, this.value.length)">Text to be decrypted</textarea>
-        <button id="encryptButton" class="codeStyle">Encrypt ></button>
-        <button id="decryptButton" class="codeStyle">< Decrypt</button>
-    </div>
-    <div id="ancillaryInputContainer">
+    <div id="narrowScreenContainer" style="display: none">
+        <div class="col-xs-12 text-center">
+            <div class="row">
+                <h1 class="header">Encryption Methods</h1>
+            </div>
+            <div class="row" style="padding-bottom: 2%">
+                <select id="encryptionMethodNarrow" class="codeStyle methodSelect">
+                    <option>Please select method...</option>
+                    <option>Simple Keyword Cipher</option>
+                    <option>Vigenère Cipher</option>
+                </select>
+            </div>
+            <div class="row text-center" style="height: 350px">
+                <textarea id="textInputNarrow" class="largeTextField codeStyle"
+                      onclick="if (this.value === 'Text to be encrypted/decrypted here') this.setSelectionRange(0, this.value.length)">Text to be encrypted/decrypted here</textarea>
+            </div>
+            <div class="row" id="ancillaryInputContainerNarrow"></div>
+            <div class="row" style="height: 125px">
+                <div class="col-xs-6 buttonContainerNarrow">
+                    <button id="encryptButtonNarrow" class="codeStyle">Encrypt</button>
+                </div>
+                <div class="col-xs-6 buttonContainerNarrow">
+                    <button id="decryptButtonNarrow" class="codeStyle">Decrypt</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
+<!-- jQuery -->
+<script src="{{ url_for('static', filename='bootstrap/js/jquery.js') }}"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+<!-- Page-specific Scripts -->
 <script src="{{ url_for('static', filename='scripts/functionLibrary.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/simpleKeywordCipher.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/vigenereCipher.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/encryptionMethods.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/mainHandler.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/wordLists.js') }}"></script>
-<!-- jQuery -->
-<script src="{{ url_for('static', filename='bootstrap/js/jquery.js') }}"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
 </html>

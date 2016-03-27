@@ -3,7 +3,7 @@
  */
 
 function simpleKeywordCipherEncrypt () {
-    var inputText = getText(true);
+    var inputText = getText();
     var keyword = getKeyword(0, true, false);
 
     var originalAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
@@ -56,7 +56,7 @@ function simpleKeywordCipherEncrypt () {
 
 
 function simpleKeywordCipherDecrypt () {
-    var inputText = getText(false);
+    var inputText = getText();
     var keyword = getKeyword(0, true, false);
 
     var originalAlphabet = [];
@@ -155,7 +155,7 @@ function PartialSolution (oldSolution, wordList) {
 }
 
 function cleanInput () {
-    var inputText = getText(false);
+    var inputText = getText();
     inputText = inputText.toUpperCase();
     inputText = inputText.replace(/\n/g, " ");
     var wordList = inputText.split(" ");

@@ -32,7 +32,7 @@ var vigenereSquare = {
 };
 
 function vigenereCipherEncrypt () {
-    var inputText = getText(true);
+    var inputText = getText();
     var keyword = getKeyword(0, true, true);
 
     var keywordNum, originalLetter, cipherLetter, cipherLetterAlphabet;
@@ -61,7 +61,7 @@ function vigenereCipherEncrypt () {
 }
 
 function vigenereCipherDecrypt () {
-    var inputText = getText(false);
+    var inputText = getText();
     var keyword = getKeyword(0, true, true);
 
     var keywordNum, cipherLetter, decryptLetter, cipherLetterAlphabet;
