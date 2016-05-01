@@ -103,8 +103,9 @@ function resetEventListeners () {
         var decryptedText, textOutput;
         if (lastScreenWide) textOutput = document.querySelector("#textOutput");
         else textOutput = document.querySelector("#textInputNarrow");
+
         var attemptCrack = document.querySelector("#attemptCrack");
-        if (!attemptCrack.checked || attemptCrack == undefined) {
+        if (attemptCrack == null || !attemptCrack.checked) {
             decryptedText = encryptionMethods[encryptionMethodList.value].decryptFunction();
             textOutput.value = decryptedText;
         }

@@ -51,7 +51,7 @@ body {
 }
 
 .buttonContainer {
-    height: 50%;
+    height: 33.3%;
     text-align: center;
 }
 
@@ -143,11 +143,10 @@ body {
 }
 
 #encryptButton {
-    margin-top: 30%;
+    margin-bottom: 6.5%;
 }
 
 #decryptButton {
-    margin-top: 4%;
 }
 
 #encryptButtonNarrow {

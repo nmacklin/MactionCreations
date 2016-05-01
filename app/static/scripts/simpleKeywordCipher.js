@@ -102,15 +102,13 @@ function simpleKeywordCipherDecrypt () {
 }
 
 function PartialSolution (oldSolution, wordList) {
-    this.anyLongWordSolved = false;
-    this.solvedAllLongWords = false;
     if (oldSolution == null) {
         this.words = {};
         this.subReg = {};
         this.solvedLetters = {};
         this.solvedLetterValues = [];
         this.solvedLettersJSON = "";
-        this.unknownWords = 0;
+        this.solvedWords = [];
 
         this.words.numWords = wordList.length;
         var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -150,42 +148,8 @@ function PartialSolution (oldSolution, wordList) {
         this.solvedLetters = JSON.parse(JSON.stringify(oldSolution.solvedLetters));
         this.solvedLetterValues = JSON.parse(JSON.stringify(oldSolution.solvedLetterValues));
         this.solvedLettersJSON = JSON.stringify(this.solvedLetters);
-        this.unknownWords = oldSolution.unknownWords;
+        this.solvedWords = JSON.parse(JSON.stringify(oldSolution.solvedWords));
     }
-}
-
-function cleanInput () {
-    var inputText = getText();
-    inputText = inputText.toUpperCase();
-    inputText = inputText.replace(/\n/g, " ");
-    var wordList = inputText.split(" ");
-
-    var flagForClear = [];
-    for (var i = 0; i < wordList.length; i++) {
-        var word = wordList[i];
-        if (word.length === 0) {
-            flagForClear.push(i);
-        }
-    }
-    for (i = flagForClear.length - 1; i >= 0; i--) {
-        wordList.splice(flagForClear[i], 1);
-    }
-
-    flagForClear = [];
-    var omittedWords = {};
-    for (i = 0; i < wordList.length; i++) {
-        word = wordList[i];
-        var patt = /\d/;
-        if (patt.test(word)) {
-            omittedWords[i] = word;
-            flagForClear.push(i);
-        }
-    }
-    for (i = flagForClear.length - 1; i >= 0; i--) {
-        wordList.splice(flagForClear[i], 1);
-    }
-
-    return [omittedWords, wordList];
 }
 
 PartialSolution.prototype.outputString = function () {
@@ -209,15 +173,246 @@ PartialSolution.prototype.updateCiphertext  = function () {
                 this.subReg[i][j] = true;
             }
         }
+        if (this.solvedWords.indexOf(i) === -1) {
+            var wordSolved = true;
+            for (j = 0; j < word.length; j++) {
+                if (!this.subReg[i][j]) {
+                    wordSolved = false;
+                    break;
+                }
+            }
+            if (wordSolved) {
+                this.solvedWords.push(i);
+            }
+        }
     }
     this.solvedLettersJSON = JSON.stringify(this.solvedLetters);
     this.solvedLetterValues = [];
     for (var letter in this.solvedLetters) {
-        if (this.solvedLetters.hasOwnProperty(letter) && this.solvedLetters[letter] !== null) {
+        if (this.solvedLetters.hasOwnProperty(letter)
+                && this.solvedLetters[letter] !== null
+                && this.solvedLetterValues.indexOf(letter) === -1) {
             this.solvedLetterValues.push(this.solvedLetters[letter]);
         }
     }
 };
+
+function ChangeNode (type, parentNode, change, partialSolution) {
+    if (parentNode === null) {
+        this.partialSolution = new PartialSolution(partialSolution);
+        this.lastChange = null;
+        this.parentNode = null;
+        this.layer = 0;
+        if (type === "Longest") {
+            this.hyphenatedWords = [];
+            this.wordsWithSpecialChars = [];
+        }
+        if (type === "Contraction") {
+            this.failedChanges = [];
+        }
+    }
+    else {
+        this.parentNode = parentNode;
+        this.partialSolution =  new PartialSolution(parentNode.partialSolution);
+        this.lastChange = change;
+        this.layer = parentNode.layer + 1;
+        switch (type) {
+            case "OneLetter":
+                // change format: W[word index]L[letter index]S[substituted letter]
+                console.log(change);
+                console.log(/W\d+L/.exec(change));
+                var wordIndex = Number(/W\d+L/.exec(change)[0].slice(1, -1));
+                console.log("wordIndex: " + wordIndex);
+                var letterIndex = Number(/L\d+S/.exec(change)[0].slice(1, -1));
+                console.log("letterIndex: " + letterIndex);
+                this.partialSolution.solvedLetters[this.partialSolution.words[wordIndex][letterIndex]] = /S\w/.exec(change)[0].slice(1);
+                break;
+            case "Longest":
+                // change format: {index: n, sub: word}
+                var oldWord = this.partialSolution.words[change.index];
+                for (var i = 0; i < oldWord.length; i++) {
+                    if (!this.partialSolution.subReg[change.index][i]) {
+                        if (this.partialSolution.solvedLetters[oldWord[i]] === null) {
+                            if (this.partialSolution.solvedLetterValues.indexOf(change.sub.charAt(i)) !== -1) {
+                                this.partialSolution = null;
+                                console.log("Letter already solved!");
+                                return;
+                            }
+                            else {
+                                this.partialSolution.solvedLetters[oldWord[i]] = change.sub.charAt(i);
+                                this.partialSolution.solvedLetterValues.push(change.sub.charAt(i));
+                            }
+                        }
+                        else {
+                            // Checks if same letter occurs twice in word
+                            if (this.partialSolution.solvedLetters[oldWord[i]] !== change.sub.charAt(i)) {
+                                this.partialSolution = null;
+                                console.log("Uncaught repeat detected!");
+                                return;
+                            }
+                        }
+                    }
+                }
+                this.hyphenatedWords = parentNode.hyphenatedWords;
+                this.wordsWithSpecialChars = parentNode.wordsWithSpecialChars;
+                break;
+            case "Contraction":
+                // Change format: "I[word index]S[word substituted]
+                console.log(change);
+                var index = Number(/I\d+S/.exec(change)[0].slice(1, -1));
+                oldWord = this.partialSolution.words[index];
+                var newWord = /S.+/.exec(change)[0].slice(1);
+                for (i = 0; i < oldWord.length; i++) {
+                    var oldLetter = oldWord[i];
+                    console.log("Old letter: " + oldLetter);
+                    var newLetter = newWord.charAt(i);
+                    console.log("New letter: " + newLetter);
+                    if (oldLetter === "'") continue;
+                    if (this.partialSolution.subReg[index][i]) {
+                        if (oldLetter === newLetter) {
+                            continue;
+                        }
+                        else {
+                            console.log("Letter already substituted!");
+                            this.partialSolution = null;
+                            return;
+                        }
+                    }
+                    if (this.partialSolution.solvedLetterValues.indexOf(newLetter) !== -1
+                        && this.partialSolution.solvedLetters[oldLetter] !== newLetter) {
+                        console.log("Letter already used!");
+                        this.partialSolution = null;
+                        return;
+                    }
+                    if (this.partialSolution.solvedLetters[oldLetter] !== null) {
+                        if (this.partialSolution.solvedLetters[oldLetter] === newLetter) {
+                            continue;
+                        }
+                        else {
+                            console.log("Letter already solved!");
+                            this.partialSolution = null;
+                            return;
+                        }
+                    }
+                    this.partialSolution.solvedLetters[oldLetter] = newLetter;
+                    this.partialSolution.solvedLetterValues.push(newLetter);
+                }
+                this.failedChanges = parentNode.failedChanges;
+        }
+        this.partialSolution.updateCiphertext();
+        parentNode.children.push(this);
+    }
+    this.children = [];
+}
+
+function cleanInput () {
+    var inputText = getText();
+    inputText = inputText.toUpperCase();
+    inputText = inputText.replace(/\n/g, " ");
+    var wordList = inputText.split(/[ -]/);
+    var flagForClear = [];
+    for (var i = 0; i < wordList.length; i++) {
+        var word = wordList[i];
+        if (word.length === 0) {
+            flagForClear.push(i);
+        }
+    }
+    for (i = flagForClear.length - 1; i >= 0; i--) {
+        wordList.splice(flagForClear[i], 1);
+    }
+
+    flagForClear = [];
+    var omittedWords = {};
+    for (i = 0; i < wordList.length; i++) {
+        word = wordList[i];
+        var patt = /\d/;
+        if (patt.test(word)) {
+            omittedWords[i] = word;
+            flagForClear.push(i);
+        }
+        patt = /'\w$/;
+        if (patt.test(word)) {
+            omittedWords[i] = word;
+            flagForClear.push(i);
+        }
+    }
+    for (i = flagForClear.length - 1; i >= 0; i--) {
+        wordList.splice(flagForClear[i], 1);
+    }
+    console.log(omittedWords);
+    return [omittedWords, wordList];
+}
+
+function fractionSolvedWordsUnknown (partialSolution) {
+    var unknownWordsCount = 0;
+    for (var i = 0; i < partialSolution.solvedWords.length; i++) {
+        var currentSolvedWord = partialSolution.words[partialSolution.solvedWords[i]];
+        var wordReference;
+        if (/'/.test(currentSolvedWord.join(""))) {
+            wordReference = contractions;
+        }
+        else {
+            switch (currentSolvedWord.length) {
+                case 1:
+                    continue;
+                case 2:
+                    wordReference = twoLetterWords;
+                    break;
+                case 3:
+                    wordReference = threeLetterWords;
+                    break;
+                case 4:
+                    wordReference = fourLetterWords;
+                    break;
+                case 5:
+                    wordReference = fiveLetterWords;
+                    break;
+                case 6:
+                    wordReference = sixLetterWords;
+                    break;
+                default:
+                    wordReference = sevenLetterWords;
+                    break;
+            }
+        }
+        if (!wordReference[currentSolvedWord.join("")]) {
+            console.log("Unknown word: " + currentSolvedWord.join(""));
+            unknownWordsCount++;
+        }
+    }
+    return unknownWordsCount / partialSolution.words.numWords;
+}
+
+function selectBestSolution (partialSolutions) {
+    // TODO: What if many solutions are tied for most unknown words??
+    var bestSolutions = [];
+    var bestSolutionFraction = 0;
+    for (var i = 0; i < partialSolutions.length; i++) {
+        var fractionOfWordsSolved = partialSolutions[i].solvedWords.length / partialSolutions[i].words.numWords;
+        if (fractionOfWordsSolved > bestSolutionFraction) {
+            bestSolutions = [partialSolutions[i]];
+            bestSolutionFraction = fractionOfWordsSolved;
+        }
+        else if (fractionOfWordsSolved === bestSolutionFraction) {
+            bestSolutions.push(partialSolutions[i]);
+        }
+    }
+    var singleBestSolution;
+    var unknownProportion = 1;
+    if (bestSolutions.length === 1) {
+        singleBestSolution = bestSolutions[0];
+    }
+    else {
+        for (i = 0; i < bestSolutions.length; i++) {
+            var currentUnknown = fractionSolvedWordsUnknown(bestSolutions[i]);
+            if (currentUnknown < unknownProportion) {
+                unknownProportion = currentUnknown;
+                singleBestSolution = bestSolutions[i];
+            }
+        }
+    }
+    return singleBestSolution;
+}
 
 function oneLetterWords (partialSolutions) {
     var singleLetterWords = [];
@@ -260,6 +455,111 @@ function oneLetterWords (partialSolutions) {
     }
     partialSolutions = tempPartialSolutions;
     return partialSolutions;
+}
+
+function contractionSolver (partialSolutions) {
+    var tempSolutions = [];
+    var tempOutputStrings = [];
+
+    for (var i = 0; i < partialSolutions.length; i++) {
+        console.log("Changing partial solution!");
+        var deepestNodes = [];
+        var deepestNodesStrings = [];
+        var deepestLayer = -1;
+        var candidateWords = {};
+        var candidateWordCount = 0;
+        for (var j = 0; j < partialSolutions[i].words.numWords; j++) {
+            if (/'\w{2,}/.test(partialSolutions[i].words[j].join(""))) {
+                candidateWords[j] = partialSolutions[i].words[j];
+                candidateWordCount++;
+            }
+        }
+        if (candidateWordCount === 0) {
+            // If no contractions present
+            return partialSolutions;
+        }
+
+        var currentNode = new ChangeNode("Contraction", null, null, partialSolutions[i]);
+        var allBranchesExplored = false;
+
+        whileLoop:
+        while (!allBranchesExplored) {
+            var currentSolution = currentNode.partialSolution;
+            var currentCandidate = null, candidateIndex = null;
+            // Set current word from list of candidates
+            for (var index in candidateWords) {
+                if (candidateWords.hasOwnProperty(index)) {
+                    if (currentSolution.solvedWords.indexOf(Number(index)) === -1) {
+                        candidateIndex = Number(index);
+                        currentCandidate = candidateWords[index];
+                        break;
+                    }
+                }
+            }
+            if (currentCandidate === null) {
+                if (currentNode.parentNode !== null) {
+                    console.log("No suitable candidate word identified - reverting");
+                    currentNode = currentNode.parentNode;
+                }
+                else {
+                    allBranchesExplored = true;
+                }
+                continue;
+            }
+            currentContraction:
+            for (var contraction in contractions) {
+                if (contractions.hasOwnProperty(contraction)) {
+                    if (contraction.length !== currentCandidate.length) continue;
+                    if (contraction.indexOf("'") !== currentCandidate.indexOf("'")) continue;
+                    var proposedChange = "I" + candidateIndex + "S" + contraction;
+                    for (j = 0; j < currentNode.children.length; j++) {
+                        if (currentNode.children[j].lastChange === proposedChange
+                            || currentNode.failedChanges.indexOf(proposedChange) !== -1) {
+                            continue currentContraction;
+                        }
+                    }
+                    var newNode = new ChangeNode("Contraction", currentNode, proposedChange, null);
+                    if (newNode.partialSolution === null) {
+                        currentNode.failedChanges.push(proposedChange);
+                        continue;
+                    }
+                    console.log("Solution found!");
+                    currentNode = newNode;
+                    if (deepestNodesStrings.indexOf(currentNode.partialSolution.outputString()) === -1) {
+                        if (currentNode.layer > deepestLayer) {
+                            deepestNodes = [currentNode];
+                            deepestLayer = currentNode.layer;
+                        }
+                        else if (currentNode.layer === deepestLayer) {
+                            deepestNodes.push(currentNode);
+                        }
+                        deepestNodesStrings.push(currentNode.partialSolution.outputString());
+                    }
+                    continue whileLoop;
+                }
+            }
+            if (currentNode.parentNode !== null) {
+                console.log("No solutions found - reverting to parent");
+                currentNode = currentNode.parentNode;
+            }
+            else {
+                console.log("All branches explored!");
+                allBranchesExplored = true;
+            }
+        }
+        for (j = 0; j < deepestNodes.length; j++) {
+            if (tempOutputStrings.indexOf(deepestNodes[j].partialSolution.outputString()) === -1) {
+                tempSolutions.push(deepestNodes[j].partialSolution);
+                tempOutputStrings.push(deepestNodes[j].partialSolution.outputString());
+            }
+        }
+    }
+    if (tempSolutions.length > 0) {
+        return tempSolutions;
+    }
+    else {
+        return partialSolutions;
+    }
 }
 
 function generateThe (partialSolutions) {
@@ -305,323 +605,324 @@ function generateThe (partialSolutions) {
     return tempSolutions;
 }
 
-function longestWordSolver (partialSolution, solvedLetterThreshold) {
-    var failedCandidates = [];
-    var solutions = [];
-    var longWordsReference = Object.keys(sevenLetterWords);
-    currentAttempt:
-    while (solutions.length === 0) {
-        var longestWordFinder = {
-        index: null,
-        length: 0
-        };
-        for (var i = 0; i < partialSolution.words.numWords; i++) {
-            if (partialSolution.words[i].length >= longestWordFinder.length && failedCandidates.indexOf(i) === -1) {
-                longestWordFinder.length = partialSolution.words[i].length;
-                longestWordFinder.index = i;
-            }
-        }
-        var longestWord = partialSolution.words[longestWordFinder.index];
+function longestWordSolver (partialSolutions) {
+    var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var wordReference = sevenLetterWords;
+    var allDeepestSolutions = [];
 
-        if (longestWord.length < 7) {
-            if (!partialSolution.anyLongWordSolved) break;
-            partialSolution.solvedAllLongWords = true;
-            solutions.push(partialSolution);
-            return solutions;
-        }
-        var longestWordSolvedLetters = {};
-        for (i = 0; i < longestWord.length; i++) {
-            if (partialSolution.solvedLetters[longestWord[i].toUpperCase()] === undefined) {
-                failedCandidates.push(longestWordFinder.index);
-                continue currentAttempt;
-            }
-            if (partialSolution.subReg[longestWordFinder.index][i]) {
-                longestWordSolvedLetters[i] = longestWord[i];
-            }
-        }
-        if (Object.keys(longestWordSolvedLetters).length < solvedLetterThreshold
-            || Object.keys(longestWordSolvedLetters).length === longestWord.length) {
-            failedCandidates.push(longestWordFinder.index);
-            continue;
-        }
-        currentWord:
-        for (i = 0; i < longWordsReference.length; i++) {
-            if (longWordsReference[i].length === longestWord.length) {
-                var match = true;
-                for (var index in longestWordSolvedLetters) {
-                    if (longestWordSolvedLetters.hasOwnProperty(index)) {
-                        if (longWordsReference[i].charAt(Number(index)) !== longestWordSolvedLetters[index]) {
-                            match = false;
-                            break;
-                        }
-                    }
-                }
-                // Don't even try to read this.
-                if (match) {
-                    var newSolution = new PartialSolution(partialSolution);
-                    for (var j = 0; j < longestWord.length; j++) {
-                        if (longestWordSolvedLetters[j] == undefined) {
-                            // Second condition allows for letter occurring in same word twice.
-                            if (newSolution.solvedLetters[longestWord[j]] !== null
-                                && newSolution.solvedLetters[longestWord[j]] !== longWordsReference[i].charAt(j)
-                                || newSolution.solvedLetterValues.indexOf(longWordsReference[i].charAt(j)) !== -1) {
-                                continue currentWord;
-                            }
-                            newSolution.solvedLetters[longestWord[j]] = longWordsReference[i].charAt(j);
-                        }
-                    }
-                    console.log("Successful match with " + longestWord.join("") + " and " + longWordsReference[i]);
-                    newSolution.updateCiphertext();
-                    newSolution.anyLongWordSolved = true;
-                    solutions.push(newSolution);
-                }
-            }
-        }
-        if (solutions.length === 0) {
-            failedCandidates.push(longestWordFinder.index);
-        }
-    }
-    return solutions;
-}
-
-function longestWordFinderLoop (partialSolutions, possibleSolutions, solvedLetterThreshold) {
+    forLoop:
     for (var i = 0; i < partialSolutions.length; i++) {
-        var newPartialSolutions = longestWordSolver(partialSolutions[i], solvedLetterThreshold);
-        if (newPartialSolutions.length === 0) {
-            console.log("Branch terminated.");
-            continue;
-        }
-        if (newPartialSolutions.length === 1 && newPartialSolutions[0].solvedAllLongWords) {
-            console.log("Adding possible solution!!");
-            possibleSolutions.push(newPartialSolutions[0]);
-            continue;
-        }
-        console.log("Number solutions: " + newPartialSolutions.length);
-        console.log(newPartialSolutions);
-        longestWordFinderLoop(newPartialSolutions, possibleSolutions, 5);
-    }
-    if (possibleSolutions.length === 0 && solvedLetterThreshold > 2) {
-        console.log("Reducing solved letter threshold.");
-        longestWordFinderLoop(partialSolutions, possibleSolutions, solvedLetterThreshold - 1)
-    }
-}
+        var deepestNodes = [];
+        var deepestLayer = 0;
+        var treeExhausted = false;
+        var solvedLetterThreshold = 5;
+        var failedWords = [];
+        var usedLetterAlphabets = {};
+        var currentNode = new ChangeNode("Longest", null, null, partialSolutions[i]);
 
-function oneLetterRemainingWordSolver (partialSolutions) {
-    var tempSolutions = [];
-    var alphabet = "abcdefghijklmnopqrstuvwxyz";
-    for (var i = 0; i < partialSolutions.length; i++) {
-        var oldSolution = partialSolutions[i];
-        console.log("Old Solution: " + i);
-        var endReached = false;
-        var currentSolution = undefined;
-        while (!endReached) {
-            var unusedLetters = [];
-            if (currentSolution == undefined) {
-                currentSolution = new PartialSolution(oldSolution);
-            }
-            for (var j = 0; j < alphabet.length; j++) {
-                if (currentSolution.solvedLetterValues.indexOf(alphabet[j]) === -1) {
-                    unusedLetters.push(alphabet[j]);
+        whileLoop:
+        while (!treeExhausted) {
+            console.log("Looping! Current layer: " + currentNode.layer);
+            var currentSolution = currentNode.partialSolution;
+            // Find longest word
+            var longestWord = [];
+            var longestWordIndex = -1;
+            for (var j = 0; j < currentSolution.words.numWords; j++) {
+                if (currentSolution.words[j].length > longestWord.length
+                    && failedWords.indexOf(j) === -1
+                    && currentNode.hyphenatedWords.indexOf(j) === -1
+                    && currentNode.wordsWithSpecialChars.indexOf(j) === -1
+                    && currentNode.partialSolution.solvedWords.indexOf(j) === -1) {
+                    longestWord = currentSolution.words[j];
+                    longestWordIndex = j;
                 }
             }
-            console.log("Unused letters: " + unusedLetters);
-            var lettersTried = {};
-            currentWord:
-            for (j = 0; j < currentSolution.words.numWords; j++) {
-                var wordArray = oldSolution.words[j];
-                var unsolvedLettersCount = 0;
-                var unsolvedLetterIndex;
-                for (var k = 0; k < wordArray.length; k++) {
-                    if (!currentSolution.subReg[j][k]) {
-                        unsolvedLettersCount++;
-                        unsolvedLetterIndex = k;
+            // Determine what to do if longest word below length threshold
+            if (longestWord.length < 7) {
+                if (deepestLayer > 0) {
+                    if (failedWords.length === 0) {
+                        // All long words solved
+                        console.log(fractionSolvedWordsUnknown(currentSolution));
+                        treeExhausted = true;
+                        allDeepestSolutions.push(currentNode.partialSolution);
+                        break forLoop;
                     }
                 }
-                if (unsolvedLettersCount === 1) {
-                    if (lettersTried[j] === undefined) {
-                        lettersTried[j] = [];
-                    }
-
-                    var wordReference;
-                    switch (wordArray.length) {
-                        case 1:
-                            continue;
-                        case 2:
-                            wordReference = twoLetterWords;
-                            break;
-                        case 3:
-                            wordReference = threeLetterWords;
-                            break;
-                        case 4:
-                            wordReference = fourLetterWords;
-                            break;
-                        case 5:
-                            wordReference = fiveLetterWords;
-                            break;
-                        case 6:
-                            wordReference = sixLetterWords;
-                            break;
-                        default:
-                            wordReference = sevenLetterWords;
-                            break;
-                    }
-                    for (k = 0; k < unusedLetters.length; k++) {
-                        if (lettersTried[j].indexOf(unusedLetters[k]) === -1) {
-                            var testWord = wordArray.slice();
-                            testWord[unsolvedLetterIndex] = unusedLetters[k];
-                            if (wordReference[testWord.join("")]) {
-                                lettersTried[j].push(unusedLetters[k]);
-                                currentSolution.solvedLetters[wordArray[unsolvedLetterIndex]] = unusedLetters[k];
-                                currentSolution.updateCiphertext();
-                                break currentWord;
-                            }
-                        }
-                    }
+                if (solvedLetterThreshold > 2) {
+                    console.log("Reducing threshold to " + String(solvedLetterThreshold - 1));
+                    solvedLetterThreshold -= 1;
+                    failedWords = [];
+                    continue;
                 }
-            }
-            if (j === currentSolution.words.numWords) {
-                tempSolutions.push(currentSolution);
-                endReached = true;
-                console.log("End reached!");
-            }
-        }
-    }
-    if (tempSolutions.length === 0) {
-        tempSolutions = partialSolutions;
-    }
-    console.log("tempSolutions: " + tempSolutions.length);
-    return tempSolutions;
-}
-
-function fractionSolvedWordsCorrect (partialSolution) {
-    var solvedWordsCount = 0;
-    var knownWordsCount = 0;
-    currentWord:
-    for (var i = 0; i < partialSolution.words.numWords; i++) {
-        for (var j = 0; j < partialSolution.words[i].length; j++) {
-            if (!partialSolution.subReg[i][j]) {
-                continue currentWord;
-            }
-        }
-        solvedWordsCount++;
-        var wordReference;
-        switch (partialSolution.words[i].length) {
-            case 1:
+                if (currentNode.parentNode === null) {
+                    console.log("Tree exhausted!");
+                    treeExhausted = true;
+                    break;
+                }
+                console.log("Reverting to parent node.");
+                currentNode = currentNode.parentNode;
+                failedWords = [];
                 continue;
-            case 2:
-                wordReference = twoLetterWords;
-                break;
-            case 3:
-                wordReference = threeLetterWords;
-                break;
-            case 4:
-                wordReference = fourLetterWords;
-                break;
-            case 5:
-                wordReference = fiveLetterWords;
-                break;
-            case 6:
-                wordReference = sixLetterWords;
-                break;
-            default:
-                wordReference = sevenLetterWords;
-                break;
-        }
-        if (wordReference[partialSolution.words[i].join("")]) knownWordsCount++;
-    }
-    return knownWordsCount / solvedWordsCount;
-}
-
-function selectBestSolution (partialSolutions) {
-    // TODO: What if many solutions are tied for most unknown words??
-    var bestSolution = [];
-    var bestSolutionFraction = 0;
-    for (var i = 0; i < partialSolutions.length; i++) {
-        var fractionKnown = fractionSolvedWordsCorrect(partialSolutions[i]);
-        if (fractionKnown > bestSolutionFraction) {
-            bestSolution[0] = partialSolutions[i];
-            bestSolutionFraction = fractionKnown;
-        }
-        else if (fractionKnown === bestSolutionFraction) {
-            bestSolution.push(partialSolutions[i]);
-        }
-    }
-    return bestSolution;
-}
-
-function replaceOmittedWords (partialSolutions, omittedWords) {
-    for (var i = 0; i < partialSolutions.length; i++) {
-        var partialSolution = partialSolutions[i];
-        var wordList = [];
-        for (var j = 0; j < partialSolution.words.numWords; j++) {
-            wordList.push(partialSolution.words[j]);
-        }
-        for (var index in omittedWords) {
-            if (omittedWords.hasOwnProperty(index)) {
-                var omittedWord = omittedWords[index];
-                console.log("Omitted word: " + omittedWord);
-                var decipheredWord = [];
-                for (j = 0; j < omittedWord.length; j++) {
-                    var outputChar = partialSolution.solvedLetters[omittedWord.charAt(j)];
-                    if (outputChar !== null && outputChar != undefined) {
-                        decipheredWord.push(partialSolution.solvedLetters[omittedWord.charAt(j)]);
+            }
+            console.log("Appropriate length for " + longestWord.join(""));
+            // Counts letters already solved and checks for non-letter chars
+            var solvedLetters = {};
+            for (j = 0; j < longestWord.length; j++) {
+                if (!/[a-z]/i.test(longestWord[j])) {
+                    if (/-/.test(longestWord[j])) {
+                        console.log("Hyphenated word identified: " + longestWord.join(""));
+                        currentNode.hyphenatedWords.push(longestWordIndex);
                     }
                     else {
-                        decipheredWord.push(omittedWord.charAt(j));
+                        console.log("Word with special char identified: " + longestWord.join(""));
+                        currentNode.wordsWithSpecialChars.push(longestWordIndex);
                     }
+                    continue whileLoop;
                 }
-                console.log("Deciphered word: ");
-                console.log(decipheredWord);
-                wordList.splice(index, 0, decipheredWord);
+                if (currentSolution.subReg[longestWordIndex][j]) {
+                    solvedLetters[j] = longestWord[j];
+                }
+            }
+            // Check if known letters quantity meets threshold
+            if (Object.keys(solvedLetters).length < solvedLetterThreshold) {
+                failedWords.push(longestWordIndex);
+                console.log("Insufficient known letters in " + longestWord.join("") + " to meet " + solvedLetterThreshold);
+                continue;
+            }
+            currentWord:
+            for (var word in wordReference) {
+                if (wordReference.hasOwnProperty(word)) {
+                    if (word.length !== longestWord.length) continue;
+                    // Check if all known letters match
+                    for (var solvedLetterIndex in solvedLetters) {
+                        if (solvedLetters.hasOwnProperty(solvedLetterIndex)) {
+                            if (word.charAt(Number(solvedLetterIndex)) !== solvedLetters[solvedLetterIndex]) {
+                                continue currentWord;
+                            }
+                        }
+                    }
+                    // Check if current change not already made in child
+                    var proposedChange = {
+                        index: longestWordIndex,
+                        sub: word
+                    };
+                    for (j = 0; j < currentNode.children.length; j++) {
+                        if (currentNode.children[j].lastChange.index === proposedChange.index
+                            && currentNode.children[j].lastChange.sub === proposedChange.sub) {
+                            console.log("Branch already explored!");
+                            continue currentWord;
+                        }
+                    }
+                    // Passed all checks, create new child node
+                    console.log("Matched " + word + " with " + longestWord.join("") + "!!");
+                    var newNode = new ChangeNode('Longest', currentNode, proposedChange, null);
+                    if (newNode.partialSolution === null) {
+                        continue;
+                    }
+                    var solvedAlphabet = "";
+                    for (j = 0; j < 26; j++) {
+                        solvedAlphabet += alphabet.charAt(j);
+                        solvedAlphabet += newNode.partialSolution.solvedLetters[alphabet.charAt(j)];
+                    }
+                    if (usedLetterAlphabets[solvedAlphabet]) {
+                        console.log("Convergence prevented.");
+                        continue;
+                    }
+                    if (fractionSolvedWordsUnknown(newNode.partialSolution) >= 0.1) {
+                        console.log("Harmful change prevented");
+                        continue;
+                    }
+                    if (newNode.layer > deepestLayer) {
+                        deepestNodes = [newNode];
+                        deepestLayer = newNode.layer;
+                    }
+                    else if (newNode.layer === deepestLayer) {
+                        deepestNodes.push(newNode);
+                    }
+                    usedLetterAlphabets[solvedAlphabet] = true;
+                    currentNode = newNode;
+                    solvedLetterThreshold = 5;
+                    failedWords = [];
+                    console.log(currentNode.partialSolution.outputString());
+                    continue whileLoop;
+                }
+            }
+            // Executed if no matches found in word reference
+            console.log("No matches found for " + longestWord.join(""));
+            failedWords.push(longestWordIndex);
+        }
+        // Transfer deepest nodes from current solution to array for all deepest nodes
+        for (j = 0; j < deepestNodes.length; j++) {
+            allDeepestSolutions.push(deepestNodes[j].partialSolution);
+        }
+    }
+    return selectBestSolution(allDeepestSolutions);
+}
+
+function oneLetterRemainingWordSolver (partialSolution) {
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    var currentNode = new ChangeNode("OneLetter", null, null, partialSolution);
+    var deepestNodeLayer = 0;
+    var deepestNodeSolutions = [currentNode.partialSolution];
+
+    doLoop:
+    do {
+        var currentSolution = currentNode.partialSolution;
+        console.log(currentSolution.outputString());
+
+        var lettersUnsolved = 0;
+        for (var i = 0; i < currentSolution.words.numWords; i++) {
+            for (var j = 0; j < currentSolution.subReg[i].length; j++) {
+                if (!currentSolution.subReg[i][j]) lettersUnsolved++;
             }
         }
-        for (j = 0; j < wordList.length; j++) {
-            partialSolution.words[j] = wordList[j];
+        if (lettersUnsolved === 0) break;
+
+        for (i = 0; i < currentSolution.words.numWords; i++) {
+            var unsolvedLettersCount = 0;
+            var unsolvedLetterIndex;
+            for (j = 0; j < currentSolution.words[i].length; j++) {
+                if (!currentSolution.subReg[i][j]) {
+                    unsolvedLettersCount++;
+                    unsolvedLetterIndex = j;
+                }
+            }
+            if (unsolvedLettersCount === 1) {
+                console.log("Word with one letter found: " + currentSolution.words[i].join(""));
+                currentLetter:
+                for (j = 0; j < alphabet.length; j++) {
+                    if (currentSolution.solvedLetterValues.indexOf(alphabet.charAt(j)) === -1) {
+                        console.log("Unused letter identified.");
+                        var attemptedChange = String("W" + i + "L" + unsolvedLetterIndex + "S" + alphabet[j]);
+                        for (var k = 0; k < currentNode.children.length; k++) {
+                            if (currentNode.children[k].lastChange === attemptedChange) continue currentLetter;
+                        }
+                        console.log("New change identified.");
+                        var testWordArray = currentSolution.words[i].slice(); // Clones array
+                        testWordArray[unsolvedLetterIndex] = alphabet[j];
+                        var wordReference;
+                        switch (testWordArray.length) {
+                            case 1:
+                                continue;
+                            case 2:
+                                wordReference = twoLetterWords;
+                                break;
+                            case 3:
+                                wordReference = threeLetterWords;
+                                break;
+                            case 4:
+                                wordReference = fourLetterWords;
+                                break;
+                            case 5:
+                                wordReference = fiveLetterWords;
+                                break;
+                            case 6:
+                                wordReference = sixLetterWords;
+                                break;
+                            default:
+                                wordReference = sevenLetterWords;
+                                break;
+                        }
+                        console.log("Testing: " + testWordArray.join(""));
+                        if (wordReference[testWordArray.join("")]) {
+                            var newNode = new ChangeNode("OneLetter", currentNode, attemptedChange, null);
+                            if (newNode.layer === deepestNodeLayer) {
+                                deepestNodeSolutions.push(newNode.partialSolution);
+                            }
+                            else if (newNode.layer > deepestNodeLayer) {
+                                deepestNodeLayer = newNode.layer;
+                                deepestNodeSolutions = [newNode.partialSolution];
+                            }
+                            currentNode = newNode;
+                            console.log("New node created!");
+                            console.log(newNode);
+                            continue doLoop;
+                        }
+                    }
+                }
+            }
         }
-        partialSolution.words.numWords = wordList.length;
+        if (currentNode.parentNode !== null) {
+            currentNode = currentNode.parentNode;
+        }
+        else {
+            break;
+        }
+    } while (lettersUnsolved > 0);
+
+    return selectBestSolution(deepestNodeSolutions);
+}
+
+function replaceOmittedWords (partialSolution, omittedWords) {
+    var wordList = [];
+    for (var j = 0; j < partialSolution.words.numWords; j++) {
+        wordList.push(partialSolution.words[j]);
     }
+    for (var index in omittedWords) {
+        if (omittedWords.hasOwnProperty(index)) {
+            var omittedWord = omittedWords[index];
+            console.log("Omitted word: " + omittedWord);
+            var decipheredWord = [];
+            for (j = 0; j < omittedWord.length; j++) {
+                var outputChar = partialSolution.solvedLetters[omittedWord.charAt(j)];
+                if (outputChar !== null && outputChar != undefined) {
+                    decipheredWord.push(partialSolution.solvedLetters[omittedWord.charAt(j)]);
+                }
+                else {
+                    decipheredWord.push(omittedWord.charAt(j));
+                }
+            }
+            console.log("Deciphered word: ");
+            console.log(decipheredWord);
+            wordList.splice(index, 0, decipheredWord);
+        }
+    }
+    for (j = 0; j < wordList.length; j++) {
+        partialSolution.words[j] = wordList[j];
+    }
+    partialSolution.words.numWords = wordList.length;
 }
 
 function simpleKeywordCipherCrack () {
-    var inputCleaning = cleanInput();
-    var omittedWords = inputCleaning[0];
-    var initialParse = new PartialSolution(undefined, inputCleaning[1]);
-    var partialSolutions = [];
-    partialSolutions.push(initialParse);
-    console.log("Initial array: ");
-    console.log(partialSolutions);
+    try {
+        var inputCleaning = cleanInput();
+        var omittedWords = inputCleaning[0];
+        var initialParse = new PartialSolution(undefined, inputCleaning[1]);
+        var partialSolutions = [];
+        partialSolutions.push(initialParse);
+        console.log("Initial array: ");
+        console.log(partialSolutions);
 
-    partialSolutions = oneLetterWords(partialSolutions);
-    console.log("oneLetterWords: ");
-    console.log(partialSolutions);
+        partialSolutions = oneLetterWords(partialSolutions);
+        console.log("oneLetterWords: ");
+        console.log(partialSolutions);
 
-    partialSolutions = generateThe(partialSolutions);
-    console.log('generateThe');
-    console.log(partialSolutions);
+        partialSolutions = contractionSolver(partialSolutions);
+        console.log("Contractions: ");
+        console.log(partialSolutions);
 
-    var longestWordFinderOutput = [];
-    longestWordFinderLoop(partialSolutions, longestWordFinderOutput, 5);
-    partialSolutions = longestWordFinderOutput;
-    console.log("Results of solving long words: ");
-    console.log(partialSolutions);
+        partialSolutions = generateThe(partialSolutions);
+        console.log('generateThe');
+        console.log(partialSolutions);
 
-    partialSolutions = selectBestSolution(partialSolutions);
-    console.log("Best solution(s): ");
-    console.log(partialSolutions);
+        var partialSolution = longestWordSolver(partialSolutions);
+        if (partialSolution === 99) {
+            return "Cryptanalysis failed.";
+        }
+        console.log("Results of solving long words: ");
+        console.log(partialSolution);
+        console.log(partialSolution.outputString());
 
-    partialSolutions = oneLetterRemainingWordSolver(partialSolutions);
-    console.log("Attempted to solve words with one letter remaining unsolved.");
-    console.log(partialSolutions);
-    for (var i = 0; i < partialSolutions.length; i++) {
-        console.log(partialSolutions[i].outputString());
+        partialSolution = oneLetterRemainingWordSolver(partialSolution);
+        console.log("Attempted to solve words with one letter remaining unsolved.");
+        console.log(partialSolution);
+        console.log(partialSolution.outputString());
+
+        replaceOmittedWords(partialSolution, omittedWords);
+        return partialSolution.outputString();
     }
-
-    partialSolutions = selectBestSolution(partialSolutions);
-    replaceOmittedWords(partialSolutions, omittedWords);
-    if (partialSolutions.length === 1) {
-        return partialSolutions[0].outputString();
-    }
-    if (partialSolutions.length === 0) {
-        return "Cryptanalysis failed.";
+    catch (error) {
+        console.log(error);
+        return "Error occurred during cryptanalysis.";
     }
 }
