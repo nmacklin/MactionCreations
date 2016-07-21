@@ -37,13 +37,14 @@ function vigenereCipherEncrypt () {
 
     var keywordNum, originalLetter, cipherLetter, cipherLetterAlphabet;
     var outputMessage = "";
+    var encipheredChars = 0;
     for (var i = 0; i < inputText.length; i++) {
         originalLetter = inputText.slice(i, i + 1);
         if (vigenereSquare.A.indexOf(originalLetter.toUpperCase()) === -1) {
             outputMessage += originalLetter;
             continue;
         }
-        keywordNum = i % keyword.length;
+        keywordNum = encipheredChars % keyword.length;
         cipherLetterAlphabet = vigenereSquare[keyword.slice(keywordNum, keywordNum + 1)];
         if (cipherLetterAlphabet == undefined) {
             alert("Encryption failed. Keywords may only contain letters and spaces.");
@@ -56,6 +57,7 @@ function vigenereCipherEncrypt () {
         else {
             outputMessage += cipherLetter.toLowerCase();
         }
+        encipheredChars++;
     }
     return outputMessage;
 }
@@ -66,13 +68,14 @@ function vigenereCipherDecrypt () {
 
     var keywordNum, cipherLetter, decryptLetter, cipherLetterAlphabet;
     var outputMessage = "";
+    var decipheredChars = 0; // So non-letter chars do not advance keyword index
     for (var i = 0; i < inputText.length; i++) {
         cipherLetter = inputText.slice(i, i + 1);
         if (vigenereSquare.A.indexOf(cipherLetter.toUpperCase()) === -1) {
             outputMessage += cipherLetter;
             continue;
         }
-        keywordNum = i % keyword.length;
+        keywordNum = decipheredChars % keyword.length;
         cipherLetterAlphabet = vigenereSquare[keyword.slice(keywordNum, keywordNum + 1)];
         decryptLetter = vigenereSquare.A[cipherLetterAlphabet.indexOf(cipherLetter.toUpperCase())];
         if (cipherLetter === cipherLetter.toUpperCase()) {
@@ -81,6 +84,7 @@ function vigenereCipherDecrypt () {
         else {
             outputMessage += decryptLetter.toLowerCase();
         }
+        decipheredChars++;
     }
 
     return outputMessage;
