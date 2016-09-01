@@ -51,3 +51,26 @@ function getKeyword (inputNumber, toUpper, removeSpaces) {
 
     return keyword;
 }
+
+function transformWithAlphabet (originalAB, transformedAB, inputText) {
+    // Generates output text using newly-generated cipher alphabet
+    var output = "";
+    for (var i = 0; i < inputText.length; i++) {
+        var letter = inputText.slice(i, i + 1);
+        var letterNumber = originalAB.indexOf(letter.toUpperCase());
+        // If char not found in original alphabet, output original char
+        if (letterNumber === -1) {
+            output += letter;
+            continue;
+        }
+        // Case-preserved transformation
+        if (letter === letter.toUpperCase()) {
+            output += transformedAB[letterNumber];
+        }
+        else {
+            output += transformedAB[letterNumber].toLowerCase();
+        }
+    }
+    
+    return output;
+}

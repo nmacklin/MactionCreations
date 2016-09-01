@@ -21,6 +21,9 @@
           </div>
         </div>
       </div>
+      <svg width="90%" height="75%">
+          <rect width="50%" height="50%" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)"></rect>
+      </svg>
     </div>
     <div id="wideScreenContainer" style="display: none">
         <div class="container-fluid">
@@ -33,8 +36,9 @@
                     <h3>Input</h3>
                 </div>
                 <div class="col-xs-2" style="padding: 0">
-                    <select id="encryptionMethod" class="codeStyle methodSelect">
+                    <select id="encryptionMethod" class="codeStyle methodSelect" tabindex="1">
                         <option>Please select method...</option>
+                        <option>Caesar Shift</option>
                         <option>Simple Keyword Cipher</option>
                         <option>Vigenère Cipher</option>
                     </select>
@@ -47,8 +51,8 @@
             <div class="row" style="height: 200px">
                 <div class="col-xs-1"></div>
                 <div class="col-xs-4 largeTextFieldContainer">
-                    <textarea id="textInput" class="largeTextField codeStyle"
-                      onclick="if (this.value === 'Text to be encrypted/decrypted here') this.setSelectionRange(0, this.value.length)">Text to be encrypted/decrypted here</textarea>
+                    <textarea id="textInput" class="largeTextField codeStyle" tabindex="2"
+                      onfocus="if (this.value === 'Text to be encrypted/decrypted here') this.setSelectionRange(0, this.value.length)">Text to be encrypted/decrypted here</textarea>
                 </div>
                 <div class="col-xs-2 largeTextFieldContainer">
                     <div class="row buttonContainer">
@@ -79,6 +83,7 @@
             <div class="row" style="padding-bottom: 2%">
                 <select id="encryptionMethodNarrow" class="codeStyle methodSelect">
                     <option>Please select method...</option>
+                    <option>Caesar Shift</option>
                     <option>Simple Keyword Cipher</option>
                     <option>Vigenère Cipher</option>
                 </select>
@@ -106,6 +111,7 @@
 <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
 <!-- Page-specific Scripts -->
 <script src="{{ url_for('static', filename='scripts/functionLibrary.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/caesarShift.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/simpleKeywordCipher.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/vigenereCipher.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/encryptionMethods.js') }}"></script>

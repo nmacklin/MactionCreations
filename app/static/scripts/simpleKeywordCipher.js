@@ -3,6 +3,7 @@
  */
 
 function simpleKeywordCipherEncrypt () {
+    // Takes input and keyword, generates cipher alphabet from keyword, and generates output cipher text
     var inputText = getText();
     var keyword = getKeyword(0, true, false);
 
@@ -11,6 +12,7 @@ function simpleKeywordCipherEncrypt () {
                     'Y', 'Z'];
     var transformedAlphabet = [];
 
+    // Generates cipher alphabet letters for each letter of keyword
     for (var i = 0; i < keyword.length; i++) {
         var letter = keyword.slice(i, i + 1);
         if (originalAlphabet.indexOf(letter) > -1 || letter === " ") {
@@ -23,6 +25,8 @@ function simpleKeywordCipherEncrypt () {
             return 88;
         }
     }
+
+    // Fills in remaining cipher alphabet with unused letters
     for (i = 0; i < originalAlphabet.length; i++) {
         letter = originalAlphabet[i];
         if (transformedAlphabet.indexOf(letter) === -1) {
@@ -34,24 +38,7 @@ function simpleKeywordCipherEncrypt () {
         alert("Error occurred in encryption.");
         return 88;
     }
-
-    var output = "";
-    for (i = 0; i < inputText.length; i++) {
-        letter = inputText.slice(i, i + 1);
-        var letterNumber = originalAlphabet.indexOf(letter.toUpperCase());
-        if (letterNumber === -1) {
-            output += letter;
-            continue;
-        }
-        if (letter === letter.toUpperCase()) {
-            output += transformedAlphabet[letterNumber];
-        }
-        else {
-            output += transformedAlphabet[letterNumber].toLowerCase();
-        }
-    }
-
-    return output;
+    return transformWithAlphabet(originalAlphabet, transformedAlphabet, inputText);
 }
 
 
@@ -63,6 +50,7 @@ function simpleKeywordCipherDecrypt () {
     var transformedAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
                     'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
                     'Y', 'Z'];
+    // Generates plaintext alphabet from keyword
     for (var i = 0; i < keyword.length; i++) {
         var letter = keyword.slice(i, i + 1);
         if (transformedAlphabet.indexOf(letter) === -1 && letter !== " ") {
@@ -73,7 +61,7 @@ function simpleKeywordCipherDecrypt () {
             originalAlphabet.push(letter);
         }
     }
-
+    // Fills in remaining plaintext alphabet from unused letters
     for (i = 0; i < transformedAlphabet.length; i++) {
         letter = transformedAlphabet[i];
         if (originalAlphabet.indexOf(letter) === -1) {
@@ -102,15 +90,17 @@ function simpleKeywordCipherDecrypt () {
 }
 
 function PartialSolution (oldSolution, wordList) {
-    if (oldSolution == null) {
-        this.words = {};
-        this.subReg = {};
-        this.solvedLetters = {};
-        this.solvedLetterValues = [];
-        this.solvedLettersJSON = "";
-        this.solvedWords = [];
+    // PartialSolution prototype to contain necessary information regarding prior efforts to solve
 
-        this.words.numWords = wordList.length;
+    if (oldSolution == null) {
+        this.words = {}; // Object containing all words of form {index: [word array]}
+        this.subReg = {}; // Substitution register to track if letter has been substituted {index: [bool array]}
+        this.solvedLetters = {}; // For each letter in alphabet, either {letter: null} or {letter: solved letter}
+        this.solvedLetterValues = []; // List of plaintext letters that have been solved for
+        this.solvedLettersJSON = "";
+        this.solvedWords = []; // List of indices of solved words
+
+        this.words.numWords = wordList.length; 
         var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         for (var i = 0; i < wordList.length; i++) {
             var word = wordList[i];
@@ -165,14 +155,18 @@ PartialSolution.prototype.outputString = function () {
 };
 
 PartialSolution.prototype.updateCiphertext  = function () {
+    // Updates text by substituting ciphertext letters with solved letters
+
     for (var i = 0; i < this.words.numWords; i++) {
         var word = this.words[i];
         for (var j = 0; j < word.length; j++) {
+            // If not substituted and letter solved for
             if (this.subReg[i][j] === false && this.solvedLetters[word[j]] !== null) {
                 word[j] = this.solvedLetters[word[j]];
                 this.subReg[i][j] = true;
             }
         }
+        // Checks if word solved and adds to solvedWords array if it is
         if (this.solvedWords.indexOf(i) === -1) {
             var wordSolved = true;
             for (j = 0; j < word.length; j++) {
@@ -186,7 +180,9 @@ PartialSolution.prototype.updateCiphertext  = function () {
             }
         }
     }
+    
     this.solvedLettersJSON = JSON.stringify(this.solvedLetters);
+    // Updates solvedLetterValues
     this.solvedLetterValues = [];
     for (var letter in this.solvedLetters) {
         if (this.solvedLetters.hasOwnProperty(letter)
@@ -198,6 +194,8 @@ PartialSolution.prototype.updateCiphertext  = function () {
 };
 
 function ChangeNode (type, parentNode, change, partialSolution) {
+    // Node for tree-based solution finding functions (longestWordSolver, contractionSolver, oneLetterSolver)
+
     if (parentNode === null) {
         this.partialSolution = new PartialSolution(partialSolution);
         this.lastChange = null;
@@ -278,12 +276,14 @@ function ChangeNode (type, parentNode, change, partialSolution) {
                             return;
                         }
                     }
+                    // Reject if new letter already used and not for current old letter
                     if (this.partialSolution.solvedLetterValues.indexOf(newLetter) !== -1
                         && this.partialSolution.solvedLetters[oldLetter] !== newLetter) {
                         console.log("Letter already used!");
                         this.partialSolution = null;
                         return;
                     }
+                    // Reject if old letter already solved for other letter
                     if (this.partialSolution.solvedLetters[oldLetter] !== null) {
                         if (this.partialSolution.solvedLetters[oldLetter] === newLetter) {
                             continue;
@@ -306,10 +306,14 @@ function ChangeNode (type, parentNode, change, partialSolution) {
 }
 
 function cleanInput () {
+    // Takes input text, replaces newline chars with spaces, removes words with length 0
+    // then catalogs and removes words with numbers
+
     var inputText = getText();
     inputText = inputText.toUpperCase();
     inputText = inputText.replace(/\n/g, " ");
     var wordList = inputText.split(/[ -]/);
+    // Removes words with no chars
     var flagForClear = [];
     for (var i = 0; i < wordList.length; i++) {
         var word = wordList[i];
@@ -320,7 +324,8 @@ function cleanInput () {
     for (i = flagForClear.length - 1; i >= 0; i--) {
         wordList.splice(flagForClear[i], 1);
     }
-
+    // Catalogs and removes words with numbers and words with one letter after apostrophe
+    // TODO: Solve words with one letter following apostrophe instead of just removing
     flagForClear = [];
     var omittedWords = {};
     for (i = 0; i < wordList.length; i++) {
@@ -344,6 +349,9 @@ function cleanInput () {
 }
 
 function fractionSolvedWordsUnknown (partialSolution) {
+    // Counts words that are solved but not found in word reference
+    // Returns proportion of unknown words to message length
+
     var unknownWordsCount = 0;
     for (var i = 0; i < partialSolution.solvedWords.length; i++) {
         var currentSolvedWord = partialSolution.words[partialSolution.solvedWords[i]];
@@ -384,7 +392,9 @@ function fractionSolvedWordsUnknown (partialSolution) {
 }
 
 function selectBestSolution (partialSolutions) {
-    // TODO: What if many solutions are tied for most unknown words??
+    // Compares solutions. First checks for solution with most solved words.
+    // If tied, returns solution with least solved but unknown words.
+
     var bestSolutions = [];
     var bestSolutionFraction = 0;
     for (var i = 0; i < partialSolutions.length; i++) {
@@ -415,6 +425,8 @@ function selectBestSolution (partialSolutions) {
 }
 
 function oneLetterWords (partialSolutions) {
+    // Identifies single letter words and substitutes these with either "a" or "i"
+
     var singleLetterWords = [];
     var oldSolution = partialSolutions[0];
     for (var i = 0; i < oldSolution.words.numWords; i++) {
@@ -423,10 +435,12 @@ function oneLetterWords (partialSolutions) {
             singleLetterWords.push(word[0]);
         }
     }
+
     if (singleLetterWords.length === 0) {
         console.log("No single letter words found.");
         return partialSolutions;
     }
+
     var tempPartialSolutions = [];
     if (singleLetterWords.length === 1) {
         console.log("One single-letter-word found");
@@ -454,26 +468,33 @@ function oneLetterWords (partialSolutions) {
         }
     }
     partialSolutions = tempPartialSolutions;
+
     return partialSolutions;
 }
 
 function contractionSolver (partialSolutions) {
+    // Solves for contractions with at least 2 letters after the apostrophe
+    // Currently does not solve for contractions with one letter words to avoid problems with possessives
+    // e.g. "Sean's"
+
     var tempSolutions = [];
     var tempOutputStrings = [];
 
     for (var i = 0; i < partialSolutions.length; i++) {
-        console.log("Changing partial solution!");
         var deepestNodes = [];
         var deepestNodesStrings = [];
         var deepestLayer = -1;
         var candidateWords = {};
         var candidateWordCount = 0;
+        // Identifies words with at least 2 letters after apostrophe
         for (var j = 0; j < partialSolutions[i].words.numWords; j++) {
-            if (/'\w{2,}/.test(partialSolutions[i].words[j].join(""))) {
+            if (/'\w{2,}/.test(partialSolutions[i].words[j].join("")) &&
+                partialSolutions[i].solvedWords.indexOf(j) === -1) {
                 candidateWords[j] = partialSolutions[i].words[j];
                 candidateWordCount++;
             }
         }
+
         if (candidateWordCount === 0) {
             // If no contractions present
             return partialSolutions;
@@ -484,16 +505,13 @@ function contractionSolver (partialSolutions) {
 
         whileLoop:
         while (!allBranchesExplored) {
-            var currentSolution = currentNode.partialSolution;
             var currentCandidate = null, candidateIndex = null;
             // Set current word from list of candidates
             for (var index in candidateWords) {
                 if (candidateWords.hasOwnProperty(index)) {
-                    if (currentSolution.solvedWords.indexOf(Number(index)) === -1) {
-                        candidateIndex = Number(index);
-                        currentCandidate = candidateWords[index];
-                        break;
-                    }
+                    candidateIndex = Number(index);
+                    currentCandidate = candidateWords[index];
+                    break;
                 }
             }
             if (currentCandidate === null) {
@@ -502,6 +520,7 @@ function contractionSolver (partialSolutions) {
                     currentNode = currentNode.parentNode;
                 }
                 else {
+                    // No current candidate and at root node
                     allBranchesExplored = true;
                 }
                 continue;

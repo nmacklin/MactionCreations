@@ -30,5 +30,15 @@ var encryptionMethods = {
         crackFunction: null,
         encryptFunction: vigenereCipherEncrypt,
         decryptFunction: vigenereCipherDecrypt
+    },
+
+    "Caesar Shift": {
+        ancillaries: {
+            ancillaryInput1: "Input a whole number"
+        },
+        attemptCrack: false,
+        crackFunction: null,
+        encryptFunction: caesarShiftEncrypt,
+        decryptFunction: caesarShiftDecrypt
     }
 };

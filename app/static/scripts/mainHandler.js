@@ -64,6 +64,7 @@ function resetEventListeners () {
                     ancillaryInput.className = "codeStyle ancillaryInputNarrow";
                 }
                 ancillaryInput.id = "ancillaryInput" + String(ancillaryCount);
+                ancillaryInput.tabIndex = ancillaryCount + 2;
                 ancillaryInput.value = options.ancillaries.ancillaryInput1;
                 ancillaryInput.setAttribute("onClick", "this.setSelectionRange(0, this.value.length)");
                 ancillaryInputContainer.appendChild(ancillaryInput);
