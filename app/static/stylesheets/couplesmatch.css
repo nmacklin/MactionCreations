@@ -1,0 +1,67 @@
+body {
+    background-image: url('../images/LinenTexture.jpg');
+}
+
+.input-group {
+    width: 100%;
+}
+
+.btn-link {
+    color: firebrick;
+    float: right;
+}
+
+.glyphicon-remove {
+    font-size: 1.4em;
+}
+
+.submitButton {
+    text-align: center;
+}
+
+.centerButton {
+    text-align: center;
+}
+
+.colLabel {
+    font-weight: bolder;
+}
+
+.rankListRow {
+    margin-bottom: 5px;
+}
+
+.modal-title {
+    display: inline-block;
+}
+
+#header {
+    color: ghostwhite;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    justify-content: center;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+#input-container {
+    width: 80%;
+}
+
+#deletionColumn {
+    padding-right: 0;
+}
+
+#buttonRow {
+    margin-bottom: 30px;
+}
+
+#modalColumnLabelsRow {
+    margin-bottom: 20px;
+}
+
+#saveAsXLS {
+    position: absolute;
+    right: 8%;
+}

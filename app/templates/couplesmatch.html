@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('static', filename='bootstrap-3.3.7/css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Page specific CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/couplesmatch.css') }}">
+
+    <title>Rank List Generator for Couples Match</title>
+</head>
+<body>
+    <div class="modal fade" id="resultsModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Generated Rank List</h4>
+                    <button type="button" class="btn btn-primary" id="saveAsXLS">Export as Excel File</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="rankListBody">
+                    <div class="row" id="modalColumnLabelsRow">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4 colLabel">Applicant A Rank List</div>
+                        <div class="col-lg-4 colLabel">Applicant B Rank List</div>
+                        <div class="col-lg-3 colLabel">Average Rank</div>
+                    </div>
+                    <div class="row rankListRow">
+                        <div class="col-lg-1 numRank"></div>
+                        <div class="col-lg-4 appAProgram"></div>
+                        <div class="col-lg-4 appBProgram"></div>
+                        <div class="col-lg-3 averageRank"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="/index"><b>Home</b></a></li>
+                <li><a href="/encryption"><b>Encryption Tools</b></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/nmacklin/MactionCreations"><b>Source</b></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-header" id="header">
+        <h1>Rank List Generator for the Couples Match
+            <p><small>Enter programs with each applicant's rank to generate all possible combinations sorted by average
+                rank.
+            </small></p>
+        </h1>
+    </div>
+    <div class="container-fluid" id="inputRowsContainer">
+        <div class="row" id="buttonRow">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2 centerButton">
+                <button type="button" class="btn" id="generateListBtn">Generate List</button>
+            </div>
+            <div class="col-sm-2 centerButton">
+                <button type="button" class="btn" id="clearAllBtn">Clear All</button>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row entryRow">
+            <div class="col-md-2 deletionColumn">
+                <button type="button" class="btn btn-link" style="display: none">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control programName" placeholder="Program Name">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="input-group">
+                    <input type="number" class="form-control rankA" placeholder="Rank A">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="input-group">
+                    <input type="number" class="form-control rankB" placeholder="Rank B">
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap Javascript -->
+    <script src="{{ url_for('static', filename='bootstrap-3.3.7/js/bootstrap.min.js') }}"></script>
+    <!-- Page-specific script for functionality -->
+    <script src="{{ url_for('static', filename='scripts/rankListGenerator.js') }}"></script>
+</body>

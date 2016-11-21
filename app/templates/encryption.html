@@ -9,7 +9,7 @@
     <!-- Inconsolata Font from Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-    <title>Encryption Methods by Nick Macklin</title>
+    <title>Encryption Methods</title>
 </head>
 <body>
    <!-- Cracking Modal -->
@@ -21,10 +21,18 @@
           </div>
         </div>
       </div>
-      <svg width="90%" height="75%">
-          <rect width="50%" height="50%" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)"></rect>
-      </svg>
     </div>
+   <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="/index"><b>Home</b></a></li>
+                <li><a href="/couplesmatch"><b>Couples Match</b></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/nmacklin/MactionCreations"><b>Source</b></a></li>
+            </ul>
+        </div>
+    </nav>
     <div id="wideScreenContainer" style="display: none">
         <div class="container-fluid">
             <div class="row">
@@ -117,4 +125,6 @@
 <script src="{{ url_for('static', filename='scripts/encryptionMethods.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/mainHandler.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/wordLists.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/testExamples.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/testScripts.js') }}"></script>
 </html>

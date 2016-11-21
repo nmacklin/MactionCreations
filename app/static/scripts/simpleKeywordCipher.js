@@ -96,7 +96,7 @@ function PartialSolution (oldSolution, wordList) {
         this.words = {}; // Object containing all words of form {index: [word array]}
         this.subReg = {}; // Substitution register to track if letter has been substituted {index: [bool array]}
         this.solvedLetters = {}; // For each letter in alphabet, either {letter: null} or {letter: solved letter}
-        this.solvedLetterValues = []; // List of plaintext letters that have been solved for
+        this.solvedLetterValues = []; // List of plaintext  letters that have been solved for
         this.solvedLettersJSON = "";
         this.solvedWords = []; // List of indices of solved words
 
@@ -305,11 +305,17 @@ function ChangeNode (type, parentNode, change, partialSolution) {
     this.children = [];
 }
 
-function cleanInput () {
+function cleanInput (test) {
     // Takes input text, replaces newline chars with spaces, removes words with length 0
     // then catalogs and removes words with numbers
 
-    var inputText = getText();
+    if (test == undefined) {
+        var inputText = getText();
+    }
+    else {
+        inputText = test;
+    }
+
     inputText = inputText.toUpperCase();
     inputText = inputText.replace(/\n/g, " ");
     var wordList = inputText.split(/[ -]/);
@@ -661,13 +667,13 @@ function longestWordSolver (partialSolutions) {
                 if (deepestLayer > 0) {
                     if (failedWords.length === 0) {
                         // All long words solved
-                        console.log(fractionSolvedWordsUnknown(currentSolution));
+                        console.log("Fraction unsolved: " + fractionSolvedWordsUnknown(currentSolution));
                         treeExhausted = true;
                         allDeepestSolutions.push(currentNode.partialSolution);
                         break forLoop;
                     }
                 }
-                if (solvedLetterThreshold > 2) {
+                if (solvedLetterThreshold > 3) {
                     console.log("Reducing threshold to " + String(solvedLetterThreshold - 1));
                     solvedLetterThreshold -= 1;
                     failedWords = [];
@@ -893,7 +899,7 @@ function replaceOmittedWords (partialSolution, omittedWords) {
             }
             console.log("Deciphered word: ");
             console.log(decipheredWord);
-            wordList.splice(index, 0, decipheredWord);
+            wordList.splice(Number(index), 0, decipheredWord);
         }
     }
     for (j = 0; j < wordList.length; j++) {
@@ -902,9 +908,9 @@ function replaceOmittedWords (partialSolution, omittedWords) {
     partialSolution.words.numWords = wordList.length;
 }
 
-function simpleKeywordCipherCrack () {
+function simpleKeywordCipherCrack (test) {
     try {
-        var inputCleaning = cleanInput();
+        var inputCleaning = cleanInput(test); // returns [omittedWords, cleanedInput]
         var omittedWords = inputCleaning[0];
         var initialParse = new PartialSolution(undefined, inputCleaning[1]);
         var partialSolutions = [];
