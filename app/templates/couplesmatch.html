@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress HtmlUnknownTag -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,29 +11,187 @@
     <title>Rank List Generator for Couples Match</title>
 </head>
 <body>
-    <div class="modal fade" id="resultsModal">
+    <div class="modal fade" id="indSubModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h4 class="modal-title">Confirm Entries for Submission</h4>
+                    <button type="button" class="btn btn-primary modalBtn" id="submitIndJSON">Submit List</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="indSubBody">
+                    <div class="row" id="indIDRow">
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" placeholder="Username" id="subUsername">
+                        </div>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" placeholder="Couple ID" id="subCoupleID">
+                        </div>
+                        <div class="col-sm-1">
+                            <div>
+                                or
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-default" id="createIDBtn">Create Couple ID</button>
+                        </div>
+                    </div>
+                    <div class="row" id="indModalLabels">
+                        <div class="col-sm-5 colLabel">Program Name</div>
+                        <div class="col-sm-2 colLabel">Rank</div>
+                        <div class="col-sm-5 colLabel">Location</div>
+                    </div>
+                    <div class="row indSubRow">
+                        <div class="col-sm-5 indProgramName"></div>
+                        <div class="col-sm-2 indRank"></div>
+                        <div class="col-sm-5 indLocation"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="resultsModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
                     <h4 class="modal-title">Generated Rank List</h4>
-                    <button type="button" class="btn btn-primary" id="saveAsXLS">Export as Excel File</button>
+                    <button type="button" class="btn btn-primary modalBtn" id="saveAsXLS">Export as Excel File</button>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                          <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body" id="rankListBody">
                     <div class="row" id="modalColumnLabelsRow">
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-4 colLabel">Applicant A Rank List</div>
-                        <div class="col-lg-4 colLabel">Applicant B Rank List</div>
-                        <div class="col-lg-3 colLabel">Average Rank</div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-3 colLabel">Applicant A Rank List</div>
+                        <div class="col-sm-3 colLabel">Applicant B Rank List</div>
+                        <div class="col-sm-2 colLabel">Average Rank</div>
+                        <div class="col-sm-2 colLabel">Distance (miles)</div>
                     </div>
                     <div class="row rankListRow">
-                        <div class="col-lg-1 numRank"></div>
-                        <div class="col-lg-4 appAProgram"></div>
-                        <div class="col-lg-4 appBProgram"></div>
-                        <div class="col-lg-3 averageRank"></div>
+                        <div class="col-sm-1 numRank"></div>
+                        <div class="col-sm-3 appAProgram"></div>
+                        <div class="col-sm-3 appBProgram"></div>
+                        <div class="col-sm-2 averageRank"></div>
+                        <div class="col-sm-2 distListing"></div>
+                        <div class="col-sm-1"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="confirmationModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Submission Successful!</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="confirmationBody">
+                    <table class="table confirmationTable">
+                        <tr>
+                            <th class="right-align">Username</th>
+                            <td id="usernameCell"></td>
+                        </tr>
+                        <tr>
+                            <th class="right-align">Couple ID</th>
+                            <td id="coupleIDCell"></td>
+                        </tr>
+                    </table>
+                    <h4>
+                        Your list was submitted successfully. Be sure to store your Username and Couple ID,
+                        as you will be unable to retrieve your data without both.
+                        <br><br>
+                        If your partner has already submitted their list, your results are now available for retrieval.
+                        Otherwise, share your Couple ID with your partner so they may submit their list.
+                        <br><br>
+                        Your list will be available for processing for one month.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="retrieveModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Retrieve Couples Rank List</h4>
+                    <button type="button" class="btn btn-primary modalBtn" id="retrieveBtn">Get Results</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="rankListBody">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <input type="text" placeholder="Username" class="form-control" id="retrievalUsername">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" placeholder="Couple ID" class="form-control" id="retrievalID">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" placeholder="Max Distance (mi)" onfocus="this.type='number'"
+                                   class="form-control" id="retrievalDist">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="helpModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Help for Couples Match Tool</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>About</dt>
+                        <dd>
+                            This is a web tool created by a medical student designed to help medical students
+                            through the NRMP Couples Match. It takes each participants personal ranks of each program
+                            and generated a sorted list with rank pairs based on average rank and distance.
+                        </dd>
+                        <dt>Is my data stored or used in any way?</dt>
+                        <dd>
+                            If you enter your ranks jointly, your ranks are temporarily stored only if you choose
+                            to export your list to Excel. If enter your ranks separately, the only identifying
+                            information stored is the Username which you provide.
+                            <br>
+                            All data is cleared from the server periodically. While I will never share or use any
+                            stored data for any reason, I still recommend using an alias as your username. This website
+                            is open source with the source code provided in the link at the top right of the page.
+                        </dd>
+                        <dt>How does submitting individually work?</dt>
+                        <dd>
+                            You and your matching partner may choose to submit individually. To do so, you will need to
+                            share a Couple ID which can be generated in the Submit Ranks prompt. To retrieve, you will
+                            need your Username that you created and your Couple ID. You can retrieve your rank list
+                            as soon as both parties have submitted their personal ranks.
+                        </dd>
+                        <dt>Can I resubmit my personal rank list using the same Couple ID?</dt>
+                        <dd>
+                            Yes. If you submit a second personal rank list with the same Username and Couple ID, your
+                            first list will be overwritten.
+                        </dd>
+                        <dt>How are locations and distances measured?</dt>
+                        <dd>
+                            Distances are measured using the Haversine Formula on the coordinates listed on the cities
+                            provided by each program in the ERAS Registry. As such, distances are essentially straight-
+                            line distances between two points and do not reflect travel distance by road. Rank Pairs
+                            further than the supplied distance are still shown - just sorted lower than those within
+                            the distance.
+                        </dd>
+                        <dt>Contact?</dt>
+                        <dd>mactiondevs@gmail.com</dd>
+                    </dl>
                 </div>
             </div>
         </div>
@@ -40,16 +199,22 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <ul class="nav navbar-nav">
-                <li><a href="/index"><b>Home</b></a></li>
-                <li><a href="/encryption"><b>Encryption Tools</b></a></li>
+                <li><!--suppress HtmlUnknownTarget -->
+                    <a href="/index"><b>Home</b></a></li>
+
+                <li><!--suppress HtmlUnknownTarget -->
+                    <a href="/encryption"><b>Encryption Tools</b></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="helpNav"><b>Help</b></a></li>
                 <li><a href="https://github.com/nmacklin/MactionCreations"><b>Source</b></a></li>
             </ul>
         </div>
     </nav>
     <div class="page-header" id="header">
         <h1>Rank List Generator for the Couples Match
+            <span class="tooltipIcon" id="indSubIcon" data-toggle="tooltip">?</span>
+            <button class="btn btn-primary" type="button" id="indSubBtn">Switch to Individual Submission</button>
             <p><small>Enter programs with each applicant's rank to generate all possible combinations sorted by average
                 rank.
             </small></p>
@@ -57,39 +222,46 @@
     </div>
     <div class="container-fluid" id="inputRowsContainer">
         <div class="row" id="buttonRow">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-2"></div>
+            <div class="col-sm-3"></div>
             <div class="col-sm-2 centerButton">
                 <button type="button" class="btn" id="generateListBtn">Generate List</button>
             </div>
             <div class="col-sm-2 centerButton">
                 <button type="button" class="btn" id="clearAllBtn">Clear All</button>
             </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-2"></div>
+            <div class="col-sm-2 setDistance">
+                <input class="form-control distanceInput" placeholder="Maximum distance (mi)"
+                       onfocus="this.type='number';" id="maxDist">
+                <span class="tooltipIcon" id="distInfoIcon" data-toggle="tooltip">?</span>
+            </div>
+            <div class="col-sm-3"></div>
         </div>
+        <div class="row" id="indSubRow"></div>
         <div class="row entryRow">
-            <div class="col-md-2 deletionColumn">
-                <button type="button" class="btn btn-link" style="display: none">
+            <div class="col-sm-2 deletionColumn">
+                <button type="button" class="btn btn-link delBtn" style="display: none">
                     <span class="glyphicon glyphicon-remove"></span>
                 </button>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4 programCol">
                 <div class="input-group">
-                    <input type="text" class="form-control programName" placeholder="Program Name">
+                    <input type="text" class="form-control programName typeahead" placeholder="Program Name"
+                           data-loc-known="false">
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-2 rankACol">
                 <div class="input-group">
                     <input type="number" class="form-control rankA" placeholder="Rank A">
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-2 rankBCol">
                 <div class="input-group">
                     <input type="number" class="form-control rankB" placeholder="Rank B">
                 </div>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-sm-2 locGlyphCol">
+                <span class="glyphicon glyphicon-globe locGlyph" data-toggle="tooltip" style="display: none"></span>
+            </div>
         </div>
     </div>
 
@@ -98,6 +270,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Bootstrap Javascript -->
     <script src="{{ url_for('static', filename='bootstrap-3.3.7/js/bootstrap.min.js') }}"></script>
-    <!-- Page-specific script for functionality -->
+    <!-- Residency program database -->
+    <script src="{{ url_for('static', filename='data/programDatabase.js') }}"></script>
+    <!-- Twitter TypeAhead JS -->
+    <script src="{{ url_for('static', filename='scripts/typeahead.js') }}"></script>
+    <!-- Page-specific scripts for functionality -->
     <script src="{{ url_for('static', filename='scripts/rankListGenerator.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/couplesMatchIndividual.js') }}"></script>
 </body>

@@ -1,10 +1,10 @@
+#!flask/bin/python
 import json
-import os.path
-import tempfile
 
-from flask import Flask, render_template, request, send_file
+from flask import Flask, render_template, request
 
-from app.couples_match import create_xls, temp_dirs, temp_cleanup
+from app.couples_match import handle_xml
+from app.couples_match_ind import handle_individual_post
 
 
 app = Flask(__name__)
@@ -50,25 +50,14 @@ def couples_match():
 
 @app.route('/couplesmatchsubmit', methods=['GET', 'POST'])
 def couples_match_submit():
-    if request.method == 'POST':
-        if request.headers['Content-Type'] == 'application/json':
-            rank_list_data = request.get_json()
+    return handle_xml(request)
 
-            match_xls = create_xls(rank_list_data)
 
-            temp_dir = tempfile.mkdtemp()
-            print('Creating directory ' + temp_dir)
-            match_xls.save(os.path.join(temp_dir, 'RankList.xlsx'))
-            temp_dirs.append(temp_dir)
+@app.route('/couplesmatchindsub', methods=['POST'])
+def couples_match_submit_individually():
+    return handle_individual_post(request, 'submit')
 
-            return send_file(os.path.join(temp_dir, r'RankList.xlsx'),
-                             mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-                             attachment_filename='RankList.xlsx',
-                             as_attachment=True)
 
-        elif request.headers['Content-Type'] == 'text/plain':
-            confirmation = request.data
-            print(confirmation)
-            if confirmation == b'Data received':
-                temp_cleanup()
-            return '200'
+@app.route('/couplesmatchretrieval', methods=['POST'])
+def couples_match_retrieval():
+    return handle_individual_post(request, 'retrieve')
