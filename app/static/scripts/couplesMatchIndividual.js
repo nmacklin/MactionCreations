@@ -147,10 +147,15 @@ function retrieveResults () {
             var resultsJSON = JSON.parse(req.responseText);
             console.log(resultsJSON);
             if (resultsJSON.success) {
-                $('#retrieveModal').modal('hide');
+                var retrieveModal = $('#retrieveModal');
+                retrieveModal.modal('hide');
                 console.log(resultsJSON.a.entries);
                 console.log(resultsJSON.b.entries);
-                generateRankList(true, resultsJSON, maxDistance);
+                retrieveModal.on('hidden.bs.modal', function () {
+                    generateRankList(true, resultsJSON, maxDistance);
+                    retrieveModal.off();
+                });
+
             }
             else {
                 alert(resultsJSON.reason);

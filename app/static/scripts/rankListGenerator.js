@@ -3,7 +3,7 @@
  */
 
 // Disables console.log for deployment
-console.log = function () {};
+// console.log = function () {};
 
 var rowsCreated= 1;
 var activeRows = [1];

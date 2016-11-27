@@ -54,23 +54,20 @@ def handle_individual_post(request, req_type):
                 output['success'] = False
                 output['reason'] = 'Internal Error. Please resubmit lists with new Couple ID.'
                 print('Too many matching files')
-            elif number_matching_files == 2:
-                if not any(re.search(username, file, re.I) for file in matching_files):
-                    print('Third username for Couple ID detected.')
-                    output['success'] = False
-                    output['reason'] = 'Two Usernames already associated with submitted Couple ID. Please ' \
-                                       'ensure accuracy of Username and Couple ID, or create new Couple ID if your ' \
-                                       'partner has not yet submitted their personal list.'
-            elif number_matching_files < 2:
+            elif number_matching_files == 2 and not any(re.search(username, file, re.I) for file in matching_files):
+                print('Third username for Couple ID detected.')
+                output['success'] = False
+                output['reason'] = 'Two Usernames already associated with submitted Couple ID. Please ' \
+                                   'ensure accuracy of Username and Couple ID, or create new Couple ID if your ' \
+                                   'partner has not yet submitted their personal list.'
+            elif number_matching_files <= 2:
                 filename = couple_id + '_' + username + '.json'
                 file_path = os.path.join(individual_lists, filename)
-                if os.path.isfile(file_path):
-                    with open(file_path, 'r+') as f:
+                with open(file_path, 'w') as f:
+                    if number_matching_files == 2 and os.path.isfile(file_path):
+                        # Truncate if overwriting file with same ID and username
                         f.truncate()
-                        json.dump(data, f)
-                else:
-                    with open(file_path, 'w') as f:
-                        json.dump(data, f)
+                    json.dump(data, f)
                 output['success'] = True
 
         # For rank list retrieval
