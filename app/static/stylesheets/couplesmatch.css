@@ -150,3 +150,7 @@ dd {
     left: -1%;
     padding-top: 1%;
 }
+
+.indSubInstructions .panel {
+    margin-bottom: 0;
+}

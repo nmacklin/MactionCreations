@@ -9,7 +9,7 @@
                                                 '<div class="tooltip-arrow"></div>' +
                                                 '<div class="tooltip-inner"></div></div>',
                                 title: 'Allows participants in couple to submit personal ranks individually.' +
-                                        ' Rank list can be retrieved at a later time with username and list ID.'
+                                        ' Combined rank list can then be retrieved at a later time.'
     });
 
     // Add event listener to create buttons on individual submission modal
