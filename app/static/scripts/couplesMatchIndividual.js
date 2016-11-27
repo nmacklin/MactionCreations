@@ -99,8 +99,8 @@ function showConfirmation (username, id) {
     $(modal).modal('hide');
     $(modal).on('hidden.bs.modal', function () {
         $('#confirmationModal').modal('show');
+        $(modal).off();
     });
-
 }
 
 

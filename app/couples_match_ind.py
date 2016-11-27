@@ -7,7 +7,7 @@ import threading
 
 def handle_individual_post(request, req_type):
     # Gets list of all currently stored individual lists
-    dir_path = os.path.dirname(os.path.realpath(__file__))
+    dir_path = os.path.dirname(os.path.abspath(__file__))
     individual_lists = os.path.join(dir_path, 'user_content', 'individual_lists')
     all_lists = []
     for (dirpath, dirnames, filenames) in os.walk(individual_lists):
@@ -26,6 +26,7 @@ def handle_individual_post(request, req_type):
         output = {}
 
         matching_files = [file for file in all_lists if re.match(couple_id, file[0:7])]
+        print('Matching files: ')
         print(matching_files)
         number_matching_files = len(matching_files)
 
@@ -34,6 +35,7 @@ def handle_individual_post(request, req_type):
             if number_matching_files > 2:
                 output['success'] = False
                 output['reason'] = 'Internal Error. Please resubmit lists with new Couple ID.'
+                print('Too many matching files')
                 return json.dumps(output)
             elif number_matching_files <= 2:
                 filename = couple_id + '_' + username + '.json'
@@ -76,7 +78,7 @@ def handle_individual_post(request, req_type):
 
 def ind_cleanup():
     print('Cleaning up individual lists.')
-    dir_path = os.path.dirname(os.path.realpath(__file__))
+    dir_path = os.path.dirname(os.path.abspath(__file__))
     individual_lists = os.path.join(dir_path, 'user_content', 'individual_lists')
     all_lists = []
     for (dirpath, dirnames, filenames) in os.walk(individual_lists):

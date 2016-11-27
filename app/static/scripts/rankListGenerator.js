@@ -2,6 +2,9 @@
  * Created by Nick on 11/17/2016.
  */
 
+// Disables console.log for deployment
+console.log = function () {};
+
 var rowsCreated= 1;
 var activeRows = [1];
 var inputRowsContainer = document.getElementById('inputRowsContainer');
@@ -18,9 +21,7 @@ var lastCoupleList, lastIndividualList, emptyRankListRow, emptyIndRow;
     firstProgramName.id = 'programInput' + rowsCreated.toString();
 
     // Adds event listeners to generate and clear buttons
-    document.getElementById('generateListBtn').addEventListener('click', function () {
-        generateRankList(false);
-    });
+    document.getElementById('generateListBtn').addEventListener('click', generateButtonListener);
     document.getElementById('clearAllBtn').addEventListener('click', clearAllRows);
     document.getElementById('indSubBtn').addEventListener('click', switchLayout);
 
@@ -56,6 +57,11 @@ function addEntryFieldListeners (target) {
     target.addEventListener('blur', createEntryRow);
     target.addEventListener('blur', checkLocation);
     target.addEventListener('input', handleProgramEntry);
+}
+
+
+function generateButtonListener () {
+    generateRankList(false);
 }
 
 
@@ -238,6 +244,7 @@ function sortRanks (a, b) {
 
 
 function generateRankList (dataIn, resultsJSON, maxDistIn) {
+    console.log('Generating rank list!');
     var coupleRanks = [];
     var maxDistance;
     var applicantARanks = {};
@@ -270,6 +277,7 @@ function generateRankList (dataIn, resultsJSON, maxDistIn) {
         }
     }
     else {
+        console.log('Running dataIn generation');
         maxDistance = maxDistIn;
         //noinspection JSUnresolvedVariable
         var rankListA = resultsJSON.a.entries;
@@ -458,7 +466,7 @@ function switchLayout (event) {
         generateListBtn.innerHTML = 'Submit Ranks';
         clearAllBtn.innerHTML = 'Retrieve Results';
 
-        generateListBtn.removeEventListener('click', generateRankList);
+        generateListBtn.removeEventListener('click', generateButtonListener);
         generateListBtn.addEventListener('click', createIndividualRanks);
 
         clearAllBtn.removeEventListener('click', clearAllRows);
@@ -525,7 +533,7 @@ function switchLayout (event) {
         clearAllBtn.innerHTML = 'Clear All';
 
         generateListBtn.removeEventListener('click', createIndividualRanks);
-        generateListBtn.addEventListener('click', generateRankList);
+        generateListBtn.addEventListener('click', generateButtonListener);
 
         clearAllBtn.removeEventListener('click', showRetrieveModal);
         clearAllBtn.addEventListener('click', clearAllRows);

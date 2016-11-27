@@ -115,7 +115,7 @@ def create_xls(input_data):
 
 
 def handle_xml(request):
-    dir_path = os.path.dirname(os.path.realpath(__file__))
+    dir_path = os.path.dirname(os.path.abspath(__file__))
     if request.method == 'POST':
         if request.headers['Content-Type'] == 'application/json':
             rank_list_data = request.get_json()
@@ -137,7 +137,7 @@ def handle_xml(request):
 
 def couples_cleanup():
     print('Cleaning up couples rank lists.')
-    dir_path = os.path.dirname(os.path.realpath(__file__))
+    dir_path = os.path.dirname(os.path.abspath(__file__))
     rank_lists = os.path.join(dir_path, 'user_content', 'rank_lists')
     all_lists = []
     for (dirpath, dirnames, filenames) in os.walk(rank_lists):
