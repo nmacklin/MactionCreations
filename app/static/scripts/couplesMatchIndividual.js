@@ -55,7 +55,7 @@ function submitIndividualHandler () {
     };
     console.log('Submit Object');
     console.log(submitObject);
-    if (submitObject.username === 88) {
+    if (submitObject.username === '88' || submitObject.id === '88') {
         return;
     }
 
@@ -64,7 +64,14 @@ function submitIndividualHandler () {
     req.setRequestHeader('Content-Type', 'application/json');
     req.onload = function () {
         if (this.status === 200) {
-            showConfirmation(submitObject.username, submitObject.id);
+            var resultsJSON = JSON.parse(req.responseText);
+            console.log(resultsJSON);
+            if (resultsJSON.success) {
+                showConfirmation(submitObject.username, submitObject.id);
+            }
+            else {
+                alert(resultsJSON.reason);
+            }
         }
         else {
             alert('Submission failed. Please try again.');
@@ -77,16 +84,23 @@ function submitIndividualHandler () {
 function getSubIDs (fieldID) {
     var identifierInput = document.getElementById(fieldID);
     var identifier = identifierInput.value.trim();
-    if (/[^\d\w]/i.test(identifier) || identifier.length === 0) {
+    if (/[^\d\w]/i.test(identifier) || identifier.length === 0
+        || (fieldID === 'subCoupleID' && identifier.length !== 7)) {
         identifierInput.style.backgroundColor = '#ff8989';
         identifierInput.style.color = 'white';
         identifierInput.addEventListener('input', function () {
             identifierInput.style.backgroundColor = '#ffffff';
             identifierInput.style.color = '#555';
         });
-        alert('Must enter username containing only normal alphanumeric characters.');
-        return 88;
-    }
+        if (fieldID === 'subCoupleID') {
+            alert('Invalid Couple ID submitted. Couple ID should be seven characters long consisting of only ' +
+            'capital letters and numbers 1-9');
+        }
+        else {
+            alert('Invalid Username submitted. Username must contain only alphanumeric characters.');
+        }
+        return '88';
+        }
     return identifier;
 }
 

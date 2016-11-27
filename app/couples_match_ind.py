@@ -5,6 +5,21 @@ import time
 import threading
 
 
+def vet_input(username, couple_id):
+    # Check for correct format of Username and Couple ID
+    output = {}
+
+    if len(couple_id) != 7 or re.search(r'[^ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789]', couple_id):
+        output['success'] = False
+        output['reason'] = 'Invalid Couple ID submitted.'
+
+    if re.search('\W', username):
+        output['success'] = False
+        output['reason'] = 'Invalid Username submitted. Username must contain only normal alphanumeric characters.'
+
+    return output
+
+
 def handle_individual_post(request, req_type):
     # Gets list of all currently stored individual lists
     dir_path = os.path.dirname(os.path.abspath(__file__))
@@ -23,7 +38,10 @@ def handle_individual_post(request, req_type):
         couple_id = data['id']
         print('Couple ID: ' + couple_id)
 
-        output = {}
+        # Check for appropriate Username and Couple ID
+        output = vet_input(username, couple_id)
+        if output:
+            return output
 
         matching_files = [file for file in all_lists if re.match(couple_id, file[0:7])]
         print('Matching files: ')
@@ -36,8 +54,14 @@ def handle_individual_post(request, req_type):
                 output['success'] = False
                 output['reason'] = 'Internal Error. Please resubmit lists with new Couple ID.'
                 print('Too many matching files')
-                return json.dumps(output)
-            elif number_matching_files <= 2:
+            elif number_matching_files == 2:
+                if not any(re.search(username, file, re.I) for file in matching_files):
+                    print('Third username for Couple ID detected.')
+                    output['success'] = False
+                    output['reason'] = 'Two Usernames already associated with submitted Couple ID. Please ' \
+                                       'ensure accuracy of Username and Couple ID, or create new Couple ID if your ' \
+                                       'partner has not yet submitted their personal list.'
+            elif number_matching_files < 2:
                 filename = couple_id + '_' + username + '.json'
                 file_path = os.path.join(individual_lists, filename)
                 if os.path.isfile(file_path):
