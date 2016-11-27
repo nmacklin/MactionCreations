@@ -1,7 +1,5 @@
 import openpyxl
-import time
 import os
-import threading
 import random
 from openpyxl.styles import Font, Alignment, NamedStyle, Side, Border, PatternFill
 from flask import send_from_directory
@@ -133,22 +131,3 @@ def handle_xml(request):
                                    filename=filename + '.xlsx',
                                    as_attachment=True,
                                    attachment_filename='RankList.xlsx')
-
-
-def couples_cleanup():
-    print('Cleaning up couples rank lists.')
-    dir_path = os.path.dirname(os.path.abspath(__file__))
-    rank_lists = os.path.join(dir_path, 'user_content', 'rank_lists')
-    all_lists = []
-    for (dirpath, dirnames, filenames) in os.walk(rank_lists):
-        all_lists.extend(filenames)
-        break
-    for file in all_lists:
-        file_path = os.path.join(rank_lists, file)
-        last_modified = os.stat(file_path).st_mtime
-        if time.time() - last_modified > 86400:
-            print('Deleting ' + file_path)
-            os.remove(file_path)
-
-
-threading.Timer(86400, couples_cleanup).start()

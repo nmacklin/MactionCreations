@@ -1,8 +1,6 @@
 import json
 import os
 import re
-import time
-import threading
 
 
 def vet_input(username, couple_id):
@@ -95,22 +93,3 @@ def handle_individual_post(request, req_type):
                 output['reason'] = 'Username not found to be associated with submitted Couple ID. Please ensure ' \
                                    'accuracy of both Couple ID and Username.'
         return json.dumps(output)
-
-
-def ind_cleanup():
-    print('Cleaning up individual lists.')
-    dir_path = os.path.dirname(os.path.abspath(__file__))
-    individual_lists = os.path.join(dir_path, 'user_content', 'individual_lists')
-    all_lists = []
-    for (dirpath, dirnames, filenames) in os.walk(individual_lists):
-        all_lists.extend(filenames)
-        break
-    for file in all_lists:
-        file_path = os.path.join(individual_lists, file)
-        last_modified = os.stat(file_path).st_mtime
-        if time.time() - last_modified > 1.21e+6:
-            print('Deleting ' + file_path)
-            os.remove(file_path)
-
-
-threading.Timer(86400, ind_cleanup).start()
