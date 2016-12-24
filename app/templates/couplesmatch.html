@@ -26,7 +26,7 @@
                         <div class="col-sm-12 indSubInstructions">
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <ul>
+                                    <ul class="instructionsList">
                                         <li>Each individual in a match pair should create their own Username.</li>
                                         <li>A Couple ID should be shared by a match pair.</li>
                                         <li>If you don't have a Couple ID yet, use the Create Couple ID button to
@@ -133,26 +133,57 @@
         </div>
     </div>
     <div class="modal fade" id="retrieveModal">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Retrieve Couples Rank List</h4>
-                    <button type="button" class="btn btn-primary modalBtn" id="retrieveBtn">Get Results</button>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                          <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body" id="rankListBody">
-                    <div class="row">
-                        <div class="col-sm-4">
+                    <div class="row retrieveRow">
+                        <div class="col-sm-12">
                             <input type="text" placeholder="Username" class="form-control" id="retrievalUsername">
                         </div>
-                        <div class="col-sm-4">
+                    </div>
+                    <div class="row retrieveRow">
+                        <div class="col-sm-12">
                             <input type="text" placeholder="Couple ID" class="form-control" id="retrievalID">
                         </div>
-                        <div class="col-sm-4">
+                    </div>
+                    <div class="row retrieveRow">
+                        <div class="col-sm-12">
+                            <div class="dropdown sortSelect">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="true">
+                                    Sorting Preferences
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" id="sortPrimaryInd0">Sort by average rank with maximum distance cutoff</a></li>
+                                    <li><a href="#" id="sortPrimaryInd1">Sort by average rank, then distance</a></li>
+                                    <li><a href="#" id="sortPrimaryInd2">Sort by distance, then average rank</a></li>
+                                    <li class="divider" role="separator"></li>
+                                    <li><a href="#" id="noMatchInd0">Do not create "No Match" pairs</a></li>
+                                    <li><a href="#" id="noMatchInd1">Create "No Match" pairs</a></li>
+                                    <li class="divider" role="separator"></li>
+                                    <li><a href="#" id="strictMatchInd0">Prioritize pairs at same program</a></li>
+                                    <li><a href="#" id="strictMatchInd1">Prioritize pairs at different programs</a></li>
+                                    <li><a href="#" id="strictMatchInd2">No preference</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row retrieveRow" id="modalMaxDistRow" style="display: none;">
+                        <div class="col-sm-12">
                             <input type="text" placeholder="Max Distance (mi)" onfocus="this.type='number'"
                                    class="form-control" id="retrievalDist">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-primary" id="retrieveBtn">Get Results</button>
                         </div>
                     </div>
                 </div>
@@ -242,32 +273,53 @@
     </nav>
     <div class="page-header" id="header">
         <h1>Rank List Generator for the Couples Match
-            <span class="tooltipIcon" id="indSubIcon" data-toggle="tooltip">?</span>
-            <button class="btn btn-primary" type="button" id="indSubBtn">Switch to Individual Submission</button>
-            <p><small>Enter programs with each applicant's rank to generate all possible combinations sorted by average
-                rank.
+            <span class="tooltipIcon" id="indSubIcon" data-toggle="tooltip" style="display: none;">?</span>
+            <button class="btn btn-primary" type="button" id="indSubBtn">Switch to Joint Submission</button>
+            <p><small id="headerInstructions">Enter personal ranks individually and submit to generate all possible rank
+                pair combinations.
             </small></p>
         </h1>
     </div>
     <div class="container-fluid" id="inputRowsContainer">
         <div class="row" id="buttonRow">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2 centerButton">
-                <button type="button" class="btn" id="generateListBtn">Generate List</button>
+            <div class="col-sm-3 btnPadding"></div>
+            <div class="col-sm-3 centerButton">
+                <button type="button" class="btn" id="submitRanksBtn">Submit Ranks</button>
             </div>
-            <div class="col-sm-2 centerButton">
-                <button type="button" class="btn" id="clearAllBtn">Clear All</button>
+            <div class="col-sm-3 centerButton">
+                <button type="button" class="btn" id="retrieveRanksBtn">Retrieve Results</button>
             </div>
-            <div class="col-sm-2 setDistance">
-                <input class="form-control distanceInput" placeholder="Maximum distance (mi)"
+            <div class="col-sm-2 noMatchCol" style="display: none;">
+                <div class="dropdown sortSelect">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                        Sorting Preferences
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="sortPrimary0">Sort by average rank with maximum distance cutoff</a></li>
+                        <li><a href="#" id="sortPrimary1">Sort by average rank, then distance</a></li>
+                        <li><a href="#" id="sortPrimary2">Sort by distance, then average rank</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li><a href="#" id="noMatch0">Do not include "No Match" pairs</a></li>
+                        <li><a href="#" id="noMatch1">Include "No Match" pairs</a></li>
+                        <li class="divider" role="separator"></li>
+                        <li><a href="#" id="strictMatch0">Prioritize pairs at same program</a></li>
+                        <li><a href="#" id="strictMatch1">Prioritize pairs at different programs</a></li>
+                        <li><a href="#" id="strictMatch2">No preference</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2 setDistance" style="display: none">
+                <input class="form-control distanceInput" placeholder="Max distance (mi)"
                        onfocus="this.type='number';" id="maxDist">
                 <span class="tooltipIcon" id="distInfoIcon" data-toggle="tooltip">?</span>
             </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-3 btnPadding"></div>
         </div>
         <div class="row" id="indSubRow"></div>
         <div class="row entryRow">
-            <div class="col-sm-2 deletionColumn">
+            <div class="col-sm-3 deletionColumn">
                 <button type="button" class="btn btn-link delBtn" style="display: none">
                     <span class="glyphicon glyphicon-remove"></span>
                 </button>
@@ -280,17 +332,13 @@
             </div>
             <div class="col-sm-2 rankACol">
                 <div class="input-group">
-                    <input type="number" class="form-control rankA" placeholder="Rank A">
-                </div>
-            </div>
-            <div class="col-sm-2 rankBCol">
-                <div class="input-group">
-                    <input type="number" class="form-control rankB" placeholder="Rank B">
+                    <input type="number" class="form-control rankA" placeholder="Rank">
                 </div>
             </div>
             <div class="col-sm-2 locGlyphCol">
                 <span class="glyphicon glyphicon-globe locGlyph" data-toggle="tooltip" style="display: none"></span>
             </div>
+            <div class="col-sm-1 optionalPaddingDiv"></div>
         </div>
     </div>
 
@@ -305,5 +353,4 @@
     <script src="{{ url_for('static', filename='scripts/typeahead.js') }}"></script>
     <!-- Page-specific scripts for functionality -->
     <script src="{{ url_for('static', filename='scripts/rankListGenerator.js') }}"></script>
-    <script src="{{ url_for('static', filename='scripts/couplesMatchIndividual.js') }}"></script>
 </body>

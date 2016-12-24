@@ -93,6 +93,18 @@ dd {
     text-align: right;
 }
 
+.noMatchCol {
+    text-align: center;
+}
+
+.retrieveRow {
+    margin-bottom: 20px;
+}
+
+.instructionsList {
+    margin-bottom: 0;
+}
+
 #header {
     color: ghostwhite;
     display: flex;

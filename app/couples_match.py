@@ -68,6 +68,10 @@ def create_workbook():
 
 def populate_workbook(parsed_json, workbook):
     ws = workbook.active
+    long_distance_border = False
+    no_match_border = False
+
+    sep_border = Side(style='double')
 
     rank_count = 0
     for rank in parsed_json:
@@ -95,13 +99,15 @@ def populate_workbook(parsed_json, workbook):
 
         ws['G' + target_row].number_format = '0.0'
 
-        if rank['exceedsLimit']:
-            ws['B' + target_row].fill = PatternFill('solid', fgColor='d16262')
-            ws['D' + target_row].fill = PatternFill('solid', fgColor='d16262')
-            ws['C' + target_row].fill = PatternFill('solid', fgColor='d16262')
-            ws['E' + target_row].fill = PatternFill('solid', fgColor='d16262')
-            ws['F' + target_row].fill = PatternFill('solid', fgColor='d16262')
-            ws['G' + target_row].fill = PatternFill('solid', fgColor='d16262')
+        columns = ['B', 'C', 'D', 'E', 'F', 'G']
+        if rank['exceedsLimit'] and not long_distance_border:
+            for column in columns:
+                ws[column + target_row].border += Border(top=sep_border)
+            long_distance_border = True
+        if rank['noMatch'] and not no_match_border:
+            for column in columns:
+                ws[column + target_row].border += Border(top=sep_border)
+            no_match_border = True
 
     return workbook
 

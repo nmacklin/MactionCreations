@@ -20,10 +20,41 @@ var lastCoupleList, lastIndividualList, emptyRankListRow, emptyIndRow;
     addEntryFieldListeners(firstProgramName);
     firstProgramName.id = 'programInput' + rowsCreated.toString();
 
-    // Adds event listeners to generate and clear buttons
-    document.getElementById('generateListBtn').addEventListener('click', generateButtonListener);
-    document.getElementById('clearAllBtn').addEventListener('click', clearAllRows);
+    // Adds event listeners to submit, retrieve, and switch layout buttons
+    document.getElementById('submitRanksBtn').addEventListener('click', createIndividualRanks);
+    document.getElementById('retrieveRanksBtn').addEventListener('click', showRetrieveModal);
     document.getElementById('indSubBtn').addEventListener('click', switchLayout);
+
+    // Initializes tooltip for individual submission button
+    $('#indSubIcon').tooltip({placement: 'auto top',
+                                template: '<div class="tooltip indSubTooltip" role="tooltip">' +
+                                                '<div class="tooltip-arrow"></div>' +
+                                                '<div class="tooltip-inner"></div></div>',
+                                title: 'Allows participants in couple to submit personal ranks individually.' +
+                                        ' Combined rank list can then be retrieved at a later time.'
+    });
+
+    // Add event listener to create buttons on individual submission modal
+    document.getElementById('createIDBtn').addEventListener('click', function () {
+        createCoupleID('subCoupleID');
+    });
+    document.getElementById('submitIndJSON').addEventListener('click', submitIndividualHandler);
+
+    // Add listener to Get Results button in Retrieval Modal
+    document.getElementById('retrieveBtn').addEventListener('click', retrieveResults);
+
+    // Add listener for dropdown closing in Retrieval Modal to show max distance entry
+    $('.col-sm-12 .sortSelect').on('hidden.bs.dropdown', function () {
+        var maxDistRow = document.getElementById('modalMaxDistRow');
+        if (document.getElementById('sortPrimaryInd0').children.length === 1) {
+            maxDistRow.style.display = 'block';
+            maxDistRow.focus();
+        }
+        else {
+            maxDistRow.style.display = 'none';
+            document.getElementById('retrievalDist').value = "";
+        }
+    });
 
     // Adds event listener to Export as Excel button
     document.getElementById('saveAsXLS').addEventListener('click', submitCouplesHandler);
@@ -50,6 +81,64 @@ var lastCoupleList, lastIndividualList, emptyRankListRow, emptyIndRow;
     emptyIndRow = document.getElementsByClassName('row indSubRow')[0];
     document.getElementById('rankListBody').removeChild(document.getElementsByClassName('row rankListRow')[0]);
     document.getElementById('indSubBody').removeChild(document.getElementsByClassName('row indSubRow')[0]);
+
+    // Add listeners to Sorting Preferences dropdown options to add check mark when clicked and
+    // prevent automatic closing when options are selected
+    for (i = 0; i < 3; i++) {
+        // For joint submission page
+        document.getElementById('sortPrimary' + i.toString()).addEventListener('click', function () {
+            sortOptionsSelector(event, 'sortPrimary');
+            event.stopPropagation(); // Prevents drop-down from closing when selection made
+        });
+        document.getElementById('strictMatch' + i.toString()).addEventListener('click', function () {
+            sortOptionsSelector(event, 'strictMatch');
+            event.stopPropagation();
+        });
+
+        // And for retrieval modal
+        document.getElementById('sortPrimaryInd' + i.toString()).addEventListener('click', function () {
+            sortOptionsSelector(event, 'sortPrimaryInd');
+            event.stopPropagation(); // Prevents drop-down from closing when selection made
+        });
+        document.getElementById('strictMatchInd' + i.toString()).addEventListener('click', function () {
+            sortOptionsSelector(event, 'strictMatchInd');
+            event.stopPropagation();
+        });
+    }
+    for (var i = 0; i < 2; i++) {
+        document.getElementById('noMatch' + i.toString()).addEventListener('click', function () {
+            sortOptionsSelector(event, 'noMatch');
+            event.stopPropagation();
+        });
+        document.getElementById('noMatchInd' + i.toString()).addEventListener('click', function () {
+            sortOptionsSelector(event, 'noMatchInd');
+            event.stopPropagation();
+        });
+    }
+
+    // Add listener for dropdown close to update Max Distance DOM display
+    $('.noMatchCol .sortSelect').on('hidden.bs.dropdown', function () {
+        console.log('Updating distance entry');
+        var distCol = document.getElementsByClassName('setDistance')[0];
+        var btnPaddingCols = document.getElementsByClassName('btnPadding');
+
+        if (document.getElementById('sortPrimary0').children.length === 1) {
+            console.log('Showing distance entry');
+            distCol.style.display = 'flex';
+            for (var i = 0; i < 2; i++) {
+                btnPaddingCols[i].className = 'col-sm-2 btnPadding';
+            }
+            document.getElementById('maxDist').focus();
+        }
+        else {
+            distCol.style.display = 'none';
+            for (i = 0; i < 2; i++) {
+                btnPaddingCols[i].className = 'col-sm-3 btnPadding';
+            }
+
+            document.getElementById('maxDist').value = "";
+        }
+    });
 })();
 
 
@@ -61,7 +150,66 @@ function addEntryFieldListeners (target) {
 
 
 function generateButtonListener () {
+    // Separate function so argument can be passed AND can be removed individually by name
     generateRankList(false);
+}
+
+
+function sortOptionsSelector (event, target) {
+    var length;
+
+    // Selects for +/- individual modal in target name
+    if (!/Ind/.test(target)) {
+        if (target === 'sortPrimary' || target === 'strictMatch') length = 3;
+        else length = 2;
+    }
+    else {
+        if (target === 'sortPrimaryInd' || target === 'strictMatchInd') length = 3;
+        else length = 2;
+    }
+
+    for (var i = 0; i < length; i++) {
+        var option = document.getElementById(target + i.toString());
+        if (option.children.length !== 0 && event.target.id !== option.id) {
+            option.removeChild(option.children[0]);
+        }
+    }
+    if (event.target.children.length === 0) {
+        event.target.innerHTML = '<span class="glyphicon glyphicon-ok"></span>' + "  " + event.target.innerHTML;
+    }
+}
+
+
+function getSortSelections (indSub) {
+    // Gets sort selections and returns list with three selections
+    var output;
+
+    var indSubID = "";
+    if (indSub) {
+        indSubID = "Ind";
+        output = ['sortPrimary1', 'noMatch0', 'strictPair2']; // defaults
+    }
+    else {
+        output = ['sortPrimaryInd1', 'noMatchInd0', 'strictPairInd2'];
+    }
+
+    for (var i = 0; i < 3; i++) {
+        var sortOption = document.getElementById('sortPrimary' + indSubID + i.toString());
+        var strictPairOption = document.getElementById('strictMatch' + indSubID + i.toString());
+        if (sortOption.children.length === 1) {
+            output[0] = sortOption.id;
+        }
+        if (strictPairOption.children.length === 1) {
+            output[2] = strictPairOption.id;
+        }
+    }
+    for (i = 0; i < 2; i++) {
+        var noMatchOption = document.getElementById('noMatch' + indSubID + i.toString());
+        if (noMatchOption.children.length == 1) {
+            output[1] = noMatchOption.id;
+        }
+    }
+    return output;
 }
 
 
@@ -172,22 +320,174 @@ function deleteRow (event) {
 }
 
 
+function submitIndividualHandler () {
+    var submitObject = {
+        entries: lastIndividualList,
+        username: getSubIDs('subUsername'),
+        id: getSubIDs('subCoupleID')
+    };
+    console.log('Submit Object');
+    console.log(submitObject);
+    if (submitObject.username === '88' || submitObject.id === '88') {
+        return;
+    }
+
+    var req = new XMLHttpRequest();
+    req.open('POST', '/couplesmatchindsub', true);
+    req.setRequestHeader('Content-Type', 'application/json');
+    req.onload = function () {
+        if (this.status === 200) {
+            var resultsJSON = JSON.parse(req.responseText);
+            console.log(resultsJSON);
+            if (resultsJSON.success) {
+                showConfirmation(submitObject.username, submitObject.id);
+            }
+            else {
+                alert(resultsJSON.reason);
+            }
+        }
+        else {
+            alert('Submission failed. Please try again.');
+        }
+    };
+    req.send(JSON.stringify(submitObject));
+}
+
+
+function getSubIDs (fieldID) {
+    var identifierInput = document.getElementById(fieldID);
+    var identifier = identifierInput.value.trim();
+    if (/[^\d\w]/i.test(identifier) || identifier.length === 0
+        || (fieldID === 'subCoupleID' && identifier.length !== 7)) {
+        identifierInput.style.backgroundColor = '#ff8989';
+        identifierInput.style.color = 'white';
+        identifierInput.addEventListener('input', function () {
+            identifierInput.style.backgroundColor = '#ffffff';
+            identifierInput.style.color = '#555';
+        });
+        if (fieldID === 'subCoupleID') {
+            alert('Invalid Couple ID submitted. Couple ID should be seven characters long consisting of only ' +
+            'capital letters and numbers 1-9');
+        }
+        else {
+            alert('Invalid Username submitted. Username must contain only alphanumeric characters.');
+        }
+        return '88';
+        }
+    return identifier;
+}
+
+
+function showConfirmation (username, id) {
+    document.getElementById('usernameCell').innerHTML = username;
+    document.getElementById('coupleIDCell').innerHTML = id;
+
+    var modal = document.getElementById('indSubModal');
+    $(modal).modal('hide');
+    $(modal).on('hidden.bs.modal', function () {
+        $('#confirmationModal').modal('show');
+        $(modal).off();
+    });
+}
+
+
+function showRetrieveModal () {
+    $('#retrieveModal').modal('show');
+}
+
+
+function createIndividualRanks () {
+    var modal = document.getElementById('indSubModal');
+    var entryRows = document.getElementsByClassName('row entryRow');
+    var entries = [];
+
+    for (var i = 0; i < entryRows.length - 1; i++) {
+        var currentRow = entryRows[i];
+        console.log('Entry row');
+        console.log(currentRow);
+        var programNameField = currentRow.getElementsByClassName('tt-input')[0];
+        var programName = $(programNameField).typeahead('val');
+        var rank = currentRow.getElementsByClassName('rankA')[0].value;
+        entries.push(new IndividualRank(programName, rank));
+    }
+
+    generateModalRows(document.getElementById('indSubBody'), entries);
+
+    $(modal).modal('show');
+    $(modal).on('hidden.bs.modal', clearModal);
+
+    lastIndividualList = entries;
+}
+
+
+function retrieveResults () {
+    var usernameIn = getSubIDs('retrievalUsername');
+    var coupleIDIn = getSubIDs('retrievalID');
+    var maxDistance = document.getElementById('retrievalDist').value;
+
+    if (coupleIDIn.length !== 7 || /[^ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789]/.test(coupleIDIn)) {
+        alert('Invalid Couple ID.');
+        return;
+    }
+
+    var identifiers = {
+        username: usernameIn,
+        id: coupleIDIn
+    };
+
+    var req = new XMLHttpRequest();
+    req.open('POST', '/couplesmatchretrieval', true);
+    req.setRequestHeader('Content-Type', 'application/json');
+    req.onload = function () {
+        if (this.status === 200) {
+            var resultsJSON = JSON.parse(req.responseText);
+            console.log(resultsJSON);
+            if (resultsJSON.success) {
+                var retrieveModal = $('#retrieveModal');
+                retrieveModal.modal('hide');
+                console.log(resultsJSON.a.entries);
+                console.log(resultsJSON.b.entries);
+                retrieveModal.on('hidden.bs.modal', function () {
+                    generateRankList(true, resultsJSON, maxDistance);
+                    retrieveModal.off();
+                });
+
+            }
+            else {
+                alert(resultsJSON.reason);
+            }
+        }
+    };
+    req.send(JSON.stringify(identifiers));
+}
+
+
+function createCoupleID (targetID) {
+    var ID = "";
+    var possChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
+    for (var i = 0; i < 7; i++) {
+        ID += possChars.substr(Math.floor(Math.random() * possChars.length), 1);
+    }
+
+    document.getElementById(targetID).value = ID;
+}
+
+
 function generateModalRows (rankListBody, entries) {
+    var longDistanceEntered = false;
+    var noMatchEntered = false;
+
     for (var i = 0; i < entries.length; i++) {
         var rankItem = entries[i];
 
         if (rankListBody.id === 'rankListBody') {
             var newRow = emptyRankListRow.cloneNode(true);
-            if (!rankItem.exceedsLimit) {
-                if ((i + 2) % 2 === 0) {
-                    newRow.style.backgroundColor = '#fbf6f0';
-                }
-                else {
-                    newRow.style.backgroundColor = '#f1f6fb';
-                }
+
+            if ((i + 2) % 2 === 0) {
+                newRow.style.backgroundColor = '#fbf6f0';
             }
             else {
-                newRow.style.backgroundColor = '#d16262';
+                newRow.style.backgroundColor = '#f1f6fb';
             }
 
             var rank = newRow.getElementsByClassName('col-sm-1 numRank')[0];
@@ -200,11 +500,20 @@ function generateModalRows (rankListBody, entries) {
             programA.innerHTML = rankItem.programA;
             programB.innerHTML = rankItem.programB;
             averageRank.innerHTML = String(rankItem.averageRank);
+
             if (rankItem.distance === "") {
                 distance.innerHTML = "";
             }
             else {
                 distance.innerHTML = rankItem.distance.toFixed(1);
+            }
+
+            if ((rankItem.exceedsLimit && !longDistanceEntered)
+                || (rankItem.noMatch && !noMatchEntered)) {
+                newRow.style.borderTopStyle = 'double';
+                newRow.style.borderTopWidth = 'thick';
+                if (rankItem.exceedsLimit) longDistanceEntered = true;
+                else noMatchEntered = true;
             }
 
             rankListBody.appendChild(newRow);
@@ -228,30 +537,22 @@ function generateModalRows (rankListBody, entries) {
 }
 
 
-function sortRanks (a, b) {
-    if (a.exceedsLimit === b.exceedsLimit) {
-        return a.averageRank - b.averageRank;
-    }
-    else {
-        if (a.exceedsLimit) {
-            return 1
-        }
-        else {
-            return -1;
-        }
-    }
-}
-
 
 function generateRankList (dataIn, resultsJSON, maxDistIn) {
     console.log('Generating rank list!');
-    var coupleRanks = [];
+    var noFlagRanks = [];
+    var longDistanceRanks = [];
+    var strictMatchRanks = [];
+    var strictMismatchRanks = [];
+    var noMatchRanks = [];
     var maxDistance;
     var applicantARanks = {};
     var applicantBRanks = {};
 
     if (!dataIn) {
         maxDistance = document.getElementById('maxDist').value;
+        var sortSelections = getSortSelections(false);
+
         var entryRows = document.getElementsByClassName('row entryRow');
         if (entryRows.length <= 2) {
             alert('At least 2 entries required');
@@ -283,14 +584,20 @@ function generateRankList (dataIn, resultsJSON, maxDistIn) {
         var rankListA = resultsJSON.a.entries;
         var rankListB = resultsJSON.b.entries;
 
+        sortSelections = getSortSelections(true);
+
         for (i = 0; i < rankListA.length; i++) {
             var entry = rankListA[i];
-            applicantARanks[entry.program] = entry.rank;
+            applicantARanks[entry.program] = parseInt(entry.rank);
         }
         for (i = 0; i < rankListB.length; i++) {
             entry = rankListB[i];
-            applicantBRanks[entry.program] = entry.rank;
+            applicantBRanks[entry.program] = parseInt(entry.rank);
         }
+    }
+    if (sortSelections[1] === 'noMatch1' || sortSelections[1] === 'noMatchInd1') {
+        applicantARanks['No Match'] = 999;
+        applicantBRanks['No Match'] = 999;
     }
 
     for (var rank1 in applicantARanks) {
@@ -298,16 +605,51 @@ function generateRankList (dataIn, resultsJSON, maxDistIn) {
             for (var rank2 in applicantBRanks) {
                 if (applicantBRanks.hasOwnProperty(rank2)) {
                     var newRank = new CoupleRank(rank1, applicantARanks[rank1], rank2, applicantBRanks[rank2], parseInt(maxDistance));
-                    coupleRanks.push(newRank);
+                    if (newRank.programA === 'No Match' && newRank.programB === 'No Match') continue;
+
+                    if (newRank.exceedsLimit) {
+                        longDistanceRanks.push(newRank);
+                        continue;
+                    }
+                    if (newRank.strictMatch) {
+                        if (sortSelections[2] === 'strictMatch0' || sortSelections[2] === 'strictMatchInd0') {
+                            strictMatchRanks.push(newRank);
+                            continue;
+                        }
+                        else if (sortSelections[2] === 'strictMatch1' || sortSelections[2] === 'strictMatchInd1') {
+                            strictMismatchRanks.push(newRank);
+                            continue;
+                        }
+                    }
+                    if (newRank.noMatch) {
+                        noMatchRanks.push(newRank);
+                        continue;
+                    }
+
+                    noFlagRanks.push(newRank);
                 }
             }
         }
     }
 
-    coupleRanks.sort(sortRanks);
-    console.log(coupleRanks);
+    strictMatchRanks.sort(sortRanks(sortSelections[0]));
+    noFlagRanks.sort(sortRanks(sortSelections[0]));
+    strictMismatchRanks.sort(sortRanks(sortSelections[0]));
+    longDistanceRanks.sort(sortRanks(sortSelections[0]));
+    noMatchRanks.sort(sortRanks(sortSelections[0]));
 
-    generateModalRows(document.getElementById('rankListBody'), coupleRanks);
+    var rankLists = [strictMatchRanks, noFlagRanks, strictMismatchRanks, longDistanceRanks, noMatchRanks];
+    var compiledList = [];
+
+    for (i = 0; i < 5; i++) {
+        if (rankLists[i].length > 0) {
+            for (var j = 0; j < rankLists[i].length; j++) {
+                compiledList.push(rankLists[i][j]);
+            }
+        }
+    }
+
+    generateModalRows(document.getElementById('rankListBody'), compiledList);
 
     var modal = document.getElementById('resultsModal');
     if (dataIn) {
@@ -317,7 +659,7 @@ function generateRankList (dataIn, resultsJSON, maxDistIn) {
         listLabels[1].innerHTML = resultsJSON.b.username;
     }
     $(modal).modal('show');
-    lastCoupleList = coupleRanks;
+    lastCoupleList = compiledList;
     console.log(JSON.stringify(lastCoupleList));
     $(modal).on('hidden.bs.modal', clearModal);
 }
@@ -330,6 +672,44 @@ function clearAllRows () {
         row.getElementsByClassName('tt-input')[0].value = "";
         row.getElementsByClassName('form-control rankA')[0].value = "";
         row.getElementsByClassName('form-control rankB')[0].value = "";
+    }
+}
+
+function sortRanks (primarySort) {
+    if (primarySort === 'sortPrimary0' || primarySort === 'sortPrimaryInd0') {
+        return function (a, b) {
+            if (a.exceedsLimit === b.exceedsLimit) {
+                return a.averageRank - b.averageRank;
+            }
+            else {
+                if (a.exceedsLimit) {
+                    return 1
+                }
+                else {
+                    return -1;
+                }
+            }
+        }
+    }
+    if (primarySort === 'sortPrimary1' || primarySort === 'sortPrimaryInd1') {
+        return function (a, b) {
+            if (a.averageRank !== b.averageRank) {
+                return a.averageRank - b.averageRank;
+            }
+            else {
+                return a.distance - b.distance;
+            }
+        }
+    }
+    if (primarySort === 'sortPrimary2' || primarySort === 'sortPrimaryInd2') {
+        return function (a, b) {
+            if (a.distance !== b.distance) {
+                return a.distance - b.distance;
+            }
+            else {
+                return a.averageRank - b.averageRank;
+            }
+        }
     }
 }
 
@@ -449,35 +829,45 @@ function haversineFunction (programA, programB) {
 
 function switchLayout (event) {
     var switchBtn = event.target;
+    var headerInstructions = document.getElementById('headerInstructions');
 
     var btnCols = document.getElementsByClassName('centerButton');
-    var generateBtnCol = btnCols[0];
-    var clearBtnCol = btnCols[1];
+    var submitRanksCol = btnCols[0];
+    var retrieveRanksCol = btnCols[1];
 
-    var generateListBtn = document.getElementById('generateListBtn');
-    var clearAllBtn = document.getElementById('clearAllBtn');
+    var submitRanksBtn = document.getElementById('submitRanksBtn');
+    var retrieveRanksBtn = document.getElementById('retrieveRanksBtn');
     var distanceCol = document.getElementsByClassName('setDistance')[0];
+    var noMatchCol = document.getElementsByClassName('noMatchCol')[0];
     var indSubIcon = document.getElementById('indSubIcon');
+    var btnPaddingCols = document.getElementsByClassName('btnPadding');
 
     if (switchBtn.innerHTML === 'Switch to Individual Submission') {
         switchBtn.innerHTML = 'Switch to Joint Submission';
         indSubIcon.style.display = 'none';
 
-        generateListBtn.innerHTML = 'Submit Ranks';
-        clearAllBtn.innerHTML = 'Retrieve Results';
+        headerInstructions.innerHTML = "Enter personal ranks individually and submit to generate all possible rank " +
+            "pair combinations.";
 
-        generateListBtn.removeEventListener('click', generateButtonListener);
-        generateListBtn.addEventListener('click', createIndividualRanks);
+        submitRanksBtn.innerHTML = 'Submit Ranks';
+        retrieveRanksBtn.innerHTML = 'Retrieve Results';
 
-        clearAllBtn.removeEventListener('click', clearAllRows);
-        clearAllBtn.addEventListener('click', showRetrieveModal);
+        submitRanksBtn.removeEventListener('click', generateButtonListener);
+        submitRanksBtn.addEventListener('click', createIndividualRanks);
+
+        retrieveRanksBtn.removeEventListener('click', clearAllRows);
+        retrieveRanksBtn.addEventListener('click', showRetrieveModal);
 
         distanceCol.style.display = 'none';
+        noMatchCol.style.display = 'none';
 
-        generateBtnCol.className = 'col-sm-3 centerButton';
-        clearBtnCol.className = 'col-sm-3 centerButton';
+        submitRanksCol.className = 'col-sm-3 centerButton';
+        retrieveRanksCol.className = 'col-sm-3 centerButton';
+        for (var i = 0; i < 2; i++) {
+            btnPaddingCols[i].className = 'col-sm-3 btnPadding';
+        }
 
-        for (var i = 0; i < activeRows.length; i++) {
+        for (i = 0; i < activeRows.length; i++) {
             var currentEntryID = 'programInput' + activeRows[i].toString();
             var inputRow = getParentRow(document.getElementById(currentEntryID));
             console.log(inputRow);
@@ -529,19 +919,34 @@ function switchLayout (event) {
         switchBtn.innerHTML = "Switch to Individual Submission";
         indSubIcon.style.display = 'inline-block';
 
-        generateListBtn.innerHTML = 'Generate List';
-        clearAllBtn.innerHTML = 'Clear All';
+        headerInstructions.innerHTML = "Enter programs with each applicant's rank to generate all possible" +
+            " combinations sorted by average rank.";
 
-        generateListBtn.removeEventListener('click', createIndividualRanks);
-        generateListBtn.addEventListener('click', generateButtonListener);
+        submitRanksBtn.innerHTML = 'Generate List';
+        retrieveRanksBtn.innerHTML = 'Clear All';
 
-        clearAllBtn.removeEventListener('click', showRetrieveModal);
-        clearAllBtn.addEventListener('click', clearAllRows);
+        submitRanksBtn.removeEventListener('click', createIndividualRanks);
+        submitRanksBtn.addEventListener('click', generateButtonListener);
 
-        distanceCol.style.display = 'flex';
+        retrieveRanksBtn.removeEventListener('click', showRetrieveModal);
+        retrieveRanksBtn.addEventListener('click', clearAllRows);
 
-        generateBtnCol.className = 'col-sm-2 centerButton';
-        clearBtnCol.className = 'col-sm-2 centerButton';
+        noMatchCol.style.display = 'block';
+
+        if (document.getElementById('sortPrimary0').children.length === 1) {
+            distanceCol.style.display = 'flex';
+            for (i = 0; i < 2; i++) {
+                btnPaddingCols[i].className = 'col-sm-2 btnPadding';
+            }
+        }
+        else {
+            for (i = 0; i < 2; i++) {
+                btnPaddingCols[i].className = 'col-sm-3 btnPadding';
+            }
+        }
+
+        submitRanksCol.className = 'col-sm-2 centerButton';
+        retrieveRanksCol.className = 'col-sm-2 centerButton';
 
         for (i = 0; i < activeRows.length; i++) {
             console.log('Active rows: ');
@@ -607,7 +1012,10 @@ function CoupleRank (programA, rankA, programB, rankB, distanceLimit) {
     this.averageRank = (this.rankA + this.rankB) / 2;
     this.distance = null;
     this.exceedsLimit = null;
+    this.noMatch = null;
+    this.strictMatch = false;
 
+    // Get distance
     if (programDB[programA] !== undefined && programDB[programB] !== undefined) {
         var programAInfo = programDB[programA];
         var programBInfo = programDB[programB];
@@ -621,11 +1029,22 @@ function CoupleRank (programA, rankA, programB, rankB, distanceLimit) {
     else {
         this.distance = "";
     }
+
+    // Check if exceeds distance limit
     if (isNaN(distanceLimit) || typeof this.distance == "string") {
         this.exceedsLimit = false;
     }
     else {
         this.exceedsLimit = this.distance > distanceLimit;
+    }
+
+    if (programA === programB) {
+        this.strictMatch = true;
+    }
+
+    if (programA === 'No Match' || programB === 'No Match') {
+        this.noMatch = true;
+        this.averageRank = rankA + rankB - 999;
     }
 }
 
