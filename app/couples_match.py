@@ -14,19 +14,6 @@ def create_workbook():
     ws = workbook.active
     ws.title = 'Rank List'
 
-    b1 = ws['B1']
-    d1 = ws['D1']
-
-    b1.value = 'Applicant A Rank List'
-    b1.alignment = Alignment(horizontal='center')
-    b1.font = Font(size=12)
-    ws.merge_cells('B1:C1')
-
-    d1.value = 'Applicant B Rank List'
-    d1.alignment = Alignment(horizontal='center')
-    d1.font = Font(size=12)
-    ws.merge_cells('D1:E1')
-
     for row in ws['D2':'D400']:
         for cell in row:
             cell.border += Border(left=Side(style='thin'))
@@ -68,6 +55,24 @@ def create_workbook():
 
 def populate_workbook(parsed_json, workbook):
     ws = workbook.active
+
+    b1 = ws['B1']
+    d1 = ws['D1']
+
+    if parsed_json[0]:
+        b1.value = parsed_json[0][0] + ' Rank List'
+        d1.value = parsed_json[0][1] + ' Rank List'
+    else:
+        b1.value = 'Applicant A Rank List'
+        d1.value = 'Applicant B Rank List'
+
+    b1.alignment = Alignment(horizontal='center')
+    b1.font = Font(size=12)
+    ws.merge_cells('B1:C1')
+    d1.alignment = Alignment(horizontal='center')
+    d1.font = Font(size=12)
+    ws.merge_cells('D1:E1')
+
     long_distance_border = False
     no_match_border = False
 
@@ -75,7 +80,12 @@ def populate_workbook(parsed_json, workbook):
 
     rank_count = 0
     for rank in parsed_json:
+        if type(rank) != dict:
+            # First value is column names
+            continue
+
         rank_count += 1
+
         target_row = str(rank_count + 2)
 
         program_a = rank['programA']

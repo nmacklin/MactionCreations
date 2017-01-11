@@ -652,12 +652,21 @@ function generateRankList (dataIn, resultsJSON, maxDistIn) {
     generateModalRows(document.getElementById('rankListBody'), compiledList);
 
     var modal = document.getElementById('resultsModal');
+    var listLabels = modal.getElementsByClassName('col-sm-3 colLabel');
     if (dataIn) {
-        var listLabels = modal.getElementsByClassName('col-sm-3 colLabel');
         //noinspection JSUnresolvedVariable
         listLabels[0].innerHTML = resultsJSON.a.username;
         listLabels[1].innerHTML = resultsJSON.b.username;
+
+        // Add usernames to list for export to Excel
+        compiledList.splice(0, 0, [resultsJSON.a.username, resultsJSON.b.username]);
     }
+    else {
+        listLabels[0].innerHTML = 'Applicant A Rank List';
+        listLabels[1].innerHTML = 'Applicant B Rank List';
+        compiledList.splice(0, 0, null);
+    }
+
     $(modal).modal('show');
     lastCoupleList = compiledList;
     console.log(JSON.stringify(lastCoupleList));
