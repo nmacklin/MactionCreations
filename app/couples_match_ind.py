@@ -59,7 +59,8 @@ def handle_individual_post(request, req_type):
                                    'ensure accuracy of Username and Couple ID, or create new Couple ID if your ' \
                                    'partner has not yet submitted their personal list.'
             elif number_matching_files <= 2:
-                filename = couple_id + '_' + username + '.json'
+                print('Adding individual rank list.')
+                filename = couple_id + '_' + username.lower() + '.json'
                 file_path = os.path.join(individual_lists, filename)
                 with open(file_path, 'w') as f:
                     if number_matching_files == 2 and os.path.isfile(file_path):
