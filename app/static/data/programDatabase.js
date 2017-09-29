@@ -1,9784 +1,8605 @@
 var programDB = {
-   "University of Virginia Program":{
-      "latitude":"38.0291667",
-      "longitude":"-78.4769444",
-      "city":"Charlottesville",
-      "state":"VA"
-   },
-   "TriHealth (Bethesda North Hospital) Program":{
-      "latitude":"39.1619444",
-      "longitude":"-84.4569444",
-      "city":"Cincinnati",
-      "state":"OH"
-   },
-   "Louisiana State University (Shreveport) Program":{
-      "latitude":"32.5250000",
-      "longitude":"-93.7500000",
-      "city":"Shreveport",
-      "state":"LA"
-   },
-   "University of Connecticut (New Britain) Program":{
-      "latitude":"41.7197222",
-      "longitude":"-72.8325000",
-      "city":"Farmington",
-      "state":"CT"
-   },
-   "LECOMT/East Liverpool City Hospital Program":{
-      "latitude":"40.6186111",
-      "longitude":"-80.5775000",
-      "city":"East Liverpool",
-      "state":"OH"
-   },
-   "TriHealth (Good Samaritan Hospital) Program":{
-      "latitude":"39.1619444",
-      "longitude":"-84.4569444",
-      "city":"Cincinnati",
-      "state":"OH"
-   },
-   "PinnacleHealth Hospitals Program":{
-      "latitude":"40.2736111",
-      "longitude":"-76.8847222",
-      "city":"Harrisburg",
-      "state":"PA"
-   },
-   "Swedish Medical Center/Cherry Hill Program":{
-      "latitude":"47.6063889",
-      "longitude":"-122.3308333",
-      "city":"Seattle",
-      "state":"WA"
-   },
-   "LECOMPT/UH Elyria Medical Center Program":{
-      "latitude":"41.3683333",
-      "longitude":"-82.1077778",
-      "city":"Elyria",
-      "state":"OH"
-   },
-   "University of Louisville Program":{
-      "latitude":"38.2541667",
-      "longitude":"-85.7594444",
-      "city":"Louisville",
-      "state":"KY"
-   },
-   "University of Texas RGV (VBMC) Program":{
-      "latitude":"26.1902778",
-      "longitude":"-97.6958333",
-      "city":"Harlingen",
-      "state":"TX"
-   },
-   "St. John's Riverside Hospital Program":{
-      "latitude":"40.9311111",
-      "longitude":"-73.8991667",
-      "city":"Yonkers",
-      "state":"NY"
-   },
-   "Advocate Health Care (Advocate Christ Medical Center) Program":{
-      "latitude":"41.7344444",
-      "longitude":"-87.7313889",
-      "city":"Hometown",
-      "state":"IL"
-   },
-   "University of Texas Health Science Center at Houston (Memorial Hermann Hospital) Program":{
-      "latitude":"29.7630556",
-      "longitude":"-95.3630556",
-      "city":"Houston",
-      "state":"TX"
-   },
-   "Rutgers New Jersey Medical School Program":{
-      "latitude":"40.7355556",
-      "longitude":"-74.1727778",
-      "city":"Newark",
-      "state":"NJ"
-   },
-   "Creighton University School of Medicine Program":{
-      "latitude":"41.2586111",
-      "longitude":"-95.9375000",
-      "city":"Omaha",
-      "state":"NE"
-   },
-   "John Muir Health Program":{
-      "latitude":"37.9063889",
-      "longitude":"-122.0638889",
-      "city":"Walnut Creek",
-      "state":"CA"
-   },
-   "SCS/MSUCOM/WMU Homer Stryker MD School of Med Program":{
-      "latitude":"42.2916667",
-      "longitude":"-85.5872222",
-      "city":"Kalamazoo",
-      "state":"MI"
-   },
-   "Poudre Valley Hospital/Fort Collins Family Medicine Program":{
-      "latitude":"40.5852778",
-      "longitude":"-105.0838889",
-      "city":"Fort Collins",
-      "state":"CO"
-   },
-   "LECOMT/Millcreek Community Hospital Program":{
-      "latitude":"42.1291667",
-      "longitude":"-80.0852778",
-      "city":"Erie",
-      "state":"PA"
-   },
-   "CEME/Mt Sinai Med Ctr Program":{
-      "latitude":"25.7902778",
-      "longitude":"-80.1302778",
-      "city":"Miami Beach",
-      "state":"FL"
-   },
-   "Texas A&M; Health Science Center College of Medicine Program":{
-      "latitude":"30.5080556",
-      "longitude":"-97.6786111",
-      "city":"Round Rock",
-      "state":"TX"
-   },
-   "Albert Einstein Healthcare Network Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Aultman Hospital/NEOMED Program":{
-      "latitude":"40.7988889",
-      "longitude":"-81.3786111",
-      "city":"Canton",
-      "state":"OH"
-   },
-   "PCOM/Wilson Memorial Reg Med Ctr Program":{
-      "latitude":"42.1155556",
-      "longitude":"-75.9591667",
-      "city":"Johnson City",
-      "state":"NY"
-   },
-   "Detroit Medical Center/Wayne State University Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "Loma Linda University Health Education Consortium Program":{
-      "latitude":"34.0555556",
-      "longitude":"-117.1816667",
-      "city":"Redlands",
-      "state":"CA"
-   },
-   "Carolinas HealthCare System-NorthEast (Northeast-Cabarrus) Program":{
-      "latitude":"35.4086111",
-      "longitude":"-80.5797222",
-      "city":"Concord",
-      "state":"NC"
-   },
-   "MetroHealth Medical Center/Case Western Reserve University Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "Kaiser Permanente Medical Group (Northern California)/San Francisco Program":{
-      "latitude":"37.7750000",
-      "longitude":"-122.4183333",
-      "city":"San Francisco",
-      "state":"CA"
-   },
-   "HEARTland/Trinity Bettendorf Program":{
-      "latitude":"41.5244444",
-      "longitude":"-90.5155556",
-      "city":"Bettendorf",
-      "state":"IA"
-   },
-   "Institute for Family Health (Mid-Hudson) Program":{
-      "latitude":"41.9269444",
-      "longitude":"-73.9977778",
-      "city":"Kingston",
-      "state":"NY"
-   },
-   "Memorial Hospital of South Bend Program":{
-      "latitude":"41.6833333",
-      "longitude":"-86.2500000",
-      "city":"South Bend",
-      "state":"IN"
-   },
-   "University of New Mexico (Santa Fe) Rural Program":{
-      "latitude":"35.6869444",
-      "longitude":"-105.9372222",
-      "city":"Santa Fe",
-      "state":"NM"
-   },
-   "SCS/MSUCOM/Mercy Memorial Hospital Program":{
-      "latitude":"41.9163889",
-      "longitude":"-83.3977778",
-      "city":"Monroe",
-      "state":"MI"
-   },
-   "University of Arkansas for Medical Sciences Regional Centers (Southwest) Program":{
-      "latitude":"33.4416667",
-      "longitude":"-94.0375000",
-      "city":"Texarkana",
-      "state":"AR"
-   },
-   "OMNEE/Park Avenue Dermatology Program":{
-      "latitude":"30.1658333",
-      "longitude":"-81.7066667",
-      "city":"Orange Park",
-      "state":"FL"
-   },
-   "OMNEE/Jack Hughston Memorial Hosp Program":{
-      "latitude":"32.4708333",
-      "longitude":"-85.0008333",
-      "city":"Phenix City",
-      "state":"AL"
-   },
-   "The University of Montana Program":{
-      "latitude":"46.8722222",
-      "longitude":"-113.9930556",
-      "city":"Missoula",
-      "state":"MT"
-   },
-   "Loyola University Program":{
-      "latitude":"41.8791667",
-      "longitude":"-87.8430556",
-      "city":"Maywood",
-      "state":"IL"
-   },
-   "Harvard School of Public Health Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "CORE/Doctors Hospital Program":{
-      "latitude":"39.8813889",
-      "longitude":"-83.0930556",
-      "city":"Grove City",
-      "state":"OH"
-   },
-   "Florida Hospital Medical Center Program":{
-      "latitude":"28.5997222",
-      "longitude":"-81.3394444",
-      "city":"Winter Park",
-      "state":"FL"
-   },
-   "CEME/Larkin Community Hospital Program":{
-      "latitude":"25.7072222",
-      "longitude":"-80.2936111",
-      "city":"South Miami",
-      "state":"FL"
-   },
-   "PCOM/Crozer-Chester Medical Center Program":{
-      "latitude":"39.9305556",
-      "longitude":"-75.3205556",
-      "city":"Springfield",
-      "state":"PA"
-   },
-   "Blake Medical Center Program":{
-      "latitude":"27.4986111",
-      "longitude":"-82.5750000",
-      "city":"Bradenton",
-      "state":"FL"
-   },
-   "SCS/MSUCOM/Hillsdale Community Health Center Program":{
-      "latitude":"41.9200000",
-      "longitude":"-84.6305556",
-      "city":"Hillsdale",
-      "state":"MI"
-   },
-   "Oregon Health & Science University Program":{
-      "latitude":"45.5236111",
-      "longitude":"-122.6750000",
-      "city":"Portland",
-      "state":"OR"
-   },
-   "Advocate Health Care (Advocate Children's Hospital/Oak Lawn) Program":{
-      "latitude":"41.7108333",
-      "longitude":"-87.7580556",
-      "city":"Oak Lawn",
-      "state":"IL"
-   },
-   "RMOPTI/Sky Ridge Medical Center Program":{
-      "latitude":"39.5361111",
-      "longitude":"-104.8958333",
-      "city":"Lone Tree",
-      "state":"CO"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals (Community Memorial) Program":{
-      "latitude":"43.1788889",
-      "longitude":"-88.1172222",
-      "city":"Menomonee Falls",
-      "state":"WI"
-   },
-   "Newton-Wellesley Hospital Program":{
-      "latitude":"42.3369444",
-      "longitude":"-71.2097222",
-      "city":"Newton",
-      "state":"MA"
-   },
-   "McKay-Dee Hospital Center Program":{
-      "latitude":"41.2230556",
-      "longitude":"-111.9730556",
-      "city":"Ogden",
-      "state":"UT"
-   },
-   "Kaiser Permanente Medical Group (Northern California) Program":{
-      "latitude":"37.8044444",
-      "longitude":"-122.2697222",
-      "city":"Oakland",
-      "state":"CA"
-   },
-   "OMECO Teaching Health Center Program":{
-      "latitude":"36.1538889",
-      "longitude":"-95.9925000",
-      "city":"Tulsa",
-      "state":"OK"
-   },
-   "Children's National Medical Center/George Washington University Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "Center for Family Medicine (Sioux Falls) Program":{
-      "latitude":"43.5500000",
-      "longitude":"-96.7000000",
-      "city":"Sioux Falls",
-      "state":"SD"
-   },
-   "CORE/Marietta Memorial Hospital Program":{
-      "latitude":"39.4152778",
-      "longitude":"-81.4550000",
-      "city":"Marietta",
-      "state":"OH"
-   },
-   "Henry Ford Macomb Hospital Program":{
-      "latitude":"42.614098",
-      "longitude":"-82.960829",
-      "city":"Clinton Township",
-      "state":"MI"
-   },
-   "NYCOMEC/Orange Regional Medical Center Program":{
-      "latitude":"41.4458333",
-      "longitude":"-74.4233333",
-      "city":"Middletown",
-      "state":"NY"
-   },
-   "NYCOMEC/Coney Island Hospital Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Morehouse School of Medicine Program":{
-      "latitude":"33.7488889",
-      "longitude":"-84.3880556",
-      "city":"Atlanta",
-      "state":"GA"
-   },
-   "Scripps Mercy Hospital (Chula Vista) Program":{
-      "latitude":"32.6400000",
-      "longitude":"-117.0833333",
-      "city":"Chula Vista",
-      "state":"CA"
-   },
-   "University of Colorado School of Medicine Program":{
-      "latitude":"39.7294444",
-      "longitude":"-104.8313889",
-      "city":"Aurora",
-      "state":"CO"
-   },
-   "Fairview Hospital/Cleveland Clinic Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "NEOMEN/Berkshire Med Ctr Program":{
-      "latitude":"42.4500000",
-      "longitude":"-73.2458333",
-      "city":"Pittsfield",
-      "state":"MA"
-   },
-   "Henry Ford Hospital/Wayne State University Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "Mayo Clinic College of Medicine and Science (Jacksonville) Program":{
-      "latitude":"30.3319444",
-      "longitude":"-81.6558333",
-      "city":"Jacksonville",
-      "state":"FL"
-   },
-   "University of Massachusetts (Fitchburg) Program":{
-      "latitude":"42.5833333",
-      "longitude":"-71.8027778",
-      "city":"Fitchburg",
-      "state":"MA"
-   },
-   "CEME/The Medical Center Program":{
-      "latitude":"32.4608333",
-      "longitude":"-84.9877778",
-      "city":"Columbus",
-      "state":"GA"
-   },
-   "PCOM/Redmond Regional Medical Center Program":{
-      "latitude":"34.2569444",
-      "longitude":"-85.1647222",
-      "city":"Rome",
-      "state":"GA"
-   },
-   "St Mark's Health Care Foundation Program":{
-      "latitude":"40.7608333",
-      "longitude":"-111.8902778",
-      "city":"Salt Lake City",
-      "state":"UT"
-   },
-   "MacNeal Hospital Program":{
-      "latitude":"41.8505556",
-      "longitude":"-87.7936111",
-      "city":"Berwyn",
-      "state":"IL"
-   },
-   "Nassau University Medical Center Program":{
-      "latitude":"40.7138889",
-      "longitude":"-73.5594444",
-      "city":"East Meadow",
-      "state":"NY"
-   },
-   "William Beaumont Hospital-Grosse Pointe Program":{
-      "latitude":"42.3861111",
-      "longitude":"-82.9119444",
-      "city":"Grosse Pointe",
-      "state":"MI"
-   },
-   "University of Oklahoma School of Community Medicine (Tulsa) Rural Program":{
-      "latitude":"36.7472222",
-      "longitude":"-95.9805556",
-      "city":"Bartlesville",
-      "state":"OK"
-   },
-   "University of Texas M D Anderson Cancer Center Program":{
-      "latitude":"29.7630556",
-      "longitude":"-95.3630556",
-      "city":"Houston",
-      "state":"TX"
-   },
-   "KCU-GMEC/Freeman Health System Program":{
-      "latitude":"37.0841667",
-      "longitude":"-94.5130556",
-      "city":"Joplin",
-      "state":"MO"
-   },
-   "OPTI-West/College Medical Center Program":{
-      "latitude":"33.7669444",
-      "longitude":"-118.1883333",
-      "city":"Long Beach",
-      "state":"CA"
-   },
-   "Indiana University Health Ball Memorial Hospital Program":{
-      "latitude":"40.1933333",
-      "longitude":"-85.3863889",
-      "city":"Muncie",
-      "state":"IN"
-   },
-   "Fairview Hospital Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "Summa Health System/NEOMED Program":{
-      "latitude":"41.0813889",
-      "longitude":"-81.5191667",
-      "city":"Akron",
-      "state":"OH"
-   },
-   "NYCOMEC/Meadowlands Hospital Medical Center Program":{
-      "latitude":"40.7894444",
-      "longitude":"-74.0569444",
-      "city":"Secaucus",
-      "state":"NJ"
-   },
-   "Brigham and Women's Hospital/Massachusetts General Hospital/Harvard Medical School Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Hospital for Special Surgery/Cornell Medical Center Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Mount Sinai Hospital Medical Center of Chicago Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "Citrus Valley Health Partners Program":{
-      "latitude":"34.0686111",
-      "longitude":"-117.9380556",
-      "city":"West Covina",
-      "state":"CA"
-   },
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Madison":{
-      "latitude":"43.0730556",
-      "longitude":"-89.4011111",
-      "city":"Madison",
-      "state":"WI"
-   },
-   "Icahn School of Medicine at Mount Sinai Program A":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "SCS/MSUCOM/St Joseph Mercy Health System Program":{
-      "latitude":"42.5294444",
-      "longitude":"-83.7802778",
-      "city":"Brighton",
-      "state":"MI"
-   },
-   "Yale-New Haven Medical Center (Primary Care) Program":{
-      "latitude":"41.3080556",
-      "longitude":"-72.9286111",
-      "city":"New Haven",
-      "state":"CT"
-   },
-   "RMOPTI/Sky Ridge Med Ctr/Colorado Derm Institute Program":{
-      "latitude":"38.8338889",
-      "longitude":"-104.8208333",
-      "city":"Colorado Springs",
-      "state":"CO"
-   },
-   "NEOMEN/Albany Medical College Program":{
-      "latitude":"42.6525000",
-      "longitude":"-73.7566667",
-      "city":"Albany",
-      "state":"NY"
-   },
-   "University of Iowa (Des Moines) Program":{
-      "latitude":"41.6005556",
-      "longitude":"-93.6088889",
-      "city":"Des Moines",
-      "state":"IA"
-   },
-   "University of Vermont Medical Center Program":{
-      "latitude":"44.6397222",
-      "longitude":"-73.1108333",
-      "city":"Milton",
-      "state":"VT"
-   },
-   "PCOM/Christiana Care Health System Program":{
-      "latitude":"39.7458333",
-      "longitude":"-75.5469444",
-      "city":"Wilmington",
-      "state":"DE"
-   },
-   "Maricopa Medical Center Program":{
-      "latitude":"33.4222222",
-      "longitude":"-111.8219444",
-      "city":"Mesa",
-      "state":"AZ"
-   },
-   "PCOM/Southeast Alabama Medical Center Program":{
-      "latitude":"31.2230556",
-      "longitude":"-85.3905556",
-      "city":"Dothan",
-      "state":"AL"
-   },
-   "Grand Rapids Medical Education Partners Program":{
-      "latitude":"42.9633333",
-      "longitude":"-85.6680556",
-      "city":"Grand Rapids",
-      "state":"MI"
-   },
-   "Carilion Clinic-Virginia Tech Carilion School of Medicine Program":{
-      "latitude":"37.2708333",
-      "longitude":"-79.9416667",
-      "city":"Roanoke",
-      "state":"VA"
-   },
-   "Tufts University at Cambridge Health Alliance Program":{
-      "latitude":"42.4250000",
-      "longitude":"-71.0666667",
-      "city":"Malden",
-      "state":"MA"
-   },
-   "Jamaica Hospital Medical Center/Albert Einstein College of Medicine Program":{
-      "latitude":"40.6913889",
-      "longitude":"-73.8061111",
-      "city":"Jamaica",
-      "state":"NY"
-   },
-   "Texas OPTI/University of North Texas HSC Program":{
-      "latitude":"32.7252778",
-      "longitude":"-97.3205556",
-      "city":"Fort Worth",
-      "state":"TX"
-   },
-   "NEOMEN/Univ of Connecticut HC Program":{
-      "latitude":"41.7197222",
-      "longitude":"-72.8325000",
-      "city":"Farmington",
-      "state":"CT"
-   },
-   "University of California (Irvine)/Children's Hospital of Orange County Program":{
-      "latitude":"33.7877778",
-      "longitude":"-117.8522222",
-      "city":"Orange",
-      "state":"CA"
-   },
-   "University of Minnesota/Methodist Hospital Program":{
-      "latitude":"44.9483333",
-      "longitude":"-93.3477778",
-      "city":"St Louis Park",
-      "state":"MN"
-   },
-   "Massachusetts General Hospital Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Mercy Memorial Hospital System Program":{
-      "latitude":"41.9163889",
-      "longitude":"-83.3977778",
-      "city":"Monroe",
-      "state":"MI"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals (St Joseph's) Program":{
-      "latitude":"43.0388889",
-      "longitude":"-87.9063889",
-      "city":"Milwaukee",
-      "state":"WI"
-   },
-   "University of Colorado Program":{
-      "latitude":"39.7294444",
-      "longitude":"-104.8313889",
-      "city":"Aurora",
-      "state":"CO"
-   },
-   "Forrest General Hospital Program":{
-      "latitude":"31.3269444",
-      "longitude":"-89.2902778",
-      "city":"Hattiesburg",
-      "state":"MS"
-   },
-   "Hofstra Northwell School of Medicine at Lenox Hill Hospital Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "University of Colorado (HealthONE Rose Medical Center) Program":{
-      "latitude":"39.7391667",
-      "longitude":"-104.9841667",
-      "city":"Denver",
-      "state":"CO"
-   },
-   "NYCOMEC/MediSys Health Network Program":{
-      "latitude":"40.7652778",
-      "longitude":"-73.8177778",
-      "city":"Flushing",
-      "state":"NY"
-   },
-   "Adventist LaGrange Memorial Hospital Program":{
-      "latitude":"41.8050000",
-      "longitude":"-87.8691667",
-      "city":"La Grange",
-      "state":"IL"
-   },
-   "University of California (San Francisco)/San Francisco General Hospital Program":{
-      "latitude":"37.7750000",
-      "longitude":"-122.4183333",
-      "city":"San Francisco",
-      "state":"CA"
-   },
-   "LECOMT/Westview Hospital Program":{
-      "latitude":"39.7683333",
-      "longitude":"-86.1580556",
-      "city":"Indianapolis",
-      "state":"IN"
-   },
-   "St Vincent Hospital and Health Care Center Preliminary Program":{
-      "latitude":"39.7683333",
-      "longitude":"-86.1580556",
-      "city":"Indianapolis",
-      "state":"IN"
-   },
-   "Virginia Commonwealth University Health System Program":{
-      "latitude":"37.5536111",
-      "longitude":"-77.4605556",
-      "city":"Richmond",
-      "state":"VA"
-   },
-   "SCS/MSUCOM/McLaren Bay Region Program":{
-      "latitude":"43.5944444",
-      "longitude":"-83.8888889",
-      "city":"Bay City",
-      "state":"MI"
-   },
-   "John Peter Smith Hospital (Tarrant County Hospital District) Program":{
-      "latitude":"32.7252778",
-      "longitude":"-97.3205556",
-      "city":"Fort Worth",
-      "state":"TX"
-   },
-   "Drexel University College of Medicine/Hahnemann University Hospital Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Brigham and Women's Hospital/Massachusetts General Hospital Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Geisinger Health System Program":{
-      "latitude":"41.2458333",
-      "longitude":"-75.8816667",
-      "city":"Wilkes-Barre",
-      "state":"PA"
-   },
-   "Montefiore Medical Center/Albert Einstein College of Medicine of Yeshiva University Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "Botsford Hospital Program":{
-      "latitude":"42.4852778",
-      "longitude":"-83.3772222",
-      "city":"Farmington Hills",
-      "state":"MI"
-   },
-   "Hofstra Northwell School of Medicine at Staten Island University Hospital Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "University of Alabama Medical Center (Selma Dallas County) Program":{
-      "latitude":"32.4072222",
-      "longitude":"-87.0211111",
-      "city":"Selma",
-      "state":"AL"
-   },
    "University of California (San Francisco)/Fresno Program":{
-      "latitude":"36.7477778",
       "longitude":"-119.7713889",
+      "state":"CA",
       "city":"Fresno",
-      "state":"CA"
-   },
-   "Mount Sinai Medical Center of Florida, Inc Program":{
-      "latitude":"25.7902778",
-      "longitude":"-80.1302778",
-      "city":"Miami Beach",
-      "state":"FL"
-   },
-   "Kaiser Foundation/UCSF Program":{
-      "latitude":"37.7750000",
-      "longitude":"-122.4183333",
-      "city":"San Francisco",
-      "state":"CA"
-   },
-   "NYCOMEC/EastEnd Health Alliance Program":{
-      "latitude":"40.8841667",
-      "longitude":"-72.3900000",
-      "city":"Southampton",
-      "state":"NY"
-   },
-   "NYCOMEC/Sisters of Charity Hosp Program":{
-      "latitude":"42.8863889",
-      "longitude":"-78.8786111",
-      "city":"Buffalo",
-      "state":"NY"
-   },
-   "University of Arizona College of Medicine-Phoenix Preliminary Program":{
-      "latitude":"33.4483333",
-      "longitude":"-112.0733333",
-      "city":"Phoenix",
-      "state":"AZ"
-   },
-   "Washington Hospital Center/Georgetown University Hospital Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "Oregon Health & Science University Hospital Program":{
-      "latitude":"45.5236111",
-      "longitude":"-122.6750000",
-      "city":"Portland",
-      "state":"OR"
-   },
-   "CEME/Ocala Regional Medical Center Program":{
-      "latitude":"29.1869444",
-      "longitude":"-82.1402778",
-      "city":"Ocala",
-      "state":"FL"
-   },
-   "Texas OPTI/Conroe Med Ed Foundation Program":{
-      "latitude":"30.3116667",
-      "longitude":"-95.4558333",
-      "city":"Conroe",
-      "state":"TX"
-   },
-   "University of Oklahoma School of Community Medicine (Tulsa) Program":{
-      "latitude":"36.1538889",
-      "longitude":"-95.9925000",
-      "city":"Tulsa",
-      "state":"OK"
-   },
-   "LECOMT/St Vincent Health Center Program":{
-      "latitude":"42.1291667",
-      "longitude":"-80.0852778",
-      "city":"Erie",
-      "state":"PA"
-   },
-   "Baylor College of Medicine Program":{
-      "latitude":"29.7630556",
-      "longitude":"-95.3630556",
-      "city":"Houston",
-      "state":"TX"
-   },
-   "Santa Barbara Cottage Hospital Program":{
-      "latitude":"34.4208333",
-      "longitude":"-119.6972222",
-      "city":"Santa Barbara",
-      "state":"CA"
-   },
-   "LECOMT/Allegheny Health Network Med Ed Consortium Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "United Hospital Center Program":{
-      "latitude":"39.2863889",
-      "longitude":"-80.2563889",
-      "city":"Bridgeport",
-      "state":"WV"
-   },
-   "Providence Health & Services - Oregon/Providence Medical Center Program":{
-      "latitude":"45.5236111",
-      "longitude":"-122.6750000",
-      "city":"Portland",
-      "state":"OR"
-   },
-   "East Tennessee State University (Bristol) Program":{
-      "latitude":"36.5950000",
-      "longitude":"-82.1888889",
-      "city":"Bristol",
-      "state":"TN"
-   },
-   "Icahn School of Medicine at Mount Sinai/St Luke\u2019s-Roosevelt Hospital Center Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Memorial Sloan Kettering Cancer Center Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Rochester Regional Health/Unity Hospital (Rochester) Program":{
-      "latitude":"43.1547222",
-      "longitude":"-77.6158333",
-      "city":"Rochester",
-      "state":"NY"
-   },
-   "University of Tennessee College of Medicine at Memphis Program":{
-      "latitude":"35.1494444",
-      "longitude":"-90.0488889",
-      "city":"Memphis",
-      "state":"TN"
-   },
-   "CEME/Palm Beach Consortium for GME Program":{
-      "latitude":"26.2125000",
-      "longitude":"-80.2500000",
-      "city":"Tamarac",
-      "state":"FL"
-   },
-   "Connecticut Institute For Communities/Greater Danbury Community Health Center Program":{
-      "latitude":"41.3947222",
-      "longitude":"-73.4544444",
-      "city":"Danbury",
-      "state":"CT"
-   },
-   "MWU/OPTI/Illinois Masonic Medical Ctr Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "Integris Baptist Medical Center Program":{
-      "latitude":"35.4675000",
-      "longitude":"-97.5161111",
-      "city":"Oklahoma City",
-      "state":"OK"
-   },
-   "NYCOMEC/Jersey City Medical Center Program":{
-      "latitude":"40.7280556",
-      "longitude":"-74.0780556",
-      "city":"Jersey City",
-      "state":"NJ"
-   },
-   "Scott and White Memorial Hospital Program":{
-      "latitude":"31.0980556",
-      "longitude":"-97.3425000",
-      "city":"Temple",
-      "state":"TX"
-   },
-   "Tidelands Health Program":{
-      "latitude":"33.5508333",
-      "longitude":"-79.0416667",
-      "city":"Murrells Inlet",
-      "state":"SC"
-   },
-   "Kadlec Regional Medical Center Program":{
-      "latitude":"46.2858333",
-      "longitude":"-119.2833333",
-      "city":"Richland",
-      "state":"WA"
-   },
-   "University of Arkansas for Medical Sciences Regional Centers (West) Program":{
-      "latitude":"35.3858333",
-      "longitude":"-94.3983333",
-      "city":"Fort Smith",
-      "state":"AR"
-   },
-   "Advocate Health Care (Advocate Lutheran General Hospital) Program":{
-      "latitude":"42.0111111",
-      "longitude":"-87.8405556",
-      "city":"Park Ridge",
-      "state":"IL"
-   },
-   "LECOMT/Manatee Memorial Hospital Program":{
-      "latitude":"27.4986111",
-      "longitude":"-82.5750000",
-      "city":"Bradenton",
-      "state":"FL"
-   },
-   "Brown University (Women and Infants Hospital of Rhode Island) Program":{
-      "latitude":"41.8238889",
-      "longitude":"-71.4133333",
-      "city":"Providence",
-      "state":"RI"
-   },
-   "St Joseph Mercy-Oakland Program":{
-      "latitude":"42.6388889",
-      "longitude":"-83.2911111",
-      "city":"Pontiac",
-      "state":"MI"
-   },
-   "SCS/MSUCOM/Community Health Center Branch County Program":{
-      "latitude":"41.9402778",
-      "longitude":"-85.0005556",
-      "city":"Coldwater",
-      "state":"MI"
-   },
-   "SCS/MSUCOM/EW Sparrow Hospital Program":{
-      "latitude":"42.7369444",
-      "longitude":"-84.4838889",
-      "city":"East Lansing",
-      "state":"MI"
-   },
-   "Florida Department of Health Palm Beach County Program":{
-      "latitude":"26.7150000",
-      "longitude":"-80.0536111",
-      "city":"West Palm Beach",
-      "state":"FL"
-   },
-   "CORE/St John Medical Center Program":{
-      "latitude":"41.4552778",
-      "longitude":"-81.9180556",
-      "city":"Westlake",
-      "state":"OH"
-   },
-   "A-OPTIC/Shenandoah Valley Program":{
-      "latitude":"38.9180556",
-      "longitude":"-78.1947222",
-      "city":"Front Royal",
-      "state":"VA"
-   },
-   "Main Line Health System/Lankenau Medical Center Program":{
-      "latitude":"40.0027778",
-      "longitude":"-75.2711111",
-      "city":"Wynnewood",
-      "state":"PA"
-   },
-   "RowanSOM/CarePoint Health-Bayonne Medical Center Program":{
-      "latitude":"40.6686111",
-      "longitude":"-74.1147222",
-      "city":"Bayonne",
-      "state":"NJ"
-   },
-   "Leonard J Chabert Medical Center Program":{
-      "latitude":"29.5955556",
-      "longitude":"-90.7194444",
-      "city":"Houma",
-      "state":"LA"
-   },
-   "Saint Joseph Hospital Program":{
-      "latitude":"39.7391667",
-      "longitude":"-104.9841667",
-      "city":"Denver",
-      "state":"CO"
-   },
-   "PCOM/Houston Healthcare Program":{
-      "latitude":"32.6208333",
-      "longitude":"-83.6000000",
-      "city":"Warner Robins",
-      "state":"GA"
-   },
-   "Cedar Rapids Medical Education Foundation Program":{
-      "latitude":"42.0083333",
-      "longitude":"-91.6438889",
-      "city":"Cedar Rapids",
-      "state":"IA"
-   },
-   "CEME/Community Health of South Florida Program":{
-      "latitude":"25.7738889",
-      "longitude":"-80.1938889",
-      "city":"Miami",
-      "state":"FL"
-   },
-   "Hunterdon Medical Center Program":{
-      "latitude":"40.5122222",
-      "longitude":"-74.8597222",
-      "city":"Flemington",
-      "state":"NJ"
-   },
-   "St Mary-Corwin Medical Center/Southern Colorado Family Medicine Program":{
-      "latitude":"38.2544444",
-      "longitude":"-104.6086111",
-      "city":"Pueblo",
-      "state":"CO"
-   },
-   "University of Southern California/LAC+USC Medical Center Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "Penn State Milton S Hershey Medical Center Program":{
-      "latitude":"40.2858333",
-      "longitude":"-76.6505556",
-      "city":"Hershey",
-      "state":"PA"
-   },
-   "Bassett Medical Center Program":{
-      "latitude":"42.7005556",
-      "longitude":"-74.9247222",
-      "city":"Cooperstown",
-      "state":"NY"
-   },
-   "Baton Rouge General Medical Center Program":{
-      "latitude":"30.4505556",
-      "longitude":"-91.1544444",
-      "city":"Baton Rouge",
-      "state":"LA"
-   },
-   "Florida State University College of Medicine Program":{
-      "latitude":"30.4380556",
-      "longitude":"-84.2808333",
-      "city":"Tallahassee",
-      "state":"FL"
-   },
-   "Medical University of South Carolina Program":{
-      "latitude":"32.7763889",
-      "longitude":"-79.9311111",
-      "city":"Charleston",
-      "state":"SC"
-   },
-   "NEOMEN/Manchester Memorial Hospital Program":{
-      "latitude":"41.7758333",
-      "longitude":"-72.5219444",
-      "city":"Manchester",
-      "state":"CT"
-   },
-   "Lehigh Valley Health Network/University of South Florida College of Medicine Program":{
-      "latitude":"40.6083333",
-      "longitude":"-75.4905556",
-      "city":"Allentown",
-      "state":"PA"
-   },
-   "University of Oklahoma Health Sciences Center Program":{
-      "latitude":"35.4675000",
-      "longitude":"-97.5161111",
-      "city":"Oklahoma City",
-      "state":"OK"
-   },
-   "Vanderbilt University Medical Center Program":{
-      "latitude":"36.1658333",
-      "longitude":"-86.7844444",
-      "city":"Nashville",
-      "state":"TN"
-   },
-   "St Peter Hospital Program":{
-      "latitude":"47.0380556",
-      "longitude":"-122.8994444",
-      "city":"Olympia",
-      "state":"WA"
-   },
-   "Hoboken University Medical Center/New York Medical College Program":{
-      "latitude":"40.7438889",
-      "longitude":"-74.0327778",
-      "city":"Hoboken",
-      "state":"NJ"
-   },
-   "NEOMEN/Eastern Maine Med Ctr Program":{
-      "latitude":"44.8011111",
-      "longitude":"-68.7783333",
-      "city":"Bangor",
-      "state":"ME"
-   },
-   "MidMichigan Medical Center-Midland Program":{
-      "latitude":"43.6155556",
-      "longitude":"-84.2472222",
-      "city":"Midland",
-      "state":"MI"
-   },
-   "University of Central Florida College of Medicine/HCA GME Consortium (Greater Orlando) Program":{
-      "latitude":"28.5380556",
-      "longitude":"-81.3794444",
-      "city":"Orlando",
-      "state":"FL"
-   },
-   "North Colorado Medical Center Program":{
-      "latitude":"40.4233333",
-      "longitude":"-104.7086111",
-      "city":"Greeley",
-      "state":"CO"
-   },
-   "A-OPTIC/East Central Health Net Regional Rural Program":{
-      "latitude":"32.3641667",
-      "longitude":"-88.7036111",
-      "city":"Meridian",
-      "state":"MS"
-   },
-   "New York Methodist Hospital Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Tufts Medical Center/Lemuel Shattuck Hospital Program":{
-      "latitude":"42.3097222",
-      "longitude":"-71.1208333",
-      "city":"Jamaica Plain",
-      "state":"MA"
-   },
-   "STILL OPTI/University of IL College of Med/ Methodist MC Program":{
-      "latitude":"40.6936111",
-      "longitude":"-89.5888889",
-      "city":"Peoria",
-      "state":"IL"
-   },
-   "Texas Tech University Health Sciences Center (Permian Basin) Program":{
-      "latitude":"31.8455556",
-      "longitude":"-102.3672222",
-      "city":"Odessa",
-      "state":"TX"
-   },
-   "Valley Baptist Medical Center Program":{
-      "latitude":"26.1902778",
-      "longitude":"-97.6958333",
-      "city":"Harlingen",
-      "state":"TX"
-   },
-   "Texas OPTI/Texoma Medical Center Program":{
-      "latitude":"33.7555556",
-      "longitude":"-96.5363889",
-      "city":"Denison",
-      "state":"TX"
-   },
-   "Augusta University/University of Georgia Medical Partnership Program":{
-      "latitude":"33.9608333",
-      "longitude":"-83.3780556",
-      "city":"Athens",
-      "state":"GA"
-   },
-   "PCOM/Georgia South-Colquitt Regional Medical Center Program":{
-      "latitude":"31.1797222",
-      "longitude":"-83.7891667",
-      "city":"Moultrie",
-      "state":"GA"
-   },
-   "Louisiana State University Program":{
-      "latitude":"30.4505556",
-      "longitude":"-91.1544444",
-      "city":"Baton Rouge",
-      "state":"LA"
-   },
-   "West Virginia University Rural Program":{
-      "latitude":"39.3252778",
-      "longitude":"-77.7391667",
-      "city":"Harpers Ferry",
-      "state":"WV"
-   },
-   "RowanSOM/Inspira Health Network Program":{
-      "latitude":"39.4861111",
-      "longitude":"-75.0261111",
-      "city":"Vineland",
-      "state":"NJ"
-   },
-   "STILL OPTI/Northeast Regional Med Ctr Program":{
-      "latitude":"40.1947222",
-      "longitude":"-92.5830556",
-      "city":"Kirksville",
-      "state":"MO"
-   },
-   "University of Maryland/Sheppard Pratt Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "Mountain View Hospital Program":{
-      "latitude":"36.1750000",
-      "longitude":"-115.1363889",
-      "city":"Las Vegas",
-      "state":"NV"
-   },
-   "Mountain Area Health Education Center Program":{
-      "latitude":"35.6008333",
-      "longitude":"-82.5541667",
-      "city":"Asheville",
-      "state":"NC"
-   },
-   "University of Utah Medical Center Program":{
-      "latitude":"40.7608333",
-      "longitude":"-111.8902778",
-      "city":"Salt Lake City",
-      "state":"UT"
-   },
-   "Providence Sacred Heart Medical Center Program":{
-      "latitude":"47.6588889",
-      "longitude":"-117.4250000",
-      "city":"Spokane",
-      "state":"WA"
-   },
-   "PCOM/Aria Health Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Penrose-St Francis Health Services Program":{
-      "latitude":"38.8338889",
-      "longitude":"-104.8208333",
-      "city":"Colorado Springs",
-      "state":"CO"
-   },
-   "NYCOMEC/Nassau University Medical Center Program":{
-      "latitude":"40.7138889",
-      "longitude":"-73.5594444",
-      "city":"East Meadow",
-      "state":"NY"
-   },
-   "Kaiser Permanente Southern California Program":{
-      "latitude":"34.0922222",
-      "longitude":"-117.4341667",
-      "city":"Fontana",
-      "state":"CA"
-   },
-   "Danbury Hospital Program":{
-      "latitude":"41.3947222",
-      "longitude":"-73.4544444",
-      "city":"Danbury",
-      "state":"CT"
-   },
-   "Aventura Hospital and Medical Center Program":{
-      "latitude":"25.9561111",
-      "longitude":"-80.1394444",
-      "city":"Aventura",
-      "state":"FL"
-   },
-   "Kaiser Permanente Southern California (Riverside) Program":{
-      "latitude":"33.9533333",
-      "longitude":"-117.3952778",
-      "city":"Riverside",
-      "state":"CA"
-   },
-   "New York Medical College at St Joseph\u2019s Regional Medical Center Program":{
-      "latitude":"40.9166667",
-      "longitude":"-74.1722222",
-      "city":"Paterson",
-      "state":"NJ"
-   },
-   "University of California (San Francisco) School of Medicine Program":{
-      "latitude":"37.7750000",
-      "longitude":"-122.4183333",
-      "city":"San Francisco",
-      "state":"CA"
-   },
-   "University of Texas RGV (MMC) Program":{
-      "latitude":"26.2030556",
-      "longitude":"-98.2297222",
-      "city":"McAllen",
-      "state":"TX"
-   },
-   "St Elizabeth Health Center Program":{
-      "latitude":"41.0997222",
-      "longitude":"-80.6497222",
-      "city":"Youngstown",
-      "state":"OH"
-   },
-   "University of Tennessee/Saint Francis Program":{
-      "latitude":"35.1494444",
-      "longitude":"-90.0488889",
-      "city":"Memphis",
-      "state":"TN"
-   },
-   "Central Michigan University College of Medicine Program":{
-      "latitude":"43.4194444",
-      "longitude":"-83.9508333",
-      "city":"Saginaw",
-      "state":"MI"
-   },
-   "University of Minnesota Program":{
-      "latitude":"44.9800000",
-      "longitude":"-93.2636111",
-      "city":"Minneapolis",
-      "state":"MN"
-   },
-   "University of Colorado (HealthONE Swedish Medical Center) Program":{
-      "latitude":"39.6133333",
-      "longitude":"-105.0161111",
-      "city":"Littleton",
-      "state":"CO"
-   },
-   "Providence Sacred Heart Medical Center (Spokane) Program":{
-      "latitude":"47.6588889",
-      "longitude":"-117.4250000",
-      "city":"Spokane",
-      "state":"WA"
-   },
-   "TOMEC/Wellmont Holston Valley MC Program":{
-      "latitude":"36.5483333",
-      "longitude":"-82.5619444",
-      "city":"Kingsport",
-      "state":"TN"
-   },
-   "West Suburban Medical Center Program":{
-      "latitude":"41.8850000",
-      "longitude":"-87.7844444",
-      "city":"Oak Park",
-      "state":"IL"
-   },
-   "Community Health Network, Inc. Program":{
-      "latitude":"39.7683333",
-      "longitude":"-86.1580556",
-      "city":"Indianapolis",
-      "state":"IN"
-   },
-   "CORE/Summa Western Reserve Hospital Program":{
-      "latitude":"41.1338889",
-      "longitude":"-81.4847222",
-      "city":"Cuyahoga Falls",
-      "state":"OH"
-   },
-   "University of Minnesota/University of Minnesota Medical Center (Fairview) Program":{
-      "latitude":"44.9800000",
-      "longitude":"-93.2636111",
-      "city":"Minneapolis",
-      "state":"MN"
-   },
-   "San Juan City Hospital Program":{
-      "latitude":"18.4683333",
-      "longitude":"-66.1061111",
-      "city":"San Juan",
-      "state":"PR"
-   },
-   "AnMed Health (Anderson) Program":{
-      "latitude":"34.5033333",
-      "longitude":"-82.6502778",
-      "city":"Anderson",
-      "state":"SC"
-   },
-   "PCOM/UPMC Mercy Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "CORE/Grandview Hosp & Medical Ctr Program":{
-      "latitude":"39.3330556",
-      "longitude":"-82.9825000",
-      "city":"Chillicothe",
-      "state":"OH"
-   },
-   "Driscoll Children's Hospital Program":{
-      "latitude":"27.8002778",
-      "longitude":"-97.3961111",
-      "city":"Corpus Christi",
-      "state":"TX"
-   },
-   "Rapid City Regional Hospital Program":{
-      "latitude":"44.0805556",
-      "longitude":"-103.2305556",
-      "city":"Rapid City",
-      "state":"SD"
-   },
-   "University of Tennessee College of Medicine at Murfreesboro Program":{
-      "latitude":"35.8455556",
-      "longitude":"-86.3902778",
-      "city":"Murfreesboro",
-      "state":"TN"
-   },
-   "MWU/OPTI/St James Hosp & Health Centers Program":{
-      "latitude":"41.5133333",
-      "longitude":"-87.6741667",
-      "city":"Olympia Fields",
-      "state":"IL"
-   },
-   "A-OPTIC/Fort Wayne Medical Ed Program":{
-      "latitude":"41.1305556",
-      "longitude":"-85.1288889",
-      "city":"Fort Wayne",
-      "state":"IN"
-   },
-   "Icahn School of Medicine at Mount Sinai Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Wyckoff Heights Medical Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Jefferson Medical College/Christiana Care Health Services Program":{
-      "latitude":"39.6836111",
-      "longitude":"-75.7500000",
-      "city":"Newark",
-      "state":"DE"
-   },
-   "New Hanover Regional Medical Center Program":{
-      "latitude":"34.2255556",
-      "longitude":"-77.9450000",
-      "city":"Wilmington",
-      "state":"NC"
-   },
-   "Mountain Area Health Education Center Rural Program":{
-      "latitude":"35.3186111",
-      "longitude":"-82.4611111",
-      "city":"Hendersonville",
-      "state":"NC"
-   },
-   "The Medical Center (Columbus) Program":{
-      "latitude":"32.4608333",
-      "longitude":"-84.9877778",
-      "city":"Columbus",
-      "state":"GA"
-   },
-   "Baylor College of Medicine (Houston)  Program":{
-      "latitude":"29.7630556",
-      "longitude":"-95.3630556",
-      "city":"Houston",
-      "state":"TX"
-   },
-   "Aurora Health Care Program":{
-      "latitude":"42.6727778",
-      "longitude":"-88.5444444",
-      "city":"Elkhorn",
-      "state":"WI"
-   },
-   "PCOM/Suburban Community Hospital Program":{
-      "latitude":"40.1213889",
-      "longitude":"-75.3402778",
-      "city":"Norristown",
-      "state":"PA"
-   },
-   "A-OPTIC/East Kentucky Osteo Hosp Program":{
-      "latitude":"37.2494444",
-      "longitude":"-83.1933333",
-      "city":"Hazard",
-      "state":"KY"
-   },
-   "NYCOMEC/NYU Hospitals Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "St Joseph Mercy Hospital Program":{
-      "latitude":"42.2708333",
-      "longitude":"-83.7263889",
-      "city":"Ann Arbor",
-      "state":"MI"
-   },
-   "Allegheny Health Network Medical Education Consortium (AGH) Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals (Columbia-St Mary's) Program":{
-      "latitude":"43.0388889",
-      "longitude":"-87.9063889",
-      "city":"Milwaukee",
-      "state":"WI"
-   },
-   "Steward Carney Hospital Inc. Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Baylor College of Medicine (San Antonio)  Program":{
-      "latitude":"29.4238889",
-      "longitude":"-98.4933333",
-      "city":"San Antonio",
-      "state":"TX"
-   },
-   "Icahn School of Medicine at Mount Sinai (Beth Israel) Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "University of Nevada School of Medicine (Las Vegas) Program":{
-      "latitude":"36.1750000",
-      "longitude":"-115.1363889",
-      "city":"Las Vegas",
-      "state":"NV"
-   },
-   "OMNEE/Cape Fear Valley Medical Center Program":{
-      "latitude":"35.0525000",
-      "longitude":"-78.8786111",
-      "city":"Fayetteville",
-      "state":"NC"
-   },
-   "CEME/N Broward Hosp District Program":{
-      "latitude":"26.1219444",
-      "longitude":"-80.1436111",
-      "city":"Fort Lauderdale",
-      "state":"FL"
-   },
-   "Fort Wayne Medical Education Program":{
-      "latitude":"41.1305556",
-      "longitude":"-85.1288889",
-      "city":"Fort Wayne",
-      "state":"IN"
-   },
-   "Charleston Area Medical Center Program":{
-      "latitude":"38.3497222",
-      "longitude":"-81.6327778",
-      "city":"Charleston",
-      "state":"WV"
-   },
-   "Spectrum Health Program":{
-      "latitude":"42.9633333",
-      "longitude":"-85.6680556",
-      "city":"Grand Rapids",
-      "state":"MI"
-   },
-   "TriHealth (Bethesda North and Good Samaritan Hospitals) Program":{
-      "latitude":"39.1619444",
-      "longitude":"-84.4569444",
-      "city":"Cincinnati",
-      "state":"OH"
-   },
-   "OMNEE/Lovelace Regional Hospital-Roswell Program":{
-      "latitude":"33.3941667",
-      "longitude":"-104.5225000",
-      "city":"Roswell",
-      "state":"NM"
-   },
-   "CEME/Borinquen Medical Center Program":{
-      "latitude":"25.7738889",
-      "longitude":"-80.1938889",
-      "city":"Miami",
-      "state":"FL"
-   },
-   "University of Puerto Rico School of Medicine Program":{
-      "latitude":"18.4683333",
-      "longitude":"-66.1061111",
-      "city":"San Juan",
-      "state":"PR"
-   },
-   "NYCOMEC/St. Bernards Medical Center Program":{
-      "latitude":"35.8422222",
-      "longitude":"-90.7041667",
-      "city":"Jonesboro",
-      "state":"AR"
-   },
-   "Still OPTI/Wright Ctr National Family Med-HealthSource Program":{
-      "latitude":"38.9486111",
-      "longitude":"-84.2800000",
-      "city":"New Richmond",
-      "state":"OH"
-   },
-   "OMECO/St Anthony Hospital Program":{
-      "latitude":"35.4675000",
-      "longitude":"-97.5161111",
-      "city":"Oklahoma CIty",
-      "state":"OK"
-   },
-   "NYCOMEC/South Nassau Communities Hosp Program":{
-      "latitude":"40.6386111",
-      "longitude":"-73.6405556",
-      "city":"Oceanside",
-      "state":"NY"
-   },
-   "MWU/OPTI/Carle Foundation Hospital Program":{
-      "latitude":"40.1105556",
-      "longitude":"-88.2072222",
-      "city":"Urbana",
-      "state":"IL"
-   },
-   "Community Health Care Program":{
-      "latitude":"47.2530556",
-      "longitude":"-122.4430556",
-      "city":"Tacoma",
-      "state":"WA"
-   },
-   "St. Elizabeth Health Center - Boardman Program":{
-      "latitude":"41.0241667",
-      "longitude":"-80.6630556",
-      "city":"Boardman",
-      "state":"OH"
-   },
-   "Jackson Park Hospital Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "Los Angeles County-Harbor-UCLA Medical Center Program":{
-      "latitude":"33.7900000",
-      "longitude":"-118.2969444",
-      "city":"Harbor City",
-      "state":"CA"
-   },
-   "O'Connor Hospital (San Jose) Program":{
-      "latitude":"37.3394444",
-      "longitude":"-121.8938889",
-      "city":"San Jose",
-      "state":"CA"
-   },
-   "Cedars-Sinai Medical Center Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "LECOMT/Centerstone of Florida Program":{
-      "latitude":"27.4986111",
-      "longitude":"-82.5750000",
-      "city":"Bradenton",
-      "state":"FL"
-   },
-   "Southern Illinois University Program":{
-      "latitude":"39.8016667",
-      "longitude":"-89.6436111",
-      "city":"Springfield",
-      "state":"IL"
-   },
-   "St Christopher's Hospital for Children Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "University of Colorado (University Hospital) Program":{
-      "latitude":"39.7391667",
-      "longitude":"-104.9841667",
-      "city":"Denver",
-      "state":"CO"
-   },
-   "Tulane University/Ochsner Clinic Foundation Program":{
-      "latitude":"29.9544444",
-      "longitude":"-90.0750000",
-      "city":"New Orleans",
-      "state":"LA"
-   },
-   "Hofstra Northwell School of Medicine at Staten Island University Hospital Preliminary Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "University of Maryland Medical Center Midtown Campus  Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "LECOMT/St. Elizabeth Boardman Hospital Program":{
-      "latitude":"41.0241667",
-      "longitude":"-80.6630556",
-      "city":"Boardman",
-      "state":"OH"
-   },
-   "Community Health Network Program":{
-      "latitude":"39.7683333",
-      "longitude":"-86.1580556",
-      "city":"Indianapolis",
-      "state":"IN"
-   },
-   "LECOMT/Our Lady of Lourdes Memorial Hosp Program":{
-      "latitude":"42.0986111",
-      "longitude":"-75.9183333",
-      "city":"Binghamton",
-      "state":"NY"
-   },
-   "St Elizabeth Health Center/NEOMED Program":{
-      "latitude":"41.0997222",
-      "longitude":"-80.6497222",
-      "city":"Youngstown",
-      "state":"OH"
-   },
-   "Lincoln Medical Education Partnership Program":{
-      "latitude":"40.8000000",
-      "longitude":"-96.6666667",
-      "city":"Lincoln",
-      "state":"NE"
-   },
-   "Icahn School of Medicine at Mount Sinai (Elmhurst) Program":{
-      "latitude":"40.7363889",
-      "longitude":"-73.8783333",
-      "city":"Elmhurst",
-      "state":"NY"
-   },
-   "Eastern Virginia Medical School (Ghent) Program":{
-      "latitude":"36.8466667",
-      "longitude":"-76.2855556",
-      "city":"Norfolk",
-      "state":"VA"
-   },
-   "Strong Memorial Hospital of the University of Rochester Program":{
-      "latitude":"43.1547222",
-      "longitude":"-77.6158333",
-      "city":"Rochester",
-      "state":"NY"
-   },
-   "OMNEE/FirstHealth Moore Regional Hosp Program":{
-      "latitude":"35.1952778",
-      "longitude":"-79.4697222",
-      "city":"Pinehurst",
-      "state":"NC"
-   },
-   "Mount Carmel Health System Program":{
-      "latitude":"39.9611111",
-      "longitude":"-82.9988889",
-      "city":"Columbus",
-      "state":"OH"
-   },
-   "University of Pennsylvania Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Presence Resurrection Medical Center Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "Wake Forest University School of Medicine Program":{
-      "latitude":"36.0997222",
-      "longitude":"-80.2444444",
-      "city":"Winston-Salem",
-      "state":"NC"
-   },
-   "Hennepin County Medical Center Program":{
-      "latitude":"44.9800000",
-      "longitude":"-93.2636111",
-      "city":"Minneapolis",
-      "state":"MN"
-   },
-   "Memorial Medical Center (Las Cruces) Program":{
-      "latitude":"32.3122222",
-      "longitude":"-106.7777778",
-      "city":"Las Cruces",
-      "state":"NM"
-   },
-   "Brown University/Rhode Island Hospital-Lifespan Program":{
-      "latitude":"41.8238889",
-      "longitude":"-71.4133333",
-      "city":"Providence",
-      "state":"RI"
-   },
-   "MWU/OPTI/Canyon Vista Medical Center Program":{
-      "latitude":"31.5544444",
-      "longitude":"-110.3030556",
-      "city":"Sierra Vista",
-      "state":"AZ"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals (Milwaukee) Program":{
-      "latitude":"43.0388889",
-      "longitude":"-87.9063889",
-      "city":"Milwaukee",
-      "state":"WI"
-   },
-   "Massachusetts General Hospital/Brigham and Women's Hospital/Harvard Medical School Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "NEOMEN/Berkshire Medical Center Program":{
-      "latitude":"42.4500000",
-      "longitude":"-73.2458333",
-      "city":"Pittsfield",
-      "state":"MA"
-   },
-   "University of Michigan Hospitals and Health Centers Program":{
-      "latitude":"42.2708333",
-      "longitude":"-83.7263889",
-      "city":"Ann Arbor",
-      "state":"MI"
-   },
-   "VA Caribbean Healthcare System Program":{
-      "latitude":"18.4683333",
-      "longitude":"-66.1061111",
-      "city":"San Juan",
-      "state":"PR"
-   },
-   "University of Kansas (Wichita)/Salina Program":{
-      "latitude":"38.8402778",
-      "longitude":"-97.6111111",
-      "city":"Salina",
-      "state":"KS"
-   },
-   "Franciscan St Francis Health Program":{
-      "latitude":"39.7683333",
-      "longitude":"-86.1580556",
-      "city":"Indianapolis",
-      "state":"IN"
-   },
-   "Pennsylvania Hospital of the University of Pennsylvania Health System Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "NYCOMEC/HackensackUMC Palisades Program":{
-      "latitude":"40.8041667",
-      "longitude":"-74.0125000",
-      "city":"North Bergen",
-      "state":"NJ"
-   },
-   "Oakwood Hospital Program":{
-      "latitude":"42.3222222",
-      "longitude":"-83.1763889",
-      "city":"Dearborn",
-      "state":"MI"
-   },
-   "University of South Alabama Program":{
-      "latitude":"30.6941667",
-      "longitude":"-88.0430556",
-      "city":"Mobile",
-      "state":"AL"
-   },
-   "OPTI-West/Bakersfield Memorial Hospital Program":{
-      "latitude":"35.3733333",
-      "longitude":"-119.0177778",
-      "city":"Bakersfield",
-      "state":"CA"
-   },
-   "Johns Hopkins University/Bayview Medical Center Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "OMECO/Oklahoma State University HS Program":{
-      "latitude":"36.1538889",
-      "longitude":"-95.9925000",
-      "city":"Tulsa",
-      "state":"OK"
-   },
-   "Grand Rapids Medical Education Partners/Michigan State University Program":{
-      "latitude":"42.9633333",
-      "longitude":"-85.6680556",
-      "city":"Grand Rapids",
-      "state":"MI"
-   },
-   "Children's Hospital-Oakland Program":{
-      "latitude":"37.8044444",
-      "longitude":"-122.2697222",
-      "city":"Oakland",
-      "state":"CA"
-   },
-   "University of Wisconsin Program":{
-      "latitude":"43.0730556",
-      "longitude":"-89.4011111",
-      "city":"Madison",
-      "state":"WI"
-   },
-   "Louisiana State University/Ochsner Clinic Foundation Program":{
-      "latitude":"29.9544444",
-      "longitude":"-90.0750000",
-      "city":"New Orleans",
-      "state":"LA"
-   },
-   "HackensackUMC Mountainside Program":{
-      "latitude":"40.8258333",
-      "longitude":"-74.2094444",
-      "city":"Montclair",
-      "state":"NJ"
-   },
-   "University of Colorado School of Medicine Program A":{
-      "latitude":"39.7294444",
-      "longitude":"-104.8313889",
-      "city":"Aurora",
-      "state":"CO"
-   },
-   "Palmetto Health/University of South Carolina School of Medicine Program":{
-      "latitude":"34.0005556",
-      "longitude":"-81.0350000",
-      "city":"Columbia",
-      "state":"SC"
-   },
-   "Presbyterian Intercommunity Hospital Program":{
-      "latitude":"33.9791667",
-      "longitude":"-118.0319444",
-      "city":"Whittier",
-      "state":"CA"
-   },
-   "HEARTland/Mercy Center-North Iowa Program":{
-      "latitude":"43.1536111",
-      "longitude":"-93.2008333",
-      "city":"Mason City",
-      "state":"IA"
-   },
-   "Ohio State University Hospital Program":{
-      "latitude":"39.9611111",
-      "longitude":"-82.9988889",
-      "city":"Columbus",
-      "state":"OH"
-   },
-   "University of California (San Diego) Program":{
-      "latitude":"32.8472222",
-      "longitude":"-117.2733333",
-      "city":"La Jolla",
-      "state":"CA"
-   },
-   "Detroit Medical Center/Wayne State University (Detroit Receiving Hospital) Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "Icahn School of Medicine at Mount Sinai (New York Eye and Ear Infirmary at Mount Sinai) Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Greater Lawrence Family Health Center Program":{
-      "latitude":"42.7069444",
-      "longitude":"-71.1636111",
-      "city":"Lawrence",
-      "state":"MA"
-   },
-   "Johns Hopkins University/University of Maryland Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "PCOM/UPMC Altoona Program":{
-      "latitude":"40.5186111",
-      "longitude":"-78.3950000",
-      "city":"Altoona",
-      "state":"PA"
-   },
-   "UCLA-San Fernando Valley/VA Greater Los Angeles Program":{
-      "latitude":"34.239389",
-      "longitude":"-118.477083",
-      "city":"North Hills",
-      "state":"CA"
-   },
-   "Good Samaritan Reg Med Ctr/Silver Falls Dermatology Program":{
-      "latitude":"44.9430556",
-      "longitude":"-123.0338889",
-      "city":"Salem",
-      "state":"OR"
-   },
-   "Ochsner Clinic Foundation Program":{
-      "latitude":"29.9544444",
-      "longitude":"-90.0750000",
-      "city":"New Orleans",
-      "state":"LA"
-   },
-   "Mercy Medical Center (Mason City) Program":{
-      "latitude":"43.1536111",
-      "longitude":"-93.2008333",
-      "city":"Mason City",
-      "state":"IA"
-   },
-   "OMECO/Mercy Osteopathic GME Consortium Program":{
-      "latitude":"35.4675000",
-      "longitude":"-97.5161111",
-      "city":"Oklahoma City",
-      "state":"OK"
-   },
-   "Clinica Sierra Vista - Bakersfield Program":{
-      "latitude":"35.3733333",
-      "longitude":"-119.0177778",
-      "city":"Bakersfield",
-      "state":"CA"
-   },
-   "MSOPTI/The Toledo Hospital Program":{
-      "latitude":"41.6638889",
-      "longitude":"-83.5552778",
-      "city":"Toledo",
-      "state":"OH"
-   },
-   "Denver Health Medical Center Program":{
-      "latitude":"39.7391667",
-      "longitude":"-104.9841667",
-      "city":"Denver",
-      "state":"CO"
-   },
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Waukesha":{
-      "latitude":"43.0116667",
-      "longitude":"-88.2313889",
-      "city":"Waukesha",
-      "state":"WI"
-   },
-   "OMNEE/New Hanover Regional Med. Ctr. Program":{
-      "latitude":"34.2255556",
-      "longitude":"-77.9450000",
-      "city":"Wilmington",
-      "state":"NC"
-   },
-   "California Department of Public Health Program":{
-      "latitude":"38.5816667",
-      "longitude":"-121.4933333",
-      "city":"Sacramento",
-      "state":"CA"
-   },
-   "LECOMT/Pinnacle Health Community Gen Osteo Hosp Program":{
-      "latitude":"40.2736111",
-      "longitude":"-76.8847222",
-      "city":"Harrisburg",
-      "state":"PA"
-   },
-   "OMECO/Choctaw Nation Health Services Authority Program":{
-      "latitude":"34.7513889",
-      "longitude":"-95.0477778",
-      "city":"Talihina",
-      "state":"OK"
-   },
-   "OPTI-West/MultiCare Good Samaritan Hosp Program":{
-      "latitude":"47.1855556",
-      "longitude":"-122.2916667",
-      "city":"Puyallup",
-      "state":"WA"
-   },
-   "Burke Rehabilitation Hospital Program":{
-      "latitude":"41.0338889",
-      "longitude":"-73.7633333",
-      "city":"White Plains",
-      "state":"NY"
-   },
-   "Genesis Health System (Quad Cities) Program":{
-      "latitude":"41.5236111",
-      "longitude":"-90.5775000",
-      "city":"Davenport",
-      "state":"IA"
-   },
-   "UPMC Medical Education (Presbyterian Shadyside Hospital) Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "UPMC Medical Education (Erie) Program":{
-      "latitude":"42.1291667",
-      "longitude":"-80.0852778",
-      "city":"Erie",
-      "state":"PA"
-   },
-   "OPTI-West/Casa Colina Centers for Rehab Program":{
-      "latitude":"34.0552778",
-      "longitude":"-117.7513889",
-      "city":"Pomona",
-      "state":"CA"
-   },
-   "NEOMEN/Univ MA (Fitchburg) Family Medicine Program":{
-      "latitude":"42.5833333",
-      "longitude":"-71.8027778",
-      "city":"Fitchburg",
-      "state":"MA"
-   },
-   "Shasta Community Health Center Program":{
-      "latitude":"40.5866667",
-      "longitude":"-122.3905556",
-      "city":"Redding",
-      "state":"CA"
-   },
-   "Kaiser Permanente Hawaii Program":{
-      "latitude":"21.3069444",
-      "longitude":"-157.8583333",
-      "city":"Honolulu",
-      "state":"HI"
-   },
-   "University of Central Florida College of Medicine/HCA Graduate Medical Education Consortium Program":{
-      "latitude":"28.2916667",
-      "longitude":"-81.4077778",
-      "city":"Kissimmee",
-      "state":"FL"
-   },
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Baraboo Rural":{
-      "latitude":"43.0730556",
-      "longitude":"-89.4011111",
-      "city":"Madison",
-      "state":"WI"
-   },
-   "Texas Tech University (Amarillo) Program":{
-      "latitude":"35.2219444",
-      "longitude":"-101.8308333",
-      "city":"Amarillo",
-      "state":"TX"
-   },
-   "PCOM/Albert Einstein Med Ctr Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Seton Hall University School of Health and Medical Sciences at Englewood Hospital and Medical Center":{
-      "latitude":"40.8927778",
-      "longitude":"-73.9730556",
-      "city":"Englewood",
-      "state":"NJ"
-   },
-   "LECOMT/St John's Episcopal Hospital Program":{
-      "latitude":"40.6052778",
-      "longitude":"-73.7555556",
-      "city":"Far Rockaway",
-      "state":"NY"
-   },
-   "CEME/Florida Hosp East Orlando Program":{
-      "latitude":"28.5380556",
-      "longitude":"-81.3794444",
-      "city":"Orlando",
-      "state":"FL"
-   },
-   "Southern Illinois University (Decatur) Program":{
-      "latitude":"39.8402778",
-      "longitude":"-88.9547222",
-      "city":"Decatur",
-      "state":"IL"
-   },
-   "OMECO/Comanche County Memorial Hosp Program":{
-      "latitude":"34.6086111",
-      "longitude":"-98.3900000",
-      "city":"Lawton",
-      "state":"OK"
-   },
-   "Duke University Hospital Program":{
-      "latitude":"35.9938889",
-      "longitude":"-78.8988889",
-      "city":"Durham",
-      "state":"NC"
-   },
-   "Mary Hitchcock Memorial Hospital Program":{
-      "latitude":"43.6422222",
-      "longitude":"-72.2522222",
-      "city":"Lebanon",
-      "state":"NH"
-   },
-   "McLeod Regional Medical Center Program":{
-      "latitude":"34.1952778",
-      "longitude":"-79.7627778",
-      "city":"Florence",
-      "state":"SC"
-   },
-   "St Elizabeth Medical Center Program":{
-      "latitude":"43.1008333",
-      "longitude":"-75.2330556",
-      "city":"Utica",
-      "state":"NY"
-   },
-   "Oakland Physicians Medical Center Program":{
-      "latitude":"42.6388889",
-      "longitude":"-83.2911111",
-      "city":"Pontiac",
-      "state":"MI"
-   },
-   "Sutter Medical Center of Santa Rosa/University of California (San Francisco) Program":{
-      "latitude":"38.4405556",
-      "longitude":"-122.7133333",
-      "city":"Santa Rosa",
-      "state":"CA"
-   },
-   "Kingsbrook Jewish Medical Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Sparrow Hospital Program":{
-      "latitude":"42.7325000",
-      "longitude":"-84.5555556",
-      "city":"Lansing",
-      "state":"MI"
-   },
-   "Drexel University College of Medicine/Hahnemann University Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Resurrection Health Program":{
-      "latitude":"35.1494444",
-      "longitude":"-90.0488889",
-      "city":"Memphis",
-      "state":"TN"
-   },
-   "University of Texas Health Science Center at Houston Program":{
-      "latitude":"29.7630556",
-      "longitude":"-95.3630556",
-      "city":"Houston",
-      "state":"TX"
-   },
-   "Redmond Regional Medical Center Program":{
-      "latitude":"34.2569444",
-      "longitude":"-85.1647222",
-      "city":"Rome",
-      "state":"GA"
-   },
-   "Michigan State University (Flint) Program":{
-      "latitude":"43.0125000",
-      "longitude":"-83.6875000",
-      "city":"Flint",
-      "state":"MI"
-   },
-   "Mount Auburn Hospital Program":{
-      "latitude":"42.3750000",
-      "longitude":"-71.1061111",
-      "city":"Cambridge",
-      "state":"MA"
-   },
-   "Huntington Memorial Hospital Program":{
-      "latitude":"34.1477778",
-      "longitude":"-118.1436111",
-      "city":"Pasadena",
-      "state":"CA"
-   },
-   "Novant Health Program":{
-      "latitude":"35.4866667",
-      "longitude":"-80.8602778",
-      "city":"Cornelius",
-      "state":"NC"
-   },
-   "Genesys Regional Medical Center Program":{
-      "latitude":"42.9275000",
-      "longitude":"-83.6300000",
-      "city":"Grand Blanc",
-      "state":"MI"
-   },
-   "RowanSOM/OPTI/Inspira Health Network Program":{
-      "latitude":"39.4861111",
-      "longitude":"-75.0261111",
-      "city":"Vineland",
-      "state":"NJ"
-   },
-   "Texas Tech University Health Sciences Center Paul L Foster School of Medicine Program":{
-      "latitude":"31.7586111",
-      "longitude":"-106.4863889",
-      "city":"El Paso",
-      "state":"TX"
-   },
-   "Halifax Medical Center Program":{
-      "latitude":"29.2105556",
-      "longitude":"-81.0230556",
-      "city":"Daytona Beach",
-      "state":"FL"
-   },
-   "OPTI West/Montana Family Medicine Program":{
-      "latitude":"45.7833333",
-      "longitude":"-108.5000000",
-      "city":"Billings",
-      "state":"MT"
-   },
-   "Central Iowa Health System (Iowa Methodist Medical Center) Program":{
-      "latitude":"41.6005556",
-      "longitude":"-93.6088889",
-      "city":"Des Moines",
-      "state":"IA"
-   },
-   "Johns Hopkins University School of Medicine Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "Lakeland Health Program":{
-      "latitude":"42.1097222",
-      "longitude":"-86.4800000",
-      "city":"Saint Joseph",
-      "state":"MI"
-   },
-   "MWU/OPTI/Affiliated Dermatology Program":{
-      "latitude":"33.5091667",
-      "longitude":"-111.8983333",
-      "city":"Scottsdale",
-      "state":"AZ"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals (Wheaton Franciscan Healthcare-All Saints) Program":{
-      "latitude":"43.0388889",
-      "longitude":"-87.9063889",
-      "city":"Milwaukee",
-      "state":"WI"
-   },
-   "New York Medical College at Metropolitan Hospital Center Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "University of Illinois College of Medicine at Urbana Program":{
-      "latitude":"40.1163889",
-      "longitude":"-88.2433333",
-      "city":"Champaign",
-      "state":"IL"
-   },
-   "Riverside Regional Medical Center Program":{
-      "latitude":"36.9786111",
-      "longitude":"-76.4283333",
-      "city":"Newport News",
-      "state":"VA"
-   },
-   "Children's Hospital/Beth Israel Deaconess Medical Center/Harvard Medical School Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Gundersen Lutheran Medical Foundation Program":{
-      "latitude":"43.8013889",
-      "longitude":"-91.2394444",
-      "city":"La Crosse",
-      "state":"WI"
-   },
-   "CORE/Fairview Hospital Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "National Rehabilitation Hospital/Washington Hospital Center/Georgetown University HospitalProgram":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "SCS/MSUCOM/McLaren Macomb Program":{
-      "latitude":"42.5972222",
-      "longitude":"-82.8780556",
-      "city":"Mount Clemens",
-      "state":"MI"
-   },
-   "St John Hospital and Medical Center Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "Christ Hospital/University of Cincinnati College of Medicine Program":{
-      "latitude":"39.1619444",
-      "longitude":"-84.4569444",
-      "city":"Cincinnati",
-      "state":"OH"
-   },
-   "Institute of Living/Hartford Hospital Program":{
-      "latitude":"41.7636111",
-      "longitude":"-72.6855556",
-      "city":"Hartford",
-      "state":"CT"
-   },
-   "RowanSOM/OPTI/Kennedy Univ Hosp/Our Lady of Lourdes Program":{
-      "latitude":"39.8266667",
-      "longitude":"-75.0158333",
-      "city":"Stratford",
-      "state":"NJ"
-   },
-   "MSOPTI/Charleston Area Med Ctr Program":{
-      "latitude":"38.3497222",
-      "longitude":"-81.6327778",
-      "city":"Charleston",
-      "state":"WV"
-   },
-   "University of Texas Medical Branch Hospitals (NASA) Program":{
-      "latitude":"29.3011111",
-      "longitude":"-94.7975000",
-      "city":"Galveston",
-      "state":"TX"
-   },
-   "PCOM/Williamsport Hospital/Med Ctr Program":{
-      "latitude":"41.2411111",
-      "longitude":"-77.0013889",
-      "city":"Williamsport",
-      "state":"PA"
-   },
-   "Allegheny Health Network Medical Education Consortium (SVH) Program":{
-      "latitude":"42.1291667",
-      "longitude":"-80.0852778",
-      "city":"Erie",
-      "state":"PA"
-   },
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Eau Claire":{
-      "latitude":"44.8113889",
-      "longitude":"-91.4983333",
-      "city":"Eau Claire",
-      "state":"WI"
-   },
-   "Summa Health System/Barberton Campus Program":{
-      "latitude":"41.0127778",
-      "longitude":"-81.6052778",
-      "city":"Barberton",
-      "state":"OH"
-   },
-   "University of South Dakota Program":{
-      "latitude":"43.5500000",
-      "longitude":"-96.7000000",
-      "city":"Sioux Falls",
-      "state":"SD"
-   },
-   "OMECO/Med Ctr Southeastern OK Program":{
-      "latitude":"33.9938889",
-      "longitude":"-96.3705556",
-      "city":"Durant",
-      "state":"OK"
-   },
-   "Flushing Hospital Medical Center Program":{
-      "latitude":"40.7652778",
-      "longitude":"-73.8177778",
-      "city":"Flushing",
-      "state":"NY"
-   },
-   "University of California (Davis) Health System Program":{
-      "latitude":"38.5816667",
-      "longitude":"-121.4933333",
-      "city":"Sacramento",
-      "state":"CA"
-   },
-   "University of Texas Health Science Center at Tyler Rural Program":{
-      "latitude":"33.1383333",
-      "longitude":"-95.6008333",
-      "city":"Sulphur Springs",
-      "state":"TX"
-   },
-   "MSOPTI/Wheeling Hospital Program":{
-      "latitude":"40.0638889",
-      "longitude":"-80.7211111",
-      "city":"Wheeling",
-      "state":"WV"
-   },
-   "Detroit Medical Center/Wayne State University (Sinai-Grace) Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "Abbott-Northwestern Hospital Program":{
-      "latitude":"44.9800000",
-      "longitude":"-93.2636111",
-      "city":"Minneapolis",
-      "state":"MN"
-   },
-   "HEARTland/Monroe Clinic Program":{
-      "latitude":"42.6011111",
-      "longitude":"-89.6383333",
-      "city":"Monroe",
-      "state":"WI"
-   },
-   "NYCOMEC/Southampton Hospital Program":{
-      "latitude":"40.8841667",
-      "longitude":"-72.3900000",
-      "city":"Southampton",
-      "state":"NY"
-   },
-   "San Joaquin General Hospital Program":{
-      "latitude":"37.8841667",
-      "longitude":"-121.2700000",
-      "city":"French Camp",
-      "state":"CA"
-   },
-   "Schwab Rehabilitation Hospital and Care Network/University of Chicago Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "SCS/MSUCOM/McLaren Greater Lansing Program":{
-      "latitude":"42.7325000",
-      "longitude":"-84.5555556",
-      "city":"Lansing",
-      "state":"MI"
-   },
-   "Hofstra Northwell School of Medicine at Southside Hospital Program":{
-      "latitude":"40.7250000",
-      "longitude":"-73.2458333",
-      "city":"Bay Shore",
-      "state":"NY"
-   },
-   "Ventura County Medical Center Program":{
-      "latitude":"34.2783333",
-      "longitude":"-119.2922222",
-      "city":"Ventura",
-      "state":"CA"
-   },
-   "NEOMEN/Kent Hospital Program":{
-      "latitude":"41.7000000",
-      "longitude":"-71.4166667",
-      "city":"Warwick",
-      "state":"RI"
-   },
-   "Hofstra Northwell School of Medicine at Forest Hills Hospital Program":{
-      "latitude":"40.7161111",
-      "longitude":"-73.8505556",
-      "city":"Forest Hills",
-      "state":"NY"
-   },
-   "Boston VA Healthcare System (Brockton-West Roxbury)/Harvard Medical School Program":{
-      "latitude":"42.0833333",
-      "longitude":"-71.0188889",
-      "city":"Brockton",
-      "state":"MA"
-   },
-   "Pine Rest Christian Mental Health Services Program":{
-      "latitude":"42.9633333",
-      "longitude":"-85.6680556",
-      "city":"Grand Rapids",
-      "state":"MI"
-   },
-   "University of Toledo Program":{
-      "latitude":"41.6638889",
-      "longitude":"-83.5552778",
-      "city":"Toledo",
-      "state":"OH"
-   },
-   "Phoebe Putney Memorial Hospital (Southwest Georgia) Program":{
-      "latitude":"31.5783333",
-      "longitude":"-84.1558333",
-      "city":"Albany",
-      "state":"GA"
-   },
-   "University of Utah Program":{
-      "latitude":"40.7608333",
-      "longitude":"-111.8902778",
-      "city":"Salt Lake City",
-      "state":"UT"
-   },
-   "PCOM/Wright Center for GME Program":{
-      "latitude":"41.4088889",
-      "longitude":"-75.6627778",
-      "city":"Scranton",
-      "state":"PA"
-   },
-   "OPTI-West/Sollus Northwest Program":{
-      "latitude":"46.2511111",
-      "longitude":"-119.9005556",
-      "city":"Grandview",
-      "state":"WA"
-   },
-   "Largo Medical Center Program":{
-      "latitude":"27.9091667",
-      "longitude":"-82.7875000",
-      "city":"Largo",
-      "state":"FL"
-   },
-   "Virginia Commonwealth University Health System (Falls Church) Program":{
-      "latitude":"38.8461111",
-      "longitude":"-77.3066667",
-      "city":"Fairfax",
-      "state":"VA"
-   },
-   "Indiana University School of Medicine Program":{
-      "latitude":"39.7683333",
-      "longitude":"-86.1580556",
-      "city":"Indianapolis",
-      "state":"IN"
-   },
-   "Nebraska Medical Center/Clarkson Regional Health Service Program":{
-      "latitude":"41.2586111",
-      "longitude":"-95.9375000",
-      "city":"Omaha",
-      "state":"NE"
-   },
-   "MultiCare Health System (East Pierce) Program":{
-      "latitude":"47.1855556",
-      "longitude":"-122.2916667",
-      "city":"Puyallup",
-      "state":"WA"
-   },
-   "RowanSOM/OPTI/AHS Morristown Medical Center Program":{
-      "latitude":"40.7966667",
-      "longitude":"-74.4819444",
-      "city":"Morristown",
-      "state":"NJ"
-   },
-   "Louisiana State University (Baton Rouge) Preliminary Program":{
-      "latitude":"30.4505556",
-      "longitude":"-91.1544444",
-      "city":"Baton Rouge",
-      "state":"LA"
-   },
-   "Louisiana State University (Shreveport)/Monroe Program":{
-      "latitude":"32.5091667",
-      "longitude":"-92.1191667",
-      "city":"Monroe",
-      "state":"LA"
-   },
-   "Louisiana State University (Baton Rouge) Program":{
-      "latitude":"30.4505556",
-      "longitude":"-91.1544444",
-      "city":"Baton Rouge",
-      "state":"LA"
-   },
-   "Stanford University Hospital/Kaiser Permanente Medical Center Program":{
-      "latitude":"37.4241667",
-      "longitude":"-122.1650000",
-      "city":"Stanford",
-      "state":"CA"
-   },
-   "Wheeling Hospital Program":{
-      "latitude":"40.0638889",
-      "longitude":"-80.7211111",
-      "city":"Wheeling",
-      "state":"WV"
-   },
-   "Allegiance Health Program":{
-      "latitude":"42.2458333",
-      "longitude":"-84.4013889",
-      "city":"Jackson",
-      "state":"MI"
-   },
-   "Beth Israel Deaconess Medical Center Program":{
-      "latitude":"42.0833333",
-      "longitude":"-71.0188889",
-      "city":"Brockton",
-      "state":"MA"
-   },
-   "RMOPTI/Ogden Regional Medical Center Program":{
-      "latitude":"41.2230556",
-      "longitude":"-111.9730556",
-      "city":"Ogden",
-      "state":"UT"
-   },
-   "Billings Clinic Program":{
-      "latitude":"45.7833333",
-      "longitude":"-108.5000000",
-      "city":"Billings",
-      "state":"MT"
-   },
-   "OMECO/Southwest Medical Center Program":{
-      "latitude":"35.4675000",
-      "longitude":"-97.5161111",
-      "city":"Oklahoma City",
-      "state":"OK"
-   },
-   "Kootenai Health Program":{
-      "latitude":"47.6777778",
-      "longitude":"-116.7794444",
-      "city":"Coeur d'Alene",
-      "state":"ID"
-   },
-   "LECOMT/Memorial Hospital Program":{
-      "latitude":"39.9625000",
-      "longitude":"-76.7280556",
-      "city":"York",
-      "state":"PA"
-   },
-   "Presence Saints Mary and Elizabeth Medical Center Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "Bon Secours Richmond Health System (Blackstone Rural) Program":{
-      "latitude":"37.5058333",
-      "longitude":"-77.6494444",
-      "city":"Midlothian",
-      "state":"VA"
-   },
-   "Cook County Hospital Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "University of Kentucky College of Medicine (Morehead) Rural Program":{
-      "latitude":"38.1838889",
-      "longitude":"-83.4327778",
-      "city":"Morehead",
-      "state":"KY"
-   },
-   "University of Nevada School of Medicine Program":{
-      "latitude":"39.5297222",
-      "longitude":"-119.8127778",
-      "city":"Reno",
-      "state":"NV"
-   },
-   "University of Pennsylvania Health System Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Griffin Hospital Program":{
-      "latitude":"41.3205556",
-      "longitude":"-73.0894444",
-      "city":"Derby",
-      "state":"CT"
-   },
-   "OMNEE/Bluefield Regional Medical Center Program":{
-      "latitude":"37.2697222",
-      "longitude":"-81.2225000",
-      "city":"Bluefield",
-      "state":"WV"
-   },
-   "University of Tennessee College of Medicine (Nashville) Program":{
-      "latitude":"36.1658333",
-      "longitude":"-86.7844444",
-      "city":"Nashville",
-      "state":"TN"
-   },
-   "Case Western Reserve University (MetroHealth) Preliminary Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "New York-Presbyterian Hospital (Cornell Campus) Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Maine-Dartmouth Family Medicine Program":{
-      "latitude":"44.3105556",
-      "longitude":"-69.7800000",
-      "city":"Augusta",
-      "state":"ME"
-   },
-   "Brandon Regional Hospital Program":{
-      "latitude":"27.9375000",
-      "longitude":"-82.2861111",
-      "city":"Brandon",
-      "state":"FL"
-   },
-   "STILL OPTI/Blessing Health System Program":{
-      "latitude":"39.9355556",
-      "longitude":"-91.4097222",
-      "city":"Quincy",
-      "state":"IL"
-   },
-   "LECOMT/St Petersburg General Hospital Program":{
-      "latitude":"27.7705556",
-      "longitude":"-82.6794444",
-      "city":"St Petersburg",
-      "state":"FL"
-   },
-   "Bergen Regional Medical Center Program":{
-      "latitude":"40.9444444",
-      "longitude":"-74.0758333",
-      "city":"Paramus",
-      "state":"NJ"
-   },
-   "Johns Hopkins Bloomberg School of Public Health Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "Berkshire Medical Center Program":{
-      "latitude":"42.4500000",
-      "longitude":"-73.2458333",
-      "city":"Pittsfield",
-      "state":"MA"
-   },
-   "San Mateo County Behavioral Health and Recovery Services Program":{
-      "latitude":"37.5630556",
-      "longitude":"-122.3244444",
-      "city":"San Mateo",
-      "state":"CA"
-   },
-   "Greater Baltimore Medical Center Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "UCLA-Kern Medical Center Program":{
-      "latitude":"35.3733333",
-      "longitude":"-119.0177778",
-      "city":"Bakersfield",
-      "state":"CA"
-   },
-   "Meharry Medical College Program":{
-      "latitude":"36.1658333",
-      "longitude":"-86.7844444",
-      "city":"Nashville",
-      "state":"TN"
-   },
-   "Riverside Community Hospital/University of California Riverside School of Medicine Program":{
-      "latitude":"33.9533333",
-      "longitude":"-117.3952778",
-      "city":"Riverside",
-      "state":"CA"
-   },
-   "Baptist Health Madisonville Program":{
-      "latitude":"37.3280556",
-      "longitude":"-87.4988889",
-      "city":"Madisonville",
-      "state":"KY"
-   },
-   "Icahn School of Medicine at Mount Sinai (Queens Hospital Center) Program":{
-      "latitude":"40.6913889",
-      "longitude":"-73.8061111",
-      "city":"Jamaica",
-      "state":"NY"
-   },
-   "Rush University Medical Center Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "OPTI-West/Arrowhead Regional Medical Center Program":{
-      "latitude":"34.0738889",
-      "longitude":"-117.3127778",
-      "city":"Colton",
-      "state":"CA"
-   },
-   "PCOM/Geisinger Wyoming Valley Program":{
-      "latitude":"41.2458333",
-      "longitude":"-75.8816667",
-      "city":"Wilkes-Barre",
-      "state":"PA"
-   },
-   "LECOMT/Wright Center for GME Program":{
-      "latitude":"41.4088889",
-      "longitude":"-75.6627778",
-      "city":"Scranton",
-      "state":"PA"
-   },
-   "MWU/OPTI/Presence Resurrection Medical Center Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "Kendall Regional Medical Center Program":{
-      "latitude":"25.7738889",
-      "longitude":"-80.1938889",
-      "city":"Miami",
-      "state":"FL"
-   },
-   "Spokane Teaching Health Center Program":{
-      "latitude":"47.6588889",
-      "longitude":"-117.4250000",
-      "city":"Spokane",
-      "state":"WA"
-   },
-   "CORE/Southern Ohio Med Ctr Program":{
-      "latitude":"38.7316667",
-      "longitude":"-82.9977778",
-      "city":"Portsmouth",
-      "state":"OH"
-   },
-   "Beth Israel Deaconess Medical Center/Harvard Medical School Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Baptist Memorial Hospital Program":{
-      "latitude":"33.4955556",
-      "longitude":"-88.4272222",
-      "city":"Columbus",
-      "state":"MS"
-   },
-   "University of Texas RGV Program":{
-      "latitude":"26.1902778",
-      "longitude":"-97.6958333",
-      "city":"Harlingen",
-      "state":"TX"
-   },
-   "OPTI-West/Arrowhead Regional Med Ctr Program":{
-      "latitude":"34.0738889",
-      "longitude":"-117.3127778",
-      "city":"Colton",
-      "state":"CA"
-   },
-   "University of Washington School of Medicine Program":{
-      "latitude":"47.6063889",
-      "longitude":"-122.3308333",
-      "city":"Seattle",
-      "state":"WA"
-   },
-   "Greenwich Hospital Association Program":{
-      "latitude":"41.0263889",
-      "longitude":"-73.6288889",
-      "city":"Greenwich",
-      "state":"CT"
-   },
-   "New York City Department of Health and Mental Hygiene Program":{
-      "latitude":"40.7447222",
-      "longitude":"-73.9491667",
-      "city":"Long Island City",
-      "state":"NY"
-   },
-   "Howard University Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "Norwalk Hospital/Yale University Program":{
-      "latitude":"41.1175000",
-      "longitude":"-73.4083333",
-      "city":"Norwalk",
-      "state":"CT"
-   },
-   "Scott and White Memorial Hospital (Round Rock) Program":{
-      "latitude":"30.5080556",
-      "longitude":"-97.6786111",
-      "city":"Round Rock",
-      "state":"TX"
-   },
-   "NYCOMEC/Newark Beth Israel MC/St. Barnabas HS Program":{
-      "latitude":"40.7355556",
-      "longitude":"-74.1727778",
-      "city":"Newark",
-      "state":"NJ"
-   },
-   "University of Nebraska Medical Center College of Medicine Rural Program":{
-      "latitude":"41.2586111",
-      "longitude":"-95.9375000",
-      "city":"Omaha",
-      "state":"NE"
-   },
-   "RowanSOM/OPTI/Jersey Shore University Medical Center Program":{
-      "latitude":"40.2000000",
-      "longitude":"-74.0283333",
-      "city":"Neptune City",
-      "state":"NJ"
-   },
-   "Creighton University Program":{
-      "latitude":"41.2586111",
-      "longitude":"-95.9375000",
-      "city":"Omaha",
-      "state":"NE"
-   },
-   "University of Massachusetts Program":{
-      "latitude":"42.2625000",
-      "longitude":"-71.8027778",
-      "city":"Worcester",
-      "state":"MA"
-   },
-   "Lahey Clinic Program":{
-      "latitude":"42.5047222",
-      "longitude":"-71.1961111",
-      "city":"Burlington",
-      "state":"MA"
-   },
-   "Montefiore - Mount Vernon Hospital Program":{
-      "latitude":"40.9125000",
-      "longitude":"-73.8375000",
-      "city":"Mount Vernon",
-      "state":"NY"
-   },
-   "NYCOMEC/Ellis Hospital McClellan Campus Program":{
-      "latitude":"42.8141667",
-      "longitude":"-73.9400000",
-      "city":"Schenectady",
-      "state":"NY"
-   },
-   "AtlantiCare Regional Medical Center Program":{
-      "latitude":"39.3641667",
-      "longitude":"-74.4233333",
-      "city":"Atlantic City",
-      "state":"NJ"
-   },
-   "OMECO/Northeastern Health System Program":{
-      "latitude":"35.9152778",
-      "longitude":"-94.9697222",
-      "city":"Tahlequah",
-      "state":"OK"
-   },
-   "Texas OPTI/Weatherford Regional MC Program":{
-      "latitude":"32.7591667",
-      "longitude":"-97.7969444",
-      "city":"Weatherford",
-      "state":"TX"
-   },
-   "A-OPTIC/The Medical Center Program":{
-      "latitude":"36.9902778",
-      "longitude":"-86.4436111",
-      "city":"Bowling Green",
-      "state":"KY"
-   },
-   "SCS/MSUCOM/St John Providence Health System-Osteo Div Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "Henry Ford Hospital Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "University of Texas Medical Branch Hospitals Program":{
-      "latitude":"29.3011111",
-      "longitude":"-94.7975000",
-      "city":"Galveston",
-      "state":"TX"
-   },
-   "St Luke's Hospital/Warren Hospital Program":{
-      "latitude":"40.6936111",
-      "longitude":"-75.1905556",
-      "city":"Phillipsburg",
-      "state":"NJ"
-   },
-   "Damas Hospital/Ponce School of Medicine Program":{
-      "latitude":"18.0130556",
-      "longitude":"-66.6144444",
-      "city":"Ponce",
-      "state":"PR"
-   },
-   "Icahn School of Medicine at Mount Sinai (Downtown) Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Newark Beth Israel Medical Center Program":{
-      "latitude":"40.7355556",
-      "longitude":"-74.1727778",
-      "city":"Newark",
-      "state":"NJ"
-   },
-   "University of Alabama Medical Center (Huntsville) Program":{
-      "latitude":"34.7302778",
-      "longitude":"-86.5861111",
-      "city":"Huntsville",
-      "state":"AL"
-   },
-   "MWU/OPTI/Advocate Christ Hospital Medical Ctr Program":{
-      "latitude":"41.7344444",
-      "longitude":"-87.7313889",
-      "city":"Hometown",
-      "state":"IL"
-   },
-   "Hofstra Northwell School of Medicine at Glen Cove Hospital Program":{
-      "latitude":"40.8622222",
-      "longitude":"-73.6341667",
-      "city":"Glen Cove",
-      "state":"NY"
-   },
-   "University of Wisconsin (Eau Claire) Program":{
-      "latitude":"44.8113889",
-      "longitude":"-91.4983333",
-      "city":"Eau Claire",
-      "state":"WI"
-   },
-   "OMNEE/Memorial Medical Center Program":{
-      "latitude":"32.3122222",
-      "longitude":"-106.7777778",
-      "city":"Las Cruces",
-      "state":"NM"
-   },
-   "VCU/Riverside Regional Medical Center Program":{
-      "latitude":"36.9786111",
-      "longitude":"-76.4283333",
-      "city":"Newport News",
-      "state":"VA"
-   },
-   "A-OPTIC/Alaska Family Medicine Residency/Providence Program":{
-      "latitude":"61.2180556",
-      "longitude":"-149.9002778",
-      "city":"Anchorage",
-      "state":"AK"
-   },
-   "St Mary Mercy Hospital Program":{
-      "latitude":"42.3683333",
-      "longitude":"-83.3527778",
-      "city":"Livonia",
-      "state":"MI"
-   },
-   "University of Miami Miller School of Medicine/Holy Cross Hospital Program":{
-      "latitude":"26.1219444",
-      "longitude":"-80.1436111",
-      "city":"Fort Lauderdale",
-      "state":"FL"
-   },
-   "Pomona Valley Hospital Medical Center Program":{
-      "latitude":"34.0552778",
-      "longitude":"-117.7513889",
-      "city":"Pomona",
-      "state":"CA"
-   },
-   "New York University School of Medicine/Hospital for Joint Diseases Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Crozer-Chester Medical Center Program":{
-      "latitude":"39.9305556",
-      "longitude":"-75.3205556",
-      "city":"Springfield",
-      "state":"PA"
-   },
-   "St Vincent Hospitals and Health Care Center Program":{
-      "latitude":"39.7683333",
-      "longitude":"-86.1580556",
-      "city":"Indianapolis",
-      "state":"IN"
-   },
-   "University of Tennessee (Nashville) Program":{
-      "latitude":"36.1658333",
-      "longitude":"-86.7844444",
-      "city":"Nashville",
-      "state":"TN"
-   },
-   "University of Washington Program":{
-      "latitude":"47.6063889",
-      "longitude":"-122.3308333",
-      "city":"Seattle",
-      "state":"WA"
-   },
-   "Mercy Health System Program":{
-      "latitude":"42.6827778",
-      "longitude":"-89.0186111",
-      "city":"Janesville",
-      "state":"WI"
-   },
-   "Emory University School of Medicine Program":{
-      "latitude":"33.7488889",
-      "longitude":"-84.3880556",
-      "city":"Atlanta",
-      "state":"GA"
-   },
-   "HealthPartners Institute for Education and Research/Regions Hospital Program":{
-      "latitude":"44.9444444",
-      "longitude":"-93.0930556",
-      "city":"St Paul",
-      "state":"MN"
-   },
-   "A-OPTIC/St Claire Regional Medical Center Program":{
-      "latitude":"38.1838889",
-      "longitude":"-83.4327778",
-      "city":"Morehead",
-      "state":"KY"
-   },
-   "University of South Florida Morsani Program":{
-      "latitude":"27.9472222",
-      "longitude":"-82.4586111",
-      "city":"Tampa",
-      "state":"FL"
-   },
-   "A-OPTIC/University of Mississippi MC Program":{
-      "latitude":"32.2986111",
-      "longitude":"-90.1847222",
-      "city":"Jackson",
-      "state":"MS"
-   },
-   "PCOM/Gwinnett Health Systems Program":{
-      "latitude":"33.9561111",
-      "longitude":"-83.9880556",
-      "city":"Lawrenceville",
-      "state":"GA"
-   },
-   "Athens Regional Medical Center Program":{
-      "latitude":"33.9608333",
-      "longitude":"-83.3780556",
-      "city":"Athens",
-      "state":"GA"
-   },
-   "University of North Dakota (Bismarck) Program":{
-      "latitude":"46.8083333",
-      "longitude":"-100.7833333",
-      "city":"Bismarck",
-      "state":"ND"
-   },
-   "PeaceHealth Southwest Medical Center Program":{
-      "latitude":"45.6388889",
-      "longitude":"-122.6602778",
-      "city":"Vancouver",
-      "state":"WA"
-   },
-   "Family Medicine Residency of Idaho Rural Program":{
-      "latitude":"43.6136111",
-      "longitude":"-116.2025000",
-      "city":"Boise",
-      "state":"ID"
-   },
-   "Roger Williams Medical Center Program":{
-      "latitude":"41.8238889",
-      "longitude":"-71.4133333",
-      "city":"Providence",
-      "state":"RI"
-   },
-   "CORE/Mercy St Vincent MC Program":{
-      "latitude":"41.6638889",
-      "longitude":"-83.5552778",
-      "city":"Toledo",
-      "state":"OH"
-   },
-   "University of North Carolina Hospitals Program":{
-      "latitude":"35.9130556",
-      "longitude":"-79.0561111",
-      "city":"Chapel Hill",
-      "state":"NC"
-   },
-   "Children's Hospital Medical Center of Akron/NEOMED Program":{
-      "latitude":"41.0813889",
-      "longitude":"-81.5191667",
-      "city":"Akron",
-      "state":"OH"
-   },
-   "St Vincent's East Program":{
-      "latitude":"33.5205556",
-      "longitude":"-86.8025000",
-      "city":"Birmingham",
-      "state":"AL"
-   },
-   "Albany Medical Center Program":{
-      "latitude":"42.7469444",
-      "longitude":"-73.7594444",
-      "city":"Latham",
-      "state":"NY"
-   },
-   "University of North Dakota School of Medicine and Health Sciences (Hettinger) Program":{
-      "latitude":"46.0013889",
-      "longitude":"-102.6363889",
-      "city":"Hettinger",
-      "state":"ND"
-   },
-   "Louisiana State University (Lake Charles) Program":{
-      "latitude":"30.2263889",
-      "longitude":"-93.2172222",
-      "city":"Lake Charles",
-      "state":"LA"
-   },
-   "Bronx-Lebanon Hospital Center Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "Hofstra Northwell School of Medicine Program":{
-      "latitude":"40.8005556",
-      "longitude":"-73.7288889",
-      "city":"Great Neck",
-      "state":"NY"
-   },
-   "University Hospitals and Clinics/Louisiana State University (Lafayette) Program":{
-      "latitude":"30.2238889",
-      "longitude":"-92.0197222",
-      "city":"Lafayette",
-      "state":"LA"
-   },
-   "University of Florida College of Medicine Program":{
-      "latitude":"29.6513889",
-      "longitude":"-82.3250000",
-      "city":"Gainesville",
-      "state":"FL"
-   },
-   "University of Florida (Orlando) Program":{
-      "latitude":"28.5380556",
-      "longitude":"-81.3794444",
-      "city":"Orlando",
-      "state":"FL"
-   },
-   "RowanSOM/OPTI/AHS Overlook MC Program":{
-      "latitude":"40.7413889",
-      "longitude":"-74.3600000",
-      "city":"Summit",
-      "state":"NJ"
-   },
-   "Southern Illinois University (Carbondale) Program":{
-      "latitude":"37.7272222",
-      "longitude":"-89.2166667",
-      "city":"Carbondale",
-      "state":"IL"
-   },
-   "Maine Medical Center Program":{
-      "latitude":"43.6413889",
-      "longitude":"-70.2413889",
-      "city":"South Portland",
-      "state":"ME"
-   },
-   "Allegheny Health Network Medical Education Consortium (FH) Program":{
-      "latitude":"40.4211111",
-      "longitude":"-79.7883333",
-      "city":"Monroeville",
-      "state":"PA"
-   },
-   "University of California (San Diego)/San Diego State University Program":{
-      "latitude":"32.8472222",
-      "longitude":"-117.2733333",
-      "city":"La Jolla",
-      "state":"CA"
-   },
-   "Loyola University Medical Center Program":{
-      "latitude":"41.8791667",
-      "longitude":"-87.8430556",
-      "city":"Maywood",
-      "state":"IL"
-   },
-   "Mercy Hospital (St Louis) Program":{
-      "latitude":"38.6272222",
-      "longitude":"-90.1977778",
-      "city":"St Louis",
-      "state":"MO"
-   },
-   "MetroWest Medical Center Program":{
-      "latitude":"42.2791667",
-      "longitude":"-71.4166667",
-      "city":"Framingham",
-      "state":"MA"
-   },
-   "Albert Einstein Healthcare Network Preliminary Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "LECOMT/Parma Medical Center Program":{
-      "latitude":"41.4047222",
-      "longitude":"-81.7230556",
-      "city":"Parma",
-      "state":"OH"
-   },
-   "Community Health of Central Washington Program":{
-      "latitude":"46.6022222",
-      "longitude":"-120.5047222",
-      "city":"Yakima",
-      "state":"WA"
-   },
-   "TOMEC/Merit Health Wesley Program":{
-      "latitude":"31.3269444",
-      "longitude":"-89.2902778",
-      "city":"Hattiesburg",
-      "state":"MS"
-   },
-   "Louisiana State University School of Medicine Program":{
-      "latitude":"29.9544444",
-      "longitude":"-90.0750000",
-      "city":"New Orleans",
-      "state":"LA"
-   },
-   "STILL OPTI/Northeast Regional Medical Center Program":{
-      "latitude":"40.1947222",
-      "longitude":"-92.5830556",
-      "city":"Kirksville",
-      "state":"MO"
-   },
-   "Raritan Bay Medical Center Program":{
-      "latitude":"40.5066667",
-      "longitude":"-74.2658333",
-      "city":"Perth Amboy",
-      "state":"NJ"
-   },
-   "Valley Children's Healthcare Program":{
-      "latitude":"36.9613889",
-      "longitude":"-120.0597222",
-      "city":"Madera",
-      "state":"CA"
-   },
-   "Wright State University Boonshoft School of Medicine Program":{
-      "latitude":"39.7588889",
-      "longitude":"-84.1916667",
-      "city":"Dayton",
-      "state":"OH"
-   },
-   "LECOMT/Washington Health System Program":{
-      "latitude":"40.1738889",
-      "longitude":"-80.2463889",
-      "city":"Washington",
-      "state":"PA"
-   },
-   "Johns Hopkins Bloomberg School of Public Health Program A":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "LECOMT/Dermatology Residency of Orlando Program":{
-      "latitude":"28.6275000",
-      "longitude":"-81.3633333",
-      "city":"Maitland",
-      "state":"FL"
-   },
-   "Oakwood Heritage Hospital Program":{
-      "latitude":"42.2408333",
-      "longitude":"-83.2697222",
-      "city":"Taylor",
-      "state":"MI"
-   },
-   "Chicago Medical School at Rosalind Franklin University of Medicine and Science Program":{
-      "latitude":"42.3255556",
-      "longitude":"-87.8411111",
-      "city":"North Chicago",
-      "state":"IL"
-   },
-   "Easton Hospital Program":{
-      "latitude":"40.6883333",
-      "longitude":"-75.2211111",
-      "city":"Easton",
-      "state":"PA"
-   },
-   "Richmond University Medical Center Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Cambridge Health Alliance Program":{
-      "latitude":"42.3750000",
-      "longitude":"-71.1061111",
-      "city":"Cambridge",
-      "state":"MA"
-   },
-   "PCOM/Mercy Catholic Medical Center Program":{
-      "latitude":"39.9183333",
-      "longitude":"-75.2594444",
-      "city":"Darby",
-      "state":"PA"
-   },
-   "Western Reserve Health Education/NEOMED Program":{
-      "latitude":"41.0997222",
-      "longitude":"-80.6497222",
-      "city":"Youngstown",
-      "state":"OH"
-   },
-   "HEARTland/U of Minnesota Mankato Program":{
-      "latitude":"44.1636111",
-      "longitude":"-93.9991667",
-      "city":"Mankato",
-      "state":"MN"
-   },
-   "University of Illinois College of Medicine at Chicago (Metropolitan Group) Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "Methodist Hospital (Houston) Program":{
-      "latitude":"29.7630556",
-      "longitude":"-95.3630556",
-      "city":"Houston",
-      "state":"TX"
-   },
-   "PCOM/Lower Bucks Hospital Program":{
-      "latitude":"40.1005556",
-      "longitude":"-74.8522222",
-      "city":"Bristol",
-      "state":"PA"
-   },
-   "OPTI-West/Community Memorial Health System Program":{
-      "latitude":"34.2783333",
-      "longitude":"-119.2922222",
-      "city":"Ventura",
-      "state":"CA"
-   },
-   "Hospital de la Concepcion Program":{
-      "latitude":"18.0836111",
-      "longitude":"-67.0452778",
-      "city":"San German",
-      "state":"PR"
-   },
-   "NYCOMEC/Wyckoff Heights Medical Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals (Fox Valley) Program":{
-      "latitude":"44.2619444",
-      "longitude":"-88.4152778",
-      "city":"Appleton",
-      "state":"WI"
-   },
-   "University of Arizona College of Medicine-Phoenix Program":{
-      "latitude":"33.4483333",
-      "longitude":"-112.0733333",
-      "city":"Phoenix",
-      "state":"AZ"
-   },
-   "University of South Florida Morsani (James A Haley Veterans Hospital) Program":{
-      "latitude":"27.9472222",
-      "longitude":"-82.4586111",
-      "city":"Tampa",
-      "state":"FL"
-   },
-   "Oakwood Annapolis Hospital Program":{
-      "latitude":"42.2813889",
-      "longitude":"-83.3863889",
-      "city":"Wayne",
-      "state":"MI"
-   },
-   "New York Presbyterian Hospital (Columbia and Cornell Campus) Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
+      "latitude":"36.7477778",
+      "acgme":"4000521018"
    },
    "University of California Riverside School of Medicine Program/Desert Regional Medical Center Program":{
-      "latitude":"33.8302778",
       "longitude":"-116.5444444",
+      "state":"CA",
       "city":"Palm Springs",
-      "state":"CA"
-   },
-   "University of Arizona College of Medicine at South Campus Program":{
-      "latitude":"32.2216667",
-      "longitude":"-110.9258333",
-      "city":"Tucson",
-      "state":"AZ"
-   },
-   "Cedars-Sinai Medical Center/Harbor/UCLA Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "Anne Arundel Medical Center Program":{
-      "latitude":"38.9783333",
-      "longitude":"-76.4925000",
-      "city":"Annapolis",
-      "state":"MD"
-   },
-   "Hartford Hospital Program":{
-      "latitude":"41.7636111",
-      "longitude":"-72.6855556",
-      "city":"Hartford",
-      "state":"CT"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals Program":{
-      "latitude":"43.0388889",
-      "longitude":"-87.9063889",
-      "city":"Milwaukee",
-      "state":"WI"
-   },
-   "Emory University Program":{
-      "latitude":"33.9461111",
-      "longitude":"-84.3347222",
-      "city":"Dunwoody",
-      "state":"GA"
-   },
-   "KCU-GMEC/Via Christi Regional Medical Center Program":{
-      "latitude":"37.6922222",
-      "longitude":"-97.3372222",
-      "city":"Wichita",
-      "state":"KS"
-   },
-   "Carolinas Medical Center Program":{
-      "latitude":"35.2269444",
-      "longitude":"-80.8433333",
-      "city":"Charlotte",
-      "state":"NC"
-   },
-   "Atlantic Health Program":{
-      "latitude":"40.7966667",
-      "longitude":"-74.4819444",
-      "city":"Morristown",
-      "state":"NJ"
-   },
-   "PCOM/Hunterdon Medical Center Program":{
-      "latitude":"40.5122222",
-      "longitude":"-74.8597222",
-      "city":"Flemington",
-      "state":"NJ"
-   },
-   "Cahaba Medical Care, P.C. Program":{
-      "latitude":"32.9444444",
-      "longitude":"-87.1386111",
-      "city":"Centreville",
-      "state":"AL"
-   },
-   "University of Texas RGV (DHR) Program":{
-      "latitude":"26.3013889",
-      "longitude":"-98.1630556",
-      "city":"Edinburg",
-      "state":"TX"
-   },
-   "Stony Brook Medicine/University Hospital Program":{
-      "latitude":"40.9463889",
-      "longitude":"-73.0697222",
-      "city":"Port Jefferson",
-      "state":"NY"
-   },
-   "SCS/MSUCOM/McLaren Oakland Program":{
-      "latitude":"42.6388889",
-      "longitude":"-83.2911111",
-      "city":"Pontiac",
-      "state":"MI"
-   },
-   "University of Tennessee/Methodist Healthcare Program":{
-      "latitude":"35.1494444",
-      "longitude":"-90.0488889",
-      "city":"Memphis",
-      "state":"TN"
-   },
-   "TOMEC/Wellmont Lonesome Pine Hosp Program":{
-      "latitude":"36.9333333",
-      "longitude":"-82.6291667",
-      "city":"Norton",
-      "state":"VA"
-   },
-   "UCLA Medical Center/Olive View Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "Baylor Scott & White Medical Center-Garland Program":{
-      "latitude":"32.9125000",
-      "longitude":"-96.6386111",
-      "city":"Garland",
-      "state":"TX"
-   },
-   "University of Washington [Boise] Program":{
-      "latitude":"43.6136111",
-      "longitude":"-116.2025000",
-      "city":"Boise",
-      "state":"ID"
-   },
-   "University at Buffalo (Catholic Health System--Sisters of Charity) Program":{
-      "latitude":"42.8863889",
-      "longitude":"-78.8786111",
-      "city":"Buffalo",
-      "state":"NY"
-   },
-   "University of Illinois College of Medicine (Rockford) Rural Program":{
-      "latitude":"41.8388889",
-      "longitude":"-89.4794444",
-      "city":"Dixon",
-      "state":"IL"
-   },
-   "Massachusetts General Hospital/Brigham and Women\u2019s Hospital/Harvard Medical School Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "SCS/MSUCOM/Garden City Hospital Program":{
-      "latitude":"42.4852778",
-      "longitude":"-83.3772222",
-      "city":"Farmington Hills",
-      "state":"MI"
-   },
-   "University of Michigan Program":{
-      "latitude":"42.2708333",
-      "longitude":"-83.7263889",
-      "city":"Ann Arbor",
-      "state":"MI"
-   },
-   "LECOMT/UH Elyria Medical Center Program":{
-      "latitude":"41.3683333",
-      "longitude":"-82.1077778",
-      "city":"Elyria",
-      "state":"OH"
-   },
-   "RMOPTI/Peak Vista Community Health Centers Program":{
-      "latitude":"38.8338889",
-      "longitude":"-104.8208333",
-      "city":"Colorado Springs",
-      "state":"CO"
-   },
-   "North Colorado Medical Center Sterling Rural Program":{
-      "latitude":"40.4233333",
-      "longitude":"-104.7086111",
-      "city":"Greeley",
-      "state":"CO"
-   },
-   "Rutgers Robert Wood Johnson Medical School Program":{
-      "latitude":"40.4991667",
-      "longitude":"-74.3994444",
-      "city":"Piscataway",
-      "state":"NJ"
-   },
-   "Southern Illinois University (Quincy) Program":{
-      "latitude":"39.9355556",
-      "longitude":"-91.4097222",
-      "city":"Quincy",
-      "state":"IL"
-   },
-   "University of Texas Health Science Center at Houston (Lyndon B Johnson General Hospital) Program":{
-      "latitude":"29.7630556",
-      "longitude":"-95.3630556",
-      "city":"Houston",
-      "state":"TX"
-   },
-   "Seton Hall University School of Health and Medical Sciences (St Francis) Program":{
-      "latitude":"40.2169444",
-      "longitude":"-74.7433333",
-      "city":"Trenton",
-      "state":"NJ"
-   },
-   "University of Texas Health Science Center at Tyler Program":{
-      "latitude":"32.3511111",
-      "longitude":"-95.3008333",
-      "city":"Tyler",
-      "state":"TX"
-   },
-   "Wright State University Program":{
-      "latitude":"39.6894444",
-      "longitude":"-84.1688889",
-      "city":"Kettering",
-      "state":"OH"
-   },
-   "University of Chicago/University of Illinois College of Medicine at Chicago Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "NYCOMEC/Maimonides Med Ctr Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Creedmoor Psychiatric Center Program":{
-      "latitude":"40.7266667",
-      "longitude":"-73.7419444",
-      "city":"Queens Village",
-      "state":"NY"
-   },
-   "Providence Health & Services - Oregon/Milwaukie Hospital Program":{
-      "latitude":"45.4463889",
-      "longitude":"-122.6380556",
-      "city":"Milwaukie",
-      "state":"OR"
-   },
-   "Spartanburg Regional Healthcare System Program":{
-      "latitude":"34.9494444",
-      "longitude":"-81.9322222",
-      "city":"Spartanburg",
-      "state":"SC"
-   },
-   "University of Wyoming (Casper) Program":{
-      "latitude":"42.8666667",
-      "longitude":"-106.3125000",
-      "city":"Casper",
-      "state":"WY"
-   },
-   "University of Miami/JFK Medical Center Palm Beach Regional GME Consortium Program":{
-      "latitude":"26.5905556",
-      "longitude":"-80.1011111",
-      "city":"Atlantis",
-      "state":"FL"
-   },
-   "University of Central Florida College of Medicine/HCA GME Consortium (Ocala) Program":{
-      "latitude":"29.1869444",
-      "longitude":"-82.1402778",
-      "city":"Ocala",
-      "state":"FL"
-   },
-   "Sparrow Hospital/Michigan State University Program":{
-      "latitude":"42.7369444",
-      "longitude":"-84.4838889",
-      "city":"East Lansing",
-      "state":"MI"
-   },
-   "CORE/Grandview Hosp & Med Ctr Program":{
-      "latitude":"39.7588889",
-      "longitude":"-84.1916667",
-      "city":"Dayton",
-      "state":"OH"
-   },
-   "University of Kentucky College of Medicine Program A":{
-      "latitude":"37.9886111",
-      "longitude":"-84.4777778",
-      "city":"Lexington",
-      "state":"KY"
-   },
-   "Cooper Hospital-University Medical Center Program":{
-      "latitude":"39.9258333",
-      "longitude":"-75.1200000",
-      "city":"Camden",
-      "state":"NJ"
-   },
-   "Still OPTI/Wright Ctr National Family Med-Virginia Garcia Program":{
-      "latitude":"45.5230556",
-      "longitude":"-122.9886111",
-      "city":"Hillsboro",
-      "state":"OR"
-   },
-   "Eisenhower Medical Center Program":{
-      "latitude":"33.7397222",
-      "longitude":"-116.4119444",
-      "city":"Rancho Mirage",
-      "state":"CA"
-   },
-   "OMNEE/Carilion Clinic Program":{
-      "latitude":"37.2708333",
-      "longitude":"-79.9416667",
-      "city":"Roanoke",
-      "state":"VA"
-   },
-   "St Vincent Hospital Program":{
-      "latitude":"42.2625000",
-      "longitude":"-71.8027778",
-      "city":"Worcester",
-      "state":"MA"
-   },
-   "Kettering Health Network Program":{
-      "latitude":"39.6894444",
-      "longitude":"-84.1688889",
-      "city":"Kettering",
-      "state":"OH"
-   },
-   "Case Western Reserve University/University Hospitals Cleveland Medical Center Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "University of Tennessee College of Medicine-Chattanooga Program":{
-      "latitude":"35.0455556",
-      "longitude":"-85.3097222",
-      "city":"Chattanooga",
-      "state":"TN"
-   },
-   "CORE/Metro-Health Medical Center Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "Stony Brook Medicine Program":{
-      "latitude":"40.9255556",
-      "longitude":"-73.1413889",
-      "city":"Stony Brook",
-      "state":"NY"
-   },
-   "University at Buffalo Rural Program":{
-      "latitude":"42.8863889",
-      "longitude":"-78.8786111",
-      "city":"Buffalo",
-      "state":"NY"
-   },
-   "Marshall University School of Medicine Program":{
-      "latitude":"38.4191667",
-      "longitude":"-82.4452778",
-      "city":"Huntington",
-      "state":"WV"
-   },
-   "Canton Medical Education Foundation/NEOMED Program":{
-      "latitude":"40.7988889",
-      "longitude":"-81.3786111",
-      "city":"Canton",
-      "state":"OH"
-   },
-   "LECOMT/UP Health System- Marquette Program":{
-      "latitude":"46.5436111",
-      "longitude":"-87.3952778",
-      "city":"Marquette",
-      "state":"MI"
-   },
-   "MWU/OPTI/Adventist Hinsdale Hospital Program":{
-      "latitude":"41.8008333",
-      "longitude":"-87.9369444",
-      "city":"Hinsdale",
-      "state":"IL"
-   },
-   "University of South Florida Morsani (Morton Plant Mease Health Care) Program":{
-      "latitude":"27.9655556",
-      "longitude":"-82.8002778",
-      "city":"Clearwater",
-      "state":"FL"
-   },
-   "St Louis University School of Medicine Program":{
-      "latitude":"38.6272222",
-      "longitude":"-90.1977778",
-      "city":"St Louis",
-      "state":"MO"
-   },
-   "Olive View/UCLA Medical Center Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "RMOPTI/St Mary Corwin Hospital Program":{
-      "latitude":"38.2544444",
-      "longitude":"-104.6086111",
-      "city":"Pueblo",
-      "state":"CO"
-   },
-   "USC/LAC+USC Medical Center Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "Butler Hospital/Brown University Program":{
-      "latitude":"41.8238889",
-      "longitude":"-71.4133333",
-      "city":"Providence",
-      "state":"RI"
-   },
-   "Iowa Medical Education Collaborative Program":{
-      "latitude":"41.6005556",
-      "longitude":"-93.6088889",
-      "city":"Des Moines",
-      "state":"IA"
-   },
-   "Middlesex Hospital Program":{
-      "latitude":"41.5622222",
-      "longitude":"-72.6511111",
-      "city":"Middletown",
-      "state":"CT"
-   },
-   "CORE/O'Bleness Memorial Hosp Program":{
-      "latitude":"39.3291667",
-      "longitude":"-82.1013889",
-      "city":"Athens",
-      "state":"OH"
-   },
-   "OMNEE/Harnett Health System Program":{
-      "latitude":"35.3061111",
-      "longitude":"-78.6091667",
-      "city":"Dunn",
-      "state":"NC"
-   },
-   "Our Lady of The Lake Program":{
-      "latitude":"30.4505556",
-      "longitude":"-91.1544444",
-      "city":"Baton Rouge",
-      "state":"LA"
-   },
-   "New York Medical College at St Michael's Medical Center Program":{
-      "latitude":"40.7355556",
-      "longitude":"-74.1727778",
-      "city":"Newark",
-      "state":"NJ"
-   },
-   "RowanSOM/OPTI/Childrens Regional/Cooper University Hosp Program":{
-      "latitude":"39.9258333",
-      "longitude":"-75.1200000",
-      "city":"Camden",
-      "state":"NJ"
-   },
-   "Greenville Health System/University of South Carolina Program":{
-      "latitude":"34.8525000",
-      "longitude":"-82.3941667",
-      "city":"Greenville",
-      "state":"SC"
-   },
-   "Loma Linda University Health Education Consortium (Rural) Program":{
-      "latitude":"36.3275000",
-      "longitude":"-119.6447222",
-      "city":"Hanford",
-      "state":"CA"
-   },
-   "LECOMT/United Memorial Medical Center Program":{
-      "latitude":"42.9980556",
-      "longitude":"-78.1877778",
-      "city":"Batavia",
-      "state":"NY"
-   },
-   "West Kendall Baptist Hospital / Florida International University Program":{
-      "latitude":"25.7738889",
-      "longitude":"-80.1938889",
-      "city":"Miami",
-      "state":"FL"
-   },
-   "MultiCare Health System (Tacoma) Program":{
-      "latitude":"47.2530556",
-      "longitude":"-122.4430556",
-      "city":"Tacoma",
-      "state":"WA"
-   },
-   "Ohio State University/Mt Carmel Hospital Program":{
-      "latitude":"39.9611111",
-      "longitude":"-82.9988889",
-      "city":"Columbus",
-      "state":"OH"
-   },
-   "John H Stroger Hospital of Cook County Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "St Mary Medical Center Program":{
-      "latitude":"33.7669444",
-      "longitude":"-118.1883333",
-      "city":"Long Beach",
-      "state":"CA"
-   },
-   "Coney Island Hospital Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Dr Ramon E Betances Hospital-Mayaguez Medical Center Program":{
-      "latitude":"18.2030556",
-      "longitude":"-67.1400000",
-      "city":"Mayaguez",
-      "state":"PR"
-   },
-   "Kaiser Permanente Medical Group (Northern California)/Santa Clara Program":{
-      "latitude":"37.3541667",
-      "longitude":"-121.9541667",
-      "city":"Santa Clara",
-      "state":"CA"
-   },
-   "Detroit Medical Center Corporation Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "Emory University Program A":{
-      "latitude":"33.7488889",
-      "longitude":"-84.3880556",
-      "city":"Atlanta",
-      "state":"GA"
-   },
-   "Children's National Medical Center Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "Woodhull Medical and Mental Health Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "St Francis Hospital and Medical Center Program":{
-      "latitude":"41.7636111",
-      "longitude":"-72.6855556",
-      "city":"Hartford",
-      "state":"CT"
-   },
-   "Texas OPTI/Bay Area Corpus Christi Medical Center Program":{
-      "latitude":"27.8002778",
-      "longitude":"-97.3961111",
-      "city":"Corpus Christi",
-      "state":"TX"
-   },
-   "TOMEC/Mercy Hospital Fort Smith Program":{
-      "latitude":"35.3858333",
-      "longitude":"-94.3983333",
-      "city":"Fort Smith",
-      "state":"AR"
-   },
-   "National Human Genome Research Institute/Children's National Medical Center Program":{
-      "latitude":"38.9805556",
-      "longitude":"-77.1005556",
-      "city":"Bethesda",
-      "state":"MD"
-   },
-   "Louisiana State University (Shreveport)/Rapides Regional Medical Center Program":{
-      "latitude":"31.3111111",
-      "longitude":"-92.4450000",
-      "city":"Alexandria",
-      "state":"LA"
-   },
-   "KCU-GMEC/St Anthony Hospital Program":{
-      "latitude":"39.7047222",
-      "longitude":"-105.0808333",
-      "city":"Lakewood",
-      "state":"CO"
-   },
-   "Ohio State University Hospital Rural Program":{
-      "latitude":"40.2522222",
-      "longitude":"-83.7558333",
-      "city":"West Liberty",
-      "state":"OH"
-   },
-   "Salem Hospital Program":{
-      "latitude":"42.5194444",
-      "longitude":"-70.8972222",
-      "city":"Salem",
-      "state":"MA"
-   },
-   "New York Presbyterian Hospital (Columbia Campus)/New York State Psychiatric Institute Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "OMNEE/Southeastern Health Program":{
-      "latitude":"34.6180556",
-      "longitude":"-79.0088889",
-      "city":"Lumberton",
-      "state":"NC"
-   },
-   "Brigham and Women's Hospital/Children's Hospital/Harvard Medical School Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Integris Baptist Medical Center/Great Plains Program":{
-      "latitude":"35.4675000",
-      "longitude":"-97.5161111",
-      "city":"Oklahoma City",
-      "state":"OK"
-   },
-   "Broadlawns Medical Center Program":{
-      "latitude":"41.6005556",
-      "longitude":"-93.6088889",
-      "city":"Des Moines",
-      "state":"IA"
-   },
-   "Kaiser Permanente Southern California (San Diego) Program":{
-      "latitude":"32.7152778",
-      "longitude":"-117.1563889",
-      "city":"San Diego",
-      "state":"CA"
-   },
-   "Family Medicine Residency of Idaho Program":{
-      "latitude":"43.6136111",
-      "longitude":"-116.2025000",
-      "city":"Boise",
-      "state":"ID"
-   },
-   "Advocate Health Care (Advocate Children's Hospital/Park Ridge) Program":{
-      "latitude":"42.0111111",
-      "longitude":"-87.8405556",
-      "city":"Park Ridge",
-      "state":"IL"
-   },
-   "Carle Foundation Hospital Program":{
-      "latitude":"40.1105556",
-      "longitude":"-88.2072222",
-      "city":"Urbana",
-      "state":"IL"
-   },
-   "LECOMT/Mercy Medical Center Program":{
-      "latitude":"40.6586111",
-      "longitude":"-73.6416667",
-      "city":"Rockville Centre",
-      "state":"NY"
-   },
-   "Providence Hospital Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "Still OPTI/Wright Ctr National Family Med-Unity HC Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "Children's Hospital/Boston Medical Center Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Ellis Hospital of Schenectady Program":{
-      "latitude":"42.8141667",
-      "longitude":"-73.9400000",
-      "city":"Schenectady",
-      "state":"NY"
-   },
-   "Tulane University School of Public Health and Tropical Medicine Program":{
-      "latitude":"29.9544444",
-      "longitude":"-90.0750000",
-      "city":"New Orleans",
-      "state":"LA"
-   },
-   "University of California (San Francisco) Program":{
-      "latitude":"37.7750000",
-      "longitude":"-122.4183333",
-      "city":"San Francisco",
-      "state":"CA"
-   },
-   "University of South Florida Morsani College of Medicine Program":{
-      "latitude":"27.9472222",
-      "longitude":"-82.4586111",
-      "city":"Tampa",
-      "state":"FL"
-   },
-   "CEME/Medical College of GA Program":{
-      "latitude":"33.4708333",
-      "longitude":"-81.9750000",
-      "city":"Augusta",
-      "state":"GA"
-   },
-   "LECOMT/UPMC Horizon Program":{
-      "latitude":"41.2122222",
-      "longitude":"-80.4969444",
-      "city":"Farrell",
-      "state":"PA"
-   },
-   "NYCOMEC/St Barnabas Hospital Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "University of Wyoming (Cheyenne) Program":{
-      "latitude":"41.1400000",
-      "longitude":"-104.8197222",
-      "city":"Cheyenne",
-      "state":"WY"
-   },
-   "UPMC Medical Education (St Margaret Hospital) Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "United Health Services Hospitals Program":{
-      "latitude":"42.1155556",
-      "longitude":"-75.9591667",
-      "city":"Johnson City",
-      "state":"NY"
-   },
-   "Rutgers Robert Wood Johnson Medical School at CentraState Program":{
-      "latitude":"40.2600000",
-      "longitude":"-74.2741667",
-      "city":"Freehold",
-      "state":"NJ"
-   },
-   "OMECO/Norman Regional Health System Program":{
-      "latitude":"35.2225000",
-      "longitude":"-97.4391667",
-      "city":"Norman",
-      "state":"OK"
-   },
-   "Baton Rouge General Program":{
-      "latitude":"30.4505556",
-      "longitude":"-91.1544444",
-      "city":"Baton Rouge",
-      "state":"LA"
-   },
-   "Jackson Memorial Hospital/Jackson Health System Program":{
-      "latitude":"25.7738889",
-      "longitude":"-80.1938889",
-      "city":"Miami",
-      "state":"FL"
-   },
-   "Plaza Medical Center of Fort Worth Program":{
-      "latitude":"32.7252778",
-      "longitude":"-97.3205556",
-      "city":"Fort Worth",
-      "state":"TX"
-   },
-   "UCLA Medical Center Program":{
-      "latitude":"34.0194444",
-      "longitude":"-118.4902778",
-      "city":"Santa Monica",
-      "state":"CA"
-   },
-   "Newark Beth Israel Medical Center (Jersey City) Program":{
-      "latitude":"40.7280556",
-      "longitude":"-74.0780556",
-      "city":"Jersey City",
-      "state":"NJ"
-   },
-   "New York Presbyterian Hospital Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "OMNEE/Johnston Memorial Hospital Program":{
-      "latitude":"36.7097222",
-      "longitude":"-81.9775000",
-      "city":"Abingdon",
-      "state":"VA"
-   },
-   "Temple University Hospital Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Stanford Hospital and Clinics Program":{
-      "latitude":"37.4241667",
-      "longitude":"-122.1650000",
-      "city":"Stanford",
-      "state":"CA"
-   },
-   "Inova Fairfax Medical Campus/Inova Children's Hospital Program":{
-      "latitude":"38.8822222",
-      "longitude":"-77.1713889",
-      "city":"Falls Church",
-      "state":"VA"
-   },
-   "University of Tennessee Program":{
-      "latitude":"35.1494444",
-      "longitude":"-90.0488889",
-      "city":"Memphis",
-      "state":"TN"
-   },
-   "LECOMT/Northside Hosp & Heart Inst Program":{
-      "latitude":"27.7705556",
-      "longitude":"-82.6794444",
-      "city":"St Petersburg",
-      "state":"FL"
-   },
-   "OPTI-West/Valley Hospital Medical Center Program":{
-      "latitude":"36.1750000",
-      "longitude":"-115.1363889",
-      "city":"Las Vegas",
-      "state":"NV"
-   },
-   "Suburban Community Hospital Program":{
-      "latitude":"40.1516667",
-      "longitude":"-75.3369444",
-      "city":"East Norriton",
-      "state":"PA"
-   },
-   "MSOPTI/Ohio Valley Medical Center Program":{
-      "latitude":"40.0638889",
-      "longitude":"-80.7211111",
-      "city":"Wheeling",
-      "state":"WV"
-   },
-   "St Anthony Hospital Program":{
-      "latitude":"35.4675000",
-      "longitude":"-97.5161111",
-      "city":"Oklahoma City",
-      "state":"OK"
-   },
-   "Spokane Teaching Health Center Rural Program":{
-      "latitude":"47.6588889",
-      "longitude":"-117.4250000",
-      "city":"Spokane",
-      "state":"WA"
-   },
-   "Natividad Medical Center Program":{
-      "latitude":"36.6777778",
-      "longitude":"-121.6544444",
-      "city":"Salinas",
-      "state":"CA"
-   },
-   "LECOMT/UPMC St Margaret Memorial Hospital Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "SCS/MSUCOM/McLaren General Surgery Consortium Program":{
-      "latitude":"42.5972222",
-      "longitude":"-82.8780556",
-      "city":"Mount Clemens",
-      "state":"MI"
-   },
-   "Stanford University Program":{
-      "latitude":"37.4419444",
-      "longitude":"-122.1419444",
-      "city":"Palo Alto",
-      "state":"CA"
-   },
-   "Atlantic Health (Overlook) Program":{
-      "latitude":"40.7413889",
-      "longitude":"-74.3600000",
-      "city":"Summit",
-      "state":"NJ"
-   },
-   "LECOMT/Larkin Community Hosp Palm Springs Program":{
-      "latitude":"25.8572222",
-      "longitude":"-80.2783333",
-      "city":"Hialeah",
-      "state":"FL"
-   },
-   "LECOMT/Alta Dermatology Program":{
-      "latitude":"33.4222222",
-      "longitude":"-111.8219444",
-      "city":"Mesa",
-      "state":"AZ"
-   },
-   "PCOM/St Luke's University Hospital Program":{
-      "latitude":"40.6258333",
-      "longitude":"-75.3708333",
-      "city":"Bethlehem",
-      "state":"PA"
-   },
-   "Winthrop-University Hospital Program":{
-      "latitude":"40.7491667",
-      "longitude":"-73.6411111",
-      "city":"Mineola",
-      "state":"NY"
-   },
-   "Christ Hospital Program":{
-      "latitude":"39.1619444",
-      "longitude":"-84.4569444",
-      "city":"Cincinnati",
-      "state":"OH"
-   },
-   "NYCOMEC/Plainview Hospital Program":{
-      "latitude":"40.7763889",
-      "longitude":"-73.4677778",
-      "city":"Plainview",
-      "state":"NY"
-   },
-   "George Washington University Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "STILL OPTI/Center Family Med/SIU Springfield Family Med Program":{
-      "latitude":"39.8016667",
-      "longitude":"-89.6436111",
-      "city":"Springfield",
-      "state":"IL"
-   },
-   "Texas Tech University (Lubbock) Program":{
-      "latitude":"33.5777778",
-      "longitude":"-101.8547222",
-      "city":"Lubbock",
-      "state":"TX"
-   },
-   "Wayne State University School of Medicine Program":{
-      "latitude":"42.2408333",
-      "longitude":"-83.2697222",
-      "city":"Taylor",
-      "state":"MI"
-   },
-   "Broward Health Medical Center Program":{
-      "latitude":"26.1219444",
-      "longitude":"-80.1436111",
-      "city":"Fort Lauderdale",
-      "state":"FL"
-   },
-   "University of Arkansas for Medical Sciences Regional Centers (South Central) Program":{
-      "latitude":"34.2283333",
-      "longitude":"-92.0030556",
-      "city":"Pine Bluff",
-      "state":"AR"
-   },
-   "St Elizabeth's Medical Center Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Texas Tech University [Lubbock] Program":{
-      "latitude":"33.5777778",
-      "longitude":"-101.8547222",
-      "city":"Lubbock",
-      "state":"TX"
-   },
-   "Institute for Family Health (Harlem) Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Penn State Milton S Hershey Medical Center/State College Program":{
-      "latitude":"40.7933333",
-      "longitude":"-77.8602778",
-      "city":"State College",
-      "state":"PA"
-   },
-   "Virginia Mason Medical Center Program":{
-      "latitude":"47.6063889",
-      "longitude":"-122.3308333",
-      "city":"Seattle",
-      "state":"WA"
-   },
-   "Detroit Medical Center/Wayne State University (Sinai Grace) Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "Hofstra Northwell School of Medicine at Plainview Hospital Program":{
-      "latitude":"40.7763889",
-      "longitude":"-73.4677778",
-      "city":"Plainview",
-      "state":"NY"
-   },
-   "St Francis Hospital Program":{
-      "latitude":"39.7458333",
-      "longitude":"-75.5469444",
-      "city":"Wilmington",
-      "state":"DE"
-   },
-   "OPTI-West/Chino Valley Medical Center Program":{
-      "latitude":"34.0122222",
-      "longitude":"-117.6880556",
-      "city":"Chino",
-      "state":"CA"
-   },
-   "SCS/MSUCOM/Michigan St U/Col of Osteo Med Program":{
-      "latitude":"42.7369444",
-      "longitude":"-84.4838889",
-      "city":"East Lansing",
-      "state":"MI"
-   },
-   "Providence-Providence Park Hospital/MSUCHM Program":{
-      "latitude":"42.4733333",
-      "longitude":"-83.2219444",
-      "city":"Southfield",
-      "state":"MI"
-   },
-   "Florida State University College of Medicine (Tallahassee) Program":{
-      "latitude":"30.4380556",
-      "longitude":"-84.2808333",
-      "city":"Tallahassee",
-      "state":"FL"
-   },
-   "Family Health Centers of San Diego Program":{
-      "latitude":"32.7152778",
-      "longitude":"-117.1563889",
-      "city":"San Diego",
-      "state":"CA"
-   },
-   "Coliseum Medical Centers Program":{
-      "latitude":"32.8405556",
-      "longitude":"-83.6325000",
-      "city":"Macon",
-      "state":"GA"
-   },
-   "SCS/MSUCOM/Munson Medical Center Program":{
-      "latitude":"44.7630556",
-      "longitude":"-85.6205556",
-      "city":"Traverse City",
-      "state":"MI"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals (Northeastern Wisconsin) Program":{
-      "latitude":"44.5191667",
-      "longitude":"-88.0197222",
-      "city":"Green Bay",
-      "state":"WI"
-   },
-   "MSOPTI/AccessHealth Teaching Health Center Program":{
-      "latitude":"37.7780556",
-      "longitude":"-81.1883333",
-      "city":"Beckley",
-      "state":"WV"
-   },
-   "Texas A&M; College of Medicine/Scott and White Memorial Hospital Program":{
-      "latitude":"31.0980556",
-      "longitude":"-97.3425000",
-      "city":"Temple",
-      "state":"TX"
-   },
-   "MSOPTI/Our Lady of Bellefonte Hospital Program":{
-      "latitude":"38.4783333",
-      "longitude":"-82.6380556",
-      "city":"Ashland",
-      "state":"KY"
-   },
-   "NYCOMEC/Peconic Bay Medical Center Program":{
-      "latitude":"40.9169444",
-      "longitude":"-72.6625000",
-      "city":"Riverhead",
-      "state":"NY"
-   },
-   "AnMed Health (Anderson) Rural Program":{
-      "latitude":"34.6855556",
-      "longitude":"-82.9533333",
-      "city":"Seneca",
-      "state":"SC"
-   },
-   "Aventura Hospital and Medical Center":{
-      "latitude":"25.9561111",
-      "longitude":"-80.1394444",
-      "city":"Aventura",
-      "state":"FL"
-   },
-   "Kaweah Delta Health Care District (KDHCD) Program":{
-      "latitude":"36.3302778",
-      "longitude":"-119.2911111",
-      "city":"Visalia",
-      "state":"CA"
-   },
-   "Adventist Hinsdale Hospital Program":{
-      "latitude":"41.8008333",
-      "longitude":"-87.9369444",
-      "city":"Hinsdale",
-      "state":"IL"
-   },
-   "Cleveland Clinic Florida Program":{
-      "latitude":"26.1000000",
-      "longitude":"-80.4000000",
-      "city":"Weston",
-      "state":"FL"
-   },
-   "Children's Mercy Hospital Program":{
-      "latitude":"39.0997222",
-      "longitude":"-94.5783333",
-      "city":"Kansas City",
-      "state":"MO"
-   },
-   "Louisiana State University (Kenner) Program":{
-      "latitude":"29.9938889",
-      "longitude":"-90.2416667",
-      "city":"Kenner",
-      "state":"LA"
-   },
-   "University of Illinois College of Medicine at Chicago/Advocate Christ Medical Center Program":{
-      "latitude":"41.7108333",
-      "longitude":"-87.7580556",
-      "city":"Oak Lawn",
-      "state":"IL"
-   },
-   "OPTI-West/Skagit Regional Health Program":{
-      "latitude":"48.4213889",
-      "longitude":"-122.3327778",
-      "city":"Mount Vernon",
-      "state":"WA"
-   },
-   "Larkin Community Hospital Program":{
-      "latitude":"25.7072222",
-      "longitude":"-80.2936111",
-      "city":"South Miami",
-      "state":"FL"
-   },
-   "University of Texas at Austin Dell Medical School Program":{
-      "latitude":"30.2669444",
-      "longitude":"-97.7427778",
-      "city":"Austin",
-      "state":"TX"
-   },
-   "Hackensack University Medical Center Program":{
-      "latitude":"40.8858333",
-      "longitude":"-74.0438889",
-      "city":"Hackensack",
-      "state":"NJ"
-   },
-   "SUNY Health Science Center at Syracuse/St Joseph's Hospital Health Center Program":{
-      "latitude":"43.0480556",
-      "longitude":"-76.1477778",
-      "city":"Syracuse",
-      "state":"NY"
-   },
-   "University of Arkansas for Medical Sciences Regional Centers (Northeast) Program":{
-      "latitude":"35.8422222",
-      "longitude":"-90.7041667",
-      "city":"Jonesboro",
-      "state":"AR"
-   },
-   "Monmouth Medical Center Program":{
-      "latitude":"40.3041667",
-      "longitude":"-73.9927778",
-      "city":"Long Branch",
-      "state":"NJ"
-   },
-   "Still OPTI/Wright Ctr National Family Med-El Rio Program":{
-      "latitude":"32.2216667",
-      "longitude":"-110.9258333",
-      "city":"Tucson",
-      "state":"AZ"
-   },
-   "Allegheny Health Network Medical Education Consortium (AGH/WPH) Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "OMNEE/Blue Ridge Healthcare Program":{
-      "latitude":"35.7452778",
-      "longitude":"-81.6850000",
-      "city":"Morganton",
-      "state":"NC"
-   },
-   "Rochester General Hospital Program":{
-      "latitude":"43.1547222",
-      "longitude":"-77.6158333",
-      "city":"Rochester",
-      "state":"NY"
-   },
-   "University of South Dakota School of Medicine Program":{
-      "latitude":"43.5500000",
-      "longitude":"-96.7000000",
-      "city":"Sioux Falls",
-      "state":"SD"
-   },
-   "Penn State Milton S Hershey Medical Center/Hershey Program":{
-      "latitude":"40.2858333",
-      "longitude":"-76.6505556",
-      "city":"Hershey",
-      "state":"PA"
-   },
-   "Florida State University College of Medicine (Sarasota) Program":{
-      "latitude":"27.3361111",
-      "longitude":"-82.5308333",
-      "city":"Sarasota",
-      "state":"FL"
-   },
-   "Arrowhead Regional Medical Center/Kaiser Permanente (Fontana) Program":{
-      "latitude":"34.0738889",
-      "longitude":"-117.3127778",
-      "city":"Colton",
-      "state":"CA"
-   },
-   "Mayo Clinic College of Medicine and Science (Arizona) Program":{
-      "latitude":"33.5091667",
-      "longitude":"-111.8983333",
-      "city":"Scottsdale",
-      "state":"AZ"
-   },
-   "Louisiana State University (Bogalusa) Program":{
-      "latitude":"30.7908333",
-      "longitude":"-89.8486111",
-      "city":"Bogalusa",
-      "state":"LA"
-   },
-   "Santa Barbara Cottage Hospital Preliminary Program":{
-      "latitude":"34.4208333",
-      "longitude":"-119.6972222",
-      "city":"Santa Barbara",
-      "state":"CA"
-   },
-   "Memorial Hermann Hospital System Program":{
-      "latitude":"29.7630556",
-      "longitude":"-95.3630556",
-      "city":"Houston",
-      "state":"TX"
-   },
-   "NEOMEN/St Michael's Hospital Program":{
-      "latitude":"40.7355556",
-      "longitude":"-74.1727778",
-      "city":"Newark",
-      "state":"NJ"
-   },
-   "Magnolia Regional Health Center Program":{
-      "latitude":"34.9341667",
-      "longitude":"-88.5222222",
-      "city":"Corinth",
-      "state":"MS"
-   },
-   "Jamaica Hospital Medical Center Program":{
-      "latitude":"40.6913889",
-      "longitude":"-73.8061111",
-      "city":"Jamaica",
-      "state":"NY"
-   },
-   "SCS/MSUCOM/William Beaumont Hospital Program":{
-      "latitude":"42.5802778",
-      "longitude":"-83.0302778",
-      "city":"Sterling Heights",
-      "state":"MI"
-   },
-   "LECOMT/Sacred Heart Health System Program":{
-      "latitude":"30.4211111",
-      "longitude":"-87.2169444",
-      "city":"Pensacola",
-      "state":"FL"
-   },
-   "New York-Presbyterian/Queens Program":{
-      "latitude":"40.7652778",
-      "longitude":"-73.8177778",
-      "city":"Flushing",
-      "state":"NY"
-   },
-   "Bayfront Health St Petersburg Program":{
-      "latitude":"27.7705556",
-      "longitude":"-82.6794444",
-      "city":"St Petersburg",
-      "state":"FL"
-   },
-   "University of Florida (Pensacola) Program":{
-      "latitude":"30.4211111",
-      "longitude":"-87.2169444",
-      "city":"Pensacola",
-      "state":"FL"
-   },
-   "CORE/Holzer Health System Program":{
-      "latitude":"38.8097222",
-      "longitude":"-82.2025000",
-      "city":"Gallipolis",
-      "state":"OH"
-   },
-   "University of Kansas School of Medicine Program":{
-      "latitude":"39.1141667",
-      "longitude":"-94.6272222",
-      "city":"Kansas City",
-      "state":"KS"
-   },
-   "LECOMT/Guthrie/Robert Packer Hospital Program":{
-      "latitude":"41.9788889",
-      "longitude":"-76.5158333",
-      "city":"Sayre",
-      "state":"PA"
-   },
-   "MWU/OPTI/John C. Lincoln Health Network Program":{
-      "latitude":"33.4483333",
-      "longitude":"-112.0733333",
-      "city":"Phoenix",
-      "state":"AZ"
-   },
-   "LECOMT/Eastern Niagara Hospital Program":{
-      "latitude":"43.1705556",
-      "longitude":"-78.6905556",
-      "city":"Lockport",
-      "state":"NY"
-   },
-   "PCOM/Pennsylvania Hospital Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Providence Hospital/Alaska Family Medicine Program":{
-      "latitude":"61.2180556",
-      "longitude":"-149.9002778",
-      "city":"Anchorage",
-      "state":"AK"
-   },
-   "St Mary's Hospital and Medical Center Program":{
-      "latitude":"37.7750000",
-      "longitude":"-122.4183333",
-      "city":"San Francisco",
-      "state":"CA"
-   },
-   "SCS/MSUCOM/Henry Ford Allegiance Health Program":{
-      "latitude":"42.2458333",
-      "longitude":"-84.4013889",
-      "city":"Jackson",
-      "state":"MI"
-   },
-   "Thomas Jefferson University Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Marianjoy Rehabilitation Hospital Program":{
-      "latitude":"41.8661111",
-      "longitude":"-88.1069444",
-      "city":"Wheaton",
-      "state":"IL"
-   },
-   "Kaiser Permanente Medical Group (Northern California/Oakland) Program":{
-      "latitude":"37.8044444",
-      "longitude":"-122.2697222",
-      "city":"Oakland",
-      "state":"CA"
-   },
-   "OMNEE/Duke/Southern Regional Area Health Ed Ctr Program":{
-      "latitude":"35.0525000",
-      "longitude":"-78.8786111",
-      "city":"Fayetteville",
-      "state":"NC"
-   },
-   "Hofstra Northwell School of Medicine at Cohen Children's Medical Center Program":{
-      "latitude":"40.7350000",
-      "longitude":"-73.6883333",
-      "city":"New Hyde Park",
-      "state":"NY"
-   },
-   "Group Health Cooperative Program":{
-      "latitude":"47.6063889",
-      "longitude":"-122.3308333",
-      "city":"Seattle",
-      "state":"WA"
-   },
-   "MWU/OPTI/Mountain Vista Medical Center Program":{
-      "latitude":"33.4222222",
-      "longitude":"-111.8219444",
-      "city":"Mesa",
-      "state":"AZ"
-   },
-   "LECOMT/Meadville Medical Ctr Program":{
-      "latitude":"41.6413889",
-      "longitude":"-80.1516667",
-      "city":"Meadville",
-      "state":"PA"
-   },
-   "Montefiore Medical Center/Albert Einstein College of Medicine (Wakefield Campus) Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "St Agnes HealthCare Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "LECOMT/UH Regional Hospitals Program":{
-      "latitude":"41.5527778",
-      "longitude":"-81.5102778",
-      "city":"Richmond Heights",
-      "state":"OH"
-   },
-   "LECOMT/Wright Ctr Community Based Program":{
-      "latitude":"42.1291667",
-      "longitude":"-80.0852778",
-      "city":"Erie",
-      "state":"PA"
-   },
-   "Chippenham and Johnston-Willis Hospitals Program":{
-      "latitude":"37.5536111",
-      "longitude":"-77.4605556",
-      "city":"Richmond",
-      "state":"VA"
-   },
-   "Altru Health System (Grand Forks) Program":{
-      "latitude":"47.9252778",
-      "longitude":"-97.0325000",
-      "city":"Grand Forks",
-      "state":"ND"
-   },
-   "Baylor University Medical Center Program":{
-      "latitude":"32.7833333",
-      "longitude":"-96.8000000",
-      "city":"Dallas",
-      "state":"TX"
-   },
-   "NYCOMEC/St Barnabas Medical Center Program":{
-      "latitude":"40.7958333",
-      "longitude":"-74.3152778",
-      "city":"Livingston",
-      "state":"NJ"
-   },
-   "University of Illinois College of Medicine at Rockford Program":{
-      "latitude":"42.2711111",
-      "longitude":"-89.0938889",
-      "city":"Rockford",
-      "state":"IL"
-   },
-   "New York Medical College at St Joseph's Medical Center Program":{
-      "latitude":"40.9311111",
-      "longitude":"-73.8991667",
-      "city":"Yonkers",
-      "state":"NY"
-   },
-   "St Barnabas Hospital Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "Georgetown University Hospital/Washington Hospital Center Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "National Institutes of Health Clinical Center Program":{
-      "latitude":"38.9805556",
-      "longitude":"-77.1005556",
-      "city":"Bethesda",
-      "state":"MD"
-   },
-   "Allina Health Program":{
-      "latitude":"44.9444444",
-      "longitude":"-93.0930556",
-      "city":"St Paul",
-      "state":"MN"
-   },
-   "Allegheny Health Network Medical Education Consortium (WPH) Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "St Joseph's Hospital and Medical Center Program":{
-      "latitude":"33.4483333",
-      "longitude":"-112.0733333",
-      "city":"Phoenix",
-      "state":"AZ"
-   },
-   "Brookwood Baptist Health Program":{
-      "latitude":"33.5205556",
-      "longitude":"-86.8025000",
-      "city":"Birmingham",
-      "state":"AL"
-   },
-   "University of Arizona College of Medicine-Tucson Program":{
-      "latitude":"32.2216667",
-      "longitude":"-110.9258333",
-      "city":"Tucson",
-      "state":"AZ"
-   },
-   "Concord Hospital/New Hampshire-Dartmouth Family Medicine Program":{
-      "latitude":"43.2080556",
-      "longitude":"-71.5380556",
-      "city":"Concord",
-      "state":"NH"
-   },
-   "University of Minnesota (Mankato) Program":{
-      "latitude":"44.1636111",
-      "longitude":"-93.9991667",
-      "city":"Mankato",
-      "state":"MN"
-   },
-   "Union Hospital Program":{
-      "latitude":"39.4666667",
-      "longitude":"-87.4138889",
-      "city":"Terre Haute",
-      "state":"IN"
-   },
-   "MWU/OPTI/Adventist LaGrange Memorial Hosp Program":{
-      "latitude":"41.8050000",
-      "longitude":"-87.8691667",
-      "city":"La Grange",
-      "state":"IL"
-   },
-   "CEME/Lakeside Medical Center Program":{
-      "latitude":"26.6841667",
-      "longitude":"-80.6677778",
-      "city":"Belle Glade",
-      "state":"FL"
-   },
-   "West Virginia University Program":{
-      "latitude":"39.6294444",
-      "longitude":"-79.9561111",
-      "city":"Morgantown",
-      "state":"WV"
-   },
-   "CEME/Palmetto General Hosp Program":{
-      "latitude":"25.8572222",
-      "longitude":"-80.2783333",
-      "city":"Hialeah",
-      "state":"FL"
-   },
-   "Gwinnett Medical Center Program":{
-      "latitude":"33.9561111",
-      "longitude":"-83.9880556",
-      "city":"Lawrenceville",
-      "state":"GA"
-   },
-   "SCS/MSUCOM/Hamilton Community Health Network Program":{
-      "latitude":"43.0125000",
-      "longitude":"-83.6875000",
-      "city":"Flint",
-      "state":"MI"
-   },
-   "Massachusetts General Hospital/McLean Hospital Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Loyola University/Cook County Hospital Program":{
-      "latitude":"41.8791667",
-      "longitude":"-87.8430556",
-      "city":"Maywood",
-      "state":"IL"
-   },
-   "LECOMT/Conemaugh Valley Mem Hosp Program":{
-      "latitude":"40.3266667",
-      "longitude":"-78.9222222",
-      "city":"Johnstown",
-      "state":"PA"
-   },
-   "PCOM/St Joseph Medical Center Program":{
-      "latitude":"40.3355556",
-      "longitude":"-75.9272222",
-      "city":"Reading",
-      "state":"PA"
-   },
-   "Susquehanna Health System/Williamsport Hospital and Medical Center Program":{
-      "latitude":"41.2411111",
-      "longitude":"-77.0013889",
-      "city":"Williamsport",
-      "state":"PA"
-   },
-   "MWU/OPTI/MacNeal Hospital Program":{
-      "latitude":"41.8505556",
-      "longitude":"-87.7936111",
-      "city":"Berwyn",
-      "state":"IL"
-   },
-   "California Pacific Medical Center Program":{
-      "latitude":"37.7750000",
-      "longitude":"-122.4183333",
-      "city":"San Francisco",
-      "state":"CA"
-   },
-   "University of Oklahoma Health Sciences Center (Lawton) Program":{
-      "latitude":"34.6086111",
-      "longitude":"-98.3900000",
-      "city":"Lawton",
-      "state":"OK"
-   },
-   "University of Wisconsin (Wausau) Program":{
-      "latitude":"44.9591667",
-      "longitude":"-89.6300000",
-      "city":"Wausau",
-      "state":"WI"
-   },
-   "NEOMEN/St Elizabeth's Hospital Program":{
-      "latitude":"43.1008333",
-      "longitude":"-75.2330556",
-      "city":"Utica",
-      "state":"NY"
-   },
-   "North Central Texas Medical Foundation Program":{
-      "latitude":"33.9136111",
-      "longitude":"-98.4930556",
-      "city":"Wichita Falls",
-      "state":"TX"
-   },
-   "Tulane University Program":{
-      "latitude":"29.9544444",
-      "longitude":"-90.0750000",
-      "city":"New Orleans",
-      "state":"LA"
-   },
-   "Delaware Psychiatric Center Program":{
-      "latitude":"39.6619444",
-      "longitude":"-75.5666667",
-      "city":"New Castle",
-      "state":"DE"
-   },
-   "Sidney Kimmel Medical College at Thomas Jefferson University/TJUH Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "William Beaumont Hospital Program":{
-      "latitude":"42.5802778",
-      "longitude":"-83.0302778",
-      "city":"Sterling Heights",
-      "state":"MI"
-   },
-   "RMOPTI/University of Wyoming Program":{
-      "latitude":"42.8666667",
-      "longitude":"-106.3125000",
-      "city":"Casper",
-      "state":"WY"
-   },
-   "Christiana Care Health Services Program":{
-      "latitude":"39.7458333",
-      "longitude":"-75.5469444",
-      "city":"Wilmington",
-      "state":"DE"
-   },
-   "Toledo Hospital Program":{
-      "latitude":"41.6638889",
-      "longitude":"-83.5552778",
-      "city":"Toledo",
-      "state":"OH"
-   },
-   "SCS/MSUCOM/Detroit Metro Urological Surg Consortium Program":{
-      "latitude":"42.5972222",
-      "longitude":"-82.8780556",
-      "city":"Mount Clemens",
-      "state":"MI"
-   },
-   "OMNEE/Lewis Gale Hospital-Montgomery Program":{
-      "latitude":"37.2294444",
-      "longitude":"-80.4141667",
-      "city":"Blacksburg",
-      "state":"VA"
-   },
-   "NYCOMEC/Brookhaven Memorial Hospital Program":{
-      "latitude":"40.7655556",
-      "longitude":"-73.0155556",
-      "city":"Patchogue",
-      "state":"NY"
-   },
-   "CORE/South Pointe Hosp/NOEM Consortium Program":{
-      "latitude":"41.4350000",
-      "longitude":"-81.5363889",
-      "city":"Warrensville Heights",
-      "state":"OH"
-   },
-   "Orange Park Medical Center Program":{
-      "latitude":"30.1658333",
-      "longitude":"-81.7066667",
-      "city":"Orange Park",
-      "state":"FL"
-   },
-   "Johns Hopkins University Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "STILL OPTI/Des Peres Hospital Program":{
-      "latitude":"38.6272222",
-      "longitude":"-90.1977778",
-      "city":"St Louis",
-      "state":"MO"
-   },
-   "Deaconess Hospital Program":{
-      "latitude":"37.9747222",
-      "longitude":"-87.5558333",
-      "city":"Evansville",
-      "state":"IN"
-   },
-   "University of Kentucky College of Medicine (Hazard) Program":{
-      "latitude":"37.2494444",
-      "longitude":"-83.1933333",
-      "city":"Hazard",
-      "state":"KY"
-   },
-   "SCS/MSUCOM/Detroit Wayne County Health Authority GME Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "KCU-GMEC/Unity Health-White County Medical Center Program":{
-      "latitude":"35.2505556",
-      "longitude":"-91.7361111",
-      "city":"Searcy",
-      "state":"AR"
-   },
-   "Idaho State University Program":{
-      "latitude":"42.8713889",
-      "longitude":"-112.4447222",
-      "city":"Pocatello",
-      "state":"ID"
-   },
-   "CORE/Adena Health System Program":{
-      "latitude":"39.3330556",
-      "longitude":"-82.9825000",
-      "city":"Chillicothe",
-      "state":"OH"
-   },
-   "University of Rochester/Highland Hospital of Rochester Program":{
-      "latitude":"43.1547222",
-      "longitude":"-77.6158333",
-      "city":"Rochester",
-      "state":"NY"
-   },
-   "Vidant Medical Center/East Carolina University Program":{
-      "latitude":"35.6125000",
-      "longitude":"-77.3666667",
-      "city":"Greenville",
-      "state":"NC"
-   },
-   "University of Illinois College of Medicine at Chicago (Mount Sinai) Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "MWU/OPTI/Riverside Medical Center Program":{
-      "latitude":"41.1200000",
-      "longitude":"-87.8611111",
-      "city":"Kankakee",
-      "state":"IL"
-   },
-   "NEOMEN/Maine-Dartmouth Family Medicine Program":{
-      "latitude":"44.3105556",
-      "longitude":"-69.7800000",
-      "city":"Augusta",
-      "state":"ME"
-   },
-   "OPTI-West/Community Health Care Program":{
-      "latitude":"47.2530556",
-      "longitude":"-122.4430556",
-      "city":"Tacoma",
-      "state":"WA"
-   },
-   "UPMC Medical Education (McKeesport Hospital) Program":{
-      "latitude":"40.3477778",
-      "longitude":"-79.8644444",
-      "city":"McKeesport",
-      "state":"PA"
-   },
-   "Tulsa Medical Education Foundation Program":{
-      "latitude":"36.1538889",
-      "longitude":"-95.9925000",
-      "city":"Tulsa",
-      "state":"OK"
-   },
-   "St Louis University School of Medicine (Belleville) Program":{
-      "latitude":"38.5200000",
-      "longitude":"-89.9838889",
-      "city":"Belleville",
-      "state":"IL"
-   },
-   "Main Line Health System/Bryn Mawr Hospital Program":{
-      "latitude":"39.9813889",
-      "longitude":"-75.3569444",
-      "city":"Broomall",
-      "state":"PA"
-   },
-   "Mercy Hospital and Medical Center Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "CORE/Fairfield Medical Center Program":{
-      "latitude":"39.7136111",
-      "longitude":"-82.5994444",
-      "city":"Lancaster",
-      "state":"OH"
-   },
-   "Central Maine Medical Center Program":{
-      "latitude":"44.1002778",
-      "longitude":"-70.2152778",
-      "city":"Lewiston",
-      "state":"ME"
-   },
-   "Lehigh Valley Health Network Program":{
-      "latitude":"40.6083333",
-      "longitude":"-75.4905556",
-      "city":"Allentown",
-      "state":"PA"
-   },
-   "UPMC Medical Education (Altoona Hospital) Program":{
-      "latitude":"40.5186111",
-      "longitude":"-78.3950000",
-      "city":"Altoona",
-      "state":"PA"
-   },
-   "Maimonides Medical Center/Infants and Children's Hospital of Brooklyn Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "LECOMT/Conemaugh Valley Memorial Hosp Program":{
-      "latitude":"40.3266667",
-      "longitude":"-78.9222222",
-      "city":"Johnstown",
-      "state":"PA"
-   },
-   "Cleveland Clinic (Florida) Program":{
-      "latitude":"26.1000000",
-      "longitude":"-80.4000000",
-      "city":"Weston",
-      "state":"FL"
-   },
-   "Washington Hospital Center Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "University of Florida College of Medicine Jacksonville Program":{
-      "latitude":"30.3319444",
-      "longitude":"-81.6558333",
-      "city":"Jacksonville",
-      "state":"FL"
-   },
-   "Case Western Reserve Univ/Univ Hosps Cleveland Med Ctr/Rainbow Babies and Childrens Hospital Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "PCOM/Heart of Lancaster Regional Medical Center Program":{
-      "latitude":"40.1572222",
-      "longitude":"-76.3072222",
-      "city":"Lititz",
-      "state":"PA"
-   },
-   "Brooklyn Hospital Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Hofstra Northwell School of Medicine at Long Island Jewish Medical Center Program":{
-      "latitude":"40.7350000",
-      "longitude":"-73.6883333",
-      "city":"New Hyde Park",
-      "state":"NY"
-   },
-   "St. John's Episcopal Hospital-South Shore Program":{
-      "latitude":"40.6052778",
-      "longitude":"-73.7555556",
-      "city":"Far Rockaway",
-      "state":"NY"
-   },
-   "Providence Health & Services - Oregon/St Vincent Hospital and Medical Center Program":{
-      "latitude":"45.5236111",
-      "longitude":"-122.6750000",
-      "city":"Portland",
-      "state":"OR"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals (Waukesha) Program":{
-      "latitude":"43.0116667",
-      "longitude":"-88.2313889",
-      "city":"Waukesha",
-      "state":"WI"
-   },
-   "OMNEE/Mountain View Regional MC Program":{
-      "latitude":"32.3122222",
-      "longitude":"-106.7777778",
-      "city":"Las Cruces",
-      "state":"NM"
-   },
-   "Robert Packer Hospital/Guthrie Program":{
-      "latitude":"41.9788889",
-      "longitude":"-76.5158333",
-      "city":"Sayre",
-      "state":"PA"
-   },
-   "Wright State University/Dayton Community Hospitals Program":{
-      "latitude":"39.7588889",
-      "longitude":"-84.1916667",
-      "city":"Dayton",
-      "state":"OH"
-   },
-   "Presence Saint Francis Hospital Program":{
-      "latitude":"42.0411111",
-      "longitude":"-87.6900000",
-      "city":"Evanston",
-      "state":"IL"
-   },
-   "Sinai Hospital of Baltimore Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "SCS/MSUCOM/Oakwood Healthcare System Osteo Div Program":{
-      "latitude":"42.2813889",
-      "longitude":"-83.3863889",
-      "city":"Wayne",
-      "state":"MI"
-   },
-   "Clinical Center at the National Institutes of Health Program":{
-      "latitude":"38.9805556",
-      "longitude":"-77.1005556",
-      "city":"Bethesda",
-      "state":"MD"
-   },
-   "Brigham and Women's Hospital/Children's Hospital Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "McLaren-Flint/Michigan State University Program":{
-      "latitude":"43.0125000",
-      "longitude":"-83.6875000",
-      "city":"Flint",
-      "state":"MI"
-   },
-   "University of Hawaii Program":{
-      "latitude":"21.3069444",
-      "longitude":"-157.8583333",
-      "city":"Honolulu",
-      "state":"HI"
-   },
-   "Valley Health System/Medical College of Virginia/Virginia Commonwealth University Program":{
-      "latitude":"38.9180556",
-      "longitude":"-78.1947222",
-      "city":"Front Royal",
-      "state":"VA"
-   },
-   "Contra Costa Regional Medical Center Program":{
-      "latitude":"38.0194444",
-      "longitude":"-122.1330556",
-      "city":"Martinez",
-      "state":"CA"
-   },
-   "Providence Hospital/Georgetown University Hospital Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "PCOM/Hahnemann University Hospital Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Texas OPTI/South Texas Osteopathic Dermatology Residency Program":{
-      "latitude":"32.7252778",
-      "longitude":"-97.3205556",
-      "city":"Fort Worth",
-      "state":"TX"
-   },
-   "Cone Health Program":{
-      "latitude":"36.0725000",
-      "longitude":"-79.7922222",
-      "city":"Greensboro",
-      "state":"NC"
-   },
-   "Marian Regional Medical Center Program":{
-      "latitude":"34.9530556",
-      "longitude":"-120.4347222",
-      "city":"Santa Maria",
-      "state":"CA"
-   },
-   "A-OPTIC/Central WA Family Med Residency Program":{
-      "latitude":"46.6022222",
-      "longitude":"-120.5047222",
-      "city":"Yakima",
-      "state":"WA"
-   },
-   "Christus Spohn Memorial Hospital Program":{
-      "latitude":"27.8002778",
-      "longitude":"-97.3961111",
-      "city":"Corpus Christi",
-      "state":"TX"
-   },
-   "Temple University Hospital/Moss Rehabilitation Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "OMNEE/Danville Regional Med Ctr Program":{
-      "latitude":"36.5858333",
-      "longitude":"-79.3952778",
-      "city":"Danville",
-      "state":"VA"
-   },
-   "PCOM/Good Samaritan Hospital Program":{
-      "latitude":"40.3408333",
-      "longitude":"-76.4116667",
-      "city":"Lebanon",
-      "state":"PA"
-   },
-   "SUNY Health Science Center at Brooklyn Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Scripps Clinic/Scripps Green Hospital Program":{
-      "latitude":"32.8472222",
-      "longitude":"-117.2733333",
-      "city":"La Jolla",
-      "state":"CA"
-   },
-   "KCU-GMEC/Freeman Hospitals and Health System Program":{
-      "latitude":"37.0841667",
-      "longitude":"-94.5130556",
-      "city":"Joplin",
-      "state":"MO"
-   },
-   "University of Massachusetts Medical School Program":{
-      "latitude":"42.2625000",
-      "longitude":"-71.8027778",
-      "city":"Worcester",
-      "state":"MA"
-   },
-   "Johns Hopkins All Children's Hospital Program":{
-      "latitude":"27.7705556",
-      "longitude":"-82.6794444",
-      "city":"St Petersburg",
-      "state":"FL"
-   },
-   "OMNEE/Regional Medical Center Program":{
-      "latitude":"33.4916667",
-      "longitude":"-80.8558333",
-      "city":"Orangeburg",
-      "state":"SC"
-   },
-   "Jacobi Medical Center/Albert Einstein College of Medicine Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "Hofstra Northwell School of Medicine at Zucker Hillside Hospital Program":{
-      "latitude":"40.7469444",
-      "longitude":"-73.7119444",
-      "city":"Glen Oaks",
-      "state":"NY"
-   },
-   "OPTI-West/Trios Health Program":{
-      "latitude":"46.2113889",
-      "longitude":"-119.1361111",
-      "city":"Kennewick",
-      "state":"WA"
-   },
-   "Christus Santa Rosa Health Care Program":{
-      "latitude":"29.4238889",
-      "longitude":"-98.4933333",
-      "city":"San Antonio",
-      "state":"TX"
-   },
-   "OPTI-West/Downey Regional MC Program":{
-      "latitude":"33.9400000",
-      "longitude":"-118.1316667",
-      "city":"Downey",
-      "state":"CA"
-   },
-   "Baptist Outreach Services (Montgomery) Program":{
-      "latitude":"32.3666667",
-      "longitude":"-86.3000000",
-      "city":"Montgomery",
-      "state":"AL"
-   },
-   "University of North Dakota (Minot) Program":{
-      "latitude":"48.2325000",
-      "longitude":"-101.2958333",
-      "city":"Minot",
-      "state":"ND"
-   },
-   "University of Arkansas for Medical Sciences Regional Centers (Northwest) Program":{
-      "latitude":"36.0625000",
-      "longitude":"-94.1572222",
-      "city":"Fayetteville",
-      "state":"AR"
-   },
-   "University of California (San Francisco)/University of California School of Public Health Program":{
-      "latitude":"37.7750000",
-      "longitude":"-122.4183333",
-      "city":"San Francisco",
-      "state":"CA"
-   },
-   "Univ of North Dakota School of Medicine and Health Sciences Rural Program":{
-      "latitude":"48.2325000",
-      "longitude":"-101.2958333",
-      "city":"Minot",
-      "state":"ND"
-   },
-   "Virginia Commonwealth University-Bon Secours (St Francis) Program":{
-      "latitude":"37.5058333",
-      "longitude":"-77.6494444",
-      "city":"Midlothian",
-      "state":"VA"
-   },
-   "NYCOMEC/NEA Baptist Memorial Hospital Program":{
-      "latitude":"35.8422222",
-      "longitude":"-90.7041667",
-      "city":"Jonesboro",
-      "state":"AR"
-   },
-   "Advocate Health Care (Advocate Illinois Masonic Medical Center) Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "LECOMT/Tri-County Dermatology Program":{
-      "latitude":"41.1338889",
-      "longitude":"-81.4847222",
-      "city":"Cuyahoga Falls",
-      "state":"OH"
-   },
-   "Florida State University College of Medicine/Lee Memorial Health System Program":{
-      "latitude":"26.6402778",
-      "longitude":"-81.8725000",
-      "city":"Fort Myers",
-      "state":"FL"
-   },
-   "Still OPTI/Wright Ctr National Family Med-HealthPoint CHC Program":{
-      "latitude":"47.3075000",
-      "longitude":"-122.2272222",
-      "city":"Auburn",
-      "state":"WA"
-   },
-   "LECOMT/UPMC Hamot Program":{
-      "latitude":"42.1291667",
-      "longitude":"-80.0852778",
-      "city":"Erie",
-      "state":"PA"
-   },
-   "LECOMT/Wellington Regional Med Ctr Program":{
-      "latitude":"26.7150000",
-      "longitude":"-80.0536111",
-      "city":"West Palm Beach",
-      "state":"FL"
-   },
-   "MWU/OPTI/Valley Consortium for Medical Education Program":{
-      "latitude":"37.6391667",
-      "longitude":"-120.9958333",
-      "city":"Modesto",
-      "state":"CA"
-   },
-   "Wright Center for Graduate Medical Education Program":{
-      "latitude":"41.4088889",
-      "longitude":"-75.6627778",
-      "city":"Scranton",
-      "state":"PA"
-   },
-   "PCOM/Latrobe Area Hospital Program":{
-      "latitude":"40.3211111",
-      "longitude":"-79.3797222",
-      "city":"Latrobe",
-      "state":"PA"
-   },
-   "OMECO/Tahlequah Medical Group Program":{
-      "latitude":"35.9152778",
-      "longitude":"-94.9697222",
-      "city":"Tahlequah",
-      "state":"OK"
-   },
-   "MSOPTI/Camden-Clark Medical Center Program":{
-      "latitude":"39.2666667",
-      "longitude":"-81.5616667",
-      "city":"Parkersburg",
-      "state":"WV"
-   },
-   "City of Hope National Medical Center Program":{
-      "latitude":"34.1394444",
-      "longitude":"-117.9763889",
-      "city":"Duarte",
-      "state":"CA"
-   },
-   "St Vincent's Medical Center Program":{
-      "latitude":"30.3319444",
-      "longitude":"-81.6558333",
-      "city":"Jacksonville",
-      "state":"FL"
-   },
-   "Methodist Hospital of Sacramento Program":{
-      "latitude":"38.5816667",
-      "longitude":"-121.4933333",
-      "city":"Sacramento",
-      "state":"CA"
-   },
-   "Nationwide Children's Hospital/Ohio State University Program":{
-      "latitude":"39.9611111",
-      "longitude":"-82.9988889",
-      "city":"Columbus",
-      "state":"OH"
-   },
-   "SSM St Mary's Hospital-St Louis Program":{
-      "latitude":"38.6272222",
-      "longitude":"-90.1977778",
-      "city":"St Louis",
-      "state":"MO"
-   },
-   "SCS/MSUCOM/Henry Ford Macomb Hospitals MEP Program":{
-      "latitude":"42.614098",
-      "longitude":"-82.960829",
-      "city":"Clinton Township",
-      "state":"MI"
-   },
-   "Univ of North Dakota School of Medicine and Health Sciences Program":{
-      "latitude":"46.8772222",
-      "longitude":"-96.7894444",
-      "city":"Fargo",
-      "state":"ND"
-   },
-   "SCS/MSUCOM/Huron Valley Hosp Program":{
-      "latitude":"42.5911111",
-      "longitude":"-83.4908333",
-      "city":"Commerce",
-      "state":"MI"
-   },
-   "MWU/OPTI/John H. Stroger Hosp Cook County Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "Mayo Clinic Health System in Waycross Program":{
-      "latitude":"31.2133333",
-      "longitude":"-82.3541667",
-      "city":"Waycross",
-      "state":"GA"
-   },
-   "Siouxland Medical Education Foundation Program":{
-      "latitude":"42.5000000",
-      "longitude":"-96.4000000",
-      "city":"Sioux City",
-      "state":"IA"
-   },
-   "South Nassau Communities Hospital Program":{
-      "latitude":"40.6386111",
-      "longitude":"-73.6405556",
-      "city":"Oceanside",
-      "state":"NY"
-   },
-   "University of Texas Rio Grande Valley Program":{
-      "latitude":"26.2030556",
-      "longitude":"-98.2297222",
-      "city":"McAllen",
-      "state":"TX"
-   },
-   "Latrobe Area Hospital Program":{
-      "latitude":"40.3211111",
-      "longitude":"-79.3797222",
-      "city":"Latrobe",
-      "state":"PA"
-   },
-   "University of Nebraska Medical Center College of Medicine Program":{
-      "latitude":"41.2586111",
-      "longitude":"-95.9375000",
-      "city":"Omaha",
-      "state":"NE"
-   },
-   "CoxHealth Program":{
-      "latitude":"37.2152778",
-      "longitude":"-93.2980556",
-      "city":"Springfield",
-      "state":"MO"
-   },
-   "Franciscan St. James Health Program":{
-      "latitude":"41.5133333",
-      "longitude":"-87.6741667",
-      "city":"Olympia Fields",
-      "state":"IL"
-   },
-   "Hofstra Northwell School of Medicine (Southside Hospital) Program":{
-      "latitude":"40.7250000",
-      "longitude":"-73.2458333",
-      "city":"Bay Shore",
-      "state":"NY"
-   },
-   "Montefiore Medical Center/Albert Einstein College of Medicine (Moses and Weiler Campuses) Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "University of Tennessee College of Medicine Program":{
-      "latitude":"35.0866667",
-      "longitude":"-89.8100000",
-      "city":"Germantown",
-      "state":"TN"
-   },
-   "McGaw Medical Center of Northwestern University Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "LECOMT/Clarion Hospital Program":{
-      "latitude":"41.2147222",
-      "longitude":"-79.3855556",
-      "city":"Clarion",
-      "state":"PA"
-   },
-   "Maimonides Medical Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Medical University of South Carolina College of Medicine Program":{
-      "latitude":"32.7763889",
-      "longitude":"-79.9311111",
-      "city":"Charleston",
-      "state":"SC"
-   },
-   "CEME/Osceola Regional Medical Center Program":{
-      "latitude":"28.2916667",
-      "longitude":"-81.4077778",
-      "city":"Kissimmee",
-      "state":"FL"
-   },
-   "University of Texas Health Science Center at Tyler/Good Shepherd Medical Center (Longview) Program":{
-      "latitude":"32.5005556",
-      "longitude":"-94.7402778",
-      "city":"Longview",
-      "state":"TX"
-   },
-   "Norwalk Hospital Program":{
-      "latitude":"41.1175000",
-      "longitude":"-73.4083333",
-      "city":"Norwalk",
-      "state":"CT"
-   },
-   "Union Memorial Hospital Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "Icahn School of Medicine at Mount Sinai (Jamaica) Program":{
-      "latitude":"40.6913889",
-      "longitude":"-73.8061111",
-      "city":"Jamaica",
-      "state":"NY"
-   },
-   "CORE/SUMMA Akron City Hospital Program":{
-      "latitude":"41.0813889",
-      "longitude":"-81.5191667",
-      "city":"Akron",
-      "state":"OH"
-   },
-   "Utah Valley Regional Medical Center Program":{
-      "latitude":"40.2338889",
-      "longitude":"-111.6577778",
-      "city":"Provo",
-      "state":"UT"
-   },
-   "Mercy Medical Center (Redding) Program":{
-      "latitude":"40.5866667",
-      "longitude":"-122.3905556",
-      "city":"Redding",
-      "state":"CA"
-   },
-   "Lincoln Medical and Mental Health Center Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "Chestnut Hill Hospital Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "California Hospital Medical Center (Los Angeles)/University of Southern California Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "CEME/Florida Dept of Corrections Program":{
-      "latitude":"28.5997222",
-      "longitude":"-81.3394444",
-      "city":"Winter Park",
-      "state":"FL"
-   },
-   "University of Mississippi School of Medicine Program":{
-      "latitude":"32.2986111",
-      "longitude":"-90.1847222",
-      "city":"Jackson",
-      "state":"MS"
-   },
-   "PCOM/Cahaba Medical Care Program":{
-      "latitude":"32.9444444",
-      "longitude":"-87.1386111",
-      "city":"Centreville",
-      "state":"AL"
-   },
-   "Dignity Health Northridge Hospital Medical Center Program":{
-      "latitude":"34.2283333",
-      "longitude":"-118.5358333",
-      "city":"Northridge",
-      "state":"CA"
-   },
-   "Mary Free Bed Hospital Program":{
-      "latitude":"42.9633333",
-      "longitude":"-85.6680556",
-      "city":"Grand Rapids",
-      "state":"MI"
-   },
-   "Texas Tech University (Amarillo) Health Sciences Center Program":{
-      "latitude":"35.2219444",
-      "longitude":"-101.8308333",
-      "city":"Amarillo",
-      "state":"TX"
-   },
-   "Yale-New Haven Medical Center Program":{
-      "latitude":"41.3080556",
-      "longitude":"-72.9286111",
-      "city":"New Haven",
-      "state":"CT"
-   },
-   "RMOPTI/Lakeview Hospital Program":{
-      "latitude":"40.8894444",
-      "longitude":"-111.8800000",
-      "city":"Bountiful",
-      "state":"UT"
-   },
-   "PCOM/AtlantiCare Regional MC Program":{
-      "latitude":"39.3641667",
-      "longitude":"-74.4233333",
-      "city":"Atlantic City",
-      "state":"NJ"
-   },
-   "STILL OPTI/Medical College of Wisconsin Program":{
-      "latitude":"43.0388889",
-      "longitude":"-87.9063889",
-      "city":"Milwaukee",
-      "state":"WI"
-   },
-   "New York Medical College (Phelps) Program":{
-      "latitude":"41.0855556",
-      "longitude":"-73.8588889",
-      "city":"Sleepy Hollow",
-      "state":"NY"
-   },
-   "Bridgeport Hospital/Yale University Program":{
-      "latitude":"41.1669444",
-      "longitude":"-73.2052778",
-      "city":"Bridgeport",
-      "state":"CT"
-   },
-   "Inova Fairfax Medical Campus/Inova Fairfax Hospital for Children Program":{
-      "latitude":"38.8822222",
-      "longitude":"-77.1713889",
-      "city":"Falls Church",
-      "state":"VA"
-   },
-   "University of Rochester Program":{
-      "latitude":"43.1547222",
-      "longitude":"-77.6158333",
-      "city":"Rochester",
-      "state":"NY"
-   },
-   "William Beaumont Army Medical Center Program":{
-      "latitude":"31.7586111",
-      "longitude":"-106.4863889",
-      "city":"El Paso",
-      "state":"TX"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals (Central Wisconsin) Program":{
-      "latitude":"44.9591667",
-      "longitude":"-89.6300000",
-      "city":"Wausau",
-      "state":"WI"
-   },
-   "University of Nebraska Medical Center Program":{
-      "latitude":"41.2586111",
-      "longitude":"-95.9375000",
-      "city":"Omaha",
-      "state":"NE"
-   },
-   "CEME/Palm Beach County Health Department Program":{
-      "latitude":"26.7150000",
-      "longitude":"-80.0536111",
-      "city":"West Palm Beach",
-      "state":"FL"
-   },
-   "PCOM/North Fulton Hospital Medical Campus Program":{
-      "latitude":"34.0230556",
-      "longitude":"-84.3616667",
-      "city":"Roswell",
-      "state":"GA"
-   },
-   "St Vincent Hospital and Health Care Center Program":{
-      "latitude":"39.7683333",
-      "longitude":"-86.1580556",
-      "city":"Indianapolis",
-      "state":"IN"
-   },
-   "MWU/OPTI/Resurrection Healthcare Consortium Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "STILL OPTI/SIU Memorial Hospital of Carbondale Program":{
-      "latitude":"37.7272222",
-      "longitude":"-89.2166667",
-      "city":"Carbondale",
-      "state":"IL"
-   },
-   "CEME/Regional Med Center Bayonet Point Program":{
-      "latitude":"28.3641667",
-      "longitude":"-82.6936111",
-      "city":"Hudson",
-      "state":"FL"
-   },
-   "OMECO/Freeman Health System/Ozark Center Program":{
-      "latitude":"37.0841667",
-      "longitude":"-94.5130556",
-      "city":"Joplin",
-      "state":"MO"
-   },
-   "University of Minnesota/St Cloud Hospital Program":{
-      "latitude":"45.5608333",
-      "longitude":"-94.1622222",
-      "city":"St Cloud",
-      "state":"MN"
-   },
-   "University of Kansas (Wichita)/Via Christi Hospitals Wichita Program":{
-      "latitude":"37.6922222",
-      "longitude":"-97.3372222",
-      "city":"Wichita",
-      "state":"KS"
-   },
-   "University at Buffalo (Sisters of Charity) Program":{
-      "latitude":"42.8863889",
-      "longitude":"-78.8786111",
-      "city":"Buffalo",
-      "state":"NY"
-   },
-   "University of Arkansas for Medical Sciences Program":{
-      "latitude":"34.7463889",
-      "longitude":"-92.2894444",
-      "city":"Little Rock",
-      "state":"AR"
-   },
-   "PCOM/Lankenau Medical Center Program":{
-      "latitude":"40.0027778",
-      "longitude":"-75.2711111",
-      "city":"Wynnewood",
-      "state":"PA"
-   },
-   "Henry Ford Allegiance Health Program":{
-      "latitude":"42.2458333",
-      "longitude":"-84.4013889",
-      "city":"Jackson",
-      "state":"MI"
-   },
-   "Arrowhead Regional Medical Center Program":{
-      "latitude":"34.0738889",
-      "longitude":"-117.3127778",
-      "city":"Colton",
-      "state":"CA"
-   },
-   "Mayo Clinic College of Medicine and Science (Eau Claire) Program":{
-      "latitude":"44.8113889",
-      "longitude":"-91.4983333",
-      "city":"Eau Claire",
-      "state":"WI"
-   },
-   "MSOPTI/United Hospital Center Program":{
-      "latitude":"39.2863889",
-      "longitude":"-80.2563889",
-      "city":"Bridgeport",
-      "state":"WV"
-   },
-   "Memorial Health System Program":{
-      "latitude":"39.4152778",
-      "longitude":"-81.4550000",
-      "city":"Marietta",
-      "state":"OH"
-   },
-   "TOMEC/Norton Community Hospital, Inc Program":{
-      "latitude":"36.9333333",
-      "longitude":"-82.6291667",
-      "city":"Norton",
-      "state":"VA"
-   },
-   "Kaiser Permanente Medical Group (Northern California)/Santa Rosa Program":{
-      "latitude":"38.4405556",
-      "longitude":"-122.7133333",
-      "city":"Santa Rosa",
-      "state":"CA"
-   },
-   "Griffin Memorial Hospital Program":{
-      "latitude":"35.2225000",
-      "longitude":"-97.4391667",
-      "city":"Norman",
-      "state":"OK"
-   },
-   "University of Wisconsin (Madison) Program":{
-      "latitude":"43.0730556",
-      "longitude":"-89.4011111",
-      "city":"Madison",
-      "state":"WI"
-   },
-   "Texas A&M; College of Medicine-Scott and White Program":{
-      "latitude":"31.0980556",
-      "longitude":"-97.3425000",
-      "city":"Temple",
-      "state":"TX"
-   },
-   "A-OPTIC/University of Montana Program":{
-      "latitude":"46.8722222",
-      "longitude":"-113.9930556",
-      "city":"Missoula",
-      "state":"MT"
-   },
-   "St Joseph's Regional Medical Center (South Bend) Program":{
-      "latitude":"41.6619444",
-      "longitude":"-86.1586111",
-      "city":"Mishawaka",
-      "state":"IN"
-   },
-   "CEME/Largo Medical Center Program":{
-      "latitude":"27.9091667",
-      "longitude":"-82.7875000",
-      "city":"Largo",
-      "state":"FL"
-   },
-   "New York Medical College at Westchester Medical Center Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "University of Wisconsin (Baraboo) Rural Program":{
-      "latitude":"43.0730556",
-      "longitude":"-89.4011111",
-      "city":"Madison",
-      "state":"WI"
-   },
-   "UCLA David Geffen School of Medicine/UCLA Medical Center Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "St John's Episcopal Hospital-South Shore Program":{
-      "latitude":"40.6052778",
-      "longitude":"-73.7555556",
-      "city":"Far Rockaway",
-      "state":"NY"
-   },
-   "William Beaumont Army Medical Center/Texas Tech University (El Paso) Program":{
-      "latitude":"31.7586111",
-      "longitude":"-106.4863889",
-      "city":"El Paso",
-      "state":"TX"
-   },
-   "New York Presbyterian Hospital (Cornell Campus) Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Mayo Clinic College of Medicine and Science (Rochester) Program":{
-      "latitude":"44.0216667",
-      "longitude":"-92.4697222",
-      "city":"Rochester",
-      "state":"MN"
-   },
-   "NYCOMEC/Good Samaritan Hospital Program":{
-      "latitude":"40.7061111",
-      "longitude":"-73.3066667",
-      "city":"West Islip",
-      "state":"NY"
-   },
-   "Yale-New Haven Medical Center (St. Raphael) Program":{
-      "latitude":"41.3080556",
-      "longitude":"-72.9286111",
-      "city":"New Haven",
-      "state":"CT"
-   },
-   "Prince George's Hospital Center Program":{
-      "latitude":"38.9280556",
-      "longitude":"-76.9161111",
-      "city":"Cheverly",
-      "state":"MD"
-   },
-   "OPTI-West/Desert Regional Medical Center Program":{
       "latitude":"33.8302778",
-      "longitude":"-116.5444444",
-      "city":"Palm Springs",
-      "state":"CA"
-   },
-   "University of Cincinnati Medical Center/College of Medicine Program":{
-      "latitude":"39.1619444",
-      "longitude":"-84.4569444",
-      "city":"Cincinnati",
-      "state":"OH"
-   },
-   "University of Central Florida College of Medicine/HCA GME Consortium (Gainesville) Program":{
-      "latitude":"29.6513889",
-      "longitude":"-82.3250000",
-      "city":"Gainesville",
-      "state":"FL"
-   },
-   "Tucson Hospitals Medical Education Program":{
-      "latitude":"32.2216667",
-      "longitude":"-110.9258333",
-      "city":"Tucson",
-      "state":"AZ"
-   },
-   "Providence Health & Services \u2013 Oregon/Hood River Rural Program":{
-      "latitude":"45.7055556",
-      "longitude":"-121.5202778",
-      "city":"Hood River",
-      "state":"OR"
-   },
-   "Lancaster General Hospital Program":{
-      "latitude":"40.0377778",
-      "longitude":"-76.3058333",
-      "city":"Lancaster",
-      "state":"PA"
-   },
-   "Still OPTI/Wright Ctr National Family Med-Lutheran Family HC Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Saint Peter's University Hospital/Rutgers Robert Wood Johnson Medical School Program":{
-      "latitude":"40.4861111",
-      "longitude":"-74.4522222",
-      "city":"New Brunswick",
-      "state":"NJ"
-   },
-   "SCS/MSUCOM/St. Mary Mercy Hospital Program":{
-      "latitude":"42.3683333",
-      "longitude":"-83.3527778",
-      "city":"Livonia",
-      "state":"MI"
-   },
-   "Hurley Medical Center/Michigan State University Program":{
-      "latitude":"43.0125000",
-      "longitude":"-83.6875000",
-      "city":"Flint",
-      "state":"MI"
-   },
-   "OMECO/Oklahoma State University Medical Center Program":{
-      "latitude":"36.1538889",
-      "longitude":"-95.9925000",
-      "city":"Tulsa",
-      "state":"OK"
-   },
-   "Eastern Virginia Medical School (Portsmouth) Program":{
-      "latitude":"36.8352778",
-      "longitude":"-76.2986111",
-      "city":"Portsmouth",
-      "state":"VA"
-   },
-   "North Colorado Medical Center Rural Program (Must also apply to ACGME ID 1200711074)":{
-      "latitude":"40.4233333",
-      "longitude":"-104.7086111",
-      "city":"Greeley",
-      "state":"CO"
-   },
-   "LECOMT/Westchester General Hospital Program":{
-      "latitude":"25.7738889",
-      "longitude":"-80.1938889",
-      "city":"Miami",
-      "state":"FL"
-   },
-   "Miami Children's Health System/Nicklaus Children's Hospital Program":{
-      "latitude":"25.7738889",
-      "longitude":"-80.1938889",
-      "city":"Miami",
-      "state":"FL"
-   },
-   "LECOMT/Penn Highlands Healthcare Program":{
-      "latitude":"41.114916",
-      "longitude":"-78.775170",
-      "city":"DuBois",
-      "state":"PA"
-   },
-   "U P Health System-Marquette Program":{
-      "latitude":"46.5436111",
-      "longitude":"-87.3952778",
-      "city":"Marquette",
-      "state":"MI"
-   },
-   "PCOM/Bryn Mawr Hospital Program":{
-      "latitude":"39.9813889",
-      "longitude":"-75.3569444",
-      "city":"Broomall",
-      "state":"PA"
-   },
-   "Scripps Mercy Hospital Program":{
-      "latitude":"32.7152778",
-      "longitude":"-117.1563889",
-      "city":"San Diego",
-      "state":"CA"
-   },
-   "SCS/MSUCOM/Botsford Hospital Program":{
-      "latitude":"42.4644444",
-      "longitude":"-83.3763889",
-      "city":"Farmington",
-      "state":"MI"
-   },
-   "Akron General Medical Center/NEOMED Program":{
-      "latitude":"41.0813889",
-      "longitude":"-81.5191667",
-      "city":"Akron",
-      "state":"OH"
-   },
-   "McGaw Medical Center of Northwestern University (Norwegian American) Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "St Vincent Charity Medical Center/Case Western Reserve University Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "Jersey Shore University Medical Center Program":{
-      "latitude":"40.2000000",
-      "longitude":"-74.0283333",
-      "city":"Neptune City",
-      "state":"NJ"
-   },
-   "Michigan State University Program":{
-      "latitude":"42.7369444",
-      "longitude":"-84.4838889",
-      "city":"East Lansing",
-      "state":"MI"
-   },
-   "OMNEE/Baptist Health System Program":{
-      "latitude":"29.4238889",
-      "longitude":"-98.4933333",
-      "city":"San Antonio",
-      "state":"TX"
-   },
-   "Rush University Medical Center/Copley Memorial Hospital Program":{
-      "latitude":"41.7605556",
-      "longitude":"-88.3200000",
-      "city":"Aurora",
-      "state":"IL"
-   },
-   "Cincinnati Children's Hospital Medical Center/University of Cincinnati College of Medicine Program":{
-      "latitude":"39.1619444",
-      "longitude":"-84.4569444",
-      "city":"Cincinnati",
-      "state":"OH"
-   },
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Wausau":{
-      "latitude":"44.9591667",
-      "longitude":"-89.6300000",
-      "city":"Wausau",
-      "state":"WI"
-   },
-   "University of Minnesota/North Memorial Hospital Program":{
-      "latitude":"44.9800000",
-      "longitude":"-93.2636111",
-      "city":"Minneapolis",
-      "state":"MN"
-   },
-   "Yuma Regional Medical Center Program":{
-      "latitude":"32.7252778",
-      "longitude":"-114.6236111",
-      "city":"Yuma",
-      "state":"AZ"
-   },
-   "Children's Hospital of Philadelphia Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Philadelphia College Osteopathic Med Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "DeTar Healthcare System Program":{
-      "latitude":"28.8050000",
-      "longitude":"-97.0033333",
-      "city":"Victoria",
-      "state":"TX"
-   },
-   "New York Medical College (Metropolitan) Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Hawaii Health Systems Corporation - Hilo Medical Center Program":{
-      "latitude":"19.7297222",
-      "longitude":"-155.0900000",
-      "city":"Hilo",
-      "state":"HI"
-   },
-   "OMNEE/Novant Health Huntersville Medical Center Program":{
-      "latitude":"35.4866667",
-      "longitude":"-80.8602778",
-      "city":"Cornelius",
-      "state":"NC"
-   },
-   "Temple University Hospital/Fox Chase Cancer Center Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "MWU/OPTI/Advocate Lutheran General Hospital Program":{
-      "latitude":"42.0111111",
-      "longitude":"-87.8405556",
-      "city":"Park Ridge",
-      "state":"IL"
-   },
-   "McLaren Oakland Program":{
-      "latitude":"42.6388889",
-      "longitude":"-83.2911111",
-      "city":"Pontiac",
-      "state":"MI"
-   },
-   "University of Connecticut Program":{
-      "latitude":"41.7636111",
-      "longitude":"-72.6855556",
-      "city":"Hartford",
-      "state":"CT"
-   },
-   "PCOM/UPMC McKeesport Program":{
-      "latitude":"40.3477778",
-      "longitude":"-79.8644444",
-      "city":"McKeesport",
-      "state":"PA"
-   },
-   "Children's Hospital of Michigan Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "Kaiser Permanente Southern California (Woodland Hills) Program":{
-      "latitude":"34.1683333",
-      "longitude":"-118.6050000",
-      "city":"Woodland Hills",
-      "state":"CA"
-   },
-   "University of California San Francisco (East Bay) Program":{
-      "latitude":"37.8044444",
-      "longitude":"-122.2697222",
-      "city":"Oakland",
-      "state":"CA"
-   },
-   "Western Michigan University Homer Stryker MD School of Medicine Program":{
-      "latitude":"42.2916667",
-      "longitude":"-85.5872222",
-      "city":"Kalamazoo",
-      "state":"MI"
-   },
-   "Jewish Hospital of Cincinnati Program":{
-      "latitude":"39.1619444",
-      "longitude":"-84.4569444",
-      "city":"Cincinnati",
-      "state":"OH"
-   },
-   "University of Arkansas for Medical Sciences Regional Centers (Magnolia) Rural Program":{
-      "latitude":"33.2669444",
-      "longitude":"-93.2391667",
-      "city":"Magnolia",
-      "state":"AR"
-   },
-   "Lutheran Family Health Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Medical College of Georgia Program":{
-      "latitude":"33.4708333",
-      "longitude":"-81.9750000",
-      "city":"Augusta",
-      "state":"GA"
-   },
-   "LECOMT/Niagara Falls Medical Center Program":{
-      "latitude":"43.0944444",
-      "longitude":"-79.0569444",
-      "city":"Niagara Falls",
-      "state":"NY"
-   },
-   "Eastern Virginia Medical School Program":{
-      "latitude":"36.8527778",
-      "longitude":"-75.9783333",
-      "city":"Virginia Beach",
-      "state":"VA"
-   },
-   "Saint Elizabeths Hospital-DC Department of Behavioral Health Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "Valley Consortium for Medical Education Family Medicine Program":{
-      "latitude":"37.6391667",
-      "longitude":"-120.9958333",
-      "city":"Modesto",
-      "state":"CA"
-   },
-   "University of Tennessee Medical Center at Knoxville Program":{
-      "latitude":"35.9605556",
-      "longitude":"-83.9208333",
-      "city":"Knoxville",
-      "state":"TN"
-   },
-   "Massachusetts Eye and Ear Infirmary/Harvard Medical School Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "A-OPTIC/Lake Cumberland Regional Hosp Program":{
-      "latitude":"37.0919444",
-      "longitude":"-84.6041667",
-      "city":"Somerset",
-      "state":"KY"
-   },
-   "Detroit Wayne County Health Authority (Authority Health) GME Consortium Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
-   },
-   "MWU/OPTI/Advanced Desert Dermatology Program":{
-      "latitude":"33.5805556",
-      "longitude":"-112.2366667",
-      "city":"Peoria",
-      "state":"AZ"
-   },
-   "PCOM/Abington Memorial Hospital Program":{
-      "latitude":"40.0958333",
-      "longitude":"-75.1255556",
-      "city":"Jenkintown",
-      "state":"PA"
-   },
-   "Inova Fairfax Medical Campus Program":{
-      "latitude":"38.8822222",
-      "longitude":"-77.1713889",
-      "city":"Falls Church",
-      "state":"VA"
-   },
-   "Tufts Medical Center Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "University of Minnesota Medical School Program":{
-      "latitude":"44.9800000",
-      "longitude":"-93.2636111",
-      "city":"Minneapolis",
-      "state":"MN"
-   },
-   "Legacy Emanuel Hospital and Health Center Program":{
-      "latitude":"45.5236111",
-      "longitude":"-122.6750000",
-      "city":"Portland",
-      "state":"OR"
-   },
-   "NYCOMEC/The Institute for Family Health Program":{
-      "latitude":"41.9269444",
-      "longitude":"-73.9977778",
-      "city":"Kingston",
-      "state":"NY"
-   },
-   "St. Louis University School of Medicine Program":{
-      "latitude":"38.6272222",
-      "longitude":"-90.1977778",
-      "city":"St Louis",
-      "state":"MO"
-   },
-   "Grant Medical Center (OhioHealth) Program":{
-      "latitude":"39.9611111",
-      "longitude":"-82.9988889",
-      "city":"Columbus",
-      "state":"OH"
-   },
-   "Southern Regional Area Health Education Center/Duke University Hospital Program":{
-      "latitude":"35.0525000",
-      "longitude":"-78.8786111",
-      "city":"Fayetteville",
-      "state":"NC"
-   },
-   "University of California Riverside/Riverside Community Hospital Program":{
-      "latitude":"33.9533333",
-      "longitude":"-117.3952778",
-      "city":"Riverside",
-      "state":"CA"
-   },
-   "PCOM/Reading Hospital and Med Ctr Program":{
-      "latitude":"40.3336111",
-      "longitude":"-75.9477778",
-      "city":"West Reading",
-      "state":"PA"
-   },
-   "Hidalgo Medical Services Program":{
-      "latitude":"32.7700000",
-      "longitude":"-108.2797222",
-      "city":"Silver City",
-      "state":"NM"
-   },
-   "Washington Health System  Program":{
-      "latitude":"40.1738889",
-      "longitude":"-80.2463889",
-      "city":"Washington",
-      "state":"PA"
-   },
-   "SUNY Upstate Medical University Program":{
-      "latitude":"43.0480556",
-      "longitude":"-76.1477778",
-      "city":"Syracuse",
-      "state":"NY"
-   },
-   "Swedish Medical Center/First Hill Program":{
-      "latitude":"47.6063889",
-      "longitude":"-122.3308333",
-      "city":"Seattle",
-      "state":"WA"
-   },
-   "Robert Wood Johnson University Hospital Somerset Program":{
-      "latitude":"40.5741667",
-      "longitude":"-74.6102778",
-      "city":"Somerville",
-      "state":"NJ"
-   },
-   "University of Wisconsin Hospital and Clinics Program":{
-      "latitude":"43.0730556",
-      "longitude":"-89.4011111",
-      "city":"Madison",
-      "state":"WI"
-   },
-   "University of Mississippi Medical Center Program":{
-      "latitude":"32.2986111",
-      "longitude":"-90.1847222",
-      "city":"Jackson",
-      "state":"MS"
-   },
-   "University of Virginia Medical Center Program":{
-      "latitude":"38.0291667",
-      "longitude":"-78.4769444",
-      "city":"Charlottesville",
-      "state":"VA"
-   },
-   "University of Maryland at Mercy Medical Center Preliminary Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "OPTI-West/West Anaheim Medical Center Program":{
-      "latitude":"33.8352778",
-      "longitude":"-117.9136111",
-      "city":"Anaheim",
-      "state":"CA"
-   },
-   "Tallahassee Memorial Healthcare Family Medicine Program":{
-      "latitude":"30.4380556",
-      "longitude":"-84.2808333",
-      "city":"Tallahassee",
-      "state":"FL"
-   },
-   "Stony Brook Medicine/Mather Hospital Program":{
-      "latitude":"40.9463889",
-      "longitude":"-73.0697222",
-      "city":"Port Jefferson",
-      "state":"NY"
-   },
-   "University of Vermont Health Network-Champlain Valley Physicians Hospital Program":{
-      "latitude":"44.6994444",
-      "longitude":"-73.4533333",
-      "city":"Plattsburgh",
-      "state":"NY"
-   },
-   "University at Buffalo Program":{
-      "latitude":"42.8863889",
-      "longitude":"-78.8786111",
-      "city":"Buffalo",
-      "state":"NY"
-   },
-   "A-OPTIC/ETSU/Quillen College of Medicine Program":{
-      "latitude":"36.3133333",
-      "longitude":"-82.3536111",
-      "city":"Johnson City",
-      "state":"TN"
-   },
-   "York Hospital Program":{
-      "latitude":"39.9625000",
-      "longitude":"-76.7280556",
-      "city":"York",
-      "state":"PA"
-   },
-   "Medical Center of Central Georgia/Mercer University School of Medicine Program":{
-      "latitude":"32.8405556",
-      "longitude":"-83.6325000",
-      "city":"Macon",
-      "state":"GA"
-   },
-   "Oakwood Hospital/Wayne State University Program":{
-      "latitude":"42.2408333",
-      "longitude":"-83.2697222",
-      "city":"Taylor",
-      "state":"MI"
-   },
-   "University of Tennessee/Methodist Healthcare-Memphis Hospitals Program":{
-      "latitude":"35.1494444",
-      "longitude":"-90.0488889",
-      "city":"Memphis",
-      "state":"TN"
-   },
-   "George Washington University School of Medicine Program":{
-      "latitude":"38.8950000",
-      "longitude":"-77.0366667",
-      "city":"Washington",
-      "state":"DC"
-   },
-   "Montefiore Medical Center/Albert Einstein College of Medicine Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "University of California Riverside School of Medicine Program":{
-      "latitude":"33.9533333",
-      "longitude":"-117.3952778",
-      "city":"Riverside",
-      "state":"CA"
-   },
-   "Massachusetts General Hospital/Beth Israel Deaconess Medical Center/Brigham and Women's Hosp Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "North Mississippi Medical Center (Tupelo) Program":{
-      "latitude":"34.2575000",
-      "longitude":"-88.7033333",
-      "city":"Tupelo",
-      "state":"MS"
-   },
-   "Children's Mercy Hospital/University of Kansas Medical Center Program":{
-      "latitude":"39.0997222",
-      "longitude":"-94.5783333",
-      "city":"Kansas City",
-      "state":"MO"
-   },
-   "University of Nevada School of Medicine Rural Program":{
-      "latitude":"36.1750000",
-      "longitude":"-115.1363889",
-      "city":"Las Vegas",
-      "state":"NV"
-   },
-   "Sierra Vista Program":{
-      "latitude":"36.7477778",
-      "longitude":"-119.7713889",
-      "city":"Fresno",
-      "state":"CA"
-   },
-   "CORE/Affinity Medical Center Program":{
-      "latitude":"40.7966667",
-      "longitude":"-81.5216667",
-      "city":"Massillon",
-      "state":"OH"
-   },
-   "University of New Mexico School of Medicine Program":{
-      "latitude":"35.0844444",
-      "longitude":"-106.6505556",
-      "city":"Albuquerque",
-      "state":"NM"
-   },
-   "University of Minnesota/St Joseph's Hospital Program":{
-      "latitude":"44.9800000",
-      "longitude":"-93.2636111",
-      "city":"Minneapolis",
-      "state":"MN"
-   },
-   "LECOMT/Florida Osteopathic Educational Institute Program":{
-      "latitude":"28.2438889",
-      "longitude":"-82.7194444",
-      "city":"New Port Richey",
-      "state":"FL"
-   },
-   "University of Louisville (Glasgow) Program":{
-      "latitude":"36.9958333",
-      "longitude":"-85.9119444",
-      "city":"Glasgow",
-      "state":"KY"
-   },
-   "OMECO/McAlester Regional Health Center Program":{
-      "latitude":"34.9333333",
-      "longitude":"-95.7694444",
-      "city":"McAlester",
-      "state":"OK"
-   },
-   "Meharry Medical College Program A":{
-      "latitude":"36.1658333",
-      "longitude":"-86.7844444",
-      "city":"Nashville",
-      "state":"TN"
-   },
-   "Hospital Dr Alejandro Otero Lopez Program":{
-      "latitude":"18.4294444",
-      "longitude":"-66.4925000",
-      "city":"Manati",
-      "state":"PR"
-   },
-   "OMECO/Chickasaw Nation Medical Center Program":{
-      "latitude":"34.7744444",
-      "longitude":"-96.6780556",
-      "city":"Ada",
-      "state":"OK"
-   },
-   "University of California (Irvine) Program":{
-      "latitude":"33.6694444",
-      "longitude":"-117.8222222",
-      "city":"Irvine",
-      "state":"CA"
-   },
-   "OMNEE/Spartanburg Regional Health Systems Program":{
-      "latitude":"34.9494444",
-      "longitude":"-81.9322222",
-      "city":"Spartanburg",
-      "state":"SC"
-   },
-   "The Medical Center Program":{
-      "latitude":"32.4608333",
-      "longitude":"-84.9877778",
-      "city":"Columbus",
-      "state":"GA"
-   },
-   "SCS/MSUCOM/St Joseph Mercy-Oakland Program":{
-      "latitude":"42.6388889",
-      "longitude":"-83.2911111",
-      "city":"Pontiac",
-      "state":"MI"
-   },
-   "LECOMT/York Hospital Program":{
-      "latitude":"39.9625000",
-      "longitude":"-76.7280556",
-      "city":"York",
-      "state":"PA"
-   },
-   "University of Iowa Hospitals and Clinics Program":{
-      "latitude":"41.6611111",
-      "longitude":"-91.5300000",
-      "city":"Iowa City",
-      "state":"IA"
-   },
-   "Nationwide Children's Hospital/Doctors Hospital Program":{
-      "latitude":"39.9611111",
-      "longitude":"-82.9988889",
-      "city":"Columbus",
-      "state":"OH"
-   },
-   "OMNEE/Sampson Regional Medical Center Program":{
-      "latitude":"34.9977778",
-      "longitude":"-78.3236111",
-      "city":"Clinton",
-      "state":"NC"
-   },
-   "Aultman Hospital/Mercy/NEOMED Program":{
-      "latitude":"40.7988889",
-      "longitude":"-81.3786111",
-      "city":"Canton",
-      "state":"OH"
-   },
-   "Family Medicine Residency of Idaho (Magic Valley) Rural Program":{
-      "latitude":"43.6136111",
-      "longitude":"-116.2025000",
-      "city":"Boise",
-      "state":"ID"
-   },
-   "St Mary-Corwin Medical Center Program":{
-      "latitude":"38.2544444",
-      "longitude":"-104.6086111",
-      "city":"Pueblo",
-      "state":"CO"
-   },
-   "PCOM/Warren Hospital Div Program":{
-      "latitude":"40.6936111",
-      "longitude":"-75.1905556",
-      "city":"Phillipsburg",
-      "state":"NJ"
-   },
-   "Capital Health Regional Medical Center Program":{
-      "latitude":"40.2169444",
-      "longitude":"-74.7433333",
-      "city":"Trenton",
-      "state":"NJ"
-   },
-   "University of Texas Southwestern Medical School Program":{
-      "latitude":"32.7833333",
-      "longitude":"-96.8000000",
-      "city":"Dallas",
-      "state":"TX"
-   },
-   "Santa Clara Valley Medical Center Program":{
-      "latitude":"37.3394444",
-      "longitude":"-121.8938889",
-      "city":"San Jose",
-      "state":"CA"
-   },
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Milwaukee":{
-      "latitude":"43.0388889",
-      "longitude":"-87.9063889",
-      "city":"Milwaukee",
-      "state":"WI"
-   },
-   "OMNEE/La Clinica de Familia Program":{
-      "latitude":"32.3122222",
-      "longitude":"-106.7777778",
-      "city":"Las Cruces",
-      "state":"NM"
-   },
-   "Spaulding Rehabilitation Hospital/Harvard Medical School Program":{
-      "latitude":"42.3777778",
-      "longitude":"-71.0625000",
-      "city":"Charlestown",
-      "state":"MA"
-   },
-   "Florida Atlantic University Charles E. Schmidt College of Medicine Program":{
-      "latitude":"26.3583333",
-      "longitude":"-80.0833333",
-      "city":"Boca Raton",
-      "state":"FL"
-   },
-   "Texas Tech University Hlth Sci Ctr Paul L. Foster Sch of Med Program":{
-      "latitude":"31.7586111",
-      "longitude":"-106.4863889",
-      "city":"El Paso",
-      "state":"TX"
-   },
-   "University of New Mexico Program":{
-      "latitude":"35.0844444",
-      "longitude":"-106.6505556",
-      "city":"Albuquerque",
-      "state":"NM"
-   },
-   "University of Kentucky College of Medicine Program":{
-      "latitude":"37.9886111",
-      "longitude":"-84.4777778",
-      "city":"Lexington",
-      "state":"KY"
-   },
-   "SCS/MSUCOM/Lakeland Regional Med Ctr Program":{
-      "latitude":"42.1097222",
-      "longitude":"-86.4800000",
-      "city":"Saint Joseph",
-      "state":"MI"
-   },
-   "Children's Hospital Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "PCOM/UPMC Shadyside Hospital Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "University of Chicago Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "University of North Dakota Program":{
-      "latitude":"46.8772222",
-      "longitude":"-96.7894444",
-      "city":"Fargo",
-      "state":"ND"
-   },
-   "KCU-GMEC/St Mary's Hospital of Blue Springs Program":{
-      "latitude":"39.0169444",
-      "longitude":"-94.2813889",
-      "city":"Blue Springs",
-      "state":"MO"
-   },
-   "PCOM/Lehigh Valley Health Network Program":{
-      "latitude":"40.6258333",
-      "longitude":"-75.3708333",
-      "city":"Bethlehem",
-      "state":"PA"
-   },
-   "Dartmouth-Hitchcock Medical Center Program":{
-      "latitude":"43.6422222",
-      "longitude":"-72.2522222",
-      "city":"Lebanon",
-      "state":"NH"
-   },
-   "NEOMEN/St Joseph's Hospital & Med Ctr Program":{
-      "latitude":"40.9166667",
-      "longitude":"-74.1722222",
-      "city":"Paterson",
-      "state":"NJ"
-   },
-   "OPTI-West/Puyallup Tribal Health Authority Program":{
-      "latitude":"47.2530556",
-      "longitude":"-122.4430556",
-      "city":"Tacoma",
-      "state":"WA"
-   },
-   "Research Medical Center Program":{
-      "latitude":"39.0997222",
-      "longitude":"-94.5783333",
-      "city":"Kansas City",
-      "state":"MO"
-   },
-   "HonorHealth Program":{
-      "latitude":"33.5091667",
-      "longitude":"-111.8983333",
-      "city":"Scottsdale",
-      "state":"AZ"
-   },
-   "Memorial Hospital of Rhode Island/Brown University Program":{
-      "latitude":"41.8786111",
-      "longitude":"-71.3830556",
-      "city":"Pawtucket",
-      "state":"RI"
-   },
-   "McGaw Medical Center of Northwestern University (Lake Forest) Program":{
-      "latitude":"42.3444444",
-      "longitude":"-88.0416667",
-      "city":"Grayslake",
-      "state":"IL"
-   },
-   "STILL OPTI/Capital Region Medical Center Program":{
-      "latitude":"38.5766667",
-      "longitude":"-92.1733333",
-      "city":"Jefferson City",
-      "state":"MO"
-   },
-   "MSOPTI/Meritus Medical Center Program":{
-      "latitude":"39.6416667",
-      "longitude":"-77.7202778",
-      "city":"Hagerstown",
-      "state":"MD"
-   },
-   "University of Missouri-Columbia Program":{
-      "latitude":"38.9516667",
-      "longitude":"-92.3338889",
-      "city":"Columbia",
-      "state":"MO"
-   },
-   "East Jefferson General Hospital Program":{
-      "latitude":"29.9838889",
-      "longitude":"-90.1527778",
-      "city":"Metairie",
-      "state":"LA"
-   },
-   "NYCOMEC/Arkansas Methodist MC Program":{
-      "latitude":"36.0583333",
-      "longitude":"-90.4972222",
-      "city":"Paragould",
-      "state":"AR"
-   },
-   "University of Puerto Rico Program":{
-      "latitude":"18.3994444",
-      "longitude":"-66.0502778",
-      "city":"Rio Piedras",
-      "state":"PR"
-   },
-   "Oregon Health & Science University (Cascades East) Program":{
-      "latitude":"42.2250000",
-      "longitude":"-121.7805556",
-      "city":"Klamath Falls",
-      "state":"OR"
-   },
-   "JFK Medical Center Program":{
-      "latitude":"40.5186111",
-      "longitude":"-74.4125000",
-      "city":"Edison",
-      "state":"NJ"
-   },
-   "CEME/St Vincents Medical Center Program":{
-      "latitude":"30.3319444",
-      "longitude":"-81.6558333",
-      "city":"Jacksonville",
-      "state":"FL"
-   },
-   "University of Kansas (Wichita) Program":{
-      "latitude":"37.6922222",
-      "longitude":"-97.3372222",
-      "city":"Wichita",
-      "state":"KS"
-   },
-   "KCU-GMEC/UMKC/Truman Medical Center Lakewood Program":{
-      "latitude":"39.0997222",
-      "longitude":"-94.5783333",
-      "city":"Kansas City",
-      "state":"MO"
-   },
-   "Virtua Program":{
-      "latitude":"40.4811111",
-      "longitude":"-74.4836111",
-      "city":"Voorhees",
-      "state":"NJ"
-   },
-   "SCS/MSUCOM/Genesys Regional Med Ctr-Health Park Program":{
-      "latitude":"42.9275000",
-      "longitude":"-83.6300000",
-      "city":"Grand Blanc",
-      "state":"MI"
-   },
-   "St Luke's Hospital Program":{
-      "latitude":"38.6272222",
-      "longitude":"-90.1977778",
-      "city":"St Louis",
-      "state":"MO"
-   },
-   "OPTI-West/Good Samaritan Reg Med Ctr Program":{
-      "latitude":"44.5647222",
-      "longitude":"-123.2608333",
-      "city":"Corvallis",
-      "state":"OR"
-   },
-   "LECOMT/UH Parma Medical Center Program":{
-      "latitude":"41.4047222",
-      "longitude":"-81.7230556",
-      "city":"Parma",
-      "state":"OH"
-   },
-   "Munson Medical Center Program":{
-      "latitude":"44.7630556",
-      "longitude":"-85.6205556",
-      "city":"Traverse City",
-      "state":"MI"
-   },
-   "University of Chicago (NorthShore) Program":{
-      "latitude":"42.0411111",
-      "longitude":"-87.6900000",
-      "city":"Evanston",
-      "state":"IL"
-   },
-   "St Joseph Mercy Livingston Program":{
-      "latitude":"42.5294444",
-      "longitude":"-83.7802778",
-      "city":"Brighton",
-      "state":"MI"
-   },
-   "Conemaugh Memorial Medical Center Program":{
-      "latitude":"40.3266667",
-      "longitude":"-78.9222222",
-      "city":"Johnstown",
-      "state":"PA"
-   },
-   "Hennepin County Medical Center/Regions Hospital Program":{
-      "latitude":"44.9444444",
-      "longitude":"-93.0930556",
-      "city":"St Paul",
-      "state":"MN"
-   },
-   "CORE/South Pointe Hosp Program":{
-      "latitude":"41.4350000",
-      "longitude":"-81.5363889",
-      "city":"Warrensville Heights",
-      "state":"OH"
-   },
-   "University of Michigan School of Public Health Program":{
-      "latitude":"42.2708333",
-      "longitude":"-83.7263889",
-      "city":"Ann Arbor",
-      "state":"MI"
-   },
-   "Mercy Catholic Medical Center Program":{
-      "latitude":"39.9183333",
-      "longitude":"-75.2594444",
-      "city":"Darby",
-      "state":"PA"
-   },
-   "Memorial Health-University Medical Center/Mercer University School of Medicine (Savannah) Program":{
-      "latitude":"32.0833333",
-      "longitude":"-81.1000000",
-      "city":"Savannah",
-      "state":"GA"
-   },
-   "University of Maryland Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "Children's Hospital Boston Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "OPTI-West/PHH/Hemet Valley Medical Center Program":{
-      "latitude":"33.7475000",
-      "longitude":"-116.9711111",
-      "city":"Hemet",
-      "state":"CA"
-   },
-   "RMOPTI/University of Wyoming-Cheyenne Program":{
-      "latitude":"41.1400000",
-      "longitude":"-104.8197222",
-      "city":"Cheyenne",
-      "state":"WY"
-   },
-   "University of Alabama Hospital Program":{
-      "latitude":"33.5205556",
-      "longitude":"-86.8025000",
-      "city":"Birmingham",
-      "state":"AL"
-   },
-   "Self Regional Healthcare/Greenwood Program":{
-      "latitude":"34.1952778",
-      "longitude":"-82.1619444",
-      "city":"Greenwood",
-      "state":"SC"
-   },
-   "University of Alabama Medical Center Program":{
-      "latitude":"33.5205556",
-      "longitude":"-86.8025000",
-      "city":"Birmingham",
-      "state":"AL"
-   },
-   "Sacred Heart Hospital/Temple University (Allentown) Program":{
-      "latitude":"40.6083333",
-      "longitude":"-75.4905556",
-      "city":"Allentown",
-      "state":"PA"
-   },
-   "New York University School of Medicine/Brooklyn Campus Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Ramon Betances Hospital-Mayaguez Medical Center/Ponce School of Medicine Consortium Program":{
-      "latitude":"18.2030556",
-      "longitude":"-67.1400000",
-      "city":"Mayaguez",
-      "state":"PR"
-   },
-   "University of Illinois College of Medicine at Chicago Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "LECOMT/Trinity Health System Program":{
-      "latitude":"40.3697222",
-      "longitude":"-80.6341667",
-      "city":"Steubenville",
-      "state":"OH"
-   },
-   "Carolinas HealthCare System Blue Ridge Program":{
-      "latitude":"35.7452778",
-      "longitude":"-81.6850000",
-      "city":"Morganton",
-      "state":"NC"
-   },
-   "RMOPTI/Swedish Medical Center Program":{
-      "latitude":"39.6477778",
-      "longitude":"-104.9872222",
-      "city":"Englewood",
-      "state":"CO"
-   },
-   "Mercy Medical Center (Merced) Program":{
-      "latitude":"37.3022222",
-      "longitude":"-120.4819444",
-      "city":"Merced",
-      "state":"CA"
-   },
-   "Interfaith Medical Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "Mount Sinai Medical Center of Florida Program":{
-      "latitude":"25.7902778",
-      "longitude":"-80.1302778",
-      "city":"Miami Beach",
-      "state":"FL"
-   },
-   "OPTI-West/Riverside University Health System MC Program":{
-      "latitude":"33.9375000",
-      "longitude":"-117.2297222",
-      "city":"Moreno Valley",
-      "state":"CA"
-   },
-   "Centra Health Program":{
-      "latitude":"37.4136111",
-      "longitude":"-79.1425000",
-      "city":"Lynchburg",
-      "state":"VA"
-   },
-   "Mayo Clinic College of Medicine and Science Program":{
-      "latitude":"44.0216667",
-      "longitude":"-92.4697222",
-      "city":"Rochester",
-      "state":"MN"
-   },
-   "Massachusetts General Hospital/Harvard Medical School Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Icahn School of Medicine at Mount Sinai (Downtown) Urban Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "McLaren-Flint Program":{
-      "latitude":"43.0125000",
-      "longitude":"-83.6875000",
-      "city":"Flint",
-      "state":"MI"
-   },
-   "Alameda Health System-Highland Hospital Program":{
-      "latitude":"37.8044444",
-      "longitude":"-122.2697222",
-      "city":"Oakland",
-      "state":"CA"
-   },
-   "Samaritan Health Services - Corvallis Program":{
-      "latitude":"44.5647222",
-      "longitude":"-123.2608333",
-      "city":"Corvallis",
-      "state":"OR"
-   },
-   "SCS/MSUCOM/Mercy Health Program":{
-      "latitude":"43.2341667",
-      "longitude":"-86.2483333",
-      "city":"Muskegon",
-      "state":"MI"
-   },
-   "Louis A Weiss Memorial Hospital Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "University of Tennessee (Jackson) Program":{
-      "latitude":"35.6144444",
-      "longitude":"-88.8138889",
-      "city":"Jackson",
-      "state":"TN"
-   },
-   "In His Image at St John Medical Center Program":{
-      "latitude":"36.1538889",
-      "longitude":"-95.9925000",
-      "city":"Tulsa",
-      "state":"OK"
-   },
-   "MSOPTI/Greenbrier Valley Med Ctr Program":{
-      "latitude":"37.7497222",
-      "longitude":"-80.4630556",
-      "city":"Ronceverte",
-      "state":"WV"
-   },
-   "University of Minnesota (Duluth) Program":{
-      "latitude":"46.7833333",
-      "longitude":"-92.1063889",
-      "city":"Duluth",
-      "state":"MN"
-   },
-   "Tripler Army Medical Center Program":{
-      "latitude":"21.3069444",
-      "longitude":"-157.8583333",
-      "city":"Honolulu",
-      "state":"HI"
-   },
-   "Mayo Clinic Health System-Franciscan Healthcare Program":{
-      "latitude":"43.8013889",
-      "longitude":"-91.2394444",
-      "city":"La Crosse",
-      "state":"WI"
-   },
-   "MWU/OPTI/Verde Valley Med Center Program":{
-      "latitude":"34.7391667",
-      "longitude":"-112.0091667",
-      "city":"Cottonwood",
-      "state":"AZ"
-   },
-   "Waterbury Hospital Health Center Program":{
-      "latitude":"41.5580556",
-      "longitude":"-73.0519444",
-      "city":"Waterbury",
-      "state":"CT"
-   },
-   "Reading Hospital Program":{
-      "latitude":"40.3355556",
-      "longitude":"-75.9272222",
-      "city":"Reading",
-      "state":"PA"
-   },
-   "Texas Tech University (Permian Basin) Program":{
-      "latitude":"31.8455556",
-      "longitude":"-102.3672222",
-      "city":"Odessa",
-      "state":"TX"
-   },
-   "Children's Hospital of Los Angeles Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "McLennan County Medical Education and Research Foundation Program":{
-      "latitude":"31.5491667",
-      "longitude":"-97.1463889",
-      "city":"Waco",
-      "state":"TX"
-   },
-   "UPMC Medical Education (Hamot)  Program":{
-      "latitude":"42.1291667",
-      "longitude":"-80.0852778",
-      "city":"Erie",
-      "state":"PA"
-   },
-   "Mercy St Vincent Medical Center/Mercy Health Partners Program":{
-      "latitude":"41.6638889",
-      "longitude":"-83.5552778",
-      "city":"Toledo",
-      "state":"OH"
-   },
-   "A-OPTIC/Pikeville Medical Center Program":{
-      "latitude":"37.4791667",
-      "longitude":"-82.5188889",
-      "city":"Pikeville",
-      "state":"KY"
-   },
-   "Montefiore Medical Center/Albert Einstein College of Medicine (New Rochelle) Program":{
-      "latitude":"40.9113889",
-      "longitude":"-73.7827778",
-      "city":"New Rochelle",
-      "state":"NY"
-   },
-   "Western Reserve Care System/NEOUCOM Program":{
-      "latitude":"41.0997222",
-      "longitude":"-80.6497222",
-      "city":"Youngstown",
-      "state":"OH"
-   },
-   "Sutter Health Program":{
-      "latitude":"38.5816667",
-      "longitude":"-121.4933333",
-      "city":"Sacramento",
-      "state":"CA"
-   },
-   "Harbor Hospital Center Program":{
-      "latitude":"39.2902778",
-      "longitude":"-76.6125000",
-      "city":"Baltimore",
-      "state":"MD"
-   },
-   "PCOM/Pinnacle Health Community Gen Osteo Hosp Program":{
-      "latitude":"40.2736111",
-      "longitude":"-76.8847222",
-      "city":"Harrisburg",
-      "state":"PA"
-   },
-   "Brown University Program":{
-      "latitude":"41.8238889",
-      "longitude":"-71.4133333",
-      "city":"Providence",
-      "state":"RI"
-   },
-   "STILL OPTI/Advocate BroMenn Med Ctr Program":{
-      "latitude":"40.5141667",
-      "longitude":"-88.9905556",
-      "city":"Normal",
-      "state":"IL"
-   },
-   "Ochsner Clinic Foundation/Louisiana State University Program":{
-      "latitude":"29.9544444",
-      "longitude":"-90.0750000",
-      "city":"New Orleans",
-      "state":"LA"
-   },
-   "East Tennessee State University (Kingsport) Program":{
-      "latitude":"36.5483333",
-      "longitude":"-82.5619444",
-      "city":"Kingsport",
-      "state":"TN"
-   },
-   "White Memorial Medical Center Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "A-OPTIC/Methodist Hospital (KY) Program":{
-      "latitude":"37.8361111",
-      "longitude":"-87.5900000",
-      "city":"Henderson",
-      "state":"KY"
-   },
-   "OMNEE/Gerald Champion Regional MC Program":{
-      "latitude":"32.8994444",
-      "longitude":"-105.9597222",
-      "city":"Alamogordo",
-      "state":"NM"
-   },
-   "Ponce Health Sciences University Program":{
-      "latitude":"18.4683333",
-      "longitude":"-66.1061111",
-      "city":"San Juan",
-      "state":"PR"
-   },
-   "New York University School of Medicine Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Orlando Health Program":{
-      "latitude":"28.5380556",
-      "longitude":"-81.3794444",
-      "city":"Orlando",
-      "state":"FL"
-   },
-   "Montana Family Medicine Residency Program":{
-      "latitude":"45.7833333",
-      "longitude":"-108.5000000",
-      "city":"Billings",
-      "state":"MT"
-   },
-   "Texas OPTI/Plaza Medical Center Program":{
-      "latitude":"32.7252778",
-      "longitude":"-97.3205556",
-      "city":"Fort Worth",
-      "state":"TX"
-   },
-   "Kaiser Permanente Southern California (Los Angeles) Program":{
-      "latitude":"34.1477778",
-      "longitude":"-118.1436111",
-      "city":"Pasadena",
-      "state":"CA"
-   },
-   "Case Western Reserve University (MetroHealth) Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "Southern Illinois University School of Medicine Program":{
-      "latitude":"39.8016667",
-      "longitude":"-89.6436111",
-      "city":"Springfield",
-      "state":"IL"
-   },
-   "Central Iowa Health System (Iowa Lutheran Hospital) Program":{
-      "latitude":"41.6005556",
-      "longitude":"-93.6088889",
-      "city":"Des Moines",
-      "state":"IA"
-   },
-   "Washington University/B-JH/SLCH Consortium Program":{
-      "latitude":"38.6272222",
-      "longitude":"-90.1977778",
-      "city":"St Louis",
-      "state":"MO"
-   },
-   "University of Florida Program":{
-      "latitude":"29.6513889",
-      "longitude":"-82.3250000",
-      "city":"Gainesville",
-      "state":"FL"
-   },
-   "Georgetown University Hospital Program":{
-      "latitude":"38.8822222",
-      "longitude":"-77.1713889",
-      "city":"Falls Church",
-      "state":"VA"
-   },
-   "Brigham and Women's Hospital/Harvard Medical School Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "University of Minnesota/St John's Hospital Program":{
-      "latitude":"44.9800000",
-      "longitude":"-93.2636111",
-      "city":"Minneapolis",
-      "state":"MN"
-   },
-   "RowanSOM/OPTI/Christ Hospital Program":{
-      "latitude":"40.7280556",
-      "longitude":"-74.0780556",
-      "city":"Jersey City",
-      "state":"NJ"
-   },
-   "Atlanta Medical Center Program":{
-      "latitude":"33.7488889",
-      "longitude":"-84.3880556",
-      "city":"Atlanta",
-      "state":"GA"
-   },
-   "Glendale Adventist Medical Center Program":{
-      "latitude":"34.1425000",
-      "longitude":"-118.2541667",
-      "city":"Glendale",
-      "state":"CA"
-   },
-   "MWU/OPTI/Kingman Regional Med Ctr Program":{
-      "latitude":"35.1894444",
-      "longitude":"-114.0522222",
-      "city":"Kingman",
-      "state":"AZ"
-   },
-   "OMNEE/Riverside Regional Medical Ctr Program":{
-      "latitude":"36.9786111",
-      "longitude":"-76.4283333",
-      "city":"Newport News",
-      "state":"VA"
-   },
-   "Phoenix Children's Hospital Program":{
-      "latitude":"33.4483333",
-      "longitude":"-112.0733333",
-      "city":"Phoenix",
-      "state":"AZ"
-   },
-   "Kaiser Permanente Southern California (Fontana) Program":{
-      "latitude":"34.0922222",
-      "longitude":"-117.4341667",
-      "city":"Fontana",
-      "state":"CA"
-   },
-   "Cincinnati Children's Hospital Medical Center Program":{
-      "latitude":"39.1619444",
-      "longitude":"-84.4569444",
-      "city":"Cincinnati",
-      "state":"OH"
-   },
-   "Colorado Health Foundation Presbyterian-St Luke's Medical Center Program":{
-      "latitude":"39.7391667",
-      "longitude":"-104.9841667",
-      "city":"Denver",
-      "state":"CO"
-   },
-   "Arrowhead Regional Med Ctr/Aspen Dermatology Program":{
-      "latitude":"40.1652778",
-      "longitude":"-111.6100000",
-      "city":"Springville",
-      "state":"UT"
-   },
-   "WellStar Kennestone Regional Medical Center Program":{
-      "latitude":"33.9525000",
-      "longitude":"-84.5500000",
-      "city":"Marietta",
-      "state":"GA"
-   },
-   "University of Tennessee College of Medicine at Chattanooga Program":{
-      "latitude":"35.0455556",
-      "longitude":"-85.3097222",
-      "city":"Chattanooga",
-      "state":"TN"
-   },
-   "Texas Department of State Health Services Program":{
-      "latitude":"30.2669444",
-      "longitude":"-97.7427778",
-      "city":"Austin",
-      "state":"TX"
-   },
-   "Sea Mar Community Health Centers Program":{
-      "latitude":"48.0519444",
-      "longitude":"-122.1758333",
-      "city":"Marysville",
-      "state":"WA"
-   },
-   "Grand Strand Regional Medical Center Program":{
-      "latitude":"33.6888889",
-      "longitude":"-78.8869444",
-      "city":"Myrtle Beach",
-      "state":"SC"
-   },
-   "University of Texas Health Science Center School of Medicine at San Antonio Program":{
-      "latitude":"29.4238889",
-      "longitude":"-98.4933333",
-      "city":"San Antonio",
-      "state":"TX"
-   },
-   "Thomas Jefferson University/duPont Hospital for Children Program":{
-      "latitude":"39.7458333",
-      "longitude":"-75.5469444",
-      "city":"Wilmington",
-      "state":"DE"
-   },
-   "Firelands Regional Medical Center Program":{
-      "latitude":"41.4488889",
-      "longitude":"-82.7080556",
-      "city":"Sandusky",
-      "state":"OH"
-   },
-   "PCOM/Geisinger Health System Program":{
-      "latitude":"40.9633333",
-      "longitude":"-76.6130556",
-      "city":"Danville",
-      "state":"PA"
-   },
-   "Cleveland Clinic Foundation Program":{
-      "latitude":"41.4994444",
-      "longitude":"-81.6955556",
-      "city":"Cleveland",
-      "state":"OH"
-   },
-   "PCOM/Heart of Lancaster Regional Med Center Program":{
-      "latitude":"40.1572222",
-      "longitude":"-76.3072222",
-      "city":"Lititz",
-      "state":"PA"
-   },
-   "Medical College of Wisconsin Affiliated Hospitals, Inc Program":{
-      "latitude":"43.0388889",
-      "longitude":"-87.9063889",
-      "city":"Milwaukee",
-      "state":"WI"
-   },
-   "Long Beach Memorial Medical Center Program":{
-      "latitude":"33.7669444",
-      "longitude":"-118.1883333",
-      "city":"Long Beach",
-      "state":"CA"
-   },
-   "Harlem Hospital Center Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "CEME/Floyd Medical Center Program":{
-      "latitude":"34.2569444",
-      "longitude":"-85.1647222",
-      "city":"Rome",
-      "state":"GA"
-   },
-   "NEOMEN/Central Maine Medical Center Program":{
-      "latitude":"44.1002778",
-      "longitude":"-70.2152778",
-      "city":"Lewiston",
-      "state":"ME"
-   },
-   "OMNEE/CommuniCare Health Centers Program":{
-      "latitude":"29.4238889",
-      "longitude":"-98.4933333",
-      "city":"San Antonio",
-      "state":"TX"
-   },
-   "Texas Health Presbyterian Dallas Program":{
-      "latitude":"32.7833333",
-      "longitude":"-96.8000000",
-      "city":"Dallas",
-      "state":"TX"
-   },
-   "Heritage Valley Health System Program":{
-      "latitude":"40.7519444",
-      "longitude":"-80.3194444",
-      "city":"Beaver Falls",
-      "state":"PA"
-   },
-   "Conroe Medical Education Foundation Program":{
-      "latitude":"30.3116667",
-      "longitude":"-95.4558333",
-      "city":"Conroe",
-      "state":"TX"
-   },
-   "PCOM/Memorial Hospital Program":{
-      "latitude":"39.9625000",
-      "longitude":"-76.7280556",
-      "city":"York",
-      "state":"PA"
-   },
-   "Jefferson Medical College/duPont Hospital for Children Program":{
-      "latitude":"39.7458333",
-      "longitude":"-75.5469444",
-      "city":"Wilmington",
-      "state":"DE"
-   },
-   "LECOMT/Arnot Ogden Medical Center Program":{
-      "latitude":"42.0897222",
-      "longitude":"-76.8080556",
-      "city":"Elmira",
-      "state":"NY"
-   },
-   "University of Kansas (Wichita)/Wesley Program":{
-      "latitude":"37.6922222",
-      "longitude":"-97.3372222",
-      "city":"Wichita",
-      "state":"KS"
-   },
-   "Marshfield Clinic-St Joseph's Hospital Program":{
-      "latitude":"44.6688889",
-      "longitude":"-90.1716667",
-      "city":"Marshfield",
-      "state":"WI"
-   },
-   "Centers for Disease Control and Prevention Program":{
-      "latitude":"33.7488889",
-      "longitude":"-84.3880556",
-      "city":"Atlanta",
-      "state":"GA"
-   },
-   "East Tennessee State University Program":{
-      "latitude":"36.3133333",
-      "longitude":"-82.3536111",
-      "city":"Johnson City",
-      "state":"TN"
-   },
-   "MSOPTI/Cornerstone Care Teaching Health Center Program":{
-      "latitude":"39.7330556",
-      "longitude":"-80.0680556",
-      "city":"Mount Morris",
-      "state":"PA"
-   },
-   "Universidad Central del Caribe Program":{
-      "latitude":"18.1797222",
-      "longitude":"-66.1136111",
-      "city":"Bayamon",
-      "state":"PR"
-   },
-   "RMOPTI/Parkview Medical Center Program":{
-      "latitude":"38.2544444",
-      "longitude":"-104.6086111",
-      "city":"Pueblo",
-      "state":"CO"
-   },
-   "New York Medical College at St Joseph\u2019s Regional Medical Center (Paterson) Program":{
-      "latitude":"40.8583333",
-      "longitude":"-74.1641667",
-      "city":"Clifton",
-      "state":"NJ"
-   },
-   "Riverside University Health System Program":{
-      "latitude":"33.9375000",
-      "longitude":"-117.2297222",
-      "city":"Moreno Valley",
-      "state":"CA"
-   },
-   "Brookdale University Hospital and Medical Center Program":{
-      "latitude":"40.6500000",
-      "longitude":"-73.9500000",
-      "city":"Brooklyn",
-      "state":"NY"
-   },
-   "St Barnabas Medical Center Program":{
-      "latitude":"40.7958333",
-      "longitude":"-74.3152778",
-      "city":"Livingston",
-      "state":"NJ"
-   },
-   "Atlantic Health (Morristown) Program":{
-      "latitude":"40.7966667",
-      "longitude":"-74.4819444",
-      "city":"Morristown",
-      "state":"NJ"
-   },
-   "Valley Medical Center Program":{
-      "latitude":"47.4830556",
-      "longitude":"-122.2158333",
-      "city":"Renton",
-      "state":"WA"
-   },
-   "Kent Hospital Program":{
-      "latitude":"41.7000000",
-      "longitude":"-71.4166667",
-      "city":"Warwick",
-      "state":"RI"
-   },
-   "Abington Memorial Hospital Program":{
-      "latitude":"40.1205556",
-      "longitude":"-75.1183333",
-      "city":"Abington",
-      "state":"PA"
-   },
-   "Geisinger Health System (Wilkes Barre) Program":{
-      "latitude":"41.2458333",
-      "longitude":"-75.8816667",
-      "city":"Wilkes-Barre",
-      "state":"PA"
-   },
-   "MWU/OPTI/West Suburban Hospital Medical Center Program":{
-      "latitude":"41.8850000",
-      "longitude":"-87.7844444",
-      "city":"Oak Park",
-      "state":"IL"
-   },
-   "Kern Medical Center Program":{
-      "latitude":"35.3733333",
-      "longitude":"-119.0177778",
-      "city":"Bakersfield",
-      "state":"CA"
-   },
-   "VA Greater Los Angeles Healthcare System Program":{
-      "latitude":"34.0522222",
-      "longitude":"-118.2427778",
-      "city":"Los Angeles",
-      "state":"CA"
-   },
-   "SCS/MSUCOM/Henry Ford Wyandotte Hospital Program":{
-      "latitude":"42.2141667",
-      "longitude":"-83.1500000",
-      "city":"Wyandotte",
-      "state":"MI"
-   },
-   "Steward Carney Hospital Program":{
-      "latitude":"42.2972222",
-      "longitude":"-71.0750000",
-      "city":"Dorchester",
-      "state":"MA"
-   },
-   "Naples Community Hospital, Inc Program":{
-      "latitude":"26.1416667",
-      "longitude":"-81.7950000",
-      "city":"Naples",
-      "state":"FL"
-   },
-   "Louisiana State University (Shreveport) Rural Program":{
-      "latitude":"32.5250000",
-      "longitude":"-93.7500000",
-      "city":"Shreveport",
-      "state":"LA"
-   },
-   "St. John Macomb-Oakland Hospital Program":{
-      "latitude":"42.4775000",
-      "longitude":"-83.0277778",
-      "city":"Warren",
-      "state":"MI"
-   },
-   "Riverside Methodist Hospitals (OhioHealth) Program":{
-      "latitude":"39.9611111",
-      "longitude":"-82.9988889",
-      "city":"Columbus",
-      "state":"OH"
-   },
-   "Charleston Area Medical Center/West Virginia University Program":{
-      "latitude":"38.3497222",
-      "longitude":"-81.6327778",
-      "city":"Charleston",
-      "state":"WV"
-   },
-   "Boston University Medical Center Program":{
-      "latitude":"42.3583333",
-      "longitude":"-71.0602778",
-      "city":"Boston",
-      "state":"MA"
-   },
-   "Montefiore Medical Center/Albert Einstein College of Medicine (Jacobi/Montefiore) Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "Intermountain Medical Center Program":{
-      "latitude":"40.6669444",
-      "longitude":"-111.8872222",
-      "city":"Murray",
-      "state":"UT"
-   },
-   "University of Missouri at Kansas City Program":{
-      "latitude":"39.0997222",
-      "longitude":"-94.5783333",
-      "city":"Kansas City",
-      "state":"MO"
-   },
-   "University at Buffalo School of Medicine Program":{
-      "latitude":"42.8863889",
-      "longitude":"-78.8786111",
-      "city":"Buffalo",
-      "state":"NY"
-   },
-   "Abrazo Central Program":{
-      "latitude":"33.4483333",
-      "longitude":"-112.0733333",
-      "city":"Phoenix",
-      "state":"AZ"
-   },
-   "MWU/OPTI/Swedish Covenant Hospital Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
-   },
-   "UPMC Medical Education Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "OMNEE/Laredo Medical Center Program":{
-      "latitude":"27.5061111",
-      "longitude":"-99.5072222",
-      "city":"Laredo",
-      "state":"TX"
-   },
-   "Indiana University School of Medicine/Methodist Hospital Program":{
-      "latitude":"39.7683333",
-      "longitude":"-86.1580556",
-      "city":"Indianapolis",
-      "state":"IN"
-   },
-   "Grand Rapids Medical Education Partners/MSU/Helen DeVos Children's Hospital Program":{
-      "latitude":"42.9633333",
-      "longitude":"-85.6680556",
-      "city":"Grand Rapids",
-      "state":"MI"
-   },
-   "Nazareth Hospital Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "LECOMT/Samaritan Med Ctr Program":{
-      "latitude":"43.9747222",
-      "longitude":"-75.9111111",
-      "city":"Watertown",
-      "state":"NY"
-   },
-   "NYCOMEC/Trinitas Regional MC Program":{
-      "latitude":"40.6638889",
-      "longitude":"-74.2111111",
-      "city":"Elizabeth",
-      "state":"NJ"
-   },
-   "Northeast Iowa Medical Education Foundation Program":{
-      "latitude":"42.4927778",
-      "longitude":"-92.3427778",
-      "city":"Waterloo",
-      "state":"IA"
-   },
-   "Citrus Health Network, Inc. Program":{
-      "latitude":"25.8572222",
-      "longitude":"-80.2783333",
-      "city":"Hialeah",
-      "state":"FL"
-   },
-   "Texas OPTI/Charlton Methodist Hospital Program":{
-      "latitude":"32.7833333",
-      "longitude":"-96.8000000",
-      "city":"Dallas",
-      "state":"TX"
-   },
-   "PCOM/Heritage Valley Program":{
-      "latitude":"40.7519444",
-      "longitude":"-80.3194444",
-      "city":"Beaver Falls",
-      "state":"PA"
-   },
-   "Floyd Medical Center Program":{
-      "latitude":"34.2569444",
-      "longitude":"-85.1647222",
-      "city":"Rome",
-      "state":"GA"
-   },
-   "Bella Vista Hospital Program":{
-      "latitude":"18.2030556",
-      "longitude":"-67.1400000",
-      "city":"Mayaguez",
-      "state":"PR"
-   },
-   "University of Arizona Program":{
-      "latitude":"32.2216667",
-      "longitude":"-110.9258333",
-      "city":"Tucson",
-      "state":"AZ"
-   },
-   "Tuscaloosa College of Community Health Science Program":{
-      "latitude":"33.2097222",
-      "longitude":"-87.5691667",
-      "city":"Tuscaloosa",
-      "state":"AL"
-   },
-   "New York Presbyterian Hospital (Columbia Campus) Program":{
-      "latitude":"40.7141667",
-      "longitude":"-74.0063889",
-      "city":"New York",
-      "state":"NY"
-   },
-   "Stamford Hospital/Columbia University College of Physicians and Surgeons Program":{
-      "latitude":"41.0533333",
-      "longitude":"-73.5391667",
-      "city":"Stamford",
-      "state":"CT"
-   },
-   "Albert Einstein Medical Center Program":{
-      "latitude":"39.9522222",
-      "longitude":"-75.1641667",
-      "city":"Philadelphia",
-      "state":"PA"
-   },
-   "Charleston Area Medical Center/West Virginia University (Charleston Division) Program":{
-      "latitude":"38.3497222",
-      "longitude":"-81.6327778",
-      "city":"Charleston",
-      "state":"WV"
-   },
-   "Phoenix Integrated Residency Program":{
-      "latitude":"33.4483333",
-      "longitude":"-112.0733333",
-      "city":"Phoenix",
-      "state":"AZ"
-   },
-   "Rutgers Robert Wood Johnson Medical School/Capital Health System-Fuld Campus Program":{
-      "latitude":"40.2169444",
-      "longitude":"-74.7433333",
-      "city":"Trenton",
-      "state":"NJ"
-   },
-   "UMMS-Baystate Program":{
-      "latitude":"42.1013889",
-      "longitude":"-72.5902778",
-      "city":"Springfield",
-      "state":"MA"
-   },
-   "St Joseph's Hospital Health Center Program":{
-      "latitude":"43.0480556",
-      "longitude":"-76.1477778",
-      "city":"Syracuse",
-      "state":"NY"
-   },
-   "Kaiser Permanente Medical Group (Northern California)/Napa-Solano Program":{
-      "latitude":"38.1041667",
-      "longitude":"-122.2555556",
-      "city":"Vallejo",
-      "state":"CA"
-   },
-   "Oak Hill Hospital Program":{
-      "latitude":"28.5550000",
-      "longitude":"-82.3880556",
-      "city":"Brooksville",
-      "state":"FL"
-   },
-   "Albert Einstein College of Medicine at Bronx-Lebanon Hospital Center Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
-   },
-   "CORE/Firelands Regional Medical Center Main Campus Program":{
-      "latitude":"41.4488889",
-      "longitude":"-82.7080556",
-      "city":"Sandusky",
-      "state":"OH"
-   },
-   "Hospital Episcopal San Lucas/Ponce School of Medicine Program":{
-      "latitude":"18.0130556",
-      "longitude":"-66.6144444",
-      "city":"Ponce",
-      "state":"PR"
-   },
-   "Eastern Maine Medical Center Program":{
-      "latitude":"44.8011111",
-      "longitude":"-68.7783333",
-      "city":"Bangor",
-      "state":"ME"
-   },
-   "UPMC Medical Education (Mercy) Program":{
-      "latitude":"40.4405556",
-      "longitude":"-79.9961111",
-      "city":"Pittsburgh",
-      "state":"PA"
-   },
-   "Yale-New Haven Hospital Program":{
-      "latitude":"41.3080556",
-      "longitude":"-72.9286111",
-      "city":"New Haven",
-      "state":"CT"
-   },
-   "University of California (San Diego) Medical Center Program":{
-      "latitude":"32.7152778",
-      "longitude":"-117.1563889",
-      "city":"San Diego",
-      "state":"CA"
-   },
-   "SCS/MSUCOM/Metro Health Hospital Program":{
-      "latitude":"42.9133333",
-      "longitude":"-85.7052778",
-      "city":"Wyoming",
-      "state":"MI"
-   },
-   "CEME/Miami Children's Hosp Program":{
-      "latitude":"25.7738889",
-      "longitude":"-80.1938889",
-      "city":"Miami",
-      "state":"FL"
-   },
-   "KCU-GMEC/Reid Hospital & Health Care Services Program":{
-      "latitude":"39.8288889",
-      "longitude":"-84.8902778",
-      "city":"Richmond",
-      "state":"IN"
-   },
-   "Seton Hall University School of Health and Medical Sciences Program":{
-      "latitude":"40.9166667",
-      "longitude":"-74.1722222",
-      "city":"Paterson",
-      "state":"NJ"
+      "acgme":"1200500737"
    },
    "St Mary's Hospital (Waterbury) Program":{
-      "latitude":"41.5580556",
       "longitude":"-73.0519444",
+      "state":"CT",
       "city":"Waterbury",
-      "state":"CT"
+      "latitude":"41.5580556",
+      "acgme":"1400813530"
    },
-   "University of Illinois College of Medicine at Peoria Program":{
-      "latitude":"40.6936111",
-      "longitude":"-89.5888889",
-      "city":"Peoria",
-      "state":"IL"
+   "Hofstra Northwell School of Medicine at Staten Island University Hospital Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4203512254"
    },
-   "RMOPTI/Idaho Physicians Clinic Program":{
-      "latitude":"43.1905556",
-      "longitude":"-112.3441667",
-      "city":"Blackfoot",
-      "state":"ID"
+   "St Louis University School of Medicine Program":{
+      "longitude":"-90.1977778",
+      "state":"MO",
+      "city":"St Louis",
+      "latitude":"38.6272222",
+      "acgme":"4512800113"
    },
-   "University of Arkansas College of Medicine Program":{
-      "latitude":"34.7463889",
-      "longitude":"-92.2894444",
-      "city":"Little Rock",
-      "state":"AR"
+   "Cincinnati Children's Hospital Medical Center Program":{
+      "longitude":"-84.4569444",
+      "state":"OH",
+      "city":"Cincinnati",
+      "latitude":"39.1619444",
+      "acgme":"3203821185"
    },
-   "University of Alabama Medical Center (Montgomery) Program":{
-      "latitude":"32.3666667",
-      "longitude":"-86.3000000",
-      "city":"Montgomery",
-      "state":"AL"
+   "Rutgers Robert Wood Johnson Medical School/Capital Health System-Fuld Campus Program":{
+      "longitude":"-74.7433333",
+      "state":"NJ",
+      "city":"Trenton",
+      "latitude":"40.2169444",
+      "acgme":"1203321559"
    },
-   "Presence Saint Joseph Hospital (Chicago) Program":{
-      "latitude":"41.8500000",
-      "longitude":"-87.6500000",
-      "city":"Chicago",
-      "state":"IL"
+   "Creighton University Program":{
+      "longitude":"-95.9375000",
+      "state":"NE",
+      "city":"Omaha",
+      "latitude":"41.2586111",
+      "acgme":"4203021220"
    },
-   "SCS/MSUCOM/Sinai Grace Hospital Program":{
-      "latitude":"42.3313889",
-      "longitude":"-83.0458333",
-      "city":"Detroit",
-      "state":"MI"
+   "East Jefferson General Hospital Program":{
+      "longitude":"-90.1527778",
+      "state":"LA",
+      "city":"Metairie",
+      "latitude":"29.9838889",
+      "acgme":"1202121631"
    },
-   "CORE/St Joseph Warren Hospital Program":{
-      "latitude":"41.2375000",
-      "longitude":"-80.8186111",
-      "city":"Warren",
-      "state":"OH"
+   "Memorial Health System Program":{
+      "longitude":"-81.4550000",
+      "state":"OH",
+      "city":"Marietta",
+      "latitude":"39.4152778",
+      "acgme":"1103800204"
    },
-   "Cooper Medical School of Rowan University/Cooper University Hospital Program":{
-      "latitude":"39.9258333",
-      "longitude":"-75.1200000",
-      "city":"Camden",
-      "state":"NJ"
+   "University of Minnesota/St Joseph's Hospital Program":{
+      "longitude":"-93.0930556",
+      "state":"MN",
+      "city":"St Paul",
+      "latitude":"44.9444444",
+      "acgme":"1202612653"
    },
-   "Brigham and Women's Hospital Program":{
-      "latitude":"42.3583333",
+   "Maine Medical Center Program":{
+      "longitude":"-70.2558333",
+      "state":"ME",
+      "city":"Portland",
+      "latitude":"43.6613889",
+      "acgme":"4512200002"
+   },
+   "Massachusetts General Hospital Program":{
       "longitude":"-71.0602778",
+      "state":"MA",
       "city":"Boston",
-      "state":"MA"
+      "latitude":"42.3583333",
+      "acgme":"4512400014"
    },
-   "Inspira Medical Center Woodbury Program":{
-      "latitude":"39.8380556",
-      "longitude":"-75.1530556",
-      "city":"Woodbury",
-      "state":"NJ"
+   "Spokane Teaching Health Center Program":{
+      "longitude":"-117.4250000",
+      "state":"WA",
+      "city":"Spokane",
+      "latitude":"47.6588889",
+      "acgme":"9995400145"
+   },
+   "Providence Sacred Heart Medical Center Program":{
+      "longitude":"-117.4250000",
+      "state":"WA",
+      "city":"Spokane",
+      "latitude":"47.6588889",
+      "acgme":"4005400226"
+   },
+   "Mercy Medical Center (Mason City) Program":{
+      "longitude":"-93.2008333",
+      "state":"IA",
+      "city":"Mason City",
+      "latitude":"43.1536111",
+      "acgme":"1201821373"
+   },
+   "New York Medical College at St Joseph\u2019s Regional Medical Center Program":{
+      "longitude":"-74.1722222",
+      "state":"NJ",
+      "city":"Paterson",
+      "latitude":"40.9166667",
+      "acgme":"3203321364"
+   },
+   "Community Health Network Program":{
+      "longitude":"-86.1580556",
+      "state":"IN",
+      "city":"Indianapolis",
+      "latitude":"39.7683333",
+      "acgme":"1201711123"
+   },
+   "University of Tennessee Medical Center at Knoxville Program":{
+      "longitude":"-83.9208333",
+      "state":"TN",
+      "city":"Knoxville",
+      "latitude":"35.9605556",
+      "acgme":"4804711181"
+   },
+   "Lincoln Medical Education Partnership Program":{
+      "longitude":"-96.6666667",
+      "state":"NE",
+      "city":"Lincoln",
+      "latitude":"40.8000000",
+      "acgme":"1203031187"
+   },
+   "Wyckoff Heights Medical Center Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"1403521520"
+   },
+   "Parkview Medical Center Program":{
+      "longitude":"-104.6086111",
+      "state":"CO",
+      "city":"Pueblo",
+      "latitude":"38.2544444",
+      "acgme":"1400700074"
+   },
+   "St Elizabeth Medical Center Program":{
+      "longitude":"-75.2330556",
+      "state":"NY",
+      "city":"Utica",
+      "latitude":"43.1008333",
+      "acgme":"1203511217"
+   },
+   "Mary Hitchcock Memorial Hospital Program":{
+      "longitude":"-72.2522222",
+      "state":"NH",
+      "city":"Lebanon",
+      "latitude":"43.6422222",
+      "acgme":"4513221059"
+   },
+   "Orange Park Medical Center Program":{
+      "longitude":"-81.7066667",
+      "state":"FL",
+      "city":"Orange Park",
+      "latitude":"30.1658333",
+      "acgme":"9991100230"
+   },
+   "University of Tennessee College of Medicine Program":{
+      "longitude":"-89.8100000",
+      "state":"TN",
+      "city":"Germantown",
+      "latitude":"35.0866667",
+      "acgme":"4304700129"
+   },
+   "Children's Hospital Boston Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"7652444017"
+   },
+   "Adventist Medical Center-Hanford Program":{
+      "longitude":"-119.6447222",
+      "state":"CA",
+      "city":"Hanford",
+      "latitude":"36.3275000",
+      "acgme":"1200513685"
+   },
+   "St Joseph's Health/SUNY Health Science Center at Syracuse Program":{
+      "longitude":"-76.1477778",
+      "state":"NY",
+      "city":"Syracuse",
+      "latitude":"43.0480556",
+      "acgme":"1203521216"
+   },
+   "Southern Illinois University (Decatur) Program":{
+      "longitude":"-88.9547222",
+      "state":"IL",
+      "city":"Decatur",
+      "latitude":"39.8402778",
+      "acgme":"1201621354"
+   },
+   "Puerto Rico Children's Hospital Program":{
+      "longitude":"-66.1136111",
+      "state":"PR",
+      "city":"Bayamon",
+      "latitude":"18.1797222",
+      "acgme":"3204200256"
+   },
+   "Eisenhower Medical Center Program":{
+      "longitude":"-116.4119444",
+      "state":"CA",
+      "city":"Rancho Mirage",
+      "latitude":"33.7397222",
+      "acgme":"1400500895"
+   },
+   "Maine-Dartmouth Family Medicine Program":{
+      "longitude":"-69.7800000",
+      "state":"ME",
+      "city":"Augusta",
+      "latitude":"44.3105556",
+      "acgme":"1202222151"
+   },
+   "Family Medicine Residency of Idaho Rural Program":{
+      "longitude":"-116.2025000",
+      "state":"ID",
+      "city":"Boise",
+      "latitude":"43.6136111",
+      "acgme":"1201521588"
+   },
+   "Grant Medical Center (OhioHealth) Program":{
+      "longitude":"-82.9988889",
+      "state":"OH",
+      "city":"Columbus",
+      "latitude":"39.9611111",
+      "acgme":"1203831239"
+   },
+   "Kaiser Permanente Southern California (San Diego) Program":{
+      "longitude":"-117.1563889",
+      "state":"CA",
+      "city":"San Diego",
+      "latitude":"32.7152778",
+      "acgme":"1200512705"
+   },
+   "Ohio State University Hospital Program":{
+      "longitude":"-82.9988889",
+      "state":"OH",
+      "city":"Columbus",
+      "latitude":"39.9611111",
+      "acgme":"4803821120"
+   },
+   "University of Missouri-Columbia Program":{
+      "longitude":"-92.3338889",
+      "state":"MO",
+      "city":"Columbia",
+      "latitude":"38.9516667",
+      "acgme":"4802821076"
+   },
+   "Dignity Health Methodist Hospital of Sacramento Program":{
+      "longitude":"-121.4933333",
+      "state":"CA",
+      "city":"Sacramento",
+      "latitude":"38.5816667",
+      "acgme":"1200521564"
+   },
+   "Nassau University Medical Center Program":{
+      "longitude":"-73.5594444",
+      "state":"NY",
+      "city":"East Meadow",
+      "latitude":"40.7138889",
+      "acgme":"4203511123"
+   },
+   "Montefiore Medical Center/Albert Einstein College of Medicine (Moses and Weiler Campuses) Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"1403521287"
+   },
+   "Albert Einstein Medical Center Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4804100193"
+   },
+   "Louis A Weiss Memorial Hospital Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"9991600035"
+   },
+   "University of Pennsylvania Health System Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4164100002"
+   },
+   "Concord Hospital/New Hampshire-Dartmouth Family Medicine Program":{
+      "longitude":"-71.5380556",
+      "state":"NH",
+      "city":"Concord",
+      "latitude":"43.2080556",
+      "acgme":"1203231557"
+   },
+   "Robert Wood Johnson University Hospital Somerset Program":{
+      "longitude":"-74.6102778",
+      "state":"NJ",
+      "city":"Somerville",
+      "latitude":"40.5741667",
+      "acgme":"1203311194"
+   },
+   "Children's Hospital/Beth Israel Deaconess Medical Center/Harvard Medical School Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"1862422002"
+   },
+   "Johns Hopkins Bloomberg School of Public Health Program A":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"3802377072"
+   },
+   "St Barnabas Medical Center Program":{
+      "longitude":"-74.3152778",
+      "state":"NJ",
+      "city":"Livingston",
+      "latitude":"40.7958333",
+      "acgme":"4203321215"
+   },
+   "SUNY Health Science Center at Brooklyn Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"4803521107"
+   },
+   "Eastern Maine Medical Center Program":{
+      "longitude":"-68.7783333",
+      "state":"ME",
+      "city":"Bangor",
+      "latitude":"44.8011111",
+      "acgme":"1202212152"
+   },
+   "St Louis University School of Medicine (Belleville) Program":{
+      "longitude":"-89.9838889",
+      "state":"IL",
+      "city":"Belleville",
+      "latitude":"38.5200000",
+      "acgme":"1201621427"
+   },
+   "Aultman Hospital/Mercy/NEOMED Program":{
+      "longitude":"-81.3786111",
+      "state":"OH",
+      "city":"Canton",
+      "latitude":"40.7988889",
+      "acgme":"4203821232"
+   },
+   "Emory University School of Medicine Program":{
+      "longitude":"-84.3880556",
+      "state":"GA",
+      "city":"Atlanta",
+      "latitude":"33.7488889",
+      "acgme":"4611246103"
+   },
+   "University of South Florida Morsani College of Medicine Program":{
+      "longitude":"-82.4586111",
+      "state":"FL",
+      "city":"Tampa",
+      "latitude":"27.9472222",
+      "acgme":"4161100003"
+   },
+   "University of California (San Francisco)/University of California School of Public Health Program":{
+      "longitude":"-122.4183333",
+      "state":"CA",
+      "city":"San Francisco",
+      "latitude":"37.7750000",
+      "acgme":"3800532008"
+   },
+   "University of Colorado Program":{
+      "longitude":"-104.8313889",
+      "state":"CO",
+      "city":"Aurora",
+      "latitude":"39.7294444",
+      "acgme":"4800721027"
+   },
+   "Norton Community Hospital Program":{
+      "longitude":"-82.6291667",
+      "state":"VA",
+      "city":"Norton",
+      "latitude":"36.9333333",
+      "acgme":"1405100437"
+   },
+   "Children's National Medical Center/George Washington University Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"1861012008"
+   },
+   "Sidney Kimmel Medical College at Thomas Jefferson University/TJUH Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4804121133"
+   },
+   "Dr Ramon E Betances Hospital-Mayaguez Medical Center Program":{
+      "longitude":"-67.1400000",
+      "state":"PR",
+      "city":"Mayaguez",
+      "latitude":"18.2030556",
+      "acgme":"1204200710"
+   },
+   "Adena Regional Medical Center Program":{
+      "longitude":"-82.9825000",
+      "state":"OH",
+      "city":"Chillicothe",
+      "latitude":"39.3330556",
+      "acgme":"9993800261"
+   },
+   "Schwab Rehabilitation Hospital and Care Network/University of Chicago Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"3401622012"
+   },
+   "Oakwood Hospital Program":{
+      "longitude":"-83.1763889",
+      "state":"MI",
+      "city":"Dearborn",
+      "latitude":"42.3222222",
+      "acgme":"9992500057"
+   },
+   "William Beaumont Hospital-Grosse Pointe Program":{
+      "longitude":"-82.9119444",
+      "state":"MI",
+      "city":"Grosse Pointe",
+      "latitude":"42.3861111",
+      "acgme":"1202521168"
+   },
+   "Berkshire Medical Center Program":{
+      "longitude":"-73.2458333",
+      "state":"MA",
+      "city":"Pittsfield",
+      "latitude":"42.4500000",
+      "acgme":"4002413302"
+   },
+   "University of Maryland Medical Center Midtown Campus  Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"9992300049"
+   },
+   "University of Oklahoma Health Sciences Center Program":{
+      "longitude":"-97.5161111",
+      "state":"OK",
+      "city":"Oklahoma City",
+      "latitude":"35.4675000",
+      "acgme":"4803921123"
+   },
+   "UCLA Medical Center/Olive View Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"1100512003"
+   },
+   "St. John's Episcopal Hospital-South Shore Program":{
+      "longitude":"-73.7555556",
+      "state":"NY",
+      "city":"Far Rockaway",
+      "latitude":"40.6052778",
+      "acgme":"4003512304"
+   },
+   "Chestnut Hill Hospital Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"1204131275"
+   },
+   "Hofstra Northwell School of Medicine at Staten Island University Hospital Preliminary Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"1403511304"
+   },
+   "St Agnes HealthCare Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"1402312156"
+   },
+   "Hospital Episcopal San Lucas/Ponce School of Medicine Program":{
+      "longitude":"-66.6144444",
+      "state":"PR",
+      "city":"Ponce",
+      "latitude":"18.0130556",
+      "acgme":"9994200125"
+   },
+   "University of Missouri at Kansas City Program":{
+      "longitude":"-94.5783333",
+      "state":"MO",
+      "city":"Kansas City",
+      "latitude":"39.0997222",
+      "acgme":"4202821231"
+   },
+   "North Mississippi Medical Center (Tupelo) Program":{
+      "longitude":"-88.7033333",
+      "state":"MS",
+      "city":"Tupelo",
+      "latitude":"34.2575000",
+      "acgme":"1202721558"
+   },
+   "Southern Illinois University (Carbondale) Program":{
+      "longitude":"-89.2166667",
+      "state":"IL",
+      "city":"Carbondale",
+      "latitude":"37.7272222",
+      "acgme":"1201611099"
+   },
+   "Montana Family Medicine Residency Program":{
+      "longitude":"-108.5000000",
+      "state":"MT",
+      "city":"Billings",
+      "latitude":"45.7833333",
+      "acgme":"1202921590"
+   },
+   "Lehigh Valley Health Network/University of South Florida College of Medicine Program":{
+      "longitude":"-75.4905556",
+      "state":"PA",
+      "city":"Allentown",
+      "latitude":"40.6083333",
+      "acgme":"9994100103"
+   },
+   "University of Kentucky College of Medicine Program":{
+      "longitude":"-84.4777778",
+      "state":"KY",
+      "city":"Lexington",
+      "latitude":"37.9886111",
+      "acgme":"4802021054"
+   },
+   "Texas A&M; College of Medicine-Scott and White Program":{
+      "longitude":"-97.3425000",
+      "state":"TX",
+      "city":"Temple",
+      "latitude":"31.0980556",
+      "acgme":"4804821148"
+   },
+   "Kingsbrook Jewish Medical Center Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"3403522041"
+   },
+   "University of Texas Health Science Center at Tyler Rural Program":{
+      "longitude":"-95.6008333",
+      "state":"TX",
+      "city":"Sulphur Springs",
+      "latitude":"33.1383333",
+      "acgme":"1204800717"
+   },
+   "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GMEC) Mesa Program":{
+      "longitude":"-111.8219444",
+      "state":"AZ",
+      "city":"Mesa",
+      "latitude":"33.4222222",
+      "acgme":"0800300146"
+   },
+   "Orlando Health Program":{
+      "longitude":"-81.3794444",
+      "state":"FL",
+      "city":"Orlando",
+      "latitude":"28.5380556",
+      "acgme":"3001112077"
+   },
+   "Brandon Regional Hospital Program":{
+      "longitude":"-82.2861111",
+      "state":"FL",
+      "city":"Brandon",
+      "latitude":"27.9375000",
+      "acgme":"9991100237"
+   },
+   "SUNY Upstate Medical University Program":{
+      "longitude":"-76.1477778",
+      "state":"NY",
+      "city":"Syracuse",
+      "latitude":"43.0480556",
+      "acgme":"4803521109"
+   },
+   "Mercy St Vincent Medical Center/Mercy Health Partners Program":{
+      "longitude":"-83.5552778",
+      "state":"OH",
+      "city":"Toledo",
+      "latitude":"41.6638889",
+      "acgme":"9993800165"
+   },
+   "Denver Health Medical Center Program":{
+      "longitude":"-104.9841667",
+      "state":"CO",
+      "city":"Denver",
+      "latitude":"39.7391667",
+      "acgme":"1100712009"
+   },
+   "Texas Tech University Hlth Sci Ctr Paul L. Foster Sch of Med Program":{
+      "longitude":"-106.4863889",
+      "state":"TX",
+      "city":"El Paso",
+      "latitude":"31.7586111",
+      "acgme":"1804800168"
+   },
+   "Mount Sinai Hospital Medical Center of Chicago Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"3201621408"
+   },
+   "Contra Costa Regional Medical Center Program":{
+      "longitude":"-122.1330556",
+      "state":"CA",
+      "city":"Martinez",
+      "latitude":"38.0194444",
+      "acgme":"1200531050"
+   },
+   "Spartanburg Regional Healthcare System Program":{
+      "longitude":"-81.9322222",
+      "state":"SC",
+      "city":"Spartanburg",
+      "latitude":"34.9494444",
+      "acgme":"9994500182"
+   },
+   "Mountain Area Health Education Center Program":{
+      "longitude":"-82.5541667",
+      "state":"NC",
+      "city":"Asheville",
+      "latitude":"35.6008333",
+      "acgme":"4003600173"
+   },
+   "New York University School of Medicine Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4513500121"
+   },
+   "Samaritan Health Services - Corvallis Program":{
+      "longitude":"-123.2608333",
+      "state":"OR",
+      "city":"Corvallis",
+      "latitude":"44.5647222",
+      "acgme":"4004000186"
+   },
+   "Louisiana State University (Baton Rouge) Program":{
+      "longitude":"-91.1544444",
+      "state":"LA",
+      "city":"Baton Rouge",
+      "latitude":"30.4505556",
+      "acgme":"2202113364"
+   },
+   "Canton Medical Education Foundation/NEOMED Program":{
+      "longitude":"-81.3786111",
+      "state":"OH",
+      "city":"Canton",
+      "latitude":"40.7988889",
+      "acgme":"1403821330"
+   },
+   "University of Nevada Las Vegas (UNLV) School of Medicine Rural Program":{
+      "longitude":"-115.1363889",
+      "state":"NV",
+      "city":"Las Vegas",
+      "latitude":"36.1750000",
+      "acgme":"1203100700"
+   },
+   "Hofstra Northwell School of Medicine at Sleepy Hollow/Phelps Hospital Program":{
+      "longitude":"-73.8588889",
+      "state":"NY",
+      "city":"Sleepy Hollow",
+      "latitude":"41.0855556",
+      "acgme":"1203521706"
+   },
+   "William Beaumont Army Medical Center/Texas Tech University (El Paso) Program":{
+      "longitude":"-106.4863889",
+      "state":"TX",
+      "city":"El Paso",
+      "latitude":"31.7586111",
+      "acgme":"2604821198"
+   },
+   "Bergen Regional Medical Center Program":{
+      "longitude":"-74.0758333",
+      "state":"NJ",
+      "city":"Paramus",
+      "latitude":"40.9444444",
+      "acgme":"4003312120"
+   },
+   "Steward Carney Hospital Inc. Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"1202400688"
+   },
+   "University of Hawaii Program":{
+      "longitude":"-157.8583333",
+      "state":"HI",
+      "city":"Honolulu",
+      "latitude":"21.3069444",
+      "acgme":"9991400031"
+   },
+   "Brookhaven Memorial Hospital Medical Center Program":{
+      "longitude":"-73.0155556",
+      "state":"NY",
+      "city":"Patchogue",
+      "latitude":"40.7655556",
+      "acgme":"1403500929"
+   },
+   "Hackensack University Medical Center Program":{
+      "longitude":"-74.0438889",
+      "state":"NJ",
+      "city":"Hackensack",
+      "latitude":"40.8858333",
+      "acgme":"4803300192"
+   },
+   "Medical University of South Carolina Program":{
+      "longitude":"-79.9311111",
+      "state":"SC",
+      "city":"Charleston",
+      "latitude":"32.7763889",
+      "acgme":"4514531010"
+   },
+   "University of Alabama Medical Center Program":{
+      "longitude":"-86.8025000",
+      "state":"AL",
+      "city":"Birmingham",
+      "latitude":"33.5205556",
+      "acgme":"4510121003"
+   },
+   "University of Minnesota/North Memorial Hospital Program":{
+      "longitude":"-93.2636111",
+      "state":"MN",
+      "city":"Minneapolis",
+      "latitude":"44.9800000",
+      "acgme":"1202631651"
+   },
+   "Florida Hospital Medical Center Program":{
+      "longitude":"-81.3794444",
+      "state":"FL",
+      "city":"Orlando",
+      "latitude":"28.5380556",
+      "acgme":"4201112260"
+   },
+   "Mercy Health Program":{
+      "longitude":"-86.2483333",
+      "state":"MI",
+      "city":"Muskegon",
+      "latitude":"43.2341667",
+      "acgme":"2752500001"
+   },
+   "Brown University Program":{
+      "longitude":"-71.4133333",
+      "state":"RI",
+      "city":"Providence",
+      "latitude":"41.8238889",
+      "acgme":"4804331139"
+   },
+   "University of Arizona College of Medicine-Tucson Program":{
+      "longitude":"-110.9258333",
+      "state":"AZ",
+      "city":"Tucson",
+      "latitude":"32.2216667",
+      "acgme":"4160300001"
+   },
+   "Genesys Regional Medical Center Program":{
+      "longitude":"-83.6300000",
+      "state":"MI",
+      "city":"Grand Blanc",
+      "latitude":"42.9275000",
+      "acgme":"2202500371"
+   },
+   "Integris Baptist Medical Center Program":{
+      "longitude":"-97.5161111",
+      "state":"OK",
+      "city":"Oklahoma City",
+      "latitude":"35.4675000",
+      "acgme":"4203912158"
+   },
+   "Icahn School of Medicine at Mount Sinai (New York Eye and Ear Infirmary at Mount Sinai) Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"2803521072"
+   },
+   "Centra Health Program":{
+      "longitude":"-79.1425000",
+      "state":"VA",
+      "city":"Lynchburg",
+      "latitude":"37.4136111",
+      "acgme":"1205121318"
+   },
+   "University of Florida (Pensacola) Program":{
+      "longitude":"-87.2169444",
+      "state":"FL",
+      "city":"Pensacola",
+      "latitude":"30.4211111",
+      "acgme":"3201121059"
+   },
+   "Abrazo Central Program":{
+      "longitude":"-112.0733333",
+      "state":"AZ",
+      "city":"Phoenix",
+      "latitude":"33.4483333",
+      "acgme":"1200321029"
+   },
+   "McGaw Medical Center of Northwestern University/Erie-Swedish Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"1201612701"
+   },
+   "Poudre Valley Hospital/Fort Collins Family Medicine Program":{
+      "longitude":"-105.0838889",
+      "state":"CO",
+      "city":"Fort Collins",
+      "latitude":"40.5852778",
+      "acgme":"1200731072"
+   },
+   "Mount Carmel Health System Program":{
+      "longitude":"-82.9988889",
+      "state":"OH",
+      "city":"Columbus",
+      "latitude":"39.9611111",
+      "acgme":"9993800093"
+   },
+   "University of Tennessee/Saint Francis Program":{
+      "longitude":"-90.0488889",
+      "state":"TN",
+      "city":"Memphis",
+      "latitude":"35.1494444",
+      "acgme":"1204721453"
+   },
+   "University of Texas Health Science Center at Houston (Memorial Hermann Hospital) Program":{
+      "longitude":"-95.3630556",
+      "state":"TX",
+      "city":"Houston",
+      "latitude":"29.7630556",
+      "acgme":"2204821289"
+   },
+   "University of California (San Diego) Program":{
+      "longitude":"-117.1563889",
+      "state":"CA",
+      "city":"San Diego",
+      "latitude":"32.7152778",
+      "acgme":"4800521024"
+   },
+   "UCLA David Geffen School of Medicine/UCLA Medical Center Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"3800588124"
+   },
+   "Sparrow Hospital/Michigan State University Program":{
+      "longitude":"-84.5555556",
+      "state":"MI",
+      "city":"Lansing",
+      "latitude":"42.7325000",
+      "acgme":"2202531143"
+   },
+   "Kaiser Permanente Medical Group (Northern California) Program":{
+      "longitude":"-122.2697222",
+      "state":"CA",
+      "city":"Oakland",
+      "latitude":"37.8044444",
+      "acgme":"3200512035"
+   },
+   "Morehouse School of Medicine Program":{
+      "longitude":"-84.3880556",
+      "state":"GA",
+      "city":"Atlanta",
+      "latitude":"33.7488889",
+      "acgme":"4001221262"
+   },
+   "Kaiser Permanente Medical Group (Northern California)/San Francisco Program":{
+      "longitude":"-122.4183333",
+      "state":"CA",
+      "city":"San Francisco",
+      "latitude":"37.7750000",
+      "acgme":"2200512045"
+   },
+   "University of Iowa (Des Moines) Program":{
+      "longitude":"-93.6088889",
+      "state":"IA",
+      "city":"Des Moines",
+      "latitude":"41.6005556",
+      "acgme":"1401831137"
+   },
+   "Danbury Hospital Program":{
+      "longitude":"-73.4544444",
+      "state":"CT",
+      "city":"Danbury",
+      "latitude":"41.3947222",
+      "acgme":"3000811057"
+   },
+   "Union Memorial Hospital Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"2602331087"
+   },
+   "Palmetto Health/University of South Carolina School of Medicine Program":{
+      "longitude":"-81.0350000",
+      "state":"SC",
+      "city":"Columbia",
+      "latitude":"34.0005556",
+      "acgme":"4004531205"
+   },
+   "Florida State University College of Medicine Program":{
+      "longitude":"-84.2808333",
+      "state":"FL",
+      "city":"Tallahassee",
+      "latitude":"30.4380556",
+      "acgme":"4401100438"
+   },
+   "Floyd Medical Center Program":{
+      "longitude":"-85.1647222",
+      "state":"GA",
+      "city":"Rome",
+      "latitude":"34.2569444",
+      "acgme":"1201231094"
+   },
+   "Shasta Community Health Center Program":{
+      "longitude":"-122.3905556",
+      "state":"CA",
+      "city":"Redding",
+      "latitude":"40.5866667",
+      "acgme":"1200500733"
+   },
+   "St Elizabeth Health Center Program":{
+      "longitude":"-80.6497222",
+      "state":"OH",
+      "city":"Youngstown",
+      "latitude":"41.0997222",
+      "acgme":"9993800250"
    },
    "Trident Medical Center/Medical University of South Carolina Program":{
-      "latitude":"32.7763889",
       "longitude":"-79.9311111",
+      "state":"SC",
       "city":"Charleston",
-      "state":"SC"
+      "latitude":"32.7763889",
+      "acgme":"9994500252"
    },
-   "Methodist Health System Dallas Program":{
-      "latitude":"32.7833333",
-      "longitude":"-96.8000000",
-      "city":"Dallas",
-      "state":"TX"
+   "AnMed Health (Anderson) Program":{
+      "longitude":"-82.6502778",
+      "state":"SC",
+      "city":"Anderson",
+      "latitude":"34.5033333",
+      "acgme":"1204511289"
    },
-   "Chicago Medical School/Rosalind Franklin Univ of Med & Sci Program":{
-      "latitude":"42.3333333",
-      "longitude":"-88.2666667",
-      "city":"McHenry",
-      "state":"IL"
+   "University of Colorado (HealthONE Rose Medical Center) Program":{
+      "longitude":"-104.9841667",
+      "state":"CO",
+      "city":"Denver",
+      "latitude":"39.7391667",
+      "acgme":"1200721071"
+   },
+   "Mount Sinai Medical Center of Florida, Inc Program":{
+      "longitude":"-80.1302778",
+      "state":"FL",
+      "city":"Miami Beach",
+      "latitude":"25.7902778",
+      "acgme":"1101100197"
+   },
+   "University of Texas RGV (DHR) Program":{
+      "longitude":"-98.1630556",
+      "state":"TX",
+      "city":"Edinburg",
+      "latitude":"26.3013889",
+      "acgme":"2204800361"
+   },
+   "Henry Ford Allegiance Health Program":{
+      "longitude":"-84.4013889",
+      "state":"MI",
+      "city":"Jackson",
+      "latitude":"42.2458333",
+      "acgme":"9992500259"
+   },
+   "Oklahoma State University Center for Health Sciences (Tulsa) Program":{
+      "longitude":"-95.9925000",
+      "state":"OK",
+      "city":"Tulsa",
+      "latitude":"36.1538889",
+      "acgme":"1103900194"
+   },
+   "Beth Israel Deaconess Medical Center Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"4512400015"
+   },
+   "Scott and White Memorial Hospital (Round Rock) Program":{
+      "longitude":"-97.6786111",
+      "state":"TX",
+      "city":"Round Rock",
+      "latitude":"30.5080556",
+      "acgme":"1404800895"
+   },
+   "New York Medical College at Westchester Medical Center Program":{
+      "longitude":"-73.7755556",
+      "state":"NY",
+      "city":"Valhalla",
+      "latitude":"41.0747222",
+      "acgme":"4803521103"
+   },
+   "Hospital for Special Surgery/Cornell Medical Center Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"2603521022"
+   },
+   "California Pacific Medical Center Program":{
+      "longitude":"-122.4183333",
+      "state":"CA",
+      "city":"San Francisco",
+      "latitude":"37.7750000",
+      "acgme":"4300522012"
+   },
+   "Piedmont Athens Regional Program":{
+      "longitude":"-83.3780556",
+      "state":"GA",
+      "city":"Athens",
+      "latitude":"33.9608333",
+      "acgme":"1401200928"
+   },
+   "Kaiser Permanente Southern California (Woodland Hills) Program":{
+      "longitude":"-118.6050000",
+      "state":"CA",
+      "city":"Woodland Hills",
+      "latitude":"34.1683333",
+      "acgme":"1200521514"
+   },
+   "Rowan SOM/Kennedy University/Our Lady of Lourdes Health System Program":{
+      "longitude":"-75.0311111",
+      "state":"NJ",
+      "city":"Cherry Hill",
+      "latitude":"39.9347222",
+      "acgme":"4003300301"
+   },
+   "Grand Strand Regional Medical Center Program":{
+      "longitude":"-78.8869444",
+      "state":"SC",
+      "city":"Myrtle Beach",
+      "latitude":"33.6888889",
+      "acgme":"9994500253"
+   },
+   "New York Presbyterian Hospital (Cornell Campus) Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4803521093"
+   },
+   "Charleston Area Medical Center/West Virginia University (Charleston Division) Program":{
+      "longitude":"-81.6327778",
+      "state":"WV",
+      "city":"Charleston",
+      "latitude":"38.3497222",
+      "acgme":"4005521264"
+   },
+   "Providence Hospital/Alaska Family Medicine Program":{
+      "longitude":"-149.9002778",
+      "state":"AK",
+      "city":"Anchorage",
+      "latitude":"61.2180556",
+      "acgme":"1200221596"
+   },
+   "Massachusetts General Hospital/Brigham and Women\u2019s Hospital/Harvard Medical School Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"4302411131"
+   },
+   "Texas Tech University [Lubbock] Program":{
+      "longitude":"-101.8547222",
+      "state":"TX",
+      "city":"Lubbock",
+      "latitude":"33.5777778",
+      "acgme":"1804813163"
+   },
+   "University of Texas Health Science Center at Houston Program":{
+      "longitude":"-95.3630556",
+      "state":"TX",
+      "city":"Houston",
+      "latitude":"29.7630556",
+      "acgme":"4514800125"
+   },
+   "Deaconess Hospital Program":{
+      "longitude":"-87.5558333",
+      "state":"IN",
+      "city":"Evansville",
+      "latitude":"37.9747222",
+      "acgme":"1201721119"
+   },
+   "Texas A&M; Health Science Center College of Medicine Program":{
+      "longitude":"-97.6786111",
+      "state":"TX",
+      "city":"Round Rock",
+      "latitude":"30.5080556",
+      "acgme":"3804888135"
+   },
+   "Central Maine Medical Center Program":{
+      "longitude":"-70.2152778",
+      "state":"ME",
+      "city":"Lewiston",
+      "latitude":"44.1002778",
+      "acgme":"1202211153"
+   },
+   "University of Mississippi School of Medicine Program":{
+      "longitude":"-90.1847222",
+      "state":"MS",
+      "city":"Jackson",
+      "latitude":"32.2986111",
+      "acgme":"3622700001"
+   },
+   "Kern Medical Center Program":{
+      "longitude":"-119.0177778",
+      "state":"CA",
+      "city":"Bakersfield",
+      "latitude":"35.3733333",
+      "acgme":"2200531027"
+   },
+   "University of Mississippi Medical Center Program":{
+      "longitude":"-90.1847222",
+      "state":"MS",
+      "city":"Jackson",
+      "latitude":"32.2986111",
+      "acgme":"4802721075"
+   },
+   "Texas Tech University Health Sciences Center (Permian Basin) Program":{
+      "longitude":"-102.3672222",
+      "state":"TX",
+      "city":"Odessa",
+      "latitude":"31.8455556",
+      "acgme":"4004800301"
+   },
+   "University of Puerto Rico Program":{
+      "longitude":"-66.1061111",
+      "state":"PR",
+      "city":"San Juan",
+      "latitude":"18.4683333",
+      "acgme":"4804231138"
+   },
+   "Main Line Health System/Lankenau Medical Center Program":{
+      "longitude":"-75.2711111",
+      "state":"PA",
+      "city":"Wynnewood",
+      "latitude":"40.0027778",
+      "acgme":"2204111249"
+   },
+   "Christus Health/Texas A&M; College of Medicine/Spohn Hospital Program":{
+      "longitude":"-97.3961111",
+      "state":"TX",
+      "city":"Corpus Christi",
+      "latitude":"27.8002778",
+      "acgme":"1204822303"
+   },
+   "Jewish Hospital of Cincinnati Program":{
+      "longitude":"-84.4569444",
+      "state":"OH",
+      "city":"Cincinnati",
+      "latitude":"39.1619444",
+      "acgme":"1403811333"
+   },
+   "Sunrise Health GME Consortium Program":{
+      "longitude":"-115.1363889",
+      "state":"NV",
+      "city":"Las Vegas",
+      "latitude":"36.1750000",
+      "acgme":"9993100001"
+   },
+   "University of Tennessee/Methodist Healthcare Program":{
+      "longitude":"-90.0488889",
+      "state":"TN",
+      "city":"Memphis",
+      "latitude":"35.1494444",
+      "acgme":"4204721187"
+   },
+   "Stony Brook Medicine/Mather Hospital Program":{
+      "longitude":"-73.0697222",
+      "state":"NY",
+      "city":"Port Jefferson",
+      "latitude":"40.9463889",
+      "acgme":"9993500258"
+   },
+   "University of New Mexico (Santa Fe) Rural Program":{
+      "longitude":"-105.9372222",
+      "state":"NM",
+      "city":"Santa Fe",
+      "latitude":"35.6869444",
+      "acgme":"1203421595"
+   },
+   "University of Arkansas for Medical Sciences Regional Centers (Northwest) Program":{
+      "longitude":"-94.1572222",
+      "state":"AR",
+      "city":"Fayetteville",
+      "latitude":"36.0625000",
+      "acgme":"1200421033"
+   },
+   "University of New Mexico School of Medicine Program":{
+      "longitude":"-106.6505556",
+      "state":"NM",
+      "city":"Albuquerque",
+      "latitude":"35.0844444",
+      "acgme":"3623400001"
+   },
+   "Stanford University Program":{
+      "longitude":"-122.1650000",
+      "state":"CA",
+      "city":"Stanford",
+      "latitude":"37.4241667",
+      "acgme":"4510521021"
+   },
+   "Johns Hopkins University School of Medicine Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"7002314143"
+   },
+   "Saint Elizabeths Hospital-DC Department of Behavioral Health Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"4001021239"
+   },
+   "Memorial Sloan Kettering Cancer Center Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"9993500241"
+   },
+   "Florida State University College of Medicine (Tallahassee) Program":{
+      "longitude":"-84.2808333",
+      "state":"FL",
+      "city":"Tallahassee",
+      "latitude":"30.4380556",
+      "acgme":"1401100894"
+   },
+   "Aurora Health Care (Elkhorn) Program":{
+      "longitude":"-88.5444444",
+      "state":"WI",
+      "city":"Elkhorn",
+      "latitude":"42.6727778",
+      "acgme":"1205600675"
+   },
+   "Riverside Community Hospital/University of California Riverside School of Medicine Program":{
+      "longitude":"-117.3952778",
+      "state":"CA",
+      "city":"Riverside",
+      "latitude":"33.9533333",
+      "acgme":"9990500248"
+   },
+   "Fort Wayne Medical Education Program":{
+      "longitude":"-85.1288889",
+      "state":"IN",
+      "city":"Fort Wayne",
+      "latitude":"41.1305556",
+      "acgme":"1201721121"
+   },
+   "Kaiser Permanente Southern California (Fontana) Program":{
+      "longitude":"-117.4341667",
+      "state":"CA",
+      "city":"Fontana",
+      "latitude":"34.0922222",
+      "acgme":"1200512040"
+   },
+   "Florida Atlantic University Charles E. Schmidt College of Medicine Program":{
+      "longitude":"-80.0833333",
+      "state":"FL",
+      "city":"Boca Raton",
+      "latitude":"26.3583333",
+      "acgme":"4001100312"
+   },
+   "Albert Einstein College of Medicine at Bronx-Lebanon Hospital Center Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"4003521135"
+   },
+   "Washington Hospital Center Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"2201031067"
+   },
+   "University of Arkansas for Medical Sciences Regional Centers (Southwest) Program":{
+      "longitude":"-94.0375000",
+      "state":"AR",
+      "city":"Texarkana",
+      "latitude":"33.4416667",
+      "acgme":"1200421527"
+   },
+   "Mayo Clinic College of Medicine and Science (Eau Claire) Program":{
+      "longitude":"-91.4983333",
+      "state":"WI",
+      "city":"Eau Claire",
+      "latitude":"44.8113889",
+      "acgme":"1205600674"
+   },
+   "Presbyterian Intercommunity Hospital Program":{
+      "longitude":"-118.0319444",
+      "state":"CA",
+      "city":"Whittier",
+      "latitude":"33.9791667",
+      "acgme":"1200521352"
+   },
+   "Yale-New Haven Medical Center Program":{
+      "longitude":"-72.9286111",
+      "state":"CT",
+      "city":"New Haven",
+      "latitude":"41.3080556",
+      "acgme":"4510821084"
+   },
+   "Texas A&M; College of Medicine/Scott and White Memorial Hospital Program":{
+      "longitude":"-97.3425000",
+      "state":"TX",
+      "city":"Temple",
+      "latitude":"31.0980556",
+      "acgme":"4304831144"
+   },
+   "University of Alabama Hospital Program":{
+      "longitude":"-86.8025000",
+      "state":"AL",
+      "city":"Birmingham",
+      "latitude":"33.5205556",
+      "acgme":"4160100001"
+   },
+   "Hofstra Northwell School of Medicine at Cohen Children's Medical Center Program":{
+      "longitude":"-73.6883333",
+      "state":"NY",
+      "city":"New Hyde Park",
+      "latitude":"40.7350000",
+      "acgme":"3203521155"
+   },
+   "University of Cincinnati Medical Center/College of Medicine Program":{
+      "longitude":"-84.4569444",
+      "state":"OH",
+      "city":"Cincinnati",
+      "latitude":"39.1619444",
+      "acgme":"4513831078"
+   },
+   "Children's Hospital-Oakland Program":{
+      "longitude":"-122.2697222",
+      "state":"CA",
+      "city":"Oakland",
+      "latitude":"37.8044444",
+      "acgme":"3200531034"
+   },
+   "University at Buffalo Program":{
+      "longitude":"-78.8786111",
+      "state":"NY",
+      "city":"Buffalo",
+      "latitude":"42.8863889",
+      "acgme":"4803521087"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals Program":{
+      "longitude":"-87.9063889",
+      "state":"WI",
+      "city":"Milwaukee",
+      "latitude":"43.0388889",
+      "acgme":"4805621159"
+   },
+   "Tufts Medical Center/Lemuel Shattuck Hospital Program":{
+      "longitude":"-71.1208333",
+      "state":"MA",
+      "city":"Jamaica Plain",
+      "latitude":"42.3097222",
+      "acgme":"9992400199"
+   },
+   "Doctors Hospital/OhioHealth Program":{
+      "longitude":"-82.9988889",
+      "state":"OH",
+      "city":"Columbus",
+      "latitude":"39.9611111",
+      "acgme":"2203800371"
+   },
+   "Sutter Medical Center of Santa Rosa/University of California (San Francisco) Program":{
+      "longitude":"-122.7133333",
+      "state":"CA",
+      "city":"Santa Rosa",
+      "latitude":"38.4405556",
+      "acgme":"1200511065"
+   },
+   "New York Presbyterian Hospital (Columbia Campus)/New York State Psychiatric Institute Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4003521138"
+   },
+   "University of Chicago Medical Center Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4161600005"
+   },
+   "Hofstra Northwell School of Medicine at Plainview Hospital Program":{
+      "longitude":"-73.4677778",
+      "state":"NY",
+      "city":"Plainview",
+      "latitude":"40.7763889",
+      "acgme":"2603500224"
+   },
+   "Wright State University/Dayton Community Hospitals Program":{
+      "longitude":"-84.1916667",
+      "state":"OH",
+      "city":"Dayton",
+      "latitude":"39.7588889",
+      "acgme":"1203831243"
+   },
+   "Chicago Medical School at Rosalind Franklin University of Medicine and Science Program":{
+      "longitude":"-87.8411111",
+      "state":"IL",
+      "city":"North Chicago",
+      "latitude":"42.3255556",
+      "acgme":"4001631056"
+   },
+   "St Vincent Hospitals and Health Care Center Program":{
+      "longitude":"-86.1580556",
+      "state":"IN",
+      "city":"Indianapolis",
+      "latitude":"39.7683333",
+      "acgme":"4401700437"
+   },
+   "Louisiana State University (Shreveport)/Monroe Program":{
+      "longitude":"-92.1191667",
+      "state":"LA",
+      "city":"Monroe",
+      "latitude":"32.5091667",
+      "acgme":"1202121440"
+   },
+   "University of Wisconsin (Madison) Program":{
+      "longitude":"-89.4011111",
+      "state":"WI",
+      "city":"Madison",
+      "latitude":"43.0730556",
+      "acgme":"1205611343"
+   },
+   "AtlantiCare Regional Medical Center Program":{
+      "longitude":"-74.4233333",
+      "state":"NJ",
+      "city":"Atlantic City",
+      "latitude":"39.3641667",
+      "acgme":"1403331226"
+   },
+   "Swedish Medical Center/Cherry Hill Program":{
+      "longitude":"-122.3308333",
+      "state":"WA",
+      "city":"Seattle",
+      "latitude":"47.6063889",
+      "acgme":"1205421328"
+   },
+   "Centers for Disease Control and Prevention Program":{
+      "longitude":"-84.3880556",
+      "state":"GA",
+      "city":"Atlanta",
+      "latitude":"33.7488889",
+      "acgme":"3801288109"
+   },
+   "CoxHealth Program":{
+      "longitude":"-93.2980556",
+      "state":"MO",
+      "city":"Springfield",
+      "latitude":"37.2152778",
+      "acgme":"1202821476"
+   },
+   "Houston Healthcare System Program":{
+      "longitude":"-83.6000000",
+      "state":"GA",
+      "city":"Warner Robins",
+      "latitude":"32.6208333",
+      "acgme":"1201200639"
+   },
+   "Albert Einstein Healthcare Network Preliminary Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"1404111369"
+   },
+   "Atlantic Health (Overlook) Program":{
+      "longitude":"-74.3600000",
+      "state":"NJ",
+      "city":"Summit",
+      "latitude":"40.7413889",
+      "acgme":"1403311245"
+   },
+   "Conroe Medical Education Foundation Program":{
+      "longitude":"-95.4558333",
+      "state":"TX",
+      "city":"Conroe",
+      "latitude":"30.3116667",
+      "acgme":"1204821454"
+   },
+   "Massachusetts General Hospital/Beth Israel Deaconess Medical Center/Brigham and Women's Hosp Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"0802431043"
+   },
+   "Texas Tech University (Amarillo) Program":{
+      "longitude":"-101.8308333",
+      "state":"TX",
+      "city":"Amarillo",
+      "latitude":"35.2219444",
+      "acgme":"3204821370"
+   },
+   "Institute of Living/Hartford Hospital Program":{
+      "longitude":"-72.6855556",
+      "state":"CT",
+      "city":"Hartford",
+      "latitude":"41.7636111",
+      "acgme":"4000821295"
+   },
+   "University of Michigan Hospitals and Health Centers Program":{
+      "longitude":"-83.7263889",
+      "state":"MI",
+      "city":"Ann Arbor",
+      "latitude":"42.2708333",
+      "acgme":"7652500013"
+   },
+   "University of Washington [Boise] Program":{
+      "longitude":"-116.2025000",
+      "state":"ID",
+      "city":"Boise",
+      "latitude":"43.6136111",
+      "acgme":"1401512544"
+   },
+   "Rutgers Robert Wood Johnson Medical School at CentraState Program":{
+      "longitude":"-74.2741667",
+      "state":"NJ",
+      "city":"Freehold",
+      "latitude":"40.2600000",
+      "acgme":"1203312679"
+   },
+   "University of Kansas (Wichita)/Via Christi Hospitals Wichita Program":{
+      "longitude":"-97.3372222",
+      "state":"KS",
+      "city":"Wichita",
+      "latitude":"37.6922222",
+      "acgme":"1201921630"
+   },
+   "University of Colorado School of Medicine Program":{
+      "longitude":"-104.8313889",
+      "state":"CO",
+      "city":"Aurora",
+      "latitude":"39.7294444",
+      "acgme":"3800721041"
+   },
+   "Montefiore - Mount Vernon Hospital Program":{
+      "longitude":"-73.8375000",
+      "state":"NY",
+      "city":"Mount Vernon",
+      "latitude":"40.9125000",
+      "acgme":"1403521482"
+   },
+   "University of California (San Diego) Medical Center Program":{
+      "longitude":"-117.1563889",
+      "state":"CA",
+      "city":"San Diego",
+      "latitude":"32.7152778",
+      "acgme":"3620500159"
+   },
+   "Kaweah Delta Health Care District (KDHCD) Program":{
+      "longitude":"-119.2911111",
+      "state":"CA",
+      "city":"Visalia",
+      "latitude":"36.3302778",
+      "acgme":"9990500244"
+   },
+   "Butler Hospital/Brown University Program":{
+      "longitude":"-71.4133333",
+      "state":"RI",
+      "city":"Providence",
+      "latitude":"41.8238889",
+      "acgme":"4004321203"
+   },
+   "UPMC Medical Education (McKeesport Hospital) Program":{
+      "longitude":"-79.8644444",
+      "state":"PA",
+      "city":"McKeesport",
+      "latitude":"40.3477778",
+      "acgme":"1404121368"
+   },
+   "Icahn School of Medicine at Mount Sinai (Jamaica) Program":{
+      "longitude":"-73.8061111",
+      "state":"NY",
+      "city":"Jamaica",
+      "latitude":"40.6913889",
+      "acgme":"2203521342"
+   },
+   "Louisiana State University School of Medicine Program":{
+      "longitude":"-90.0750000",
+      "state":"LA",
+      "city":"New Orleans",
+      "latitude":"29.9544444",
+      "acgme":"4512100117"
+   },
+   "Louisiana State University Program":{
+      "longitude":"-90.0750000",
+      "state":"LA",
+      "city":"New Orleans",
+      "latitude":"29.9544444",
+      "acgme":"4202131259"
+   },
+   "New York Medical College at St Joseph's Medical Center Program":{
+      "longitude":"-73.8991667",
+      "state":"NY",
+      "city":"Yonkers",
+      "latitude":"40.9311111",
+      "acgme":"1203511218"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals (Community Memorial) Program":{
+      "longitude":"-88.1172222",
+      "state":"WI",
+      "city":"Menomonee Falls",
+      "latitude":"43.1788889",
+      "acgme":"1205600676"
+   },
+   "University of Iowa Hospitals and Clinics Program":{
+      "longitude":"-91.5300000",
+      "state":"IA",
+      "city":"Iowa City",
+      "latitude":"41.6611111",
+      "acgme":"4511800001"
+   },
+   "UCLA Medical Center Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"4510500116"
+   },
+   "Louisiana State University (Kenner) Program":{
+      "longitude":"-90.2416667",
+      "state":"LA",
+      "city":"Kenner",
+      "latitude":"29.9938889",
+      "acgme":"1202121641"
+   },
+   "Florida Department of Health Palm Beach County Program":{
+      "longitude":"-80.0536111",
+      "state":"FL",
+      "city":"West Palm Beach",
+      "latitude":"26.7150000",
+      "acgme":"3801188098"
+   },
+   "St Mark's Health Care Foundation Program":{
+      "longitude":"-111.8902778",
+      "state":"UT",
+      "city":"Salt Lake City",
+      "latitude":"40.7608333",
+      "acgme":"1204921529"
+   },
+   "Mercy St Vincent Medical Center Program":{
+      "longitude":"-83.5552778",
+      "state":"OH",
+      "city":"Toledo",
+      "latitude":"41.6638889",
+      "acgme":"3203800419"
+   },
+   "Nationwide Children's Hospital/Ohio State University Program":{
+      "longitude":"-82.9988889",
+      "state":"OH",
+      "city":"Columbus",
+      "latitude":"39.9611111",
+      "acgme":"3203821192"
+   },
+   "University of Tennessee College of Medicine at Chattanooga Program":{
+      "longitude":"-85.3097222",
+      "state":"TN",
+      "city":"Chattanooga",
+      "latitude":"35.0455556",
+      "acgme":"3204711222"
+   },
+   "Mountain State Osteopathic Postdoctoral Training Institutions, Inc. (MSOPTI) (CornerStone Care Teaching Health Center) Program":{
+      "longitude":"-80.0680556",
+      "state":"PA",
+      "city":"Mount Morris",
+      "latitude":"39.7330556",
+      "acgme":"1204100699"
+   },
+   "Children's Hospital Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"7262444001"
+   },
+   "University of Wisconsin Hospital and Clinics Program":{
+      "longitude":"-89.4011111",
+      "state":"WI",
+      "city":"Madison",
+      "latitude":"43.0730556",
+      "acgme":"3805688096"
+   },
+   "Henry Ford Macomb Hospital Program":{
+      "longitude":"-82.960829",
+      "state":"MI",
+      "city":"Clinton Township",
+      "latitude":"42.614098",
+      "acgme":"2202500375"
+   },
+   "Phoenix Integrated Residency Program":{
+      "longitude":"-112.0733333",
+      "state":"AZ",
+      "city":"Phoenix",
+      "latitude":"33.4483333",
+      "acgme":"2200321328"
+   },
+   "Norwalk Hospital Program":{
+      "longitude":"-73.4083333",
+      "state":"CT",
+      "city":"Norwalk",
+      "latitude":"41.1175000",
+      "acgme":"4200821216"
+   },
+   "Santa Barbara Cottage Hospital Program":{
+      "longitude":"-119.6972222",
+      "state":"CA",
+      "city":"Santa Barbara",
+      "latitude":"34.4208333",
+      "acgme":"4200522033"
+   },
+   "Carolinas Medical Center Program":{
+      "longitude":"-80.8433333",
+      "state":"NC",
+      "city":"Charlotte",
+      "latitude":"35.2269444",
+      "acgme":"4803600114"
+   },
+   "Bon Secours Richmond Health System (Blackstone Rural) Program":{
+      "longitude":"-77.6494444",
+      "state":"VA",
+      "city":"Midlothian",
+      "latitude":"37.5058333",
+      "acgme":"1205100716"
+   },
+   "Prince George's Hospital Center Program":{
+      "longitude":"-76.9161111",
+      "state":"MD",
+      "city":"Cheverly",
+      "latitude":"38.9280556",
+      "acgme":"1402321161"
+   },
+   "University at Buffalo (Catholic Health System--Sisters of Charity) Program":{
+      "longitude":"-78.8786111",
+      "state":"NY",
+      "city":"Buffalo",
+      "latitude":"42.8863889",
+      "acgme":"1403521251"
+   },
+   "Norwalk Hospital/Yale University Program":{
+      "longitude":"-73.4083333",
+      "state":"CT",
+      "city":"Norwalk",
+      "latitude":"41.1175000",
+      "acgme":"1400831086"
+   },
+   "Campbell University/Cape Fear Valley Medical Center Program":{
+      "longitude":"-78.8786111",
+      "state":"NC",
+      "city":"Fayetteville",
+      "latitude":"35.0525000",
+      "acgme":"1103600215"
+   },
+   "University of Arizona College of Medicine at South Campus Program":{
+      "longitude":"-110.9258333",
+      "state":"AZ",
+      "city":"Tucson",
+      "latitude":"32.2216667",
+      "acgme":"1800331159"
+   },
+   "University of California (San Francisco)/San Francisco General Hospital Program":{
+      "longitude":"-122.4183333",
+      "state":"CA",
+      "city":"San Francisco",
+      "latitude":"37.7750000",
+      "acgme":"1100513192"
+   },
+   "University of Minnesota/University of Minnesota Medical Center (Fairview) Program":{
+      "longitude":"-93.2636111",
+      "state":"MN",
+      "city":"Minneapolis",
+      "latitude":"44.9800000",
+      "acgme":"1202621650"
+   },
+   "St Mary-Corwin Medical Center Program":{
+      "longitude":"-104.6086111",
+      "state":"CO",
+      "city":"Pueblo",
+      "latitude":"38.2544444",
+      "acgme":"1200700623"
+   },
+   "Louisiana State University (Bogalusa) Program":{
+      "longitude":"-89.8486111",
+      "state":"LA",
+      "city":"Bogalusa",
+      "latitude":"30.7908333",
+      "acgme":"1202113695"
+   },
+   "Robert Packer Hospital/Guthrie Program":{
+      "longitude":"-76.5158333",
+      "state":"PA",
+      "city":"Sayre",
+      "latitude":"41.9788889",
+      "acgme":"1404112389"
+   },
+   "Children's Hospital/Boston Medical Center Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"3202421403"
+   },
+   "Eastern Virginia Medical School (Ghent) Program":{
+      "longitude":"-76.2855556",
+      "state":"VA",
+      "city":"Norfolk",
+      "latitude":"36.8466667",
+      "acgme":"1205121319"
+   },
+   "The Medical Center (Columbus) Program":{
+      "longitude":"-84.9877778",
+      "state":"GA",
+      "city":"Columbus",
+      "latitude":"32.4608333",
+      "acgme":"1201211092"
+   },
+   "New York University School of Medicine/Brooklyn Campus Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"2203511191"
+   },
+   "Union Hospital Program":{
+      "longitude":"-87.4138889",
+      "state":"IN",
+      "city":"Terre Haute",
+      "latitude":"39.4666667",
+      "acgme":"1201711131"
+   },
+   "Palm Beach Consortium for Graduate Medical Education Program":{
+      "longitude":"-80.2500000",
+      "state":"FL",
+      "city":"Tamarac",
+      "latitude":"26.2125000",
+      "acgme":"4001100316"
+   },
+   "Pine Rest Christian Mental Health Services Program":{
+      "longitude":"-85.6680556",
+      "state":"MI",
+      "city":"Grand Rapids",
+      "latitude":"42.9633333",
+      "acgme":"4002500307"
+   },
+   "Bronx-Lebanon Hospital Center Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"3203511146"
+   },
+   "Tufts Medical Center Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"4302421044"
+   },
+   "Presence Saint Francis Hospital Program":{
+      "longitude":"-87.6900000",
+      "state":"IL",
+      "city":"Evanston",
+      "latitude":"42.0411111",
+      "acgme":"9991600038"
+   },
+   "Main Line Health System/Bryn Mawr Hospital Program":{
+      "longitude":"-75.3050000",
+      "state":"PA",
+      "city":"Bryn Mawr",
+      "latitude":"40.0197222",
+      "acgme":"4204121162"
+   },
+   "MountainStar HealthCare/Ogden Regional Medical Center Program":{
+      "longitude":"-111.9730556",
+      "state":"UT",
+      "city":"Ogden",
+      "latitude":"41.2230556",
+      "acgme":"1404900429"
+   },
+   "Hofstra Northwell School of Medicine at Glen Cove Hospital Program":{
+      "longitude":"-73.6341667",
+      "state":"NY",
+      "city":"Glen Cove",
+      "latitude":"40.8622222",
+      "acgme":"1203511202"
+   },
+   "Family Medicine Residency of Idaho Program":{
+      "longitude":"-116.2025000",
+      "state":"ID",
+      "city":"Boise",
+      "latitude":"43.6136111",
+      "acgme":"1201511097"
+   },
+   "Texas Tech University Health Sciences Center Paul L Foster School of Medicine Program":{
+      "longitude":"-106.4863889",
+      "state":"TX",
+      "city":"El Paso",
+      "latitude":"31.7586111",
+      "acgme":"4204812257"
+   },
+   "University of North Dakota School of Medicine and Health Sciences (Hettinger) Program":{
+      "longitude":"-102.6363889",
+      "state":"ND",
+      "city":"Hettinger",
+      "latitude":"46.0013889",
+      "acgme":"1203700681"
+   },
+   "University of Chicago (NorthShore) Program":{
+      "longitude":"-87.6900000",
+      "state":"IL",
+      "city":"Evanston",
+      "latitude":"42.0411111",
+      "acgme":"9991600037"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals (Columbia-St Mary's) Program":{
+      "longitude":"-87.9063889",
+      "state":"WI",
+      "city":"Milwaukee",
+      "latitude":"43.0388889",
+      "acgme":"1205621670"
+   },
+   "San Mateo County Behavioral Health and Recovery Services Program":{
+      "longitude":"-122.3244444",
+      "state":"CA",
+      "city":"San Mateo",
+      "latitude":"37.5630556",
+      "acgme":"4000522031"
+   },
+   "Brigham and Women's Hospital Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"4612400001"
+   },
+   "Inspira Medical Center Woodbury Program":{
+      "longitude":"-75.0261111",
+      "state":"NJ",
+      "city":"Vineland",
+      "latitude":"39.4861111",
+      "acgme":"4403300192"
+   },
+   "Seton Hall University-Hackensack Meridian School of Medicine Program":{
+      "longitude":"-74.2111111",
+      "state":"NJ",
+      "city":"Elizabeth",
+      "latitude":"40.6638889",
+      "acgme":"4003312300"
+   },
+   "University of North Dakota (Minot) Program":{
+      "longitude":"-101.2958333",
+      "state":"ND",
+      "city":"Minot",
+      "latitude":"48.2325000",
+      "acgme":"1203731230"
+   },
+   "Detroit Medical Center/Wayne State University (Detroit Receiving Hospital) Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"1102512024"
+   },
+   "East Tennessee State University (Kingsport) Program":{
+      "longitude":"-82.5619444",
+      "state":"TN",
+      "city":"Kingsport",
+      "latitude":"36.5483333",
+      "acgme":"1204731297"
+   },
+   "McLaren Oakland Program":{
+      "longitude":"-83.2911111",
+      "state":"MI",
+      "city":"Pontiac",
+      "latitude":"42.6388889",
+      "acgme":"1402500917"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals (Milwaukee) Program":{
+      "longitude":"-87.9063889",
+      "state":"WI",
+      "city":"Milwaukee",
+      "latitude":"43.0388889",
+      "acgme":"4005621229"
+   },
+   "Sidney Kimmel Medical College at Thomas Jefferson University/duPont Hospital for Children Program":{
+      "longitude":"-75.5469444",
+      "state":"DE",
+      "city":"Wilmington",
+      "latitude":"39.7458333",
+      "acgme":"3204121210"
+   },
+   "University of Tennessee/Methodist Healthcare-Memphis Hospitals Program":{
+      "longitude":"-90.0488889",
+      "state":"TN",
+      "city":"Memphis",
+      "latitude":"35.1494444",
+      "acgme":"9994700131"
+   },
+   "Wake Forest University School of Medicine Program":{
+      "longitude":"-80.2444444",
+      "state":"NC",
+      "city":"Winston-Salem",
+      "latitude":"36.0997222",
+      "acgme":"4803621113"
+   },
+   "Ponce Health Sciences University Program":{
+      "longitude":"-66.1061111",
+      "state":"PR",
+      "city":"San Juan",
+      "latitude":"18.4683333",
+      "acgme":"4004212296"
+   },
+   "Brown University (Women and Infants Hospital of Rhode Island) Program":{
+      "longitude":"-71.4133333",
+      "state":"RI",
+      "city":"Providence",
+      "latitude":"41.8238889",
+      "acgme":"2204321269"
+   },
+   "University of Washington School of Medicine Program":{
+      "longitude":"-122.3308333",
+      "state":"WA",
+      "city":"Seattle",
+      "latitude":"47.6063889",
+      "acgme":"4515400007"
+   },
+   "University of Vermont Health Network-Champlain Valley Physicians Hospital Program":{
+      "longitude":"-73.4533333",
+      "state":"NY",
+      "city":"Plattsburgh",
+      "latitude":"44.6994444",
+      "acgme":"1203500724"
+   },
+   "East Tennessee State University (Bristol) Program":{
+      "longitude":"-82.1888889",
+      "state":"TN",
+      "city":"Bristol",
+      "latitude":"36.5950000",
+      "acgme":"1204731296"
+   },
+   "University of Kansas (Wichita)/Wesley Program":{
+      "longitude":"-97.3372222",
+      "state":"KS",
+      "city":"Wichita",
+      "latitude":"37.6922222",
+      "acgme":"1201911142"
+   },
+   "Albert Einstein Healthcare Network Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4204121165"
+   },
+   "Mercy Memorial Hospital System Program":{
+      "longitude":"-83.3977778",
+      "state":"MI",
+      "city":"Monroe",
+      "latitude":"41.9163889",
+      "acgme":"1202500719"
+   },
+   "University of Texas RGV Program":{
+      "longitude":"-97.6958333",
+      "state":"TX",
+      "city":"Harlingen",
+      "latitude":"26.1902778",
+      "acgme":"4004800300"
+   },
+   "University of Utah Program":{
+      "longitude":"-111.8902778",
+      "state":"UT",
+      "city":"Salt Lake City",
+      "latitude":"40.7608333",
+      "acgme":"4804921149"
+   },
+   "Southern Illinois University School of Medicine Program":{
+      "longitude":"-89.6436111",
+      "state":"IL",
+      "city":"Springfield",
+      "latitude":"39.8016667",
+      "acgme":"1601600568"
+   },
+   "Mercy Catholic Medical Center Program":{
+      "longitude":"-75.2594444",
+      "state":"PA",
+      "city":"Darby",
+      "latitude":"39.9183333",
+      "acgme":"9994100106"
+   },
+   "Harvard School of Public Health Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"3802477074"
+   },
+   "Rutgers Robert Wood Johnson Medical School Program":{
+      "longitude":"-74.4522222",
+      "state":"NJ",
+      "city":"New Brunswick",
+      "latitude":"40.4861111",
+      "acgme":"4513300125"
+   },
+   "Lehigh Valley Health Network Program":{
+      "longitude":"-75.4905556",
+      "state":"PA",
+      "city":"Allentown",
+      "latitude":"40.6083333",
+      "acgme":"1804100167"
+   },
+   "Broadlawns Medical Center Program":{
+      "longitude":"-93.6088889",
+      "state":"IA",
+      "city":"Des Moines",
+      "latitude":"41.6005556",
+      "acgme":"9991800042"
+   },
+   "St John's Episcopal Hospital-South Shore Program":{
+      "longitude":"-73.7555556",
+      "state":"NY",
+      "city":"Far Rockaway",
+      "latitude":"40.6052778",
+      "acgme":"1403521486"
+   },
+   "Montefiore Medical Center/Albert Einstein College of Medicine Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"4513500114"
+   },
+   "University of Illinois College of Medicine at Chicago (Metropolitan Group) Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4401631096"
+   },
+   "Valley Baptist Medical Center Program":{
+      "longitude":"-97.6958333",
+      "state":"TX",
+      "city":"Harlingen",
+      "latitude":"26.1902778",
+      "acgme":"1204821593"
+   },
+   "Grand Rapids Medical Education Partners/Michigan State University Program":{
+      "longitude":"-85.6680556",
+      "state":"MI",
+      "city":"Grand Rapids",
+      "latitude":"42.9633333",
+      "acgme":"3602522044"
+   },
+   "Providence Health & Services \u2013 Oregon/Hood River Rural Program":{
+      "longitude":"-121.5202778",
+      "state":"OR",
+      "city":"Hood River",
+      "latitude":"45.7055556",
+      "acgme":"1204000729"
+   },
+   "University of Kentucky College of Medicine (Morehead) Rural Program":{
+      "longitude":"-83.4327778",
+      "state":"KY",
+      "city":"Morehead",
+      "latitude":"38.1838889",
+      "acgme":"1202031663"
+   },
+   "University of Florida College of Medicine (Pensacola) Program":{
+      "longitude":"-87.2169444",
+      "state":"FL",
+      "city":"Pensacola",
+      "latitude":"30.4211111",
+      "acgme":"1401100949"
+   },
+   "Kootenai Health Program":{
+      "longitude":"-116.7794444",
+      "state":"ID",
+      "city":"Coeur d'Alene",
+      "latitude":"47.6777778",
+      "acgme":"1201500734"
+   },
+   "New York Colleges of Osteopathic Medicine Educational Consortium (NYCOMEC) Program":{
+      "longitude":"-74.4233333",
+      "state":"NY",
+      "city":"Middletown",
+      "latitude":"41.4458333",
+      "acgme":"4003500316"
+   },
+   "Yuma Regional Medical Center Program":{
+      "longitude":"-114.6236111",
+      "state":"AZ",
+      "city":"Yuma",
+      "latitude":"32.7252778",
+      "acgme":"1200300718"
+   },
+   "Campbell University/Southeastern Regional Medical Center Program":{
+      "longitude":"-79.0088889",
+      "state":"NC",
+      "city":"Lumberton",
+      "latitude":"34.6180556",
+      "acgme":"1103600167"
+   },
+   "Cooper Hospital-University Medical Center Program":{
+      "longitude":"-75.1200000",
+      "state":"NJ",
+      "city":"Camden",
+      "latitude":"39.9258333",
+      "acgme":"4513300126"
+   },
+   "Maimonides Medical Center/Infants and Children's Hospital of Brooklyn Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"3203521157"
+   },
+   "Brigham and Women's Hospital/Massachusetts General Hospital/Harvard Medical School Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"1802431050"
+   },
+   "St Vincent Hospital Program":{
+      "longitude":"-71.8027778",
+      "state":"MA",
+      "city":"Worcester",
+      "latitude":"42.2625000",
+      "acgme":"4202412089"
+   },
+   "Howard University Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"4001021049"
+   },
+   "Latrobe Area Hospital Program":{
+      "longitude":"-79.3797222",
+      "state":"PA",
+      "city":"Latrobe",
+      "latitude":"40.3211111",
+      "acgme":"1204111277"
+   },
+   "University of Tennessee Program":{
+      "longitude":"-90.0488889",
+      "state":"TN",
+      "city":"Memphis",
+      "latitude":"35.1494444",
+      "acgme":"4804721141"
+   },
+   "Arrowhead Regional Medical Center/Kaiser Permanente (Fontana) Program":{
+      "longitude":"-117.3127778",
+      "state":"CA",
+      "city":"Colton",
+      "latitude":"34.0738889",
+      "acgme":"4400531425"
+   },
+   "Alameda Health System-Highland Hospital Program":{
+      "longitude":"-122.2697222",
+      "state":"CA",
+      "city":"Oakland",
+      "latitude":"37.8044444",
+      "acgme":"1400531051"
    },
    "Saint Peter's University Hospital Program":{
-      "latitude":"40.4861111",
       "longitude":"-74.4522222",
+      "state":"NJ",
       "city":"New Brunswick",
-      "state":"NJ"
+      "latitude":"40.4861111",
+      "acgme":"3203331419"
    },
-   "Kaiser Permanente Southern California (Anaheim) Program":{
-      "latitude":"33.7455556",
-      "longitude":"-117.8669444",
-      "city":"Santa Ana",
-      "state":"CA"
+   "National Rehabilitation Hospital/Washington Hospital Center/Georgetown University HospitalProgram":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"3401021087"
    },
-   "Riverside University Health System/University of California Riverside Program":{
-      "latitude":"33.9375000",
-      "longitude":"-117.2297222",
-      "city":"Moreno Valley",
-      "state":"CA"
+   "Brown University (Butler Hospital) Program":{
+      "longitude":"-71.4133333",
+      "state":"RI",
+      "city":"Providence",
+      "latitude":"41.8238889",
+      "acgme":"7554344005"
    },
-   "Swedish Medical Center Rural Program":{
-      "latitude":"47.6063889",
-      "longitude":"-122.3308333",
-      "city":"Seattle",
-      "state":"WA"
+   "Memorial Hermann Hospital System Program":{
+      "longitude":"-95.3630556",
+      "state":"TX",
+      "city":"Houston",
+      "latitude":"29.7630556",
+      "acgme":"1204821307"
    },
-   "Icahn School of Medicine at Mount Sinai (Bronx) Program":{
-      "latitude":"40.8500000",
-      "longitude":"-73.8666667",
-      "city":"Bronx",
-      "state":"NY"
+   "Ramon Betances Hospital-Mayaguez Medical Center/Ponce School of Medicine Consortium Program":{
+      "longitude":"-67.1400000",
+      "state":"PR",
+      "city":"Mayaguez",
+      "latitude":"18.2030556",
+      "acgme":"1404231525"
+   },
+   "Central Iowa Health System (Iowa Lutheran Hospital) Program":{
+      "longitude":"-93.6088889",
+      "state":"IA",
+      "city":"Des Moines",
+      "latitude":"41.6005556",
+      "acgme":"1201831135"
+   },
+   "Louisiana State University (Shreveport) Program":{
+      "longitude":"-93.7500000",
+      "state":"LA",
+      "city":"Shreveport",
+      "latitude":"32.5250000",
+      "acgme":"4802121059"
+   },
+   "Aria Health Program":{
+      "longitude":"-74.9230556",
+      "state":"PA",
+      "city":"Langhorne",
+      "latitude":"40.1744444",
+      "acgme":"1204100700"
+   },
+   "Saint Peter's University Hospital/Rutgers Robert Wood Johnson Medical School Program":{
+      "longitude":"-74.4522222",
+      "state":"NJ",
+      "city":"New Brunswick",
+      "latitude":"40.4861111",
+      "acgme":"2203312362"
+   },
+   "Miami Children's Health System/Nicklaus Children's Hospital Program":{
+      "longitude":"-80.1938889",
+      "state":"FL",
+      "city":"Miami",
+      "latitude":"25.7738889",
+      "acgme":"3201112057"
+   },
+   "University of Wisconsin (Wausau) Program":{
+      "longitude":"-89.6300000",
+      "state":"WI",
+      "city":"Wausau",
+      "latitude":"44.9591667",
+      "acgme":"1205621350"
+   },
+   "University of Texas Rio Grande Valley (Knapp) Program":{
+      "longitude":"-97.9905556",
+      "state":"TX",
+      "city":"Weslaco",
+      "latitude":"26.1591667",
+      "acgme":"1204800718"
+   },
+   "Christ Hospital/University of Cincinnati College of Medicine Program":{
+      "longitude":"-84.4569444",
+      "state":"OH",
+      "city":"Cincinnati",
+      "latitude":"39.1619444",
+      "acgme":"1203821235"
+   },
+   "Cone Health Program":{
+      "longitude":"-79.7922222",
+      "state":"NC",
+      "city":"Greensboro",
+      "latitude":"36.0725000",
+      "acgme":"1403611321"
+   },
+   "Mayo Clinic College of Medicine and Science (La Crosse) Program":{
+      "longitude":"-91.2394444",
+      "state":"WI",
+      "city":"La Crosse",
+      "latitude":"43.8013889",
+      "acgme":"1205611339"
+   },
+   "John Muir Health Program":{
+      "longitude":"-122.0638889",
+      "state":"CA",
+      "city":"Walnut Creek",
+      "latitude":"37.9063889",
+      "acgme":"1200500739"
+   },
+   "University of Nebraska Medical Center College of Medicine Rural Program":{
+      "longitude":"-95.9375000",
+      "state":"NE",
+      "city":"Omaha",
+      "latitude":"41.2586111",
+      "acgme":"1203021517"
+   },
+   "Penn State Milton S Hershey Medical Center/Hershey Program":{
+      "longitude":"-76.6505556",
+      "state":"PA",
+      "city":"Hershey",
+      "latitude":"40.2858333",
+      "acgme":"1204121504"
+   },
+   "Rochester General Hospital Program":{
+      "longitude":"-77.6158333",
+      "state":"NY",
+      "city":"Rochester",
+      "latitude":"43.1547222",
+      "acgme":"4203512145"
+   },
+   "Western Reserve Care System/NEOUCOM Program":{
+      "longitude":"-80.6497222",
+      "state":"OH",
+      "city":"Youngstown",
+      "latitude":"41.0997222",
+      "acgme":"7003844066"
+   },
+   "Johns Hopkins Bloomberg School of Public Health Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"3802311015"
+   },
+   "Aultman Hospital/NEOMED Program":{
+      "longitude":"-81.3786111",
+      "state":"OH",
+      "city":"Canton",
+      "latitude":"40.7988889",
+      "acgme":"2203821226"
+   },
+   "University of Illinois College of Medicine at Chicago (Mount Sinai) Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4401621385"
+   },
+   "Hennepin County Medical Center Program":{
+      "longitude":"-93.2636111",
+      "state":"MN",
+      "city":"Minneapolis",
+      "latitude":"44.9800000",
+      "acgme":"9992600069"
+   },
+   "St Anthony Hospital Program":{
+      "longitude":"-97.5161111",
+      "state":"OK",
+      "city":"Oklahoma City",
+      "latitude":"35.4675000",
+      "acgme":"2203900242"
+   },
+   "Geisinger Health System (Wilkes Barre) Program":{
+      "longitude":"-75.8816667",
+      "state":"PA",
+      "city":"Wilkes-Barre",
+      "latitude":"41.2458333",
+      "acgme":"4404100399"
+   },
+   "Mary Free Bed Hospital Program":{
+      "longitude":"-85.6680556",
+      "state":"MI",
+      "city":"Grand Rapids",
+      "latitude":"42.9633333",
+      "acgme":"3402500109"
+   },
+   "University of Illinois College of Medicine at Urbana Program":{
+      "longitude":"-88.2433333",
+      "state":"IL",
+      "city":"Champaign",
+      "latitude":"40.1163889",
+      "acgme":"4001600306"
+   },
+   "Tulane University Program":{
+      "longitude":"-90.0750000",
+      "state":"LA",
+      "city":"New Orleans",
+      "latitude":"29.9544444",
+      "acgme":"4802121058"
+   },
+   "Conemaugh Memorial Medical Center Program":{
+      "longitude":"-78.9222222",
+      "state":"PA",
+      "city":"Johnstown",
+      "latitude":"40.3266667",
+      "acgme":"1404131367"
+   },
+   "Sacred Heart Hospital/Temple University (Allentown) Program":{
+      "longitude":"-75.4905556",
+      "state":"PA",
+      "city":"Allentown",
+      "latitude":"40.6083333",
+      "acgme":"1204121259"
+   },
+   "Cahaba Medical Care, P.C. Program":{
+      "longitude":"-87.1386111",
+      "state":"AL",
+      "city":"Centreville",
+      "latitude":"32.9444444",
+      "acgme":"1200100727"
+   },
+   "UPMC Medical Education (Presbyterian Shadyside Hospital) Program":{
+      "longitude":"-79.9961111",
+      "state":"PA",
+      "city":"Pittsburgh",
+      "latitude":"40.4405556",
+      "acgme":"1204112280"
+   },
+   "Ocean Medical Center Program":{
+      "longitude":"-74.1375000",
+      "state":"NJ",
+      "city":"Bricktown",
+      "latitude":"40.0591667",
+      "acgme":"4003300302"
+   },
+   "Franciscan St Francis Health Program":{
+      "longitude":"-86.1580556",
+      "state":"IN",
+      "city":"Indianapolis",
+      "latitude":"39.7683333",
+      "acgme":"1201711125"
+   },
+   "Children's Hospital of Philadelphia Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"3204121205"
+   },
+   "Wheeling Hospital Program":{
+      "longitude":"-80.7211111",
+      "state":"WV",
+      "city":"Wheeling",
+      "latitude":"40.0638889",
+      "acgme":"1205522338"
+   },
+   "Brooklyn Hospital Center Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"3203511148"
+   },
+   "Flushing Hospital Medical Center Program":{
+      "longitude":"-73.8177778",
+      "state":"NY",
+      "city":"Flushing",
+      "latitude":"40.7652778",
+      "acgme":"9993500196"
+   },
+   "University of Oklahoma School of Community Medicine (Tulsa) Program":{
+      "longitude":"-95.9925000",
+      "state":"OK",
+      "city":"Tulsa",
+      "latitude":"36.1538889",
+      "acgme":"4003921246"
+   },
+   "Presence Saints Mary and Elizabeth Medical Center Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"1201612693"
+   },
+   "Cambridge Health Alliance Program":{
+      "longitude":"-71.1061111",
+      "state":"MA",
+      "city":"Cambridge",
+      "latitude":"42.3750000",
+      "acgme":"9992400054"
+   },
+   "William Beaumont Hospital Program":{
+      "longitude":"-83.1447222",
+      "state":"MI",
+      "city":"Royal Oak",
+      "latitude":"42.4894444",
+      "acgme":"4802512071"
+   },
+   "TriHealth (Bethesda North and Good Samaritan Hospitals) Program":{
+      "longitude":"-84.4569444",
+      "state":"OH",
+      "city":"Cincinnati",
+      "latitude":"39.1619444",
+      "acgme":"2203811228"
+   },
+   "University of Colorado (HealthONE Swedish Medical Center) Program":{
+      "longitude":"-105.0161111",
+      "state":"CO",
+      "city":"Littleton",
+      "latitude":"39.6133333",
+      "acgme":"1200721544"
+   },
+   "Atlantic Health (Morristown) Program":{
+      "longitude":"-74.4819444",
+      "state":"NJ",
+      "city":"Morristown",
+      "latitude":"40.7966667",
+      "acgme":"4203311116"
+   },
+   "Abington Memorial Hospital Program":{
+      "longitude":"-75.1183333",
+      "state":"PA",
+      "city":"Abington",
+      "latitude":"40.1205556",
+      "acgme":"2204112242"
+   },
+   "Detroit Medical Center/Wayne State University Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"4302521048"
+   },
+   "Driscoll Children's Hospital/Texas A&M; College of Medicine Program":{
+      "longitude":"-97.3961111",
+      "state":"TX",
+      "city":"Corpus Christi",
+      "latitude":"27.8002778",
+      "acgme":"3204811229"
    },
    "MedStar Franklin Square Medical Center Program":{
-      "latitude":"39.2902778",
       "longitude":"-76.6125000",
+      "state":"MD",
       "city":"Baltimore",
-      "state":"MD"
+      "latitude":"39.2902778",
+      "acgme":"2202321112"
+   },
+   "Brigham and Women's Hospital/Massachusetts General Hospital Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"2202411125"
+   },
+   "Tufts University at Cambridge Health Alliance Program":{
+      "longitude":"-71.0666667",
+      "state":"MA",
+      "city":"Malden",
+      "latitude":"42.4250000",
+      "acgme":"1202431687"
+   },
+   "Icahn School of Medicine at Mount Sinai (Downtown) Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"1803513155"
+   },
+   "University of Minnesota (Mankato) Program":{
+      "longitude":"-93.9991667",
+      "state":"MN",
+      "city":"Mankato",
+      "latitude":"44.1636111",
+      "acgme":"1202621568"
+   },
+   "University of Michigan School of Public Health Program":{
+      "longitude":"-83.7263889",
+      "state":"MI",
+      "city":"Ann Arbor",
+      "latitude":"42.2708333",
+      "acgme":"3802521125"
+   },
+   "Utah Valley Regional Medical Center Program":{
+      "longitude":"-111.6577778",
+      "state":"UT",
+      "city":"Provo",
+      "latitude":"40.2338889",
+      "acgme":"1204921583"
+   },
+   "White River Health System Program":{
+      "longitude":"-91.6408333",
+      "state":"AR",
+      "city":"Batesville",
+      "latitude":"35.7697222",
+      "acgme":"1400400925"
+   },
+   "Eastern Virginia Medical School (Portsmouth) Program":{
+      "longitude":"-76.2986111",
+      "state":"VA",
+      "city":"Portsmouth",
+      "latitude":"36.8352778",
+      "acgme":"1205121442"
+   },
+   "Inova Fairfax Medical Campus Program":{
+      "longitude":"-77.1713889",
+      "state":"VA",
+      "city":"Falls Church",
+      "latitude":"38.8822222",
+      "acgme":"2205100301"
+   },
+   "University of Utah Medical Center Program":{
+      "longitude":"-111.8902778",
+      "state":"UT",
+      "city":"Salt Lake City",
+      "latitude":"40.7608333",
+      "acgme":"3624900001"
+   },
+   "University of Texas RGV (VBMC) Program":{
+      "longitude":"-97.6958333",
+      "state":"TX",
+      "city":"Harlingen",
+      "latitude":"26.1902778",
+      "acgme":"1404821524"
+   },
+   "St Joseph's Regional Medical Center (South Bend) Program":{
+      "longitude":"-86.1586111",
+      "state":"IN",
+      "city":"Mishawaka",
+      "latitude":"41.6619444",
+      "acgme":"1201711130"
+   },
+   "JFK Medical Center Program":{
+      "longitude":"-74.4125000",
+      "state":"NJ",
+      "city":"Edison",
+      "latitude":"40.5186111",
+      "acgme":"3403321033"
+   },
+   "Kaiser Permanente Washington Program":{
+      "longitude":"-122.3308333",
+      "state":"WA",
+      "city":"Seattle",
+      "latitude":"47.6063889",
+      "acgme":"1205421327"
+   },
+   "Meharry Medical College Program A":{
+      "longitude":"-86.7844444",
+      "state":"TN",
+      "city":"Nashville",
+      "latitude":"36.1658333",
+      "acgme":"3804777088"
+   },
+   "University of Wisconsin (Eau Claire) Program":{
+      "longitude":"-91.4983333",
+      "state":"WI",
+      "city":"Eau Claire",
+      "latitude":"44.8113889",
+      "acgme":"1205631342"
+   },
+   "Connecticut Institute For Communities/Greater Danbury Community Health Center Program":{
+      "longitude":"-73.4544444",
+      "state":"CT",
+      "city":"Danbury",
+      "latitude":"41.3947222",
+      "acgme":"1400800908"
+   },
+   "Lutheran Family Health Center Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"1403500921"
+   },
+   "University at Buffalo Rural Program":{
+      "longitude":"-78.8786111",
+      "state":"NY",
+      "city":"Buffalo",
+      "latitude":"42.8863889",
+      "acgme":"1203521516"
+   },
+   "St Joseph Mercy-Oakland Program":{
+      "longitude":"-83.2911111",
+      "state":"MI",
+      "city":"Pontiac",
+      "latitude":"42.6388889",
+      "acgme":"9992500067"
+   },
+   "Sutter Health Program":{
+      "longitude":"-121.4933333",
+      "state":"CA",
+      "city":"Sacramento",
+      "latitude":"38.5816667",
+      "acgme":"1200531556"
+   },
+   "Pennsylvania Hospital of the University of Pennsylvania Health System Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4204131171"
+   },
+   "Providence-Providence Park Hospital/MSUCHM Program":{
+      "longitude":"-83.2219444",
+      "state":"MI",
+      "city":"Southfield",
+      "latitude":"42.4733333",
+      "acgme":"9992500068"
+   },
+   "Vanderbilt University Medical Center Program":{
+      "longitude":"-86.7844444",
+      "state":"TN",
+      "city":"Nashville",
+      "latitude":"36.1658333",
+      "acgme":"4804721142"
+   },
+   "Univ of North Dakota School of Medicine and Health Sciences Program":{
+      "longitude":"-96.7894444",
+      "state":"ND",
+      "city":"Fargo",
+      "latitude":"46.8772222",
+      "acgme":"2603700001"
+   },
+   "Duke University Hospital Program":{
+      "longitude":"-78.8988889",
+      "state":"NC",
+      "city":"Durham",
+      "latitude":"35.9938889",
+      "acgme":"4803621112"
+   },
+   "Bridgeport Hospital/Yale University Program":{
+      "longitude":"-73.2052778",
+      "state":"CT",
+      "city":"Bridgeport",
+      "latitude":"41.1669444",
+      "acgme":"4200812039"
+   },
+   "Children's Hospital Medical Center of Akron/NEOMED Program":{
+      "longitude":"-81.5191667",
+      "state":"OH",
+      "city":"Akron",
+      "latitude":"41.0813889",
+      "acgme":"3203811184"
+   },
+   "University of Nevada Las Vegas (UNLV) School of Medicine Program":{
+      "longitude":"-115.1363889",
+      "state":"NV",
+      "city":"Las Vegas",
+      "latitude":"36.1750000",
+      "acgme":"4003121297"
+   },
+   "University of Texas Health Science Center at Tyler/Good Shepherd Medical Center (Longview) Program":{
+      "longitude":"-94.7402778",
+      "state":"TX",
+      "city":"Longview",
+      "latitude":"32.5005556",
+      "acgme":"1404800890"
+   },
+   "Marshfield Clinic Program":{
+      "longitude":"-90.1716667",
+      "state":"WI",
+      "city":"Marshfield",
+      "latitude":"44.6688889",
+      "acgme":"3205631248"
+   },
+   "Johns Hopkins All Children's Hospital Program":{
+      "longitude":"-82.6794444",
+      "state":"FL",
+      "city":"St Petersburg",
+      "latitude":"27.7705556",
+      "acgme":"3201100428"
+   },
+   "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GMEC) Program":{
+      "longitude":"-94.5130556",
+      "state":"MO",
+      "city":"Joplin",
+      "latitude":"37.0841667",
+      "acgme":"4002800115"
+   },
+   "Mountain Area Health Education Center Rural Program":{
+      "longitude":"-82.4611111",
+      "state":"NC",
+      "city":"Hendersonville",
+      "latitude":"35.3186111",
+      "acgme":"1203621575"
+   },
+   "Massachusetts General Hospital/Brigham and Women's Hospital/Harvard Medical School Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"2602421011"
+   },
+   "York Hospital Program":{
+      "longitude":"-76.7280556",
+      "state":"PA",
+      "city":"York",
+      "latitude":"39.9625000",
+      "acgme":"2204111263"
+   },
+   "Allegheny Health Network Medical Education Consortium (FH) Program":{
+      "longitude":"-79.7883333",
+      "state":"PA",
+      "city":"Monroeville",
+      "latitude":"40.4211111",
+      "acgme":"1204122278"
+   },
+   "University of Tennessee (Nashville) Program":{
+      "longitude":"-86.7844444",
+      "state":"TN",
+      "city":"Nashville",
+      "latitude":"36.1658333",
+      "acgme":"1404721478"
+   },
+   "Summa Health System/NEOMED Program":{
+      "longitude":"-81.5191667",
+      "state":"OH",
+      "city":"Akron",
+      "latitude":"41.0813889",
+      "acgme":"9993800087"
+   },
+   "Penn State Milton S Hershey Medical Center/State College Program":{
+      "longitude":"-77.8602778",
+      "state":"PA",
+      "city":"State College",
+      "latitude":"40.7933333",
+      "acgme":"1204100691"
+   },
+   "Stanford Health Care-Sponsored Stanford University Program":{
+      "longitude":"-121.8938889",
+      "state":"CA",
+      "city":"San Jose",
+      "latitude":"37.3394444",
+      "acgme":"1200512684"
+   },
+   "University of South Dakota Program":{
+      "longitude":"-96.7000000",
+      "state":"SD",
+      "city":"Sioux Falls",
+      "latitude":"43.5500000",
+      "acgme":"9994600230"
+   },
+   "Vidant Medical Center/East Carolina University Program":{
+      "longitude":"-77.3666667",
+      "state":"NC",
+      "city":"Greenville",
+      "latitude":"35.6125000",
+      "acgme":"4003621169"
+   },
+   "University of Florida (Orlando) Program":{
+      "longitude":"-81.3794444",
+      "state":"FL",
+      "city":"Orlando",
+      "latitude":"28.5380556",
+      "acgme":"3201131058"
+   },
+   "Aurora Health Care Program":{
+      "longitude":"-87.9063889",
+      "state":"WI",
+      "city":"Milwaukee",
+      "latitude":"43.0388889",
+      "acgme":"9995600148"
+   },
+   "University of North Dakota (Bismarck) Program":{
+      "longitude":"-100.7833333",
+      "state":"ND",
+      "city":"Bismarck",
+      "latitude":"46.8083333",
+      "acgme":"1203721227"
+   },
+   "Detroit Medical Center Corporation Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"4802500187"
+   },
+   "Methodist Health System Dallas Program":{
+      "longitude":"-96.8000000",
+      "state":"TX",
+      "city":"Dallas",
+      "latitude":"32.7833333",
+      "acgme":"2204831281"
+   },
+   "Lake Erie College of Osteopathic Medicine Program":{
+      "longitude":"-80.0852778",
+      "state":"PA",
+      "city":"Erie",
+      "latitude":"42.1291667",
+      "acgme":"4004100275"
+   },
+   "Central Michigan University College of Medicine Program":{
+      "longitude":"-83.9508333",
+      "state":"MI",
+      "city":"Saginaw",
+      "latitude":"43.4194444",
+      "acgme":"4002500308"
+   },
+   "New York Presbyterian Hospital (Columbia Campus) Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4803521092"
+   },
+   "Montefiore Medical Center/Albert Einstein College of Medicine (Jacobi/Montefiore) Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"1103512030"
+   },
+   "Steward Carney Hospital Program":{
+      "longitude":"-71.0750000",
+      "state":"MA",
+      "city":"Dorchester",
+      "latitude":"42.2972222",
+      "acgme":"9992400159"
+   },
+   "Loma Linda University Health Education Consortium Program":{
+      "longitude":"-117.2602778",
+      "state":"CA",
+      "city":"Loma Linda",
+      "latitude":"34.0483333",
+      "acgme":"4800521019"
+   },
+   "Ellis Hospital of Schenectady Program":{
+      "longitude":"-73.9400000",
+      "state":"NY",
+      "city":"Schenectady",
+      "latitude":"42.8141667",
+      "acgme":"1203512215"
+   },
+   "Indiana University School of Medicine Program":{
+      "longitude":"-86.1580556",
+      "state":"IN",
+      "city":"Indianapolis",
+      "latitude":"39.7683333",
+      "acgme":"4511731095"
+   },
+   "Roger Williams Medical Center Program":{
+      "longitude":"-71.4133333",
+      "state":"RI",
+      "city":"Providence",
+      "latitude":"41.8238889",
+      "acgme":"1404331401"
+   },
+   "Institute for Family Health (Mid-Hudson) Program":{
+      "longitude":"-73.9977778",
+      "state":"NY",
+      "city":"Kingston",
+      "latitude":"41.9269444",
+      "acgme":"1203521204"
+   },
+   "Long Beach Memorial Medical Center Program":{
+      "longitude":"-118.1883333",
+      "state":"CA",
+      "city":"Long Beach",
+      "latitude":"33.7669444",
+      "acgme":"1200521044"
+   },
+   "United Hospital Center Program":{
+      "longitude":"-80.2563889",
+      "state":"WV",
+      "city":"Bridgeport",
+      "latitude":"39.2863889",
+      "acgme":"1205522334"
+   },
+   "Loyola University Program":{
+      "longitude":"-87.8430556",
+      "state":"IL",
+      "city":"Maywood",
+      "latitude":"41.8791667",
+      "acgme":"4801621166"
+   },
+   "Aurora Health Care (Milwaukee) Program":{
+      "longitude":"-87.9063889",
+      "state":"WI",
+      "city":"Milwaukee",
+      "latitude":"43.0388889",
+      "acgme":"1205621348"
+   },
+   "St John Hospital and Medical Center Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"3202511113"
+   },
+   "Swedish Medical Center/First Hill Program":{
+      "longitude":"-122.3308333",
+      "state":"WA",
+      "city":"Seattle",
+      "latitude":"47.6063889",
+      "acgme":"4405432347"
+   },
+   "University of California (Irvine) Program":{
+      "longitude":"-117.8522222",
+      "state":"CA",
+      "city":"Orange",
+      "latitude":"33.7877778",
+      "acgme":"4800521018"
+   },
+   "North Colorado Medical Center Sterling Rural Program":{
+      "longitude":"-104.7086111",
+      "state":"CO",
+      "city":"Greeley",
+      "latitude":"40.4233333",
+      "acgme":"1200700622"
+   },
+   "Bayfront Health St Petersburg Program":{
+      "longitude":"-82.6794444",
+      "state":"FL",
+      "city":"St Petersburg",
+      "latitude":"27.7705556",
+      "acgme":"2201111074"
+   },
+   "Samaritan Medical Center Program":{
+      "longitude":"-75.9111111",
+      "state":"NY",
+      "city":"Watertown",
+      "latitude":"43.9747222",
+      "acgme":"1403500926"
+   },
+   "Baylor College of Medicine (San Antonio)  Program":{
+      "longitude":"-98.4933333",
+      "state":"TX",
+      "city":"San Antonio",
+      "latitude":"29.4238889",
+      "acgme":"3204800422"
+   },
+   "Citrus Health Network, Inc. Program":{
+      "longitude":"-80.2783333",
+      "state":"FL",
+      "city":"Hialeah",
+      "latitude":"25.8572222",
+      "acgme":"4001100313"
+   },
+   "University of Tennessee (Jackson) Program":{
+      "longitude":"-88.8138889",
+      "state":"TN",
+      "city":"Jackson",
+      "latitude":"35.6144444",
+      "acgme":"1204721299"
+   },
+   "UMMS-Baystate Program":{
+      "longitude":"-72.5902778",
+      "state":"MA",
+      "city":"Springfield",
+      "latitude":"42.1013889",
+      "acgme":"4202412088"
+   },
+   "University of Illinois College of Medicine (Rockford) Rural Program":{
+      "longitude":"-89.4794444",
+      "state":"IL",
+      "city":"Dixon",
+      "latitude":"41.8388889",
+      "acgme":"1201611675"
+   },
+   "Allegheny Health Network Medical Education Consortium (AGH) Program":{
+      "longitude":"-79.9961111",
+      "state":"PA",
+      "city":"Pittsburgh",
+      "latitude":"40.4405556",
+      "acgme":"4514131111"
+   },
+   "University of Alabama Medical Center (Huntsville) Program":{
+      "longitude":"-86.5861111",
+      "state":"AL",
+      "city":"Huntsville",
+      "latitude":"34.7302778",
+      "acgme":"1200111023"
+   },
+   "University of Tennessee College of Medicine at Memphis Program":{
+      "longitude":"-90.0488889",
+      "state":"TN",
+      "city":"Memphis",
+      "latitude":"35.1494444",
+      "acgme":"1104700196"
+   },
+   "University of Arkansas for Medical Sciences Program":{
+      "longitude":"-92.2894444",
+      "state":"AR",
+      "city":"Little Rock",
+      "latitude":"34.7463889",
+      "acgme":"4510421055"
+   },
+   "OPTI West/Hemet Valley Medical Center Program":{
+      "longitude":"-116.9711111",
+      "state":"CA",
+      "city":"Hemet",
+      "latitude":"33.7475000",
+      "acgme":"1400500919"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals (Central Wisconsin) Program":{
+      "longitude":"-89.6300000",
+      "state":"WI",
+      "city":"Wausau",
+      "latitude":"44.9591667",
+      "acgme":"4005600261"
+   },
+   "Oakland Physicians Medical Center Program":{
+      "longitude":"-83.2911111",
+      "state":"MI",
+      "city":"Pontiac",
+      "latitude":"42.6388889",
+      "acgme":"1202512172"
+   },
+   "University of Louisville (Glasgow) Program":{
+      "longitude":"-85.9119444",
+      "state":"KY",
+      "city":"Glasgow",
+      "latitude":"36.9958333",
+      "acgme":"1202021613"
+   },
+   "Eastern Idaho Regional Medical Center Program":{
+      "longitude":"-112.0333333",
+      "state":"ID",
+      "city":"Idaho Falls",
+      "latitude":"43.4666667",
+      "acgme":"1401500546"
+   },
+   "McLaren Oakland (Macomb) Program":{
+      "longitude":"-82.8780556",
+      "state":"MI",
+      "city":"Mount Clemens",
+      "latitude":"42.5972222",
+      "acgme":"4802500190"
+   },
+   "Montefiore Medical Center/Albert Einstein College of Medicine (New Rochelle) Program":{
+      "longitude":"-73.7827778",
+      "state":"NY",
+      "city":"New Rochelle",
+      "latitude":"40.9113889",
+      "acgme":"1403511258"
+   },
+   "Allegiance Health Program":{
+      "longitude":"-84.4013889",
+      "state":"MI",
+      "city":"Jackson",
+      "latitude":"42.2458333",
+      "acgme":"1402500912"
+   },
+   "Mercy Medical Center (Redding) Program":{
+      "longitude":"-122.3905556",
+      "state":"CA",
+      "city":"Redding",
+      "latitude":"40.5866667",
+      "acgme":"1200531054"
+   },
+   "Firelands Regional Medical Center Program":{
+      "longitude":"-82.7080556",
+      "state":"OH",
+      "city":"Sandusky",
+      "latitude":"41.4488889",
+      "acgme":"9993800260"
+   },
+   "Brown University/Rhode Island Hospital-Lifespan Program":{
+      "longitude":"-71.4133333",
+      "state":"RI",
+      "city":"Providence",
+      "latitude":"41.8238889",
+      "acgme":"4164300001"
+   },
+   "Hofstra Northwell School of Medicine at Long Island Jewish Medical Center Program":{
+      "longitude":"-73.6883333",
+      "state":"NY",
+      "city":"New Hyde Park",
+      "latitude":"40.7350000",
+      "acgme":"1103512062"
+   },
+   "St Elizabeth Boardman Hospital Program":{
+      "longitude":"-80.6630556",
+      "state":"OH",
+      "city":"Boardman",
+      "latitude":"41.0241667",
+      "acgme":"1103800206"
+   },
+   "Norwegian American Hospital Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"1201600705"
+   },
+   "UPMC Medical Education (Erie) Program":{
+      "longitude":"-80.0852778",
+      "state":"PA",
+      "city":"Erie",
+      "latitude":"42.1291667",
+      "acgme":"1804100168"
+   },
+   "West Suburban Medical Center Program":{
+      "longitude":"-87.7844444",
+      "state":"IL",
+      "city":"Oak Park",
+      "latitude":"41.8850000",
+      "acgme":"1401621467"
+   },
+   "West Virginia University Rural Program":{
+      "longitude":"-77.7391667",
+      "state":"WV",
+      "city":"Harpers Ferry",
+      "latitude":"39.3252778",
+      "acgme":"1205521569"
+   },
+   "University of Wyoming (Casper) Program":{
+      "longitude":"-106.3125000",
+      "state":"WY",
+      "city":"Casper",
+      "latitude":"42.8666667",
+      "acgme":"1205712351"
+   },
+   "Penn State Milton S Hershey Medical Center Program":{
+      "longitude":"-76.6505556",
+      "state":"PA",
+      "city":"Hershey",
+      "latitude":"40.2858333",
+      "acgme":"4514113014"
+   },
+   "South Nassau Communities Hospital Program":{
+      "longitude":"-73.6405556",
+      "state":"NY",
+      "city":"Oceanside",
+      "latitude":"40.6386111",
+      "acgme":"2203500367"
+   },
+   "Summa Health System/Barberton Campus Program":{
+      "longitude":"-81.6052778",
+      "state":"OH",
+      "city":"Barberton",
+      "latitude":"41.0127778",
+      "acgme":"1203821437"
+   },
+   "Louisiana State University/Ochsner Clinic Foundation Program":{
+      "longitude":"-90.0750000",
+      "state":"LA",
+      "city":"New Orleans",
+      "latitude":"29.9544444",
+      "acgme":"4002121291"
+   },
+   "Woodhull Medical and Mental Health Center Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"3203532387"
+   },
+   "Legacy Emanuel Hospital and Health Center Program":{
+      "longitude":"-122.6750000",
+      "state":"OR",
+      "city":"Portland",
+      "latitude":"45.5236111",
+      "acgme":"1404011353"
+   },
+   "St Vincent's Medical Center Program":{
+      "longitude":"-73.2052778",
+      "state":"CT",
+      "city":"Bridgeport",
+      "latitude":"41.1669444",
+      "acgme":"4200811040"
+   },
+   "University of Texas Health Science Center School of Medicine at San Antonio Program":{
+      "longitude":"-98.4933333",
+      "state":"TX",
+      "city":"San Antonio",
+      "latitude":"29.4238889",
+      "acgme":"4804821147"
+   },
+   "Winthrop-University Hospital Program":{
+      "longitude":"-73.6411111",
+      "state":"NY",
+      "city":"Mineola",
+      "latitude":"40.7491667",
+      "acgme":"4203521240"
+   },
+   "Penrose-St Francis Health Services Program":{
+      "longitude":"-104.8208333",
+      "state":"CO",
+      "city":"Colorado Springs",
+      "latitude":"38.8338889",
+      "acgme":"3000712048"
+   },
+   "St Vincent Hospital and Health Care Center Preliminary Program":{
+      "longitude":"-86.1580556",
+      "state":"IN",
+      "city":"Indianapolis",
+      "latitude":"39.7683333",
+      "acgme":"1401711135"
+   },
+   "MultiCare Health System (East Pierce) Program":{
+      "longitude":"-122.2916667",
+      "state":"WA",
+      "city":"Puyallup",
+      "latitude":"47.1855556",
+      "acgme":"1205400711"
+   },
+   "Providence Health & Services - Oregon/Providence Medical Center Program":{
+      "longitude":"-122.6750000",
+      "state":"OR",
+      "city":"Portland",
+      "latitude":"45.5236111",
+      "acgme":"1404031355"
+   },
+   "Coney Island Hospital Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"2203500366"
+   },
+   "Texas Department of State Health Services Program":{
+      "longitude":"-97.7427778",
+      "state":"TX",
+      "city":"Austin",
+      "latitude":"30.2669444",
+      "acgme":"3804888105"
+   },
+   "National Institutes of Health Clinical Center Program":{
+      "longitude":"-77.1005556",
+      "state":"MD",
+      "city":"Bethesda",
+      "latitude":"38.9805556",
+      "acgme":"3002312015"
+   },
+   "Iowa Medical Education Collaborative Program":{
+      "longitude":"-93.6088889",
+      "state":"IA",
+      "city":"Des Moines",
+      "latitude":"41.6005556",
+      "acgme":"4001800070"
+   },
+   "Creighton University School of Medicine Program":{
+      "longitude":"-95.9375000",
+      "state":"NE",
+      "city":"Omaha",
+      "latitude":"41.2586111",
+      "acgme":"4803000082"
+   },
+   "Leonard J Chabert Medical Center Program":{
+      "longitude":"-90.7194444",
+      "state":"LA",
+      "city":"Houma",
+      "latitude":"29.5955556",
+      "acgme":"1402121537"
+   },
+   "North Colorado Medical Center Rural Program (Must also apply to ACGME ID 1200711074)":{
+      "longitude":"-104.7086111",
+      "state":"CO",
+      "city":"Greeley",
+      "latitude":"40.4233333",
+      "acgme":"1200731524"
+   },
+   "TriHealth (Bethesda North Hospital) Program":{
+      "longitude":"-84.4569444",
+      "state":"OH",
+      "city":"Cincinnati",
+      "latitude":"39.1619444",
+      "acgme":"1203821474"
+   },
+   "New York University School of Medicine/Hospital for Joint Diseases Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"2603512125"
+   },
+   "St Mary-Corwin Medical Center/Southern Colorado Family Medicine Program":{
+      "longitude":"-104.6086111",
+      "state":"CO",
+      "city":"Pueblo",
+      "latitude":"38.2544444",
+      "acgme":"1200721075"
+   },
+   "St Joseph's Hospital and Medical Center Program":{
+      "longitude":"-112.0733333",
+      "state":"AZ",
+      "city":"Phoenix",
+      "latitude":"33.4483333",
+      "acgme":"4200312010"
+   },
+   "City of Hope National Medical Center Program":{
+      "longitude":"-117.9763889",
+      "state":"CA",
+      "city":"Duarte",
+      "latitude":"34.1394444",
+      "acgme":"4300513139"
+   },
+   "Mayo Clinic College of Medicine and Science (Rochester) Program":{
+      "longitude":"-92.4697222",
+      "state":"MN",
+      "city":"Rochester",
+      "latitude":"44.0216667",
+      "acgme":"4512612061"
+   },
+   "San Joaquin General Hospital Program":{
+      "longitude":"-121.2700000",
+      "state":"CA",
+      "city":"French Camp",
+      "latitude":"37.8841667",
+      "acgme":"1400512069"
+   },
+   "Richmond University Medical Center Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4203521229"
+   },
+   "Tuscaloosa College of Community Health Science Program":{
+      "longitude":"-87.5691667",
+      "state":"AL",
+      "city":"Tuscaloosa",
+      "latitude":"33.2097222",
+      "acgme":"1200121027"
+   },
+   "University of Chicago/University of Illinois College of Medicine at Chicago Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4301611116"
+   },
+   "Presence Saint Joseph Hospital (Chicago) Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"9991600033"
+   },
+   "TriHealth (Good Samaritan Hospital) Program":{
+      "longitude":"-84.4569444",
+      "state":"OH",
+      "city":"Cincinnati",
+      "latitude":"39.1619444",
+      "acgme":"4513831043"
+   },
+   "University of Florida College of Medicine Jacksonville Program":{
+      "longitude":"-81.6558333",
+      "state":"FL",
+      "city":"Jacksonville",
+      "latitude":"30.3319444",
+      "acgme":"4201121223"
+   },
+   "Providence Health & Services - Oregon/Milwaukie Hospital Program":{
+      "longitude":"-122.6380556",
+      "state":"OR",
+      "city":"Milwaukie",
+      "latitude":"45.4463889",
+      "acgme":"1204021656"
+   },
+   "Aurora Health Care (Waukesha) Program":{
+      "longitude":"-88.2313889",
+      "state":"WI",
+      "city":"Waukesha",
+      "latitude":"43.0116667",
+      "acgme":"1205621345"
+   },
+   "Southeast Alabama Medical Center Program":{
+      "longitude":"-85.3905556",
+      "state":"AL",
+      "city":"Dothan",
+      "latitude":"31.2230556",
+      "acgme":"1400100900"
+   },
+   "Massachusetts General Hospital/McLean Hospital Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"4002421288"
+   },
+   "West Virginia University School of Public Health Occupational Medicine Program":{
+      "longitude":"-79.9561111",
+      "state":"WV",
+      "city":"Morgantown",
+      "latitude":"39.6294444",
+      "acgme":"3805577094"
+   },
+   "Allegheny Health Network Medical Education Consortium Program":{
+      "longitude":"-80.0852778",
+      "state":"PA",
+      "city":"Erie",
+      "latitude":"42.1291667",
+      "acgme":"1104100208"
+   },
+   "St. Louis University School of Medicine Program":{
+      "longitude":"-90.1977778",
+      "state":"MO",
+      "city":"St Louis",
+      "latitude":"38.6272222",
+      "acgme":"1202831704"
+   },
+   "Stanford Hospital and Clinics Program":{
+      "longitude":"-122.1650000",
+      "state":"CA",
+      "city":"Stanford",
+      "latitude":"37.4241667",
+      "acgme":"7650500010"
+   },
+   "Monmouth Medical Center Program":{
+      "longitude":"-73.9927778",
+      "state":"NJ",
+      "city":"Long Branch",
+      "latitude":"40.3041667",
+      "acgme":"4203331115"
+   },
+   "Ohio State University/Mt Carmel Hospital Program":{
+      "longitude":"-82.9988889",
+      "state":"OH",
+      "city":"Columbus",
+      "latitude":"39.9611111",
+      "acgme":"2203811234"
+   },
+   "Baylor College of Medicine (Houston)  Program":{
+      "longitude":"-95.3630556",
+      "state":"TX",
+      "city":"Houston",
+      "latitude":"29.7630556",
+      "acgme":"3204821232"
+   },
+   "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GMEC) Cuyahoga Falls Program":{
+      "longitude":"-81.4847222",
+      "state":"OH",
+      "city":"Cuyahoga Falls",
+      "latitude":"41.1338889",
+      "acgme":"0803800145"
+   },
+   "Advocate Health Care (Advocate Illinois Masonic Medical Center) Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4201621217"
+   },
+   "McKay-Dee Hospital Center Program":{
+      "longitude":"-111.9730556",
+      "state":"UT",
+      "city":"Ogden",
+      "latitude":"41.2230556",
+      "acgme":"1204921495"
+   },
+   "University of Nebraska Medical Center College of Medicine Program":{
+      "longitude":"-95.9375000",
+      "state":"NE",
+      "city":"Omaha",
+      "latitude":"41.2586111",
+      "acgme":"4803021081"
+   },
+   "Stony Brook Medicine/Southampton Hospital Program":{
+      "longitude":"-72.3900000",
+      "state":"NY",
+      "city":"Southampton",
+      "latitude":"40.8841667",
+      "acgme":"1403500923"
+   },
+   "Billings Clinic Program":{
+      "longitude":"-108.5000000",
+      "state":"MT",
+      "city":"Billings",
+      "latitude":"45.7833333",
+      "acgme":"1402900919"
+   },
+   "Newton-Wellesley Hospital Program":{
+      "longitude":"-71.2097222",
+      "state":"MA",
+      "city":"Newton",
+      "latitude":"42.3369444",
+      "acgme":"9992400246"
+   },
+   "Seton Hall University-Hackensack Meridian School of Medicine at Englewood Hospital and Med Center Program":{
+      "longitude":"-73.9730556",
+      "state":"NJ",
+      "city":"Englewood",
+      "latitude":"40.8927778",
+      "acgme":"1403321228"
+   },
+   "Charles R Drew University of Medicine and Science, College of Medicine Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"4000500317"
+   },
+   "Cedars-Sinai Medical Center Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"4800531189"
+   },
+   "Integris Health Program":{
+      "longitude":"-97.5161111",
+      "state":"OK",
+      "city":"Oklahoma City",
+      "latitude":"35.4675000",
+      "acgme":"1103900196"
+   },
+   "SSM St Mary's Hospital-St Louis Program":{
+      "longitude":"-90.1977778",
+      "state":"MO",
+      "city":"St Louis",
+      "latitude":"38.6272222",
+      "acgme":"1402811220"
+   },
+   "Pomona Valley Hospital Medical Center Program":{
+      "longitude":"-117.7513889",
+      "state":"CA",
+      "city":"Pomona",
+      "latitude":"34.0552778",
+      "acgme":"1200521610"
+   },
+   "University of Kentucky College of Medicine Program A":{
+      "longitude":"-84.4777778",
+      "state":"KY",
+      "city":"Lexington",
+      "latitude":"37.9886111",
+      "acgme":"3802077070"
+   },
+   "Children's Hospital of Michigan Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"3202521110"
+   },
+   "University of Vermont Medical Center Program":{
+      "longitude":"-73.2125000",
+      "state":"VT",
+      "city":"Burlington",
+      "latitude":"44.4758333",
+      "acgme":"4805013188"
+   },
+   "Massachusetts Eye and Ear Infirmary/Harvard Medical School Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"2802421049"
+   },
+   "University of Michigan Program":{
+      "longitude":"-83.7263889",
+      "state":"MI",
+      "city":"Ann Arbor",
+      "latitude":"42.2708333",
+      "acgme":"4512521035"
+   },
+   "University of Texas at Austin Dell Medical School Program":{
+      "longitude":"-97.7427778",
+      "state":"TX",
+      "city":"Austin",
+      "latitude":"30.2669444",
+      "acgme":"9994800133"
+   },
+   "HealthONE/Swedish Medical Center Program":{
+      "longitude":"-104.9872222",
+      "state":"CO",
+      "city":"Englewood",
+      "latitude":"39.6477778",
+      "acgme":"4400700060"
+   },
+   "Natividad Medical Center Program":{
+      "longitude":"-121.6544444",
+      "state":"CA",
+      "city":"Salinas",
+      "latitude":"36.6777778",
+      "acgme":"1200521056"
+   },
+   "Clinica Sierra Vista - Bakersfield Program":{
+      "longitude":"-119.0177778",
+      "state":"CA",
+      "city":"Bakersfield",
+      "latitude":"35.3733333",
+      "acgme":"1200500738"
+   },
+   "Ventura County Medical Center Program":{
+      "longitude":"-119.2922222",
+      "state":"CA",
+      "city":"Ventura",
+      "latitude":"34.2783333",
+      "acgme":"1200511068"
+   },
+   "Beth Israel Deaconess Medical Center/Harvard Medical School Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"3002431419"
+   },
+   "Texas Tech University Health Sciences Center at Lubbock Program":{
+      "longitude":"-101.8547222",
+      "state":"TX",
+      "city":"Lubbock",
+      "latitude":"33.5777778",
+      "acgme":"2804800139"
+   },
+   "Temple University Hospital/Moss Rehabilitation Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"3404121056"
+   },
+   "University of Minnesota (Duluth) Program":{
+      "longitude":"-92.1063889",
+      "state":"MN",
+      "city":"Duluth",
+      "latitude":"46.7833333",
+      "acgme":"1202621176"
+   },
+   "Hofstra Northwell School of Medicine at Zucker Hillside Hospital Program":{
+      "longitude":"-73.7119444",
+      "state":"NY",
+      "city":"Glen Oaks",
+      "latitude":"40.7469444",
+      "acgme":"4003521142"
+   },
+   "Yale-New Haven Medical Center (St. Raphael) Program":{
+      "longitude":"-72.9286111",
+      "state":"CT",
+      "city":"New Haven",
+      "latitude":"41.3080556",
+      "acgme":"1400831084"
+   },
+   "St Francis Hospital and Medical Center Program":{
+      "longitude":"-72.6855556",
+      "state":"CT",
+      "city":"Hartford",
+      "latitude":"41.7636111",
+      "acgme":"2200811059"
+   },
+   "North Colorado Medical Center Program":{
+      "longitude":"-104.7086111",
+      "state":"CO",
+      "city":"Greeley",
+      "latitude":"40.4233333",
+      "acgme":"1200711074"
+   },
+   "Greenwich Hospital Association Program":{
+      "longitude":"-73.6288889",
+      "state":"CT",
+      "city":"Greenwich",
+      "latitude":"41.0263889",
+      "acgme":"1400821079"
+   },
+   "Inova Fairfax Medical Campus/Inova Children's Hospital Program":{
+      "longitude":"-77.1713889",
+      "state":"VA",
+      "city":"Falls Church",
+      "latitude":"38.8822222",
+      "acgme":"3205121399"
+   },
+   "Brigham and Women's Hospital/Harvard Medical School Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"4802421064"
+   },
+   "Tripler Army Medical Center Program":{
+      "longitude":"-157.8583333",
+      "state":"HI",
+      "city":"Honolulu",
+      "latitude":"21.3069444",
+      "acgme":"4201421933"
+   },
+   "University of Rochester Program":{
+      "longitude":"-77.6158333",
+      "state":"NY",
+      "city":"Rochester",
+      "latitude":"43.1547222",
+      "acgme":"4513521006"
+   },
+   "Intermountain Medical Center Program":{
+      "longitude":"-111.8872222",
+      "state":"UT",
+      "city":"Murray",
+      "latitude":"40.6669444",
+      "acgme":"9994900142"
+   },
+   "National Human Genome Research Institute/Children's National Medical Center Program":{
+      "longitude":"-77.1005556",
+      "state":"MD",
+      "city":"Bethesda",
+      "latitude":"38.9805556",
+      "acgme":"7652344008"
+   },
+   "University of Pennsylvania Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4514100120"
+   },
+   "University of Southern California/LAC+USC Medical Center Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"4800521021"
+   },
+   "Northeast Iowa Medical Education Foundation Program":{
+      "longitude":"-92.3427778",
+      "state":"IA",
+      "city":"Waterloo",
+      "latitude":"42.4927778",
+      "acgme":"1201821138"
+   },
+   "University of California (San Francisco) Program":{
+      "longitude":"-122.4183333",
+      "state":"CA",
+      "city":"San Francisco",
+      "latitude":"37.7750000",
+      "acgme":"4800521025"
+   },
+   "LewisGale Medical Center Program":{
+      "longitude":"-80.0550000",
+      "state":"VA",
+      "city":"Salem",
+      "latitude":"37.2933333",
+      "acgme":"1405100436"
+   },
+   "Michigan State University Program":{
+      "longitude":"-84.4838889",
+      "state":"MI",
+      "city":"East Lansing",
+      "latitude":"42.7369444",
+      "acgme":"4002521101"
+   },
+   "California Department of Public Health Program":{
+      "longitude":"-121.4933333",
+      "state":"CA",
+      "city":"Sacramento",
+      "latitude":"38.5816667",
+      "acgme":"3800588097"
+   },
+   "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GME Consortium)/ADCS-Orlando Program":{
+      "longitude":"-81.3633333",
+      "state":"FL",
+      "city":"Maitland",
+      "latitude":"28.6275000",
+      "acgme":"0801100141"
+   },
+   "University of Arizona College of Medicine-Phoenix Preliminary Program":{
+      "longitude":"-112.0733333",
+      "state":"AZ",
+      "city":"Phoenix",
+      "latitude":"33.4483333",
+      "acgme":"1400321025"
+   },
+   "Chicago Medical School/Rosalind Franklin Univ of Med & Sci Program":{
+      "longitude":"-88.2666667",
+      "state":"IL",
+      "city":"McHenry",
+      "latitude":"42.3333333",
+      "acgme":"1401600543"
+   },
+   "University at Buffalo (Sisters of Charity) Program":{
+      "longitude":"-78.8786111",
+      "state":"NY",
+      "city":"Buffalo",
+      "latitude":"42.8863889",
+      "acgme":"2203521171"
+   },
+   "Griffin Hospital Program":{
+      "longitude":"-73.0894444",
+      "state":"CT",
+      "city":"Derby",
+      "latitude":"41.3205556",
+      "acgme":"3800888119"
+   },
+   "Harrison Medical Center Program":{
+      "longitude":"-122.6313889",
+      "state":"WA",
+      "city":"Bremerton",
+      "latitude":"47.5675000",
+      "acgme":"1205400721"
+   },
+   "University of Texas M D Anderson Cancer Center Program":{
+      "longitude":"-95.3630556",
+      "state":"TX",
+      "city":"Houston",
+      "latitude":"29.7630556",
+      "acgme":"4304822099"
+   },
+   "Scripps Mercy Hospital Program":{
+      "longitude":"-117.1563889",
+      "state":"CA",
+      "city":"San Diego",
+      "latitude":"32.7152778",
+      "acgme":"9990500010"
+   },
+   "Glendale Adventist Medical Center Program":{
+      "longitude":"-118.2541667",
+      "state":"CA",
+      "city":"Glendale",
+      "latitude":"34.1425000",
+      "acgme":"1200521372"
+   },
+   "University of Texas Health Science Center at Tyler Program":{
+      "longitude":"-95.3008333",
+      "state":"TX",
+      "city":"Tyler",
+      "latitude":"32.3511111",
+      "acgme":"4004800302"
+   },
+   "Central Iowa Health System (Iowa Methodist Medical Center) Program":{
+      "longitude":"-93.6088889",
+      "state":"IA",
+      "city":"Des Moines",
+      "latitude":"41.6005556",
+      "acgme":"9991800220"
+   },
+   "Riverside University Health System Program":{
+      "longitude":"-117.2297222",
+      "state":"CA",
+      "city":"Moreno Valley",
+      "latitude":"33.9375000",
+      "acgme":"0400500027"
+   },
+   "Florida State University College of Medicine (Sarasota) Program":{
+      "longitude":"-82.5308333",
+      "state":"FL",
+      "city":"Sarasota",
+      "latitude":"27.3361111",
+      "acgme":"1401100947"
+   },
+   "Nebraska Medical Center/Clarkson Regional Health Service Program":{
+      "longitude":"-95.9375000",
+      "state":"NE",
+      "city":"Omaha",
+      "latitude":"41.2586111",
+      "acgme":"1203021498"
+   },
+   "Rochester Regional Health/Unity Hospital (Rochester) Program":{
+      "longitude":"-77.6158333",
+      "state":"NY",
+      "city":"Rochester",
+      "latitude":"43.1547222",
+      "acgme":"1403531527"
+   },
+   "Our Lady of The Lake Program":{
+      "longitude":"-91.1544444",
+      "state":"LA",
+      "city":"Baton Rouge",
+      "latitude":"30.4505556",
+      "acgme":"3202146422"
+   },
+   "University of Arizona College of Medicine-Phoenix Program":{
+      "longitude":"-112.0733333",
+      "state":"AZ",
+      "city":"Phoenix",
+      "latitude":"33.4483333",
+      "acgme":"4000312010"
+   },
+   "Rush University Medical Center/Copley Memorial Hospital Program":{
+      "longitude":"-88.3200000",
+      "state":"IL",
+      "city":"Aurora",
+      "latitude":"41.7605556",
+      "acgme":"1201621604"
+   },
+   "St. Agnes Medical Center (Fresno) Program":{
+      "longitude":"-119.7713889",
+      "state":"CA",
+      "city":"Fresno",
+      "latitude":"36.7477778",
+      "acgme":"1400500923"
+   },
+   "Mayo Clinic College of Medicine and Science (Arizona) Program":{
+      "longitude":"-112.0733333",
+      "state":"AZ",
+      "city":"Phoenix",
+      "latitude":"33.4483333",
+      "acgme":"4800312182"
+   },
+   "University of South Alabama Program":{
+      "longitude":"-88.0430556",
+      "state":"AL",
+      "city":"Mobile",
+      "latitude":"30.6941667",
+      "acgme":"4200111008"
+   },
+   "University of Toledo Program":{
+      "longitude":"-83.5552778",
+      "state":"OH",
+      "city":"Toledo",
+      "latitude":"41.6638889",
+      "acgme":"4803821122"
+   },
+   "Swedish Covenant Hospital Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"1401600544"
+   },
+   "University of Oklahoma Health Sciences Center (Lawton) Program":{
+      "longitude":"-98.3900000",
+      "state":"OK",
+      "city":"Lawton",
+      "latitude":"34.6086111",
+      "acgme":"1203921659"
+   },
+   "Resurrection Health Program":{
+      "longitude":"-90.0488889",
+      "state":"TN",
+      "city":"Memphis",
+      "latitude":"35.1494444",
+      "acgme":"1204700725"
+   },
+   "Riverside Methodist Hospitals (OhioHealth) Program":{
+      "longitude":"-82.9988889",
+      "state":"OH",
+      "city":"Columbus",
+      "latitude":"39.9611111",
+      "acgme":"9993800095"
+   },
+   "Icahn School of Medicine at Mount Sinai (Queens Hospital Center) Program":{
+      "longitude":"-73.8061111",
+      "state":"NY",
+      "city":"Jamaica",
+      "latitude":"40.6913889",
+      "acgme":"1403521510"
+   },
+   "East Tennessee State University Program":{
+      "longitude":"-82.3536111",
+      "state":"TN",
+      "city":"Johnson City",
+      "latitude":"36.3133333",
+      "acgme":"4004721258"
+   },
+   "University of Florida College of Medicine Program":{
+      "longitude":"-82.3250000",
+      "state":"FL",
+      "city":"Gainesville",
+      "latitude":"29.6513889",
+      "acgme":"1851118101"
+   },
+   "Universidad Central del Caribe Program":{
+      "longitude":"-66.1136111",
+      "state":"PR",
+      "city":"Bayamon",
+      "latitude":"18.1797222",
+      "acgme":"1404212452"
+   },
+   "University of California Riverside School of Medicine Program":{
+      "longitude":"-117.3952778",
+      "state":"CA",
+      "city":"Riverside",
+      "latitude":"33.9533333",
+      "acgme":"4000500315"
+   },
+   "Cleveland Clinic (Florida) Program":{
+      "longitude":"-80.4000000",
+      "state":"FL",
+      "city":"Weston",
+      "latitude":"26.1000000",
+      "acgme":"1801122152"
+   },
+   "Virginia Commonwealth University Health System Program":{
+      "longitude":"-77.4605556",
+      "state":"VA",
+      "city":"Richmond",
+      "latitude":"37.5536111",
+      "acgme":"4805121154"
+   },
+   "Baptist Memorial Hospital Program":{
+      "longitude":"-90.0488889",
+      "state":"TN",
+      "city":"Memphis",
+      "latitude":"35.1494444",
+      "acgme":"4204712186"
+   },
+   "Halifax Medical Center Program":{
+      "longitude":"-81.0230556",
+      "state":"FL",
+      "city":"Daytona Beach",
+      "latitude":"29.2105556",
+      "acgme":"4401112434"
+   },
+   "University of Illinois College of Medicine at Chicago Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4801621174"
+   },
+   "Scripps Clinic/Scripps Green Hospital Program":{
+      "longitude":"-117.2733333",
+      "state":"CA",
+      "city":"La Jolla",
+      "latitude":"32.8472222",
+      "acgme":"1400521490"
+   },
+   "Nazareth Hospital Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"1404100903"
+   },
+   "Mercy Medical Center (Merced) Program":{
+      "longitude":"-120.4819444",
+      "state":"CA",
+      "city":"Merced",
+      "latitude":"37.3022222",
+      "acgme":"1200521459"
+   },
+   "Larkin Community Hospital Program":{
+      "longitude":"-80.2936111",
+      "state":"FL",
+      "city":"South Miami",
+      "latitude":"25.7072222",
+      "acgme":"4201100261"
+   },
+   "Center for Family Medicine (Sioux Falls) Program":{
+      "longitude":"-96.7000000",
+      "state":"SD",
+      "city":"Sioux Falls",
+      "latitude":"43.5500000",
+      "acgme":"1204611294"
+   },
+   "McGaw Medical Center of Northwestern University Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4511621001"
+   },
+   "Rutgers New Jersey Medical School Program":{
+      "longitude":"-74.1727778",
+      "state":"NJ",
+      "city":"Newark",
+      "latitude":"40.7355556",
+      "acgme":"4803321083"
+   },
+   "University of Texas Rio Grande Valley Program":{
+      "longitude":"-98.2297222",
+      "state":"TX",
+      "city":"McAllen",
+      "latitude":"26.2030556",
+      "acgme":"3804888136"
+   },
+   "Jamaica Hospital Medical Center Program":{
+      "longitude":"-73.8061111",
+      "state":"NY",
+      "city":"Jamaica",
+      "latitude":"40.6913889",
+      "acgme":"4003513294"
+   },
+   "Boston VA Healthcare System (Brockton-West Roxbury)/Harvard Medical School Program":{
+      "longitude":"-71.0188889",
+      "state":"MA",
+      "city":"Brockton",
+      "latitude":"42.0833333",
+      "acgme":"4002421279"
+   },
+   "New York University School of Medicine (Brooklyn) Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"4403500445"
+   },
+   "University of Puerto Rico School of Medicine Program":{
+      "longitude":"-66.1061111",
+      "state":"PR",
+      "city":"San Juan",
+      "latitude":"18.4683333",
+      "acgme":"9994200256"
+   },
+   "University of Arkansas for Medical Sciences Regional Centers (Northeast) Program":{
+      "longitude":"-90.7041667",
+      "state":"AR",
+      "city":"Jonesboro",
+      "latitude":"35.8422222",
+      "acgme":"1200421406"
+   },
+   "UCLA-San Fernando Valley/VA Greater Los Angeles Program":{
+      "longitude":"-118.477083",
+      "state":"CA",
+      "city":"North Hills",
+      "latitude":"34.239389",
+      "acgme":"4000531032"
+   },
+   "Hartford Hospital Program":{
+      "longitude":"-72.6855556",
+      "state":"CT",
+      "city":"Hartford",
+      "latitude":"41.7636111",
+      "acgme":"4200822041"
+   },
+   "McLennan County Medical Education and Research Foundation Program":{
+      "longitude":"-97.1463889",
+      "state":"TX",
+      "city":"Waco",
+      "latitude":"31.5491667",
+      "acgme":"1204811313"
+   },
+   "Dignity Health Northridge Hospital Medical Center Program":{
+      "longitude":"-118.5358333",
+      "state":"CA",
+      "city":"Northridge",
+      "latitude":"34.2283333",
+      "acgme":"1200511053"
+   },
+   "University of Minnesota/Methodist Hospital Program":{
+      "longitude":"-93.3477778",
+      "state":"MN",
+      "city":"St Louis Park",
+      "latitude":"44.9483333",
+      "acgme":"1202621617"
+   },
+   "Jackson Park Hospital Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"1201612363"
+   },
+   "Suburban Community Hospital Program":{
+      "longitude":"-75.3369444",
+      "state":"PA",
+      "city":"East Norriton",
+      "latitude":"40.1516667",
+      "acgme":"1404100904"
+   },
+   "University of Kansas (Wichita) Program":{
+      "longitude":"-97.3372222",
+      "state":"KS",
+      "city":"Wichita",
+      "latitude":"37.6922222",
+      "acgme":"4201912070"
+   },
+   "Susquehanna Health System/Williamsport Hospital and Medical Center Program":{
+      "longitude":"-77.0013889",
+      "state":"PA",
+      "city":"Williamsport",
+      "latitude":"41.2411111",
+      "acgme":"1204131285"
+   },
+   "HealthPartners Institute/Park Nicollet Methodist Hospital/Amery/Westfields Hospitals Program":{
+      "longitude":"-93.3477778",
+      "state":"MN",
+      "city":"St Louis Park",
+      "latitude":"44.9483333",
+      "acgme":"1202600654"
+   },
+   "Providence Sacred Heart Medical Center (Spokane) Program":{
+      "longitude":"-117.4250000",
+      "state":"WA",
+      "city":"Spokane",
+      "latitude":"47.6588889",
+      "acgme":"4205421207"
+   },
+   "Family Medicine Residency of Idaho (Magic Valley) Rural Program":{
+      "longitude":"-116.2025000",
+      "state":"ID",
+      "city":"Boise",
+      "latitude":"43.6136111",
+      "acgme":"1201521698"
+   },
+   "Henry Ford Hospital Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"4162500004"
+   },
+   "Mercy Health System Program":{
+      "longitude":"-89.0186111",
+      "state":"WI",
+      "city":"Janesville",
+      "latitude":"42.6827778",
+      "acgme":"1205621503"
+   },
+   "Memorial Hospital of Rhode Island/Brown University Program":{
+      "longitude":"-71.3830556",
+      "state":"RI",
+      "city":"Pawtucket",
+      "latitude":"41.8786111",
+      "acgme":"1404321473"
+   },
+   "Largo Medical Center Program":{
+      "longitude":"-82.7875000",
+      "state":"FL",
+      "city":"Largo",
+      "latitude":"27.9091667",
+      "acgme":"1401100946"
+   },
+   "St Mary Mercy Hospital Program":{
+      "longitude":"-83.3527778",
+      "state":"MI",
+      "city":"Livonia",
+      "latitude":"42.3683333",
+      "acgme":"9992500255"
+   },
+   "Forrest General Hospital Program":{
+      "longitude":"-89.2902778",
+      "state":"MS",
+      "city":"Hattiesburg",
+      "latitude":"31.3269444",
+      "acgme":"1202700559"
+   },
+   "University of Central Florida College of Medicine/HCA GME Consortium Program":{
+      "longitude":"-81.3794444",
+      "state":"FL",
+      "city":"Orlando",
+      "latitude":"28.5380556",
+      "acgme":"1401100909"
+   },
+   "Novant Health Program":{
+      "longitude":"-80.8602778",
+      "state":"NC",
+      "city":"Cornelius",
+      "latitude":"35.4866667",
+      "acgme":"1203600666"
+   },
+   "Maimonides Medical Center Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"4803521099"
+   },
+   "St Joseph Mercy Hospital Program":{
+      "longitude":"-83.6130556",
+      "state":"MI",
+      "city":"Ypsilanti",
+      "latitude":"42.2411111",
+      "acgme":"9992500056"
+   },
+   "Hospital de la Concepcion Program":{
+      "longitude":"-67.0452778",
+      "state":"PR",
+      "city":"San German",
+      "latitude":"18.0836111",
+      "acgme":"1404221488"
+   },
+   "University of South Florida Morsani Program":{
+      "longitude":"-82.4586111",
+      "state":"FL",
+      "city":"Tampa",
+      "latitude":"27.9472222",
+      "acgme":"4511121031"
+   },
+   "Medical College of Georgia/Satilla MCG Rural Program":{
+      "longitude":"-82.3541667",
+      "state":"GA",
+      "city":"Waycross",
+      "latitude":"31.2133333",
+      "acgme":"1201221637"
+   },
+   "Indiana University School of Medicine/Methodist Hospital Program":{
+      "longitude":"-86.1580556",
+      "state":"IN",
+      "city":"Indianapolis",
+      "latitude":"39.7683333",
+      "acgme":"9991700040"
+   },
+   "University of Wisconsin Program":{
+      "longitude":"-89.4011111",
+      "state":"WI",
+      "city":"Madison",
+      "latitude":"43.0730556",
+      "acgme":"4515631005"
+   },
+   "Henry Ford Wyandotte Hospital Program":{
+      "longitude":"-83.1500000",
+      "state":"MI",
+      "city":"Wyandotte",
+      "latitude":"42.2141667",
+      "acgme":"2202500373"
+   },
+   "Meharry Medical College Program":{
+      "longitude":"-86.7844444",
+      "state":"TN",
+      "city":"Nashville",
+      "latitude":"36.1658333",
+      "acgme":"4004721207"
+   },
+   "Case Western Reserve University (MetroHealth) Preliminary Program":{
+      "longitude":"-81.6955556",
+      "state":"OH",
+      "city":"Cleveland",
+      "latitude":"41.4994444",
+      "acgme":"1403811336"
+   },
+   "University of Maryland/Sheppard Pratt Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"4002321289"
+   },
+   "Carilion Clinic-Virginia Tech Carilion School of Medicine Program":{
+      "longitude":"-79.9416667",
+      "state":"VA",
+      "city":"Roanoke",
+      "latitude":"37.2708333",
+      "acgme":"4005121267"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals (Fox Valley) Program":{
+      "longitude":"-88.4152778",
+      "state":"WI",
+      "city":"Appleton",
+      "latitude":"44.2619444",
+      "acgme":"1205631368"
+   },
+   "Palmetto General Hospital Program":{
+      "longitude":"-80.2783333",
+      "state":"FL",
+      "city":"Hialeah",
+      "latitude":"25.8572222",
+      "acgme":"1401100953"
+   },
+   "Tidelands Health Program":{
+      "longitude":"-79.0416667",
+      "state":"SC",
+      "city":"Murrells Inlet",
+      "latitude":"33.5508333",
+      "acgme":"1204500670"
+   },
+   "Mercy Health Grand Rapids Program":{
+      "longitude":"-85.6680556",
+      "state":"MI",
+      "city":"Grand Rapids",
+      "latitude":"42.9633333",
+      "acgme":"1802500150"
+   },
+   "New York Medical College (Metropolitan) Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4003511148"
+   },
+   "Mercy Hospital (St Louis) Program":{
+      "longitude":"-90.1977778",
+      "state":"MO",
+      "city":"St Louis",
+      "latitude":"38.6272222",
+      "acgme":"9992800071"
+   },
+   "Cooper Medical School of Rowan University/Cooper University Hospital Program":{
+      "longitude":"-75.1200000",
+      "state":"NJ",
+      "city":"Camden",
+      "latitude":"39.9258333",
+      "acgme":"4803300190"
+   },
+   "Tucson Hospitals Medical Education Program":{
+      "longitude":"-110.9258333",
+      "state":"AZ",
+      "city":"Tucson",
+      "latitude":"32.2216667",
+      "acgme":"9990300006"
+   },
+   "Genesis Health System (Quad Cities) Program":{
+      "longitude":"-90.5775000",
+      "state":"IA",
+      "city":"Davenport",
+      "latitude":"41.5236111",
+      "acgme":"1201821133"
+   },
+   "Henry Ford Hospital/Wayne State University Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"4802511067"
+   },
+   "Nationwide Children's Hospital/Doctors Hospital Program":{
+      "longitude":"-82.9988889",
+      "state":"OH",
+      "city":"Columbus",
+      "latitude":"39.9611111",
+      "acgme":"3203821418"
+   },
+   "George Washington University School of Medicine Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"0801000127"
+   },
+   "Charleston Area Medical Center/West Virginia University Program":{
+      "longitude":"-81.6327778",
+      "state":"WV",
+      "city":"Charleston",
+      "latitude":"38.3497222",
+      "acgme":"4515500126"
+   },
+   "George Washington University Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"4801021031"
+   },
+   "Yale-New Haven Medical Center (Primary Care) Program":{
+      "longitude":"-72.9286111",
+      "state":"CT",
+      "city":"New Haven",
+      "latitude":"41.3080556",
+      "acgme":"1400821496"
+   },
+   "UPMC Medical Education (St Margaret Hospital) Program":{
+      "longitude":"-79.9961111",
+      "state":"PA",
+      "city":"Pittsburgh",
+      "latitude":"40.4405556",
+      "acgme":"1204112279"
+   },
+   "United Health Services Hospitals Program":{
+      "longitude":"-75.9591667",
+      "state":"NY",
+      "city":"Johnson City",
+      "latitude":"42.1155556",
+      "acgme":"9993500081"
+   },
+   "VCU/Riverside Regional Medical Center Program":{
+      "longitude":"-76.4283333",
+      "state":"VA",
+      "city":"Newport News",
+      "latitude":"36.9786111",
+      "acgme":"1205131323"
+   },
+   "Oregon Health & Science University (Cascades East) Program":{
+      "longitude":"-121.7805556",
+      "state":"OR",
+      "city":"Klamath Falls",
+      "latitude":"42.2250000",
+      "acgme":"1204021540"
+   },
+   "Boston University Medical Center Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"4802421063"
+   },
+   "University of Virginia Medical Center Program":{
+      "longitude":"-78.4769444",
+      "state":"VA",
+      "city":"Charlottesville",
+      "latitude":"38.0291667",
+      "acgme":"4165100001"
+   },
+   "Jamaica Hospital Medical Center/Albert Einstein College of Medicine Program":{
+      "longitude":"-73.8061111",
+      "state":"NY",
+      "city":"Jamaica",
+      "latitude":"40.6913889",
+      "acgme":"1203511206"
+   },
+   "Valley Consortium for Medical Education Family Medicine Program":{
+      "longitude":"-120.9958333",
+      "state":"CA",
+      "city":"Modesto",
+      "latitude":"37.6391667",
+      "acgme":"1200513703"
+   },
+   "Greater Lawrence Family Health Center Program":{
+      "longitude":"-71.1636111",
+      "state":"MA",
+      "city":"Lawrence",
+      "latitude":"42.7069444",
+      "acgme":"1202421528"
+   },
+   "Oakwood Annapolis Hospital Program":{
+      "longitude":"-83.3863889",
+      "state":"MI",
+      "city":"Wayne",
+      "latitude":"42.2813889",
+      "acgme":"1202531678"
+   },
+   "Harlem Hospital Center Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4203521214"
+   },
+   "Wayne State University School of Medicine Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"4802512185"
+   },
+   "University of Arkansas for Medical Sciences Regional Centers (South Central) Program":{
+      "longitude":"-92.0030556",
+      "state":"AR",
+      "city":"Pine Bluff",
+      "latitude":"34.2283333",
+      "acgme":"1200411037"
+   },
+   "Dublin Methodist Hospital Program":{
+      "longitude":"-83.1141667",
+      "state":"OH",
+      "city":"Dublin",
+      "latitude":"40.0991667",
+      "acgme":"1203800701"
+   },
+   "Los Angeles County-Harbor-UCLA Medical Center Program":{
+      "longitude":"-118.3397222",
+      "state":"CA",
+      "city":"Torrance",
+      "latitude":"33.8358333",
+      "acgme":"9990500239"
+   },
+   "Advocate Health Care (Advocate Children's Hospital/Oak Lawn) Program":{
+      "longitude":"-87.7580556",
+      "state":"IL",
+      "city":"Oak Lawn",
+      "latitude":"41.7108333",
+      "acgme":"3201621382"
+   },
+   "Harbor Hospital Center Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"9992300050"
+   },
+   "New Hanover Regional Medical Center Program":{
+      "longitude":"-77.9450000",
+      "state":"NC",
+      "city":"Wilmington",
+      "latitude":"34.2255556",
+      "acgme":"2203611218"
+   },
+   "University of Texas Medical Branch Hospitals (NASA) Program":{
+      "longitude":"-94.7975000",
+      "state":"TX",
+      "city":"Galveston",
+      "latitude":"29.3011111",
+      "acgme":"3804866118"
+   },
+   "Stony Brook Medicine Program":{
+      "longitude":"-73.1413889",
+      "state":"NY",
+      "city":"Stony Brook",
+      "latitude":"40.9255556",
+      "acgme":"4303500146"
+   },
+   "University of Colorado (University Hospital) Program":{
+      "longitude":"-104.9841667",
+      "state":"CO",
+      "city":"Denver",
+      "latitude":"39.7391667",
+      "acgme":"1200721619"
+   },
+   "Kaiser Permanente Medical Group (Northern California)/Napa-Solano Program":{
+      "longitude":"-122.2555556",
+      "state":"CA",
+      "city":"Vallejo",
+      "latitude":"38.1041667",
+      "acgme":"1200500731"
+   },
+   "St Francis Hospital Program":{
+      "longitude":"-75.5469444",
+      "state":"DE",
+      "city":"Wilmington",
+      "latitude":"39.7458333",
+      "acgme":"1200921415"
+   },
+   "UPMC Medical Education (Altoona Hospital) Program":{
+      "longitude":"-78.3950000",
+      "state":"PA",
+      "city":"Altoona",
+      "latitude":"40.5186111",
+      "acgme":"1204111260"
+   },
+   "Brigham and Women's Hospital/Children's Hospital/Harvard Medical School Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"7002414084"
+   },
+   "The Medical Center Program":{
+      "longitude":"-84.9877778",
+      "state":"GA",
+      "city":"Columbus",
+      "latitude":"32.4608333",
+      "acgme":"9991200229"
+   },
+   "Santa Clara Valley Medical Center Program":{
+      "longitude":"-121.8938889",
+      "state":"CA",
+      "city":"San Jose",
+      "latitude":"37.3394444",
+      "acgme":"9990500013"
+   },
+   "Tulane University/Ochsner Clinic Foundation Program":{
+      "longitude":"-90.0750000",
+      "state":"LA",
+      "city":"New Orleans",
+      "latitude":"29.9544444",
+      "acgme":"1602121033"
+   },
+   "Oregon Health & Science University Program":{
+      "longitude":"-122.6750000",
+      "state":"OR",
+      "city":"Portland",
+      "latitude":"45.5236111",
+      "acgme":"4804021124"
+   },
+   "Easton Hospital Program":{
+      "longitude":"-75.2211111",
+      "state":"PA",
+      "city":"Easton",
+      "latitude":"40.6883333",
+      "acgme":"1404111363"
+   },
+   "VA Greater Los Angeles Healthcare System Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"3400521007"
+   },
+   "Idaho State University Program":{
+      "longitude":"-112.4447222",
+      "state":"ID",
+      "city":"Pocatello",
+      "latitude":"42.8713889",
+      "acgme":"1201521521"
+   },
+   "University of Minnesota Program":{
+      "longitude":"-93.2636111",
+      "state":"MN",
+      "city":"Minneapolis",
+      "latitude":"44.9800000",
+      "acgme":"4802621072"
+   },
+   "PeaceHealth Southwest Medical Center Program":{
+      "longitude":"-122.6602778",
+      "state":"WA",
+      "city":"Vancouver",
+      "latitude":"45.6388889",
+      "acgme":"1205421546"
+   },
+   "Good Samaritan Hospital Medical Center Program":{
+      "longitude":"-73.3066667",
+      "state":"NY",
+      "city":"West Islip",
+      "latitude":"40.7061111",
+      "acgme":"2203500371"
+   },
+   "WellStar Kennestone Regional Medical Center Program":{
+      "longitude":"-84.5500000",
+      "state":"GA",
+      "city":"Marietta",
+      "latitude":"33.9525000",
+      "acgme":"9991200235"
+   },
+   "Texas Tech University (Lubbock) Program":{
+      "longitude":"-101.8547222",
+      "state":"TX",
+      "city":"Lubbock",
+      "latitude":"33.5777778",
+      "acgme":"4804831184"
+   },
+   "Mayo Clinic College of Medicine and Science (Jacksonville) Program":{
+      "longitude":"-81.6558333",
+      "state":"FL",
+      "city":"Jacksonville",
+      "latitude":"30.3319444",
+      "acgme":"4801121179"
+   },
+   "Research Medical Center Program":{
+      "longitude":"-94.6705556",
+      "state":"KS",
+      "city":"Overland Park",
+      "latitude":"38.9822222",
+      "acgme":"1401900141"
+   },
+   "Children's Mercy Hospital Program":{
+      "longitude":"-94.5783333",
+      "state":"MO",
+      "city":"Kansas City",
+      "latitude":"39.0997222",
+      "acgme":"3202811124"
+   },
+   "Baylor University Medical Center Program":{
+      "longitude":"-96.8000000",
+      "state":"TX",
+      "city":"Dallas",
+      "latitude":"32.7833333",
+      "acgme":"4204822190"
+   },
+   "U P Health System-Marquette Program":{
+      "longitude":"-87.3952778",
+      "state":"MI",
+      "city":"Marquette",
+      "latitude":"46.5436111",
+      "acgme":"1202521370"
+   },
+   "Advocate Health Care (Advocate Christ Medical Center) Program":{
+      "longitude":"-87.7313889",
+      "state":"IL",
+      "city":"Hometown",
+      "latitude":"41.7344444",
+      "acgme":"1201621364"
+   },
+   "St Elizabeth's Medical Center Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"4002421092"
+   },
+   "Montefiore Medical Center/Albert Einstein College of Medicine of Yeshiva University Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"3623500157"
+   },
+   "Citrus Valley Health Partners Program":{
+      "longitude":"-117.9380556",
+      "state":"CA",
+      "city":"West Covina",
+      "latitude":"34.0686111",
+      "acgme":"1200500743"
+   },
+   "Kaiser Permanente Southern California (Riverside) Program":{
+      "longitude":"-117.3952778",
+      "state":"CA",
+      "city":"Riverside",
+      "latitude":"33.9533333",
+      "acgme":"1200521509"
+   },
+   "New York Medical College at St Joseph\u2019s Regional Medical Center (Paterson) Program":{
+      "longitude":"-74.1641667",
+      "state":"NJ",
+      "city":"Clifton",
+      "latitude":"40.8583333",
+      "acgme":"1203531681"
+   },
+   "Scott and White Memorial Hospital Program":{
+      "longitude":"-97.3425000",
+      "state":"TX",
+      "city":"Temple",
+      "latitude":"31.0980556",
+      "acgme":"1604800127"
+   },
+   "Hoboken University Medical Center/New York Medical College Program":{
+      "longitude":"-74.0327778",
+      "state":"NJ",
+      "city":"Hoboken",
+      "latitude":"40.7438889",
+      "acgme":"1203311192"
+   },
+   "Hennepin County Medical Center/Regions Hospital Program":{
+      "longitude":"-93.0930556",
+      "state":"MN",
+      "city":"St Paul",
+      "latitude":"44.9444444",
+      "acgme":"4002621285"
+   },
+   "Waterbury Hospital Health Center Program":{
+      "longitude":"-73.0519444",
+      "state":"CT",
+      "city":"Waterbury",
+      "latitude":"41.5580556",
+      "acgme":"4400811066"
+   },
+   "Atlanta Medical Center Program":{
+      "longitude":"-84.3880556",
+      "state":"GA",
+      "city":"Atlanta",
+      "latitude":"33.7488889",
+      "acgme":"2601222113"
+   },
+   "Virginia Commonwealth University Health System (Falls Church) Program":{
+      "longitude":"-77.3066667",
+      "state":"VA",
+      "city":"Fairfax",
+      "latitude":"38.8461111",
+      "acgme":"1205111322"
+   },
+   "University of Missouri-Kansas City School of Medicine Program":{
+      "longitude":"-94.5783333",
+      "state":"MO",
+      "city":"Kansas City",
+      "latitude":"39.0997222",
+      "acgme":"1802800062"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals (Wheaton Franciscan Healthcare-All Saints) Program":{
+      "longitude":"-87.9063889",
+      "state":"WI",
+      "city":"Milwaukee",
+      "latitude":"43.0388889",
+      "acgme":"1205631349"
+   },
+   "Regional Medical Center Bayonet Point Program":{
+      "longitude":"-82.6936111",
+      "state":"FL",
+      "city":"Hudson",
+      "latitude":"28.3641667",
+      "acgme":"1401100951"
+   },
+   "Medical University of South Carolina College of Medicine Program":{
+      "longitude":"-79.9311111",
+      "state":"SC",
+      "city":"Charleston",
+      "latitude":"32.7763889",
+      "acgme":"3624500001"
+   },
+   "Marian Regional Medical Center Program":{
+      "longitude":"-120.4347222",
+      "state":"CA",
+      "city":"Santa Maria",
+      "latitude":"34.9530556",
+      "acgme":"2200500336"
+   },
+   "University of Illinois College of Medicine at Peoria Program":{
+      "longitude":"-89.5888889",
+      "state":"IL",
+      "city":"Peoria",
+      "latitude":"40.6936111",
+      "acgme":"4201621243"
+   },
+   "Lahey Clinic Program":{
+      "longitude":"-71.1961111",
+      "state":"MA",
+      "city":"Burlington",
+      "latitude":"42.5047222",
+      "acgme":"4802422065"
+   },
+   "Hawaii Health Systems Corporation - Hilo Medical Center Program":{
+      "longitude":"-155.0900000",
+      "state":"HI",
+      "city":"Hilo",
+      "latitude":"19.7297222",
+      "acgme":"1201400650"
+   },
+   "Methodist Hospital (Houston) Program":{
+      "longitude":"-95.3630556",
+      "state":"TX",
+      "city":"Houston",
+      "latitude":"29.7630556",
+      "acgme":"4514800113"
+   },
+   "Newark Beth Israel Medical Center Program":{
+      "longitude":"-74.1727778",
+      "state":"NJ",
+      "city":"Newark",
+      "latitude":"40.7355556",
+      "acgme":"4203331118"
+   },
+   "Georgetown University Hospital/Washington Hospital Center Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"4801021030"
+   },
+   "MidMichigan Medical Center-Midland Program":{
+      "longitude":"-84.2472222",
+      "state":"MI",
+      "city":"Midland",
+      "latitude":"43.6155556",
+      "acgme":"1202531171"
+   },
+   "Children's Mercy Hospital/University of Kansas Medical Center Program":{
+      "longitude":"-94.5783333",
+      "state":"MO",
+      "city":"Kansas City",
+      "latitude":"39.0997222",
+      "acgme":"1851922096"
+   },
+   "University of Massachusetts Program":{
+      "longitude":"-71.8027778",
+      "state":"MA",
+      "city":"Worcester",
+      "latitude":"42.2625000",
+      "acgme":"4512421013"
+   },
+   "Emory University Program":{
+      "longitude":"-84.3880556",
+      "state":"GA",
+      "city":"Atlanta",
+      "latitude":"33.7488889",
+      "acgme":"4801221039"
+   },
+   "White Memorial Medical Center Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"2200521039"
+   },
+   "University of Kansas (Wichita)/Salina Program":{
+      "longitude":"-97.6111111",
+      "state":"KS",
+      "city":"Salina",
+      "latitude":"38.8402778",
+      "acgme":"1201921366"
+   },
+   "Allegheny Health Network Medical Education Consortium (SVH) Program":{
+      "longitude":"-80.0852778",
+      "state":"PA",
+      "city":"Erie",
+      "latitude":"42.1291667",
+      "acgme":"1204111264"
+   },
+   "HealthPartners Institute for Education and Research/Regions Hospital Program":{
+      "longitude":"-93.0930556",
+      "state":"MN",
+      "city":"St Paul",
+      "latitude":"44.9444444",
+      "acgme":"3802677079"
+   },
+   "University of Wisconsin (Baraboo) Rural Program":{
+      "longitude":"-89.4011111",
+      "state":"WI",
+      "city":"Madison",
+      "latitude":"43.0730556",
+      "acgme":"1205621609"
+   },
+   "Eastern Virginia Medical School Program":{
+      "longitude":"-75.9783333",
+      "state":"VA",
+      "city":"Virginia Beach",
+      "latitude":"36.8527778",
+      "acgme":"4805121153"
+   },
+   "McLeod Regional Medical Center Program":{
+      "longitude":"-79.7627778",
+      "state":"SC",
+      "city":"Florence",
+      "latitude":"34.1952778",
+      "acgme":"1204521375"
+   },
+   "Lancaster General Hospital Program":{
+      "longitude":"-76.3058333",
+      "state":"PA",
+      "city":"Lancaster",
+      "latitude":"40.0377778",
+      "acgme":"1204112270"
+   },
+   "Ohio State University Hospital Rural Program":{
+      "longitude":"-83.7558333",
+      "state":"OH",
+      "city":"West Liberty",
+      "latitude":"40.2522222",
+      "acgme":"1203821640"
+   },
+   "Icahn School of Medicine at Mount Sinai (Bronx) Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"1403531517"
+   },
+   "University of New Mexico Program":{
+      "longitude":"-106.6505556",
+      "state":"NM",
+      "city":"Albuquerque",
+      "latitude":"35.0844444",
+      "acgme":"4803421084"
+   },
+   "Arrowhead Regional Medical Center Program":{
+      "longitude":"-117.3127778",
+      "state":"CA",
+      "city":"Colton",
+      "latitude":"34.0738889",
+      "acgme":"4000500316"
+   },
+   "Georgetown University Hospital Program":{
+      "longitude":"-77.1713889",
+      "state":"VA",
+      "city":"Falls Church",
+      "latitude":"38.8822222",
+      "acgme":"9995100205"
+   },
+   "Burke Rehabilitation Hospital Program":{
+      "longitude":"-73.7633333",
+      "state":"NY",
+      "city":"White Plains",
+      "latitude":"41.0338889",
+      "acgme":"3403500105"
+   },
+   "University of Virginia Program":{
+      "longitude":"-78.4769444",
+      "state":"VA",
+      "city":"Charlottesville",
+      "latitude":"38.0291667",
+      "acgme":"4805121151"
+   },
+   "Drexel University College of Medicine/Hahnemann University Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4804100194"
+   },
+   "St Joseph Mercy Livingston Program":{
+      "longitude":"-83.7802778",
+      "state":"MI",
+      "city":"Brighton",
+      "latitude":"42.5294444",
+      "acgme":"1202521690"
+   },
+   "UPMC Medical Education (Mercy) Program":{
+      "longitude":"-79.9961111",
+      "state":"PA",
+      "city":"Pittsburgh",
+      "latitude":"40.4405556",
+      "acgme":"9994100114"
+   },
+   "Hofstra Northwell School of Medicine at Southside Hospital Program":{
+      "longitude":"-73.2458333",
+      "state":"NY",
+      "city":"Bay Shore",
+      "latitude":"40.7250000",
+      "acgme":"1203521199"
+   },
+   "Spectrum Health/Michigan State University Program":{
+      "longitude":"-85.6680556",
+      "state":"MI",
+      "city":"Grand Rapids",
+      "latitude":"42.9633333",
+      "acgme":"4512531015"
+   },
+   "Manatee Memorial Hospital Program":{
+      "longitude":"-82.5750000",
+      "state":"FL",
+      "city":"Bradenton",
+      "latitude":"27.4986111",
+      "acgme":"1401100948"
+   },
+   "University of California Davis Health Program":{
+      "longitude":"-121.4933333",
+      "state":"CA",
+      "city":"Sacramento",
+      "latitude":"38.5816667",
+      "acgme":"4510500115"
+   },
+   "St Barnabas Hospital Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"4003500313"
+   },
+   "University of California (San Diego)/San Diego State University Program":{
+      "longitude":"-117.2733333",
+      "state":"CA",
+      "city":"La Jolla",
+      "latitude":"32.8472222",
+      "acgme":"3800521038"
+   },
+   "OPTI West/Community Memorial Hospital Program":{
+      "longitude":"-119.2922222",
+      "state":"CA",
+      "city":"Ventura",
+      "latitude":"34.2783333",
+      "acgme":"1400500920"
+   },
+   "University of Illinois College of Medicine at Chicago/Advocate Christ Medical Center Program":{
+      "longitude":"-87.7580556",
+      "state":"IL",
+      "city":"Oak Lawn",
+      "latitude":"41.7108333",
+      "acgme":"1401621129"
+   },
+   "University of Maryland Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"4802321062"
+   },
+   "Jackson Memorial Hospital/Jackson Health System Program":{
+      "longitude":"-80.1938889",
+      "state":"FL",
+      "city":"Miami",
+      "latitude":"25.7738889",
+      "acgme":"4511100032"
+   },
+   "Kent Hospital Program":{
+      "longitude":"-71.4166667",
+      "state":"RI",
+      "city":"Warwick",
+      "latitude":"41.7000000",
+      "acgme":"1404300474"
+   },
+   "Kaiser Permanente Southern California (Los Angeles) Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"4800512020"
+   },
+   "University of Alabama Medical Center (Montgomery) Program":{
+      "longitude":"-86.3000000",
+      "state":"AL",
+      "city":"Montgomery",
+      "latitude":"32.3666667",
+      "acgme":"1400121447"
+   },
+   "St. Elizabeth Health Center - Boardman Program":{
+      "longitude":"-80.6630556",
+      "state":"OH",
+      "city":"Boardman",
+      "latitude":"41.0241667",
+      "acgme":"1203800689"
+   },
+   "Heritage Valley Health System Program":{
+      "longitude":"-80.3194444",
+      "state":"PA",
+      "city":"Beaver Falls",
+      "latitude":"40.7519444",
+      "acgme":"1204121409"
+   },
+   "University of Miami/JFK Medical Center Palm Beach Regional GME Consortium Program":{
+      "longitude":"-80.1011111",
+      "state":"FL",
+      "city":"Atlantis",
+      "latitude":"26.5905556",
+      "acgme":"1401131535"
+   },
+   "Magnolia Regional Health Center Program":{
+      "longitude":"-88.5222222",
+      "state":"MS",
+      "city":"Corinth",
+      "latitude":"34.9341667",
+      "acgme":"1402700210"
+   },
+   "University of California (Irvine)/Children's Hospital of Orange County Program":{
+      "longitude":"-117.8522222",
+      "state":"CA",
+      "city":"Orange",
+      "latitude":"33.7877778",
+      "acgme":"3200512425"
+   },
+   "Loyola University Medical Center Program":{
+      "longitude":"-87.8430556",
+      "state":"IL",
+      "city":"Maywood",
+      "latitude":"41.8791667",
+      "acgme":"3621600147"
+   },
+   "University of Kansas School of Medicine Program":{
+      "longitude":"-94.6272222",
+      "state":"KS",
+      "city":"Kansas City",
+      "latitude":"39.1141667",
+      "acgme":"4801921053"
+   },
+   "Valley Health System/Medical College of Virginia/Virginia Commonwealth University Program":{
+      "longitude":"-78.1947222",
+      "state":"VA",
+      "city":"Front Royal",
+      "latitude":"38.9180556",
+      "acgme":"1205121627"
+   },
+   "Oregon Health & Science University Hospital Program":{
+      "longitude":"-122.6750000",
+      "state":"OR",
+      "city":"Portland",
+      "latitude":"45.5236111",
+      "acgme":"4164000001"
+   },
+   "Johns Hopkins University/Bayview Medical Center Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"1402311150"
+   },
+   "West Virginia University Program":{
+      "longitude":"-79.9561111",
+      "state":"WV",
+      "city":"Morgantown",
+      "latitude":"39.6294444",
+      "acgme":"4805521157"
+   },
+   "Carolinas HealthCare System-NorthEast (Northeast-Cabarrus) Program":{
+      "longitude":"-80.5797222",
+      "state":"NC",
+      "city":"Concord",
+      "latitude":"35.4086111",
+      "acgme":"1203621580"
+   },
+   "Wright State University Program":{
+      "longitude":"-84.1916667",
+      "state":"OH",
+      "city":"Dayton",
+      "latitude":"39.7588889",
+      "acgme":"4003821178"
+   },
+   "Anne Arundel Medical Center Program":{
+      "longitude":"-76.4925000",
+      "state":"MD",
+      "city":"Annapolis",
+      "latitude":"38.9783333",
+      "acgme":"4402300418"
+   },
+   "Stanford University Hospital/Kaiser Permanente Medical Center Program":{
+      "longitude":"-122.1419444",
+      "state":"CA",
+      "city":"Palo Alto",
+      "latitude":"37.4419444",
+      "acgme":"1100521098"
+   },
+   "University of California San Francisco (East Bay) Program":{
+      "longitude":"-122.2697222",
+      "state":"CA",
+      "city":"Oakland",
+      "latitude":"37.8044444",
+      "acgme":"4400521389"
+   },
+   "University at Buffalo School of Medicine Program":{
+      "longitude":"-78.8786111",
+      "state":"NY",
+      "city":"Buffalo",
+      "latitude":"42.8863889",
+      "acgme":"4513513004"
+   },
+   "Siouxland Medical Education Foundation Program":{
+      "longitude":"-96.4000000",
+      "state":"IA",
+      "city":"Sioux City",
+      "latitude":"42.5000000",
+      "acgme":"1201821137"
+   },
+   "Valley Children's Healthcare Program":{
+      "longitude":"-120.0597222",
+      "state":"CA",
+      "city":"Madera",
+      "latitude":"36.9613889",
+      "acgme":"3200500426"
+   },
+   "Coliseum Medical Centers Program":{
+      "longitude":"-83.6325000",
+      "state":"GA",
+      "city":"Macon",
+      "latitude":"32.8405556",
+      "acgme":"4001200263"
+   },
+   "Valley Health Team, Inc. Program":{
+      "longitude":"-119.7713889",
+      "state":"CA",
+      "city":"Fresno",
+      "latitude":"36.7477778",
+      "acgme":"1200500750"
+   },
+   "John Peter Smith Hospital (Tarrant County Hospital District) Program":{
+      "longitude":"-97.3205556",
+      "state":"TX",
+      "city":"Fort Worth",
+      "latitude":"32.7252778",
+      "acgme":"9994800168"
+   },
+   "Case Western Reserve University (MetroHealth) Program":{
+      "longitude":"-81.6955556",
+      "state":"OH",
+      "city":"Cleveland",
+      "latitude":"41.4994444",
+      "acgme":"4203821242"
+   },
+   "New York-Presbyterian Brooklyn Methodist Hospital Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"4303522064"
+   },
+   "University of Minnesota/St John's Hospital Program":{
+      "longitude":"-93.0930556",
+      "state":"MN",
+      "city":"St Paul",
+      "latitude":"44.9444444",
+      "acgme":"1202611652"
+   },
+   "Western Reserve Health Education/NEOMED Program":{
+      "longitude":"-80.6497222",
+      "state":"OH",
+      "city":"Youngstown",
+      "latitude":"41.0997222",
+      "acgme":"1403831350"
+   },
+   "Allegheny Health Network Medical Education Consortium (WPH) Program":{
+      "longitude":"-79.9961111",
+      "state":"PA",
+      "city":"Pittsburgh",
+      "latitude":"40.4405556",
+      "acgme":"2204111261"
+   },
+   "Cleveland Clinic Florida Program":{
+      "longitude":"-80.4000000",
+      "state":"FL",
+      "city":"Weston",
+      "latitude":"26.1000000",
+      "acgme":"0401100209"
+   },
+   "University of Massachusetts Medical School Program":{
+      "longitude":"-71.8027778",
+      "state":"MA",
+      "city":"Worcester",
+      "latitude":"42.2625000",
+      "acgme":"4802400194"
+   },
+   "Arnot Ogden Medical Center Program":{
+      "longitude":"-76.8080556",
+      "state":"NY",
+      "city":"Elmira",
+      "latitude":"42.0897222",
+      "acgme":"4003500317"
+   },
+   "Michigan State University (Flint) Program":{
+      "longitude":"-83.6875000",
+      "state":"MI",
+      "city":"Flint",
+      "latitude":"43.0125000",
+      "acgme":"4202531100"
+   },
+   "Virtua Program":{
+      "longitude":"-74.4836111",
+      "state":"NJ",
+      "city":"Voorhees",
+      "latitude":"40.4811111",
+      "acgme":"1203312667"
+   },
+   "Advocate Health Care (Advocate Lutheran General Hospital) Program":{
+      "longitude":"-87.8405556",
+      "state":"IL",
+      "city":"Park Ridge",
+      "latitude":"42.0111111",
+      "acgme":"4001621257"
+   },
+   "AnMed Health (Anderson) Rural Program":{
+      "longitude":"-82.9533333",
+      "state":"SC",
+      "city":"Seneca",
+      "latitude":"34.6855556",
+      "acgme":"1204521668"
+   },
+   "Southern Illinois University (Quincy) Program":{
+      "longitude":"-91.4097222",
+      "state":"IL",
+      "city":"Quincy",
+      "latitude":"39.9355556",
+      "acgme":"1201621365"
+   },
+   "Clinical Center at the National Institutes of Health Program":{
+      "longitude":"-77.1005556",
+      "state":"MD",
+      "city":"Bethesda",
+      "latitude":"38.9805556",
+      "acgme":"1602313129"
+   },
+   "Texas Health Presbyterian Dallas Program":{
+      "longitude":"-96.8000000",
+      "state":"TX",
+      "city":"Dallas",
+      "latitude":"32.7833333",
+      "acgme":"1404811420"
+   },
+   "Griffin Memorial Hospital Program":{
+      "longitude":"-97.4391667",
+      "state":"OK",
+      "city":"Norman",
+      "latitude":"35.2225000",
+      "acgme":"4003921183"
+   },
+   "Sparrow Hospital Program":{
+      "longitude":"-84.5555556",
+      "state":"MI",
+      "city":"Lansing",
+      "latitude":"42.7325000",
+      "acgme":"4802500189"
+   },
+   "Delaware Psychiatric Center Program":{
+      "longitude":"-75.5666667",
+      "state":"DE",
+      "city":"New Castle",
+      "latitude":"39.6619444",
+      "acgme":"4000931046"
+   },
+   "Riverside Regional Medical Center Program":{
+      "longitude":"-76.4283333",
+      "state":"VA",
+      "city":"Newport News",
+      "latitude":"36.9786111",
+      "acgme":"9995100170"
+   },
+   "Detroit Medical Center/Wayne State University (Sinai-Grace) Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"9992500060"
+   },
+   "VA Caribbean Healthcare System Program":{
+      "longitude":"-66.1061111",
+      "state":"PR",
+      "city":"San Juan",
+      "latitude":"18.4683333",
+      "acgme":"3404231063"
+   },
+   "Abbott-Northwestern Hospital Program":{
+      "longitude":"-93.2636111",
+      "state":"MN",
+      "city":"Minneapolis",
+      "latitude":"44.9800000",
+      "acgme":"1402631204"
+   },
+   "Salem Hospital Program":{
+      "longitude":"-70.8972222",
+      "state":"MA",
+      "city":"Salem",
+      "latitude":"42.5194444",
+      "acgme":"1402412180"
+   },
+   "Baylor College of Medicine Program":{
+      "longitude":"-95.3630556",
+      "state":"TX",
+      "city":"Houston",
+      "latitude":"29.7630556",
+      "acgme":"4514800126"
+   },
+   "Sea Mar Community Health Centers Program":{
+      "longitude":"-122.1758333",
+      "state":"WA",
+      "city":"Marysville",
+      "latitude":"48.0519444",
+      "acgme":"1205400716"
+   },
+   "Allina Health Program":{
+      "longitude":"-93.0930556",
+      "state":"MN",
+      "city":"St Paul",
+      "latitude":"44.9444444",
+      "acgme":"1202621526"
+   },
+   "Valley Medical Center Program":{
+      "longitude":"-122.2158333",
+      "state":"WA",
+      "city":"Renton",
+      "latitude":"47.4830556",
+      "acgme":"1205421470"
+   },
+   "Baptist Outreach Services (Montgomery) Program":{
+      "longitude":"-86.3000000",
+      "state":"AL",
+      "city":"Montgomery",
+      "latitude":"32.3666667",
+      "acgme":"1200121624"
+   },
+   "University of Arkansas for Medical Sciences Regional Centers (West) Program":{
+      "longitude":"-94.3983333",
+      "state":"AR",
+      "city":"Fort Smith",
+      "latitude":"35.3858333",
+      "acgme":"1200421034"
+   },
+   "Baptist Health Madisonville Program":{
+      "longitude":"-87.4988889",
+      "state":"KY",
+      "city":"Madisonville",
+      "latitude":"37.3280556",
+      "acgme":"1202031146"
+   },
+   "Scripps Mercy Hospital (Chula Vista) Program":{
+      "longitude":"-117.0833333",
+      "state":"CA",
+      "city":"Chula Vista",
+      "latitude":"32.6400000",
+      "acgme":"1200521632"
+   },
+   "Olive View/UCLA Medical Center Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"1400521047"
+   },
+   "St Mary's Hospital and Medical Center Program":{
+      "longitude":"-122.4183333",
+      "state":"CA",
+      "city":"San Francisco",
+      "latitude":"37.7750000",
+      "acgme":"2600522108"
+   },
+   "Broward Health Medical Center Program":{
+      "longitude":"-80.1436111",
+      "state":"FL",
+      "city":"Fort Lauderdale",
+      "latitude":"26.1219444",
+      "acgme":"9991100232"
+   },
+   "Carolinas HealthCare System Blue Ridge Program":{
+      "longitude":"-81.6850000",
+      "state":"NC",
+      "city":"Morganton",
+      "latitude":"35.7452778",
+      "acgme":"1403600326"
+   },
+   "Inova Fairfax Medical Campus/Inova Fairfax Hospital for Children Program":{
+      "longitude":"-77.1713889",
+      "state":"VA",
+      "city":"Falls Church",
+      "latitude":"38.8822222",
+      "acgme":"4405121412"
+   },
+   "MacNeal Hospital Program":{
+      "longitude":"-87.7936111",
+      "state":"IL",
+      "city":"Berwyn",
+      "latitude":"41.8505556",
+      "acgme":"9991600032"
+   },
+   "Middlesex Hospital Program":{
+      "longitude":"-72.6511111",
+      "state":"CT",
+      "city":"Middletown",
+      "latitude":"41.5622222",
+      "acgme":"1200821077"
+   },
+   "University of South Dakota School of Medicine Program":{
+      "longitude":"-96.7000000",
+      "state":"SD",
+      "city":"Sioux Falls",
+      "latitude":"43.5500000",
+      "acgme":"4404600001"
+   },
+   "University of Central Florida College of Medicine/HCA GME Consortium (Gainesville) Program":{
+      "longitude":"-82.3250000",
+      "state":"FL",
+      "city":"Gainesville",
+      "latitude":"29.6513889",
+      "acgme":"4001100314"
+   },
+   "Redmond Regional Medical Center Program":{
+      "longitude":"-85.1647222",
+      "state":"GA",
+      "city":"Rome",
+      "latitude":"34.2569444",
+      "acgme":"9991200236"
+   },
+   "Aventura Hospital and Medical Center":{
+      "longitude":"-80.1394444",
+      "state":"FL",
+      "city":"Aventura",
+      "latitude":"25.9561111",
+      "acgme":"1101100196"
+   },
+   "New York Presbyterian Hospital (Columbia and Cornell Campus) Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"3403521039"
+   },
+   "Louisiana State University (Baton Rouge) Preliminary Program":{
+      "longitude":"-91.1544444",
+      "state":"LA",
+      "city":"Baton Rouge",
+      "latitude":"30.4505556",
+      "acgme":"1402121507"
+   },
+   "Family Health Centers of San Diego Program":{
+      "longitude":"-117.1563889",
+      "state":"CA",
+      "city":"San Diego",
+      "latitude":"32.7152778",
+      "acgme":"1200500736"
+   },
+   "Southern Illinois University Program":{
+      "longitude":"-89.6436111",
+      "state":"IL",
+      "city":"Springfield",
+      "latitude":"39.8016667",
+      "acgme":"4511621034"
+   },
+   "Western Michigan University Homer Stryker MD School of Medicine Program":{
+      "longitude":"-85.5872222",
+      "state":"MI",
+      "city":"Kalamazoo",
+      "latitude":"42.2916667",
+      "acgme":"9992500065"
+   },
+   "Gundersen Lutheran Medical Foundation Program":{
+      "longitude":"-91.2394444",
+      "state":"WI",
+      "city":"La Crosse",
+      "latitude":"43.8013889",
+      "acgme":"9995600147"
+   },
+   "Johns Hopkins University Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"4802321060"
+   },
+   "Augusta University/University of Georgia Medical Partnership Program":{
+      "longitude":"-83.3780556",
+      "state":"GA",
+      "city":"Athens",
+      "latitude":"33.9608333",
+      "acgme":"1401200926"
+   },
+   "Kaiser Permanente Southern California Program":{
+      "longitude":"-117.4341667",
+      "state":"CA",
+      "city":"Fontana",
+      "latitude":"34.0922222",
+      "acgme":"4000500314"
+   },
+   "Huntington Memorial Hospital Program":{
+      "longitude":"-118.1436111",
+      "state":"CA",
+      "city":"Pasadena",
+      "latitude":"34.1477778",
+      "acgme":"1400511056"
+   },
+   "West Virginia University School of Medicine Program":{
+      "longitude":"-79.9561111",
+      "state":"WV",
+      "city":"Morgantown",
+      "latitude":"39.6294444",
+      "acgme":"4305500001"
+   },
+   "Washington Health System  Program":{
+      "longitude":"-80.2463889",
+      "state":"PA",
+      "city":"Washington",
+      "latitude":"40.1738889",
+      "acgme":"1204112283"
+   },
+   "Botsford Hospital Program":{
+      "longitude":"-83.3772222",
+      "state":"MI",
+      "city":"Farmington Hills",
+      "latitude":"42.4852778",
+      "acgme":"4202500105"
+   },
+   "Kaiser Permanente Medical Group (Northern California)/Santa Clara Program":{
+      "longitude":"-121.9541667",
+      "state":"CA",
+      "city":"Santa Clara",
+      "latitude":"37.3541667",
+      "acgme":"2200512311"
+   },
+   "Kaiser Permanente Southern California (Anaheim) Program":{
+      "longitude":"-117.8669444",
+      "state":"CA",
+      "city":"Santa Ana",
+      "latitude":"33.7455556",
+      "acgme":"1200531515"
+   },
+   "Raritan Bay Medical Center Program":{
+      "longitude":"-74.2658333",
+      "state":"NJ",
+      "city":"Perth Amboy",
+      "latitude":"40.5066667",
+      "acgme":"1403321466"
+   },
+   "St Luke's Hospital/Warren Hospital Program":{
+      "longitude":"-75.1905556",
+      "state":"NJ",
+      "city":"Phillipsburg",
+      "latitude":"40.6936111",
+      "acgme":"1203321436"
+   },
+   "Garden City Hospital Program":{
+      "longitude":"-83.3311111",
+      "state":"MI",
+      "city":"Garden City",
+      "latitude":"42.3255556",
+      "acgme":"1402500915"
+   },
+   "Univ of North Dakota School of Medicine and Health Sciences Rural Program":{
+      "longitude":"-101.2958333",
+      "state":"ND",
+      "city":"Minot",
+      "latitude":"48.2325000",
+      "acgme":"1203700682"
+   },
+   "McGaw Medical Center of Northwestern University (Lake Forest) Program":{
+      "longitude":"-88.0416667",
+      "state":"IL",
+      "city":"Grayslake",
+      "latitude":"42.3444444",
+      "acgme":"1201600702"
+   },
+   "Washington Hospital Center/Georgetown University Hospital Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"4511021008"
+   },
+   "Albany Medical Center Program":{
+      "longitude":"-73.7566667",
+      "state":"NY",
+      "city":"Albany",
+      "latitude":"42.6525000",
+      "acgme":"4513500122"
+   },
+   "Icahn School of Medicine at Mount Sinai Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4513521038"
+   },
+   "Unity Health-White County Medical Center Program":{
+      "longitude":"-91.7361111",
+      "state":"AR",
+      "city":"Searcy",
+      "latitude":"35.2505556",
+      "acgme":"4002800116"
+   },
+   "Washington University/B-JH/SLCH Consortium Program":{
+      "longitude":"-90.1977778",
+      "state":"MO",
+      "city":"St Louis",
+      "latitude":"38.6272222",
+      "acgme":"4512800112"
+   },
+   "California Hospital Medical Center (Los Angeles)/University of Southern California Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"1200521458"
+   },
+   "University of Tennessee College of Medicine at Murfreesboro Program":{
+      "longitude":"-86.3902778",
+      "state":"TN",
+      "city":"Murfreesboro",
+      "latitude":"35.8455556",
+      "acgme":"1204700726"
+   },
+   "Community Health Care Program":{
+      "longitude":"-122.4430556",
+      "state":"WA",
+      "city":"Tacoma",
+      "latitude":"47.2530556",
+      "acgme":"1205400714"
+   },
+   "Altru Health System (Grand Forks) Program":{
+      "longitude":"-97.0325000",
+      "state":"ND",
+      "city":"Grand Forks",
+      "latitude":"47.9252778",
+      "acgme":"1203731229"
+   },
+   "DeTar Healthcare System Program":{
+      "longitude":"-97.0033333",
+      "state":"TX",
+      "city":"Victoria",
+      "latitude":"28.8050000",
+      "acgme":"1204800715"
+   },
+   "University of Arkansas for Medical Sciences Regional Centers (Magnolia) Rural Program":{
+      "longitude":"-93.2391667",
+      "state":"AR",
+      "city":"Magnolia",
+      "latitude":"33.2669444",
+      "acgme":"1200400725"
+   },
+   "St Elizabeth Health Center/NEOMED Program":{
+      "longitude":"-80.6497222",
+      "state":"OH",
+      "city":"Youngstown",
+      "latitude":"41.0997222",
+      "acgme":"1403811349"
+   },
+   "Yale-New Haven Hospital Program":{
+      "longitude":"-72.9286111",
+      "state":"CT",
+      "city":"New Haven",
+      "latitude":"41.3080556",
+      "acgme":"9990800020"
+   },
+   "University of Arizona Program":{
+      "longitude":"-110.9258333",
+      "state":"AZ",
+      "city":"Tucson",
+      "latitude":"32.2216667",
+      "acgme":"4510321032"
+   },
+   "HealthONE Program":{
+      "longitude":"-104.8958333",
+      "state":"CO",
+      "city":"Lone Tree",
+      "latitude":"39.5361111",
+      "acgme":"1800700020"
+   },
+   "University of Rochester/Highland Hospital of Rochester Program":{
+      "longitude":"-77.6158333",
+      "state":"NY",
+      "city":"Rochester",
+      "latitude":"43.1547222",
+      "acgme":"1203521214"
+   },
+   "University of Connecticut Program":{
+      "longitude":"-72.8325000",
+      "state":"CT",
+      "city":"Farmington",
+      "latitude":"41.7197222",
+      "acgme":"4800821028"
+   },
+   "St Vincent Charity Medical Center/Case Western Reserve University Program":{
+      "longitude":"-81.6955556",
+      "state":"OH",
+      "city":"Cleveland",
+      "latitude":"41.4994444",
+      "acgme":"1403811338"
+   },
+   "Naples Community Hospital, Inc Program":{
+      "longitude":"-81.7950000",
+      "state":"FL",
+      "city":"Naples",
+      "latitude":"26.1416667",
+      "acgme":"1401100942"
+   },
+   "Cleveland Clinic Foundation Program":{
+      "longitude":"-81.6955556",
+      "state":"OH",
+      "city":"Cleveland",
+      "latitude":"41.4994444",
+      "acgme":"4513822046"
+   },
+   "Massachusetts General Hospital/Harvard Medical School Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"4802411161"
+   },
+   "University of Louisville Program":{
+      "longitude":"-85.7594444",
+      "state":"KY",
+      "city":"Louisville",
+      "latitude":"38.2541667",
+      "acgme":"4802021186"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals (Northeastern Wisconsin) Program":{
+      "longitude":"-88.0197222",
+      "state":"WI",
+      "city":"Green Bay",
+      "latitude":"44.5191667",
+      "acgme":"4005600260"
+   },
+   "Ochsner Clinic Foundation Program":{
+      "longitude":"-90.0750000",
+      "state":"LA",
+      "city":"New Orleans",
+      "latitude":"29.9544444",
+      "acgme":"4802121176"
+   },
+   "Mount Sinai Medical Center of Florida Program":{
+      "longitude":"-80.1302778",
+      "state":"FL",
+      "city":"Miami Beach",
+      "latitude":"25.7902778",
+      "acgme":"4801100192"
+   },
+   "St Mary Medical Center Program":{
+      "longitude":"-118.1883333",
+      "state":"CA",
+      "city":"Long Beach",
+      "latitude":"33.7669444",
+      "acgme":"1400531039"
+   },
+   "Johns Hopkins University/University of Maryland Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"3622321037"
+   },
+   "Northside Hospital Program":{
+      "longitude":"-82.6794444",
+      "state":"FL",
+      "city":"St Petersburg",
+      "latitude":"27.7705556",
+      "acgme":"1401100943"
+   },
+   "Akron General Medical Center/NEOMED Program":{
+      "longitude":"-81.5191667",
+      "state":"OH",
+      "city":"Akron",
+      "latitude":"41.0813889",
+      "acgme":"4803821164"
+   },
+   "New York-Presbyterian/Queens Program":{
+      "longitude":"-73.8177778",
+      "state":"NY",
+      "city":"Flushing",
+      "latitude":"40.7652778",
+      "acgme":"1403511262"
+   },
+   "Stamford Hospital/Columbia University College of Physicians and Surgeons Program":{
+      "longitude":"-73.5391667",
+      "state":"CT",
+      "city":"Stamford",
+      "latitude":"41.0533333",
+      "acgme":"2200811061"
+   },
+   "Mount Auburn Hospital Program":{
+      "longitude":"-71.1061111",
+      "state":"MA",
+      "city":"Cambridge",
+      "latitude":"42.3750000",
+      "acgme":"4202411087"
+   },
+   "MetroWest Medical Center Program":{
+      "longitude":"-71.4166667",
+      "state":"MA",
+      "city":"Framingham",
+      "latitude":"42.2791667",
+      "acgme":"9992400160"
+   },
+   "Lincoln Medical and Mental Health Center Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"9993500257"
+   },
+   "Hurley Medical Center/Michigan State University Program":{
+      "longitude":"-83.6875000",
+      "state":"MI",
+      "city":"Flint",
+      "latitude":"43.0125000",
+      "acgme":"9992500062"
+   },
+   "Sierra Vista Program":{
+      "longitude":"-119.7713889",
+      "state":"CA",
+      "city":"Fresno",
+      "latitude":"36.7477778",
+      "acgme":"1200500726"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals (St Joseph's) Program":{
+      "longitude":"-87.9063889",
+      "state":"WI",
+      "city":"Milwaukee",
+      "latitude":"43.0388889",
+      "acgme":"4205622212"
+   },
+   "Jacobi Medical Center/Albert Einstein College of Medicine Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"4203521251"
+   },
+   "Detroit Medical Center/Wayne State University (Sinai Grace) Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"1402521506"
+   },
+   "Texas Tech University (Amarillo) Health Sciences Center Program":{
+      "longitude":"-101.8308333",
+      "state":"TX",
+      "city":"Amarillo",
+      "latitude":"35.2219444",
+      "acgme":"7004844073"
+   },
+   "Interfaith Medical Center Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"4003500315"
+   },
+   "Detroit Wayne County Health Authority (Authority Health) GME Consortium Program":{
+      "longitude":"-83.0458333",
+      "state":"MI",
+      "city":"Detroit",
+      "latitude":"42.3313889",
+      "acgme":"4002500310"
+   },
+   "University of Central Florida College of Medicine/HCA GME Consortium (Greater Orlando) Program":{
+      "longitude":"-81.3794444",
+      "state":"FL",
+      "city":"Orlando",
+      "latitude":"28.5380556",
+      "acgme":"9991100233"
+   },
+   "Kendall Regional Medical Center Program":{
+      "longitude":"-80.1938889",
+      "state":"FL",
+      "city":"Miami",
+      "latitude":"25.7738889",
+      "acgme":"9991100235"
+   },
+   "Greater Baltimore Medical Center Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"1402331152"
+   },
+   "Brigham and Women's Hospital/Children's Hospital Program":{
+      "longitude":"-71.0602778",
+      "state":"MA",
+      "city":"Boston",
+      "latitude":"42.3583333",
+      "acgme":"1602421036"
+   },
+   "West Kendall Baptist Hospital / Florida International University Program":{
+      "longitude":"-80.1938889",
+      "state":"FL",
+      "city":"Miami",
+      "latitude":"25.7738889",
+      "acgme":"1201100721"
+   },
+   "Geisinger Health System Program":{
+      "longitude":"-76.6130556",
+      "state":"PA",
+      "city":"Danville",
+      "latitude":"40.9633333",
+      "acgme":"4804111125"
+   },
+   "Adventist LaGrange Memorial Hospital Program":{
+      "longitude":"-87.8691667",
+      "state":"IL",
+      "city":"La Grange",
+      "latitude":"41.8050000",
+      "acgme":"1201611110"
+   },
+   "University of Texas Medical Branch Hospitals Program":{
+      "longitude":"-94.7975000",
+      "state":"TX",
+      "city":"Galveston",
+      "latitude":"29.3011111",
+      "acgme":"4514800124"
+   },
+   "Baton Rouge General Medical Center Program":{
+      "longitude":"-91.1544444",
+      "state":"LA",
+      "city":"Baton Rouge",
+      "latitude":"30.4505556",
+      "acgme":"1202121560"
+   },
+   "Temple University Hospital/Fox Chase Cancer Center Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4304121123"
+   },
+   "Lakeland Health Program":{
+      "longitude":"-86.4800000",
+      "state":"MI",
+      "city":"Saint Joseph",
+      "latitude":"42.1097222",
+      "acgme":"1402500914"
+   },
+   "University of Arkansas College of Medicine Program":{
+      "longitude":"-92.2894444",
+      "state":"AR",
+      "city":"Little Rock",
+      "latitude":"34.7463889",
+      "acgme":"9990400008"
+   },
+   "University of Connecticut (New Britain) Program":{
+      "longitude":"-72.8325000",
+      "state":"CT",
+      "city":"Farmington",
+      "latitude":"41.7197222",
+      "acgme":"1400821499"
+   },
+   "Reading Hospital Program":{
+      "longitude":"-75.9477778",
+      "state":"PA",
+      "city":"West Reading",
+      "latitude":"40.3336111",
+      "acgme":"9994100119"
+   },
+   "St Vincent Hospital and Health Care Center Program":{
+      "longitude":"-86.1580556",
+      "state":"IN",
+      "city":"Indianapolis",
+      "latitude":"39.7683333",
+      "acgme":"9991700041"
+   },
+   "Bay Area Corpus Christi Medical Center Program":{
+      "longitude":"-97.3961111",
+      "state":"TX",
+      "city":"Corpus Christi",
+      "latitude":"27.8002778",
+      "acgme":"1404800892"
+   },
+   "Strong Memorial Hospital of the University of Rochester Program":{
+      "longitude":"-77.6158333",
+      "state":"NY",
+      "city":"Rochester",
+      "latitude":"43.1547222",
+      "acgme":"4163500009"
+   },
+   "Christ Hospital Program":{
+      "longitude":"-84.4569444",
+      "state":"OH",
+      "city":"Cincinnati",
+      "latitude":"39.1619444",
+      "acgme":"1403811331"
+   },
+   "Temple University Hospital Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4804121132"
+   },
+   "Montefiore Medical Center/Albert Einstein College of Medicine (Wakefield Campus) Program":{
+      "longitude":"-73.8666667",
+      "state":"NY",
+      "city":"Bronx",
+      "latitude":"40.8500000",
+      "acgme":"1403521285"
+   },
+   "Tallahassee Memorial Healthcare Family Medicine Program":{
+      "longitude":"-84.2808333",
+      "state":"FL",
+      "city":"Tallahassee",
+      "latitude":"30.4380556",
+      "acgme":"1201111086"
+   },
+   "New York Presbyterian Hospital Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"1103513169"
+   },
+   "Riverside University Health System/University of California Riverside Program":{
+      "longitude":"-117.2297222",
+      "state":"CA",
+      "city":"Moreno Valley",
+      "latitude":"33.9375000",
+      "acgme":"4400521427"
+   },
+   "Providence Hospital/Georgetown University Hospital Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"1201021080"
+   },
+   "Blake Medical Center Program":{
+      "longitude":"-82.5750000",
+      "state":"FL",
+      "city":"Bradenton",
+      "latitude":"27.4986111",
+      "acgme":"9991100234"
+   },
+   "Franciscan St. James Health Program":{
+      "longitude":"-87.6741667",
+      "state":"IL",
+      "city":"Olympia Fields",
+      "latitude":"41.5133333",
+      "acgme":"4201600679"
+   },
+   "Baylor Scott & White Medical Center-Garland Program":{
+      "longitude":"-96.6386111",
+      "state":"TX",
+      "city":"Garland",
+      "latitude":"32.9125000",
+      "acgme":"1204821574"
+   },
+   "Wright Center for Graduate Medical Education Program":{
+      "longitude":"-75.6627778",
+      "state":"PA",
+      "city":"Scranton",
+      "latitude":"41.4088889",
+      "acgme":"4004100274"
+   },
+   "University of Minnesota/St Cloud Hospital Program":{
+      "longitude":"-94.1622222",
+      "state":"MN",
+      "city":"St Cloud",
+      "latitude":"45.5608333",
+      "acgme":"1202621586"
+   },
+   "St Joseph's Hospital Health Center Program":{
+      "longitude":"-76.1477778",
+      "state":"NY",
+      "city":"Syracuse",
+      "latitude":"43.0480556",
+      "acgme":"9993500084"
+   },
+   "Institute for Family Health (Harlem) Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"1203500723"
+   },
+   "Aventura Hospital and Medical Center Program":{
+      "longitude":"-80.1394444",
+      "state":"FL",
+      "city":"Aventura",
+      "latitude":"25.9561111",
+      "acgme":"9991100229"
+   },
+   "Rush University Medical Center Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4801631046"
+   },
+   "Cook County Hospital Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"7001644011"
+   },
+   "Presence Resurrection Medical Center Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"9991600207"
+   },
+   "University of Chicago Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4801621047"
+   },
+   "Florida State University College of Medicine/Lee Memorial Health System Program":{
+      "longitude":"-81.8725000",
+      "state":"FL",
+      "city":"Fort Myers",
+      "latitude":"26.6402778",
+      "acgme":"1201100728"
+   },
+   "McLaren-Flint Program":{
+      "longitude":"-83.6875000",
+      "state":"MI",
+      "city":"Flint",
+      "latitude":"43.0125000",
+      "acgme":"2602512089"
+   },
+   "Memorial Hospital of South Bend Program":{
+      "longitude":"-86.2500000",
+      "state":"IN",
+      "city":"South Bend",
+      "latitude":"41.6833333",
+      "acgme":"1201711129"
+   },
+   "Newark Beth Israel Medical Center (Jersey City) Program":{
+      "longitude":"-74.0780556",
+      "state":"NJ",
+      "city":"Jersey City",
+      "latitude":"40.7280556",
+      "acgme":"2203321324"
+   },
+   "Community Health Network, Inc. Program":{
+      "longitude":"-86.1580556",
+      "state":"IN",
+      "city":"Indianapolis",
+      "latitude":"39.7683333",
+      "acgme":"4001700067"
+   },
+   "MetroHealth Medical Center/Case Western Reserve University Program":{
+      "longitude":"-81.6955556",
+      "state":"OH",
+      "city":"Cleveland",
+      "latitude":"41.4994444",
+      "acgme":"0803831143"
+   },
+   "UCLA-Kern Medical Center Program":{
+      "longitude":"-119.0177778",
+      "state":"CA",
+      "city":"Bakersfield",
+      "latitude":"35.3733333",
+      "acgme":"4000522298"
+   },
+   "North Central Texas Medical Foundation Program":{
+      "longitude":"-98.4930556",
+      "state":"TX",
+      "city":"Wichita Falls",
+      "latitude":"33.9136111",
+      "acgme":"1204821435"
+   },
+   "Wright State University Boonshoft School of Medicine Program":{
+      "longitude":"-84.1916667",
+      "state":"OH",
+      "city":"Dayton",
+      "latitude":"39.7588889",
+      "acgme":"1803800144"
+   },
+   "Allegheny Health Network Medical Education Consortium (AGH/WPH) Program":{
+      "longitude":"-79.9961111",
+      "state":"PA",
+      "city":"Pittsburgh",
+      "latitude":"40.4405556",
+      "acgme":"0404132141"
+   },
+   "Capital Health Regional Medical Center Program":{
+      "longitude":"-74.7433333",
+      "state":"NJ",
+      "city":"Trenton",
+      "latitude":"40.2169444",
+      "acgme":"1403321246"
+   },
+   "Kaiser Permanente Medical Group (Northern California/Oakland) Program":{
+      "longitude":"-122.2697222",
+      "state":"CA",
+      "city":"Oakland",
+      "latitude":"37.8044444",
+      "acgme":"2200512040"
+   },
+   "McLaren-Flint/Michigan State University Program":{
+      "longitude":"-83.6875000",
+      "state":"MI",
+      "city":"Flint",
+      "latitude":"43.0125000",
+      "acgme":"1402521471"
+   },
+   "Atlantic Health Program":{
+      "longitude":"-74.4819444",
+      "state":"NJ",
+      "city":"Morristown",
+      "latitude":"40.7966667",
+      "acgme":"3203321412"
+   },
+   "Children's National Medical Center Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"3201021051"
+   },
+   "William Beaumont Army Medical Center Program":{
+      "longitude":"-106.4863889",
+      "state":"TX",
+      "city":"El Paso",
+      "latitude":"31.7586111",
+      "acgme":"1404812008"
+   },
+   "Spokane Teaching Health Center Rural Program":{
+      "longitude":"-117.4250000",
+      "state":"WA",
+      "city":"Spokane",
+      "latitude":"47.6588889",
+      "acgme":"1205421552"
+   },
+   "Medical College of Wisconsin Affiliated Hospitals, Inc Program":{
+      "longitude":"-87.9063889",
+      "state":"WI",
+      "city":"Milwaukee",
+      "latitude":"43.0388889",
+      "acgme":"7265644006"
+   },
+   "St Vincent's East Program":{
+      "longitude":"-86.8025000",
+      "state":"AL",
+      "city":"Birmingham",
+      "latitude":"33.5205556",
+      "acgme":"1200131020"
+   },
+   "University of Nevada Reno School of Medicine Program":{
+      "longitude":"-119.8127778",
+      "state":"NV",
+      "city":"Reno",
+      "latitude":"39.5297222",
+      "acgme":"4003121263"
+   },
+   "Gwinnett Medical Center Program":{
+      "longitude":"-83.9880556",
+      "state":"GA",
+      "city":"Lawrenceville",
+      "latitude":"33.9561111",
+      "acgme":"9991200234"
+   },
+   "University of South Florida Morsani (James A Haley Veterans Hospital) Program":{
+      "longitude":"-82.4586111",
+      "state":"FL",
+      "city":"Tampa",
+      "latitude":"27.9472222",
+      "acgme":"3401113106"
+   },
+   "MultiCare Health System (Tacoma) Program":{
+      "longitude":"-122.4430556",
+      "state":"WA",
+      "city":"Tacoma",
+      "latitude":"47.2530556",
+      "acgme":"1205431331"
+   },
+   "Oak Hill Hospital Program":{
+      "longitude":"-82.3880556",
+      "state":"FL",
+      "city":"Brooksville",
+      "latitude":"28.5550000",
+      "acgme":"9991100231"
+   },
+   "USC/LAC+USC Medical Center Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"4510512011"
+   },
+   "Bassett Medical Center Program":{
+      "longitude":"-74.9247222",
+      "state":"NY",
+      "city":"Cooperstown",
+      "latitude":"42.7005556",
+      "acgme":"9993500080"
+   },
+   "Mayo Clinic College of Medicine and Science Program":{
+      "longitude":"-92.4697222",
+      "state":"MN",
+      "city":"Rochester",
+      "latitude":"44.0216667",
+      "acgme":"4162600003"
+   },
+   "Hunterdon Medical Center Program":{
+      "longitude":"-74.8597222",
+      "state":"NJ",
+      "city":"Flemington",
+      "latitude":"40.5122222",
+      "acgme":"1203311191"
+   },
+   "Case Western Reserve University/University Hospitals Cleveland Medical Center Program":{
+      "longitude":"-81.6955556",
+      "state":"OH",
+      "city":"Cleveland",
+      "latitude":"41.4994444",
+      "acgme":"4513800122"
+   },
+   "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GME Consortium)/Freeman Program":{
+      "longitude":"-94.5130556",
+      "state":"MO",
+      "city":"Joplin",
+      "latitude":"37.0841667",
+      "acgme":"1402800915"
+   },
+   "Seton Hall University-Hackensack Meridian School of Medicine (St Francis) Program":{
+      "longitude":"-74.7433333",
+      "state":"NJ",
+      "city":"Trenton",
+      "latitude":"40.2169444",
+      "acgme":"1403313523"
+   },
+   "Hofstra Northwell School of Medicine at Lenox Hill Hospital Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4513512002"
+   },
+   "University of Colorado School of Medicine Program A":{
+      "longitude":"-104.8313889",
+      "state":"CO",
+      "city":"Aurora",
+      "latitude":"39.7294444",
+      "acgme":"3800777060"
+   },
+   "Advocate Health Care (Advocate Children's Hospital/Park Ridge) Program":{
+      "longitude":"-87.8405556",
+      "state":"IL",
+      "city":"Park Ridge",
+      "latitude":"42.0111111",
+      "acgme":"3201612077"
+   },
+   "HackensackUMC Mountainside Program":{
+      "longitude":"-74.2094444",
+      "state":"NJ",
+      "city":"Montclair",
+      "latitude":"40.8258333",
+      "acgme":"1403311234"
+   },
+   "Spectrum Health/Michigan State University Program/Helen DeVos Children's Hospital Program":{
+      "longitude":"-85.6680556",
+      "state":"MI",
+      "city":"Grand Rapids",
+      "latitude":"42.9633333",
+      "acgme":"3202521116"
+   },
+   "Sinai Hospital of Baltimore Program":{
+      "longitude":"-76.6125000",
+      "state":"MD",
+      "city":"Baltimore",
+      "latitude":"39.2902778",
+      "acgme":"3402322021"
+   },
+   "Christus Health/Santa Rosa Program":{
+      "longitude":"-98.4933333",
+      "state":"TX",
+      "city":"San Antonio",
+      "latitude":"29.4238889",
+      "acgme":"1204821616"
+   },
+   "Kaiser Permanente Hawaii Program":{
+      "longitude":"-157.8583333",
+      "state":"HI",
+      "city":"Honolulu",
+      "latitude":"21.3069444",
+      "acgme":"1401400904"
+   },
+   "Memorial Healthcare System (Hollywood, Florida) Program":{
+      "longitude":"-80.1497222",
+      "state":"FL",
+      "city":"Hollywood",
+      "latitude":"26.0108333",
+      "acgme":"3401100108"
+   },
+   "Self Regional Healthcare/Greenwood Program":{
+      "longitude":"-82.1619444",
+      "state":"SC",
+      "city":"Greenwood",
+      "latitude":"34.1952778",
+      "acgme":"1204521376"
+   },
+   "University of Washington Program":{
+      "longitude":"-122.3308333",
+      "state":"WA",
+      "city":"Seattle",
+      "latitude":"47.6063889",
+      "acgme":"4805421155"
+   },
+   "University of Florida Program":{
+      "longitude":"-82.3250000",
+      "state":"FL",
+      "city":"Gainesville",
+      "latitude":"29.6513889",
+      "acgme":"4801121034"
+   },
+   "Damas Hospital/Ponce School of Medicine Program":{
+      "longitude":"-66.6144444",
+      "state":"PR",
+      "city":"Ponce",
+      "latitude":"18.0130556",
+      "acgme":"9994200249"
+   },
+   "New York City Department of Health and Mental Hygiene Program":{
+      "longitude":"-73.9491667",
+      "state":"NY",
+      "city":"Long Island City",
+      "latitude":"40.7447222",
+      "acgme":"3803588104"
+   },
+   "UPMC Medical Education (Hamot)  Program":{
+      "longitude":"-80.0852778",
+      "state":"PA",
+      "city":"Erie",
+      "latitude":"42.1291667",
+      "acgme":"2604122156"
+   },
+   "Providence Hospital Program":{
+      "longitude":"-77.0366667",
+      "state":"DC",
+      "city":"Washington",
+      "latitude":"38.8950000",
+      "acgme":"1401021095"
+   },
+   "Maricopa Medical Center Program":{
+      "longitude":"-112.0733333",
+      "state":"AZ",
+      "city":"Phoenix",
+      "latitude":"33.4483333",
+      "acgme":"4200331255"
+   },
+   "Indiana University Health Ball Memorial Hospital Program":{
+      "longitude":"-85.3863889",
+      "state":"IN",
+      "city":"Muncie",
+      "latitude":"40.1933333",
+      "acgme":"9991700157"
+   },
+   "Hofstra Northwell School of Medicine (Southside Hospital) Program":{
+      "longitude":"-73.2458333",
+      "state":"NY",
+      "city":"Bay Shore",
+      "latitude":"40.7250000",
+      "acgme":"2203500370"
+   },
+   "St Christopher's Hospital for Children Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"3204112209"
+   },
+   "Hidalgo Medical Services Program":{
+      "longitude":"-108.2797222",
+      "state":"NM",
+      "city":"Silver City",
+      "latitude":"32.7700000",
+      "acgme":"1203400708"
+   },
+   "Indiana University School of Medicine (Arnett) Program":{
+      "longitude":"-86.8752778",
+      "state":"IN",
+      "city":"Lafayette",
+      "latitude":"40.4166667",
+      "acgme":"1201700719"
+   },
+   "St Luke's Hospital Program":{
+      "longitude":"-75.3708333",
+      "state":"PA",
+      "city":"Bethlehem",
+      "latitude":"40.6258333",
+      "acgme":"9994100104"
+   },
+   "Phoebe Putney Memorial Hospital (Southwest Georgia) Program":{
+      "longitude":"-84.1558333",
+      "state":"GA",
+      "city":"Albany",
+      "latitude":"31.5783333",
+      "acgme":"1201221525"
+   },
+   "Sidney Kimmel Medical College at Thomas Jefferson University/Christiana Care Health Services Program":{
+      "longitude":"-75.7500000",
+      "state":"DE",
+      "city":"Newark",
+      "latitude":"39.6836111",
+      "acgme":"1400911090"
+   },
+   "University of Texas Health Science Center at Houston (Lyndon B Johnson General Hospital) Program":{
+      "longitude":"-95.3630556",
+      "state":"TX",
+      "city":"Houston",
+      "latitude":"29.7630556",
+      "acgme":"2204821334"
+   },
+   "John H Stroger Hospital of Cook County Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"4801600175"
+   },
+   "Icahn School of Medicine at Mount Sinai/St Luke\u2019s-Roosevelt Hospital Center Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4203521224"
+   },
+   "In His Image at St John Medical Center Program":{
+      "longitude":"-95.9925000",
+      "state":"OK",
+      "city":"Tulsa",
+      "latitude":"36.1538889",
+      "acgme":"1203921499"
+   },
+   "Rapid City Regional Hospital Program":{
+      "longitude":"-103.2305556",
+      "state":"SD",
+      "city":"Rapid City",
+      "latitude":"44.0805556",
+      "acgme":"1204621547"
+   },
+   "Icahn School of Medicine at Mount Sinai Program A":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"3803577082"
+   },
+   "University of Texas RGV (MMC) Program":{
+      "longitude":"-98.2297222",
+      "state":"TX",
+      "city":"McAllen",
+      "latitude":"26.2030556",
+      "acgme":"1204811311"
+   },
+   "Bella Vista Hospital Program":{
+      "longitude":"-67.1400000",
+      "state":"PR",
+      "city":"Mayaguez",
+      "latitude":"18.2030556",
+      "acgme":"1204221620"
+   },
+   "Kadlec Regional Medical Center Program":{
+      "longitude":"-119.2833333",
+      "state":"WA",
+      "city":"Richland",
+      "latitude":"46.2858333",
+      "acgme":"1205400713"
+   },
+   "University of North Carolina Hospitals Program":{
+      "longitude":"-79.0561111",
+      "state":"NC",
+      "city":"Chapel Hill",
+      "latitude":"35.9130556",
+      "acgme":"4513621007"
+   },
+   "Providence Health & Services - Oregon/St Vincent Hospital and Medical Center Program":{
+      "longitude":"-122.6750000",
+      "state":"OR",
+      "city":"Portland",
+      "latitude":"45.5236111",
+      "acgme":"1404031356"
+   },
+   "Memorial Health-University Medical Center/Mercer University School of Medicine (Savannah) Program":{
+      "longitude":"-81.1000000",
+      "state":"GA",
+      "city":"Savannah",
+      "latitude":"32.0833333",
+      "acgme":"4201212054"
+   },
+   "Medical Center of Central Georgia/Mercer University School of Medicine Program":{
+      "longitude":"-83.6325000",
+      "state":"GA",
+      "city":"Macon",
+      "latitude":"32.8405556",
+      "acgme":"3201221398"
+   },
+   "Icahn School of Medicine at Mount Sinai (Elmhurst) Program":{
+      "longitude":"-73.8783333",
+      "state":"NY",
+      "city":"Elmhurst",
+      "latitude":"40.7363889",
+      "acgme":"4003511242"
+   },
+   "University of Tennessee College of Medicine-Chattanooga Program":{
+      "longitude":"-85.3097222",
+      "state":"TN",
+      "city":"Chattanooga",
+      "latitude":"35.0455556",
+      "acgme":"4804700182"
+   },
+   "Southern Regional Area Health Education Center/Duke University Hospital Program":{
+      "longitude":"-78.8786111",
+      "state":"NC",
+      "city":"Fayetteville",
+      "latitude":"35.0525000",
+      "acgme":"1203631223"
+   },
+   "Virginia Mason Medical Center Program":{
+      "longitude":"-122.3308333",
+      "state":"WA",
+      "city":"Seattle",
+      "latitude":"47.6063889",
+      "acgme":"4805400156"
+   },
+   "University of California Riverside/Riverside Community Hospital Program":{
+      "longitude":"-117.3952778",
+      "state":"CA",
+      "city":"Riverside",
+      "latitude":"33.9533333",
+      "acgme":"2200500334"
+   },
+   "University of Wyoming (Cheyenne) Program":{
+      "longitude":"-104.8197222",
+      "state":"WY",
+      "city":"Cheyenne",
+      "latitude":"41.1400000",
+      "acgme":"1205712369"
+   },
+   "The University of Montana Program":{
+      "longitude":"-113.9930556",
+      "state":"MT",
+      "city":"Missoula",
+      "latitude":"46.8722222",
+      "acgme":"1202900720"
+   },
+   "University of Illinois College of Medicine at Rockford Program":{
+      "longitude":"-89.0938889",
+      "state":"IL",
+      "city":"Rockford",
+      "latitude":"42.2711111",
+      "acgme":"1201631115"
+   },
+   "San Juan City Hospital Program":{
+      "longitude":"-66.1061111",
+      "state":"PR",
+      "city":"San Juan",
+      "latitude":"18.4683333",
+      "acgme":"9994200213"
+   },
+   "Medical City Fort Worth Program":{
+      "longitude":"-97.3205556",
+      "state":"TX",
+      "city":"Fort Worth",
+      "latitude":"32.7252778",
+      "acgme":"1404800894"
+   },
+   "Spaulding Rehabilitation Hospital/Harvard Medical School Program":{
+      "longitude":"-71.0625000",
+      "state":"MA",
+      "city":"Charlestown",
+      "latitude":"42.3777778",
+      "acgme":"3402421094"
+   },
+   "St. John Macomb-Oakland Hospital Program":{
+      "longitude":"-83.0277778",
+      "state":"MI",
+      "city":"Warren",
+      "latitude":"42.4775000",
+      "acgme":"9992500260"
+   },
+   "Medical College of Georgia Program":{
+      "longitude":"-81.9750000",
+      "state":"GA",
+      "city":"Augusta",
+      "latitude":"33.4708333",
+      "acgme":"4801221040"
+   },
+   "Texas Tech University (Permian Basin) Program":{
+      "longitude":"-102.3672222",
+      "state":"TX",
+      "city":"Odessa",
+      "latitude":"31.8455556",
+      "acgme":"2204821331"
+   },
+   "University of Nebraska Medical Center Program":{
+      "longitude":"-95.9375000",
+      "state":"NE",
+      "city":"Omaha",
+      "latitude":"41.2586111",
+      "acgme":"1103031168"
+   },
+   "University of California (San Francisco) School of Medicine Program":{
+      "longitude":"-122.4183333",
+      "state":"CA",
+      "city":"San Francisco",
+      "latitude":"37.7750000",
+      "acgme":"4160500006"
+   },
+   "University Hospitals and Clinics/Louisiana State University (Lafayette) Program":{
+      "longitude":"-92.0197222",
+      "state":"LA",
+      "city":"Lafayette",
+      "latitude":"30.2238889",
+      "acgme":"1402111144"
+   },
+   "University of Tennessee College of Medicine (Nashville) Program":{
+      "longitude":"-86.7844444",
+      "state":"TN",
+      "city":"Nashville",
+      "latitude":"36.1658333",
+      "acgme":"4404700378"
+   },
+   "Icahn School of Medicine at Mount Sinai (Downtown) Urban Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"1203532538"
+   },
+   "UPMC Medical Education Program":{
+      "longitude":"-79.9961111",
+      "state":"PA",
+      "city":"Pittsburgh",
+      "latitude":"40.4405556",
+      "acgme":"4514121088"
+   },
+   "New York Medical College at Metropolitan Hospital Center Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4403500438"
+   },
+   "Marianjoy Rehabilitation Hospital Program":{
+      "longitude":"-88.1069444",
+      "state":"IL",
+      "city":"Wheaton",
+      "latitude":"41.8661111",
+      "acgme":"3401621097"
+   },
+   "Stony Brook Medicine/University Hospital Program":{
+      "longitude":"-73.1413889",
+      "state":"NY",
+      "city":"Stony Brook",
+      "latitude":"40.9255556",
+      "acgme":"4513521051"
+   },
+   "Brookdale University Hospital and Medical Center Program":{
+      "longitude":"-73.9500000",
+      "state":"NY",
+      "city":"Brooklyn",
+      "latitude":"40.6500000",
+      "acgme":"4803531091"
+   },
+   "Christiana Care Health Services Inc Program":{
+      "longitude":"-75.7500000",
+      "state":"DE",
+      "city":"Newark",
+      "latitude":"39.6836111",
+      "acgme":"4160900001"
+   },
+   "Phoenix Children's Hospital Program":{
+      "longitude":"-112.0733333",
+      "state":"AZ",
+      "city":"Phoenix",
+      "latitude":"33.4483333",
+      "acgme":"3200332020"
+   },
+   "University of Massachusetts (Fitchburg) Program":{
+      "longitude":"-71.8027778",
+      "state":"MA",
+      "city":"Fitchburg",
+      "latitude":"42.5833333",
+      "acgme":"1202431159"
+   },
+   "Hofstra Northwell School of Medicine at Forest Hills Hospital Program":{
+      "longitude":"-73.8505556",
+      "state":"NY",
+      "city":"Forest Hills",
+      "latitude":"40.7161111",
+      "acgme":"1403521468"
+   },
+   "Louisiana State University (Lake Charles) Program":{
+      "longitude":"-93.2172222",
+      "state":"LA",
+      "city":"Lake Charles",
+      "latitude":"30.2263889",
+      "acgme":"1202121594"
+   },
+   "Icahn School of Medicine at Mount Sinai (Beth Israel) Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4803511090"
+   },
+   "OPTI West/Chino Valley Medical Center Program":{
+      "longitude":"-117.6880556",
+      "state":"CA",
+      "city":"Chino",
+      "latitude":"34.0122222",
+      "acgme":"1200500744"
+   },
+   "Memorial Medical Center (Las Cruces) Program":{
+      "longitude":"-106.7777778",
+      "state":"NM",
+      "city":"Las Cruces",
+      "latitude":"32.3122222",
+      "acgme":"1203421577"
+   },
+   "St. John's Riverside Hospital Program":{
+      "longitude":"-73.8991667",
+      "state":"NY",
+      "city":"Yonkers",
+      "latitude":"40.9311111",
+      "acgme":"1403500924"
+   },
+   "Tulane University School of Public Health and Tropical Medicine Program":{
+      "longitude":"-90.0750000",
+      "state":"LA",
+      "city":"New Orleans",
+      "latitude":"29.9544444",
+      "acgme":"3802121014"
+   },
+   "PinnacleHealth Hospitals Program":{
+      "longitude":"-76.8847222",
+      "state":"PA",
+      "city":"Harrisburg",
+      "latitude":"40.2736111",
+      "acgme":"1404111365"
+   },
+   "University of Texas Southwestern Medical School Program":{
+      "longitude":"-96.8000000",
+      "state":"TX",
+      "city":"Dallas",
+      "latitude":"32.7833333",
+      "acgme":"4804821143"
+   },
+   "Tulsa Medical Education Foundation Program":{
+      "longitude":"-95.9925000",
+      "state":"OK",
+      "city":"Tulsa",
+      "latitude":"36.1538889",
+      "acgme":"1203921256"
+   },
+   "Cedar Rapids Medical Education Foundation Program":{
+      "longitude":"-91.6438889",
+      "state":"IA",
+      "city":"Cedar Rapids",
+      "latitude":"42.0083333",
+      "acgme":"1201822132"
+   },
+   "University of Central Florida College of Medicine/HCA GME Consortium (Ocala) Program":{
+      "longitude":"-82.1402778",
+      "state":"FL",
+      "city":"Ocala",
+      "latitude":"29.1869444",
+      "acgme":"1401100939"
+   },
+   "Integris Baptist Medical Center/Great Plains Program":{
+      "longitude":"-97.5161111",
+      "state":"OK",
+      "city":"Oklahoma City",
+      "latitude":"35.4675000",
+      "acgme":"1203921585"
+   },
+   "Hospital Dr Alejandro Otero Lopez Program":{
+      "longitude":"-66.4925000",
+      "state":"PR",
+      "city":"Manati",
+      "latitude":"18.4294444",
+      "acgme":"1204221501"
+   },
+   "Santa Barbara Cottage Hospital Preliminary Program":{
+      "longitude":"-119.6972222",
+      "state":"CA",
+      "city":"Santa Barbara",
+      "latitude":"34.4208333",
+      "acgme":"1400522066"
+   },
+   "Crozer-Chester Medical Center Program":{
+      "longitude":"-75.3830556",
+      "state":"PA",
+      "city":"Upland",
+      "latitude":"39.8525000",
+      "acgme":"9994100212"
+   },
+   "St Peter Hospital Program":{
+      "longitude":"-122.8994444",
+      "state":"WA",
+      "city":"Olympia",
+      "latitude":"47.0380556",
+      "acgme":"1205421497"
+   },
+   "Greenville Health System/University of South Carolina Program":{
+      "longitude":"-82.3941667",
+      "state":"SC",
+      "city":"Greenville",
+      "latitude":"34.8525000",
+      "acgme":"4004500311"
+   },
+   "Munson Medical Center Program":{
+      "longitude":"-85.6205556",
+      "state":"MI",
+      "city":"Traverse City",
+      "latitude":"44.7630556",
+      "acgme":"1202521602"
+   },
+   "Children's Hospital of Los Angeles Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"3200511028"
+   },
+   "University of Minnesota Medical School Program":{
+      "longitude":"-93.2636111",
+      "state":"MN",
+      "city":"Minneapolis",
+      "latitude":"44.9800000",
+      "acgme":"4162600002"
+   },
+   "Virginia Commonwealth University-Bon Secours (St Francis) Program":{
+      "longitude":"-77.6494444",
+      "state":"VA",
+      "city":"Midlothian",
+      "latitude":"37.5058333",
+      "acgme":"1205131683"
+   },
+   "Jersey Shore University Medical Center Program":{
+      "longitude":"-74.0283333",
+      "state":"NJ",
+      "city":"Neptune City",
+      "latitude":"40.2000000",
+      "acgme":"4003300303"
+   },
+   "New York Medical College at St Michael's Medical Center Program":{
+      "longitude":"-74.1727778",
+      "state":"NJ",
+      "city":"Newark",
+      "latitude":"40.7355556",
+      "acgme":"1403300532"
+   },
+   "Swedish Medical Center Rural Program":{
+      "longitude":"-122.3308333",
+      "state":"WA",
+      "city":"Seattle",
+      "latitude":"47.6063889",
+      "acgme":"1205400717"
+   },
+   "Kettering Health Network Program":{
+      "longitude":"-84.1688889",
+      "state":"OH",
+      "city":"Kettering",
+      "latitude":"39.6894444",
+      "acgme":"9993800096"
+   },
+   "Drexel University College of Medicine/Hahnemann University Hospital Program":{
+      "longitude":"-75.1641667",
+      "state":"PA",
+      "city":"Philadelphia",
+      "latitude":"39.9522222",
+      "acgme":"4204121169"
+   },
+   "Brookwood Baptist Health Program":{
+      "longitude":"-86.8025000",
+      "state":"AL",
+      "city":"Birmingham",
+      "latitude":"33.5205556",
+      "acgme":"9990100001"
+   },
+   "Community Health of Central Washington Program":{
+      "longitude":"-120.5047222",
+      "state":"WA",
+      "city":"Yakima",
+      "latitude":"46.6022222",
+      "acgme":"1205421522"
+   },
+   "Saint Joseph Hospital Program":{
+      "longitude":"-104.9841667",
+      "state":"CO",
+      "city":"Denver",
+      "latitude":"39.7391667",
+      "acgme":"2200721051"
+   },
+   "University of North Dakota Program":{
+      "longitude":"-96.7894444",
+      "state":"ND",
+      "city":"Fargo",
+      "latitude":"46.8772222",
+      "acgme":"9993700086"
+   },
+   "Kaiser Permanente Northern California (Santa Rosa) Program":{
+      "longitude":"-122.7133333",
+      "state":"CA",
+      "city":"Santa Rosa",
+      "latitude":"38.4405556",
+      "acgme":"1200500745"
+   },
+   "Cedars-Sinai Medical Center/Harbor/UCLA Program":{
+      "longitude":"-118.2427778",
+      "state":"CA",
+      "city":"Los Angeles",
+      "latitude":"34.0522222",
+      "acgme":"7650544005"
+   },
+   "Louisiana State University (Shreveport)/Rapides Regional Medical Center Program":{
+      "longitude":"-92.4450000",
+      "state":"LA",
+      "city":"Alexandria",
+      "latitude":"31.3111111",
+      "acgme":"1202131566"
+   },
+   "University of Alabama Medical Center (Selma Dallas County) Program":{
+      "longitude":"-87.0211111",
+      "state":"AL",
+      "city":"Selma",
+      "latitude":"32.4072222",
+      "acgme":"1200121026"
+   },
+   "Mercy Hospital and Medical Center Program":{
+      "longitude":"-87.6500000",
+      "state":"IL",
+      "city":"Chicago",
+      "latitude":"41.8500000",
+      "acgme":"2201611086"
+   },
+   "Case Western Reserve Univ/Univ Hosps Cleveland Med Ctr/Rainbow Babies and Childrens Hospital Program":{
+      "longitude":"-81.6955556",
+      "state":"OH",
+      "city":"Cleveland",
+      "latitude":"41.4994444",
+      "acgme":"3203821367"
+   },
+   "Hofstra Northwell School of Medicine Program":{
+      "longitude":"-73.6883333",
+      "state":"NY",
+      "city":"New Hyde Park",
+      "latitude":"40.7350000",
+      "acgme":"4803521098"
+   },
+   "Desert Regional Medical Center Program":{
+      "longitude":"-116.5444444",
+      "state":"CA",
+      "city":"Palm Springs",
+      "latitude":"33.8302778",
+      "acgme":"1100500217"
+   },
+   "Christiana Care Health Services Program":{
+      "longitude":"-75.7500000",
+      "state":"DE",
+      "city":"Newark",
+      "latitude":"39.6836111",
+      "acgme":"9990900021"
+   },
+   "Carle Foundation Hospital Program":{
+      "longitude":"-88.2072222",
+      "state":"IL",
+      "city":"Urbana",
+      "latitude":"40.1105556",
+      "acgme":"4401612430"
+   },
+   "Colorado Health Foundation Presbyterian-St Luke's Medical Center Program":{
+      "longitude":"-104.9841667",
+      "state":"CO",
+      "city":"Denver",
+      "latitude":"39.7391667",
+      "acgme":"9990700017"
+   },
+   "Baton Rouge General Program":{
+      "longitude":"-91.1544444",
+      "state":"LA",
+      "city":"Baton Rouge",
+      "latitude":"30.4505556",
+      "acgme":"1402131543"
+   },
+   "Louisiana State University (Shreveport) Rural Program":{
+      "longitude":"-93.7500000",
+      "state":"LA",
+      "city":"Shreveport",
+      "latitude":"32.5250000",
+      "acgme":"1202111567"
+   },
+   "New York-Presbyterian Hospital (Cornell Campus) Program":{
+      "longitude":"-74.0063889",
+      "state":"NY",
+      "city":"New York",
+      "latitude":"40.7141667",
+      "acgme":"4303522126"
+   },
+   "Oakwood Heritage Hospital Program":{
+      "longitude":"-83.2697222",
+      "state":"MI",
+      "city":"Taylor",
+      "latitude":"42.2408333",
+      "acgme":"9992500258"
+   },
+   "Charleston Area Medical Center Program":{
+      "longitude":"-81.6327778",
+      "state":"WV",
+      "city":"Charleston",
+      "latitude":"38.3497222",
+      "acgme":"4805500158"
+   },
+   "Creedmoor Psychiatric Center Program":{
+      "longitude":"-73.7419444",
+      "state":"NY",
+      "city":"Queens Village",
+      "latitude":"40.7266667",
+      "acgme":"4003512139"
+   },
+   "HonorHealth Program":{
+      "longitude":"-111.8983333",
+      "state":"AZ",
+      "city":"Scottsdale",
+      "latitude":"33.5091667",
+      "acgme":"1400300537"
+   },
+   "University of Miami Miller School of Medicine/Holy Cross Hospital Program":{
+      "longitude":"-80.1436111",
+      "state":"FL",
+      "city":"Fort Lauderdale",
+      "latitude":"26.1219444",
+      "acgme":"1401100929"
+   },
+   "University of Kentucky College of Medicine (Hazard) Program":{
+      "longitude":"-83.1933333",
+      "state":"KY",
+      "city":"Hazard",
+      "latitude":"37.2494444",
+      "acgme":"1202021512"
+   },
+   "Mountain State Osteopathic Postdoctoral Training Institutions, Inc. (MSOPTI) (Ohio Valley Medical Center) Program":{
+      "longitude":"-80.7211111",
+      "state":"WV",
+      "city":"Wheeling",
+      "latitude":"40.0638889",
+      "acgme":"1105500130"
+   },
+   "University of South Florida Morsani (Morton Plant Mease Health Care) Program":{
+      "longitude":"-82.8002778",
+      "state":"FL",
+      "city":"Clearwater",
+      "latitude":"27.9655556",
+      "acgme":"1201121625"
+   },
+   "Kaiser Foundation/UCSF Program":{
+      "longitude":"-122.4183333",
+      "state":"CA",
+      "city":"San Francisco",
+      "latitude":"37.7750000",
+      "acgme":"7510544011"
+   },
+   "Marshall University School of Medicine Program":{
+      "longitude":"-82.4452778",
+      "state":"WV",
+      "city":"Huntington",
+      "latitude":"38.4191667",
+      "acgme":"4005500265"
+   },
+   "Adventist Hinsdale Hospital Program":{
+      "longitude":"-87.9369444",
+      "state":"IL",
+      "city":"Hinsdale",
+      "latitude":"41.8008333",
+      "acgme":"1201621109"
    }
-}
+};
 
 var programNames = [
-   "Group Health Cooperative Program",
-   "Latrobe Area Hospital Program",
-   "Fairview Hospital/Cleveland Clinic Program",
-   "PCOM/Wilson Memorial Reg Med Ctr Program",
-   "Ohio State University Hospital Rural Program",
-   "LECOMT/Allegheny Health Network Med Ed Consortium Program",
-   "UPMC Medical Education (Erie) Program",
-   "Kaiser Permanente Southern California (Anaheim) Program",
-   "Swedish Medical Center/First Hill Program",
-   "University of Nevada School of Medicine (Las Vegas) Program",
-   "A-OPTIC/Pikeville Medical Center Program",
-   "NEOMEN/St Elizabeth's Hospital Program",
-   "Santa Barbara Cottage Hospital Preliminary Program",
-   "University of Texas Health Science Center at Houston (Memorial Hermann Hospital) Program",
-   "PCOM/Crozer-Chester Medical Center Program",
-   "Eastern Virginia Medical School (Ghent) Program",
-   "LECOMT/UPMC St Margaret Memorial Hospital Program",
-   "SCS/MSUCOM/EW Sparrow Hospital Program",
-   "A-OPTIC/ETSU/Quillen College of Medicine Program",
-   "RMOPTI/Swedish Medical Center Program",
-   "MWU/OPTI/Advocate Lutheran General Hospital Program",
-   "University of Colorado (University Hospital) Program",
-   "Medical College of Wisconsin Affiliated Hospitals (Fox Valley) Program",
-   "Mercy Health System Program",
-   "RowanSOM/OPTI/AHS Morristown Medical Center Program",
-   "University of Arizona Program",
-   "University of Virginia Medical Center Program",
-   "Eisenhower Medical Center Program",
-   "Summa Health System/NEOMED Program",
-   "MSOPTI/Charleston Area Med Ctr Program",
-   "St Elizabeth's Medical Center Program",
-   "Arrowhead Regional Medical Center Program",
-   "Stamford Hospital/Columbia University College of Physicians and Surgeons Program",
-   "Southern Illinois University (Decatur) Program",
-   "Institute for Family Health (Mid-Hudson) Program",
-   "Floyd Medical Center Program",
-   "U P Health System-Marquette Program",
-   "Memorial Health-University Medical Center/Mercer University School of Medicine (Savannah) Program",
-   "University of Illinois College of Medicine at Chicago (Mount Sinai) Program",
-   "Southern Illinois University (Carbondale) Program",
-   "Kaiser Permanente Medical Group (Northern California)/Santa Rosa Program",
-   "University of Minnesota/North Memorial Hospital Program",
-   "Greenville Health System/University of South Carolina Program",
-   "Sidney Kimmel Medical College at Thomas Jefferson University/TJUH Program",
-   "Presence Resurrection Medical Center Program",
-   "PCOM/Heritage Valley Program",
-   "University of Pennsylvania Health System Program",
-   "Yale-New Haven Medical Center (St. Raphael) Program",
-   "University of Puerto Rico Program",
-   "NYCOMEC/St. Bernards Medical Center Program",
-   "St Elizabeth Medical Center Program",
-   "Indiana University Health Ball Memorial Hospital Program",
-   "NYCOMEC/Brookhaven Memorial Hospital Program",
-   "NYCOMEC/Nassau University Medical Center Program",
-   "Rochester Regional Health/Unity Hospital (Rochester) Program",
-   "Atlantic Health (Overlook) Program",
-   "Henry Ford Hospital Program",
-   "MedStar Franklin Square Medical Center Program",
-   "Texas A&M; Health Science Center College of Medicine Program",
-   "University of Michigan Program",
-   "Texas OPTI/Weatherford Regional MC Program",
-   "University of South Florida Morsani (Morton Plant Mease Health Care) Program",
-   "CEME/The Medical Center Program",
-   "OPTI-West/Skagit Regional Health Program",
-   "MSOPTI/Meritus Medical Center Program",
-   "OMNEE/Regional Medical Center Program",
-   "Texas OPTI/Conroe Med Ed Foundation Program",
-   "Kaiser Permanente Southern California (Los Angeles) Program",
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Waukesha",
-   "Glendale Adventist Medical Center Program",
-   "Tufts Medical Center/Lemuel Shattuck Hospital Program",
-   "LECOMT/Parma Medical Center Program",
-   "Harlem Hospital Center Program",
-   "Mount Carmel Health System Program",
-   "PCOM/Pennsylvania Hospital Program",
-   "TriHealth (Bethesda North and Good Samaritan Hospitals) Program",
-   "PCOM/Pinnacle Health Community Gen Osteo Hosp Program",
-   "SCS/MSUCOM/McLaren Oakland Program",
-   "Memorial Hospital of South Bend Program",
-   "University of Florida (Pensacola) Program",
-   "Maricopa Medical Center Program",
-   "RowanSOM/CarePoint Health-Bayonne Medical Center Program",
-   "Texas OPTI/Plaza Medical Center Program",
-   "Institute of Living/Hartford Hospital Program",
-   "Kaiser Permanente Hawaii Program",
-   "Franciscan St. James Health Program",
-   "Valley Baptist Medical Center Program",
-   "New York Medical College at Metropolitan Hospital Center Program",
-   "Summa Health System/Barberton Campus Program",
-   "Bronx-Lebanon Hospital Center Program",
-   "UCLA-Kern Medical Center Program",
-   "St Elizabeth Health Center/NEOMED Program",
-   "St Mary's Hospital and Medical Center Program",
-   "STILL OPTI/SIU Memorial Hospital of Carbondale Program",
-   "Stony Brook Medicine/Mather Hospital Program",
-   "MetroHealth Medical Center/Case Western Reserve University Program",
-   "New York Medical College at St Joseph\u2019s Regional Medical Center Program",
-   "RMOPTI/Sky Ridge Medical Center Program",
-   "Boston University Medical Center Program",
-   "University of Alabama Hospital Program",
-   "New York Medical College at St Michael's Medical Center Program",
-   "LECOMT/Tri-County Dermatology Program",
-   "OMECO Teaching Health Center Program",
-   "CEME/Mt Sinai Med Ctr Program",
-   "Drexel University College of Medicine/Hahnemann University Program",
-   "Tripler Army Medical Center Program",
-   "University of Maryland/Sheppard Pratt Program",
-   "Swedish Medical Center Rural Program",
-   "A-OPTIC/Alaska Family Medicine Residency/Providence Program",
-   "University of Vermont Medical Center Program",
-   "Inova Fairfax Medical Campus/Inova Fairfax Hospital for Children Program",
-   "NYCOMEC/St Barnabas Hospital Program",
-   "Deaconess Hospital Program",
-   "University of California Riverside/Riverside Community Hospital Program",
-   "St Vincent's Medical Center Program",
-   "University of Oklahoma School of Community Medicine (Tulsa) Rural Program",
-   "CORE/Metro-Health Medical Center Program",
-   "Norwalk Hospital Program",
-   "San Juan City Hospital Program",
-   "Valley Health System/Medical College of Virginia/Virginia Commonwealth University Program",
-   "SCS/MSUCOM/Hillsdale Community Health Center Program",
-   "OMECO/Norman Regional Health System Program",
-   "Kootenai Health Program",
-   "St. John's Episcopal Hospital-South Shore Program",
-   "OPTI-West/Trios Health Program",
-   "SCS/MSUCOM/Community Health Center Branch County Program",
-   "CORE/Doctors Hospital Program",
-   "Memorial Health System Program",
-   "Icahn School of Medicine at Mount Sinai (Downtown) Urban Program",
-   "University of Central Florida College of Medicine/HCA GME Consortium (Ocala) Program",
-   "New York City Department of Health and Mental Hygiene Program",
-   "Baylor Scott & White Medical Center-Garland Program",
-   "NYCOMEC/HackensackUMC Palisades Program",
-   "Hofstra Northwell School of Medicine (Southside Hospital) Program",
-   "LECOMT/Wright Ctr Community Based Program",
-   "Interfaith Medical Center Program",
-   "University of Texas RGV (DHR) Program",
-   "Mountain Area Health Education Center Rural Program",
-   "Rapid City Regional Hospital Program",
-   "SCS/MSUCOM/Garden City Hospital Program",
-   "Texas Tech University (Permian Basin) Program",
-   "Medical Center of Central Georgia/Mercer University School of Medicine Program",
-   "Resurrection Health Program",
-   "Mayo Clinic College of Medicine and Science Program",
-   "LECOMT/Larkin Community Hosp Palm Springs Program",
-   "Cedar Rapids Medical Education Foundation Program",
-   "CEME/Larkin Community Hospital Program",
-   "Steward Carney Hospital Inc. Program",
-   "Mercy Medical Center (Redding) Program",
-   "Jacobi Medical Center/Albert Einstein College of Medicine Program",
-   "Los Angeles County-Harbor-UCLA Medical Center Program",
-   "LECOMT/Conemaugh Valley Memorial Hosp Program",
-   "Rush University Medical Center/Copley Memorial Hospital Program",
-   "Augusta University/University of Georgia Medical Partnership Program",
-   "University of California San Francisco (East Bay) Program",
-   "Still OPTI/Wright Ctr National Family Med-Unity HC Program",
-   "OPTI-West/MultiCare Good Samaritan Hosp Program",
-   "Virginia Commonwealth University Health System (Falls Church) Program",
-   "Christus Spohn Memorial Hospital Program",
-   "Medical College of Wisconsin Affiliated Hospitals (Milwaukee) Program",
-   "University of Kansas (Wichita)/Salina Program",
-   "Emory University Program A",
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Wausau",
-   "University of California (San Francisco) Program",
-   "East Jefferson General Hospital Program",
-   "NYCOMEC/Orange Regional Medical Center Program",
-   "SCS/MSUCOM/Botsford Hospital Program",
-   "Brown University/Rhode Island Hospital-Lifespan Program",
-   "University of Texas Health Science Center at Houston (Lyndon B Johnson General Hospital) Program",
-   "Massachusetts General Hospital/Brigham and Women\u2019s Hospital/Harvard Medical School Program",
-   "Anne Arundel Medical Center Program",
-   "William Beaumont Army Medical Center/Texas Tech University (El Paso) Program",
-   "Redmond Regional Medical Center Program",
-   "Stony Brook Medicine Program",
-   "St John's Episcopal Hospital-South Shore Program",
-   "Rutgers Robert Wood Johnson Medical School Program",
-   "Maine Medical Center Program",
-   "University of Arkansas for Medical Sciences Regional Centers (Magnolia) Rural Program",
-   "New York Medical College at St Joseph's Medical Center Program",
-   "University of Nevada School of Medicine Rural Program",
-   "Scott and White Memorial Hospital Program",
-   "OMECO/Choctaw Nation Health Services Authority Program",
-   "Geisinger Health System Program",
-   "Nebraska Medical Center/Clarkson Regional Health Service Program",
-   "Hospital Episcopal San Lucas/Ponce School of Medicine Program",
-   "OMNEE/Carilion Clinic Program",
-   "University of Florida Program",
-   "CEME/Palm Beach Consortium for GME Program",
-   "John Peter Smith Hospital (Tarrant County Hospital District) Program",
-   "OPTI-West/Valley Hospital Medical Center Program",
-   "Spokane Teaching Health Center Program",
-   "University of North Dakota Program",
-   "Kaiser Permanente Medical Group (Northern California) Program",
-   "Texas OPTI/University of North Texas HSC Program",
-   "CEME/Palmetto General Hosp Program",
-   "NYCOMEC/Good Samaritan Hospital Program",
-   "North Colorado Medical Center Sterling Rural Program",
-   "Danbury Hospital Program",
-   "University of California (San Diego) Medical Center Program",
-   "Providence Hospital/Alaska Family Medicine Program",
-   "UCLA Medical Center/Olive View Program",
-   "Detroit Medical Center/Wayne State University (Sinai Grace) Program",
-   "OPTI-West/West Anaheim Medical Center Program",
-   "CORE/Affinity Medical Center Program",
-   "Penn State Milton S Hershey Medical Center/State College Program",
-   "Clinica Sierra Vista - Bakersfield Program",
-   "Texas Tech University (Lubbock) Program",
-   "Icahn School of Medicine at Mount Sinai (New York Eye and Ear Infirmary at Mount Sinai) Program",
-   "University of Tennessee Program",
-   "TOMEC/Wellmont Lonesome Pine Hosp Program",
-   "Michigan State University Program",
-   "NYCOMEC/South Nassau Communities Hosp Program",
-   "PCOM/Redmond Regional Medical Center Program",
-   "MacNeal Hospital Program",
-   "McGaw Medical Center of Northwestern University Program",
-   "Aventura Hospital and Medical Center Program",
-   "Lahey Clinic Program",
-   "McKay-Dee Hospital Center Program",
-   "Hofstra Northwell School of Medicine Program",
-   "Seton Hall University School of Health and Medical Sciences (St Francis) Program",
-   "RMOPTI/Sky Ridge Med Ctr/Colorado Derm Institute Program",
-   "Brigham and Women's Hospital/Children's Hospital Program",
-   "St Barnabas Medical Center Program",
-   "University of Virginia Program",
-   "PCOM/Latrobe Area Hospital Program",
-   "University of Michigan School of Public Health Program",
-   "Presence Saints Mary and Elizabeth Medical Center Program",
-   "University of Louisville Program",
-   "Florida State University College of Medicine (Tallahassee) Program",
-   "CORE/Holzer Health System Program",
-   "Memorial Sloan Kettering Cancer Center Program",
-   "University of Texas RGV (MMC) Program",
-   "Emory University School of Medicine Program",
-   "Montefiore Medical Center/Albert Einstein College of Medicine Program",
-   "Charleston Area Medical Center/West Virginia University (Charleston Division) Program",
-   "University of Michigan Hospitals and Health Centers Program",
-   "Louisiana State University (Bogalusa) Program",
-   "STILL OPTI/Northeast Regional Med Ctr Program",
-   "Marshfield Clinic-St Joseph's Hospital Program",
-   "SCS/MSUCOM/St. Mary Mercy Hospital Program",
-   "The Medical Center (Columbus) Program",
-   "Hospital Dr Alejandro Otero Lopez Program",
-   "OPTI-West/Arrowhead Regional Med Ctr Program",
-   "OMNEE/Bluefield Regional Medical Center Program",
-   "Children's Hospital of Michigan Program",
-   "University of Kentucky College of Medicine Program",
-   "Medical College of Wisconsin Affiliated Hospitals (Community Memorial) Program",
-   "OPTI-West/College Medical Center Program",
-   "LECOMT/Northside Hosp & Heart Inst Program",
-   "University of Oklahoma School of Community Medicine (Tulsa) Program",
-   "Eastern Virginia Medical School (Portsmouth) Program",
-   "North Mississippi Medical Center (Tupelo) Program",
-   "OPTI-West/Bakersfield Memorial Hospital Program",
-   "John H Stroger Hospital of Cook County Program",
-   "University of Texas Health Science Center at Tyler Program",
-   "University of Chicago (NorthShore) Program",
-   "LECOMT/Eastern Niagara Hospital Program",
-   "CORE/Fairview Hospital Program",
-   "Sierra Vista Program",
-   "University of California Riverside School of Medicine Program/Desert Regional Medical Center Program",
-   "Kaiser Permanente Southern California (Woodland Hills) Program",
-   "Phoenix Integrated Residency Program",
-   "Natividad Medical Center Program",
-   "Michigan State University (Flint) Program",
-   "SCS/MSUCOM/Lakeland Regional Med Ctr Program",
-   "University of California (San Diego) Program",
-   "Santa Clara Valley Medical Center Program",
-   "Massachusetts General Hospital/Harvard Medical School Program",
-   "Case Western Reserve University (MetroHealth) Program",
-   "Yuma Regional Medical Center Program",
-   "USC/LAC+USC Medical Center Program",
-   "Temple University Hospital/Fox Chase Cancer Center Program",
-   "University at Buffalo (Catholic Health System--Sisters of Charity) Program",
-   "Louisiana State University (Kenner) Program",
-   "Trident Medical Center/Medical University of South Carolina Program",
-   "MetroWest Medical Center Program",
-   "Kaiser Permanente Southern California (San Diego) Program",
-   "Eastern Virginia Medical School Program",
-   "Broward Health Medical Center Program",
-   "Presence Saint Francis Hospital Program",
-   "MWU/OPTI/Presence Resurrection Medical Center Program",
-   "SUNY Health Science Center at Syracuse/St Joseph's Hospital Health Center Program",
-   "University of New Mexico Program",
-   "Advocate Health Care (Advocate Lutheran General Hospital) Program",
-   "Icahn School of Medicine at Mount Sinai (Jamaica) Program",
-   "St Louis University School of Medicine Program",
-   "Santa Barbara Cottage Hospital Program",
-   "University of Tennessee College of Medicine at Memphis Program",
-   "University of Illinois College of Medicine at Peoria Program",
-   "NEOMEN/Kent Hospital Program",
-   "University of California (Irvine)/Children's Hospital of Orange County Program",
-   "Montefiore Medical Center/Albert Einstein College of Medicine (New Rochelle) Program",
-   "University of Arkansas College of Medicine Program",
-   "PCOM/Suburban Community Hospital Program",
-   "OPTI-West/Community Memorial Health System Program",
-   "LECOMT/East Liverpool City Hospital Program",
-   "University of Minnesota (Mankato) Program",
-   "Mount Sinai Medical Center of Florida Program",
-   "Broadlawns Medical Center Program",
-   "TriHealth (Good Samaritan Hospital) Program",
-   "University at Buffalo Program",
-   "Bergen Regional Medical Center Program",
-   "Medical College of Wisconsin Affiliated Hospitals, Inc Program",
-   "Mercy Memorial Hospital System Program",
-   "NEOMEN/Eastern Maine Med Ctr Program",
-   "Hoboken University Medical Center/New York Medical College Program",
-   "Tulane University Program",
-   "Nassau University Medical Center Program",
-   "Case Western Reserve University (MetroHealth) Preliminary Program",
-   "University of California (San Francisco) School of Medicine Program",
-   "Temple University Hospital/Moss Rehabilitation Program",
-   "Sacred Heart Hospital/Temple University (Allentown) Program",
-   "LECOMT/Penn Highlands Healthcare Program",
-   "Lincoln Medical and Mental Health Center Program",
-   "HealthPartners Institute for Education and Research/Regions Hospital Program",
-   "OPTI-West/Arrowhead Regional Medical Center Program",
-   "Maine-Dartmouth Family Medicine Program",
-   "Johns Hopkins University School of Medicine Program",
-   "University of Alabama Medical Center Program",
-   "Sparrow Hospital/Michigan State University Program",
-   "OMECO/Southwest Medical Center Program",
-   "Providence Health & Services - Oregon/St Vincent Hospital and Medical Center Program",
-   "St Christopher's Hospital for Children Program",
-   "Univ of North Dakota School of Medicine and Health Sciences Rural Program",
-   "Woodhull Medical and Mental Health Center Program",
-   "NYCOMEC/MediSys Health Network Program",
-   "Brigham and Women's Hospital Program",
-   "Stanford University Hospital/Kaiser Permanente Medical Center Program",
-   "Johns Hopkins Bloomberg School of Public Health Program A",
-   "Genesis Health System (Quad Cities) Program",
-   "Medical College of Wisconsin Affiliated Hospitals (Wheaton Franciscan Healthcare-All Saints) Program",
-   "University of Texas Health Science Center at Houston Program",
-   "CORE/Grandview Hosp & Medical Ctr Program",
-   "OMNEE/Blue Ridge Healthcare Program",
-   "University of Minnesota/University of Minnesota Medical Center (Fairview) Program",
-   "SCS/MSUCOM/St Joseph Mercy-Oakland Program",
-   "Brooklyn Hospital Center Program",
-   "Oregon Health & Science University Program",
-   "TOMEC/Merit Health Wesley Program",
-   "Christ Hospital Program",
-   "NYCOMEC/The Institute for Family Health Program",
-   "Wheeling Hospital Program",
-   "Valley Consortium for Medical Education Family Medicine Program",
-   "George Washington University School of Medicine Program",
-   "Hofstra Northwell School of Medicine at Staten Island University Hospital Preliminary Program",
-   "CEME/Miami Children's Hosp Program",
-   "CEME/Osceola Regional Medical Center Program",
-   "SCS/MSUCOM/St Joseph Mercy Health System Program",
-   "A-OPTIC/Central WA Family Med Residency Program",
-   "Newark Beth Israel Medical Center Program",
-   "University of Pennsylvania Program",
-   "VA Caribbean Healthcare System Program",
-   "OMECO/McAlester Regional Health Center Program",
-   "SCS/MSUCOM/William Beaumont Hospital Program",
-   "Memorial Medical Center (Las Cruces) Program",
-   "Detroit Medical Center/Wayne State University Program",
-   "Hennepin County Medical Center Program",
-   "Tuscaloosa College of Community Health Science Program",
-   "McLaren-Flint Program",
-   "Abrazo Central Program",
-   "East Tennessee State University (Kingsport) Program",
-   "CORE/Marietta Memorial Hospital Program",
-   "NYCOMEC/Coney Island Hospital Program",
-   "Allegheny Health Network Medical Education Consortium (AGH/WPH) Program",
-   "University of Connecticut Program",
-   "Riverside University Health System/University of California Riverside Program",
-   "Robert Wood Johnson University Hospital Somerset Program",
-   "Texas OPTI/Bay Area Corpus Christi Medical Center Program",
-   "Cook County Hospital Program",
-   "St Mary-Corwin Medical Center Program",
-   "CEME/Regional Med Center Bayonet Point Program",
-   "University of Cincinnati Medical Center/College of Medicine Program",
-   "Cooper Hospital-University Medical Center Program",
-   "NEOMEN/Central Maine Medical Center Program",
-   "University of Tennessee College of Medicine at Chattanooga Program",
-   "Pennsylvania Hospital of the University of Pennsylvania Health System Program",
-   "Charleston Area Medical Center/West Virginia University Program",
-   "Institute for Family Health (Harlem) Program",
-   "Geisinger Health System (Wilkes Barre) Program",
-   "University of North Carolina Hospitals Program",
-   "Community Health Care Program",
-   "Florida State University College of Medicine Program",
-   "UPMC Medical Education (St Margaret Hospital) Program",
-   "Bridgeport Hospital/Yale University Program",
-   "Riverside University Health System Program",
-   "University of Kentucky College of Medicine Program A",
-   "OMNEE/FirstHealth Moore Regional Hosp Program",
-   "Brigham and Women's Hospital/Massachusetts General Hospital/Harvard Medical School Program",
-   "PCOM/UPMC McKeesport Program",
-   "Forrest General Hospital Program",
-   "Icahn School of Medicine at Mount Sinai (Bronx) Program",
-   "RMOPTI/Peak Vista Community Health Centers Program",
-   "University of Florida (Orlando) Program",
-   "MSOPTI/AccessHealth Teaching Health Center Program",
-   "CEME/Floyd Medical Center Program",
-   "Harvard School of Public Health Program",
-   "Cincinnati Children's Hospital Medical Center/University of Cincinnati College of Medicine Program",
-   "Ponce Health Sciences University Program",
-   "University of South Dakota Program",
-   "Mount Sinai Medical Center of Florida, Inc Program",
-   "CEME/Ocala Regional Medical Center Program",
-   "Mayo Clinic College of Medicine and Science (Jacksonville) Program",
-   "Icahn School of Medicine at Mount Sinai Program",
-   "LECOMT/Westview Hospital Program",
-   "Griffin Hospital Program",
-   "University of Arkansas for Medical Sciences Regional Centers (Southwest) Program",
-   "PCOM/Southeast Alabama Medical Center Program",
-   "Phoebe Putney Memorial Hospital (Southwest Georgia) Program",
-   "Louisiana State University (Baton Rouge) Preliminary Program",
-   "Louisiana State University (Shreveport) Rural Program",
-   "Brigham and Women's Hospital/Harvard Medical School Program",
-   "PCOM/Hahnemann University Hospital Program",
-   "Baptist Memorial Hospital Program",
-   "Eastern Maine Medical Center Program",
-   "PCOM/Aria Health Program",
-   "OMNEE/Southeastern Health Program",
-   "Lakeland Health Program",
-   "Kaiser Permanente Medical Group (Northern California)/Napa-Solano Program",
-   "University of Utah Medical Center Program",
-   "Coliseum Medical Centers Program",
-   "University of Illinois College of Medicine (Rockford) Rural Program",
-   "MWU/OPTI/John H. Stroger Hosp Cook County Program",
-   "Virginia Mason Medical Center Program",
-   "University of Nevada School of Medicine Program",
-   "University of Massachusetts Medical School Program",
-   "CEME/Palm Beach County Health Department Program",
-   "Conemaugh Memorial Medical Center Program",
-   "Grant Medical Center (OhioHealth) Program",
-   "OMNEE/Jack Hughston Memorial Hosp Program",
-   "RMOPTI/Lakeview Hospital Program",
-   "LECOMT/Trinity Health System Program",
-   "Nazareth Hospital Program",
-   "Baylor University Medical Center Program",
-   "UPMC Medical Education (Presbyterian Shadyside Hospital) Program",
-   "Marshall University School of Medicine Program",
-   "Munson Medical Center Program",
-   "St John Hospital and Medical Center Program",
-   "STILL OPTI/Capital Region Medical Center Program",
-   "Wake Forest University School of Medicine Program",
-   "Baptist Outreach Services (Montgomery) Program",
-   "Pine Rest Christian Mental Health Services Program",
-   "OPTI-West/Riverside University Health System MC Program",
-   "Rush University Medical Center Program",
-   "University of Minnesota Program",
-   "University of Wisconsin Program",
-   "Ohio State University Hospital Program",
-   "OMNEE/Novant Health Huntersville Medical Center Program",
-   "Chestnut Hill Hospital Program",
-   "University of Puerto Rico School of Medicine Program",
-   "Saint Joseph Hospital Program",
-   "SCS/MSUCOM/McLaren General Surgery Consortium Program",
-   "Northeast Iowa Medical Education Foundation Program",
-   "McLeod Regional Medical Center Program",
-   "Union Hospital Program",
-   "UPMC Medical Education Program",
-   "University of Alabama Medical Center (Montgomery) Program",
-   "MSOPTI/United Hospital Center Program",
-   "Mercy Catholic Medical Center Program",
-   "Tufts Medical Center Program",
-   "OMNEE/Baptist Health System Program",
-   "MSOPTI/Greenbrier Valley Med Ctr Program",
-   "CORE/Grandview Hosp & Med Ctr Program",
-   "NYCOMEC/EastEnd Health Alliance Program",
-   "Susquehanna Health System/Williamsport Hospital and Medical Center Program",
-   "DeTar Healthcare System Program",
-   "KCU-GMEC/St Mary's Hospital of Blue Springs Program",
-   "LECOMT/Dermatology Residency of Orlando Program",
-   "University of Tennessee College of Medicine at Murfreesboro Program",
-   "MSOPTI/Cornerstone Care Teaching Health Center Program",
-   "Children's Hospital of Los Angeles Program",
-   "Central Iowa Health System (Iowa Methodist Medical Center) Program",
-   "STILL OPTI/Blessing Health System Program",
-   "Orange Park Medical Center Program",
-   "East Tennessee State University Program",
-   "San Mateo County Behavioral Health and Recovery Services Program",
-   "Western Reserve Health Education/NEOMED Program",
-   "A-OPTIC/St Claire Regional Medical Center Program",
-   "University of Tennessee College of Medicine Program",
-   "KCU-GMEC/Unity Health-White County Medical Center Program",
-   "University of Maryland Medical Center Midtown Campus  Program",
-   "Medical College of Wisconsin Affiliated Hospitals (Central Wisconsin) Program",
-   "Marian Regional Medical Center Program",
-   "Creighton University School of Medicine Program",
-   "West Virginia University Rural Program",
-   "California Hospital Medical Center (Los Angeles)/University of Southern California Program",
-   "CORE/St Joseph Warren Hospital Program",
-   "OMNEE/Lovelace Regional Hospital-Roswell Program",
-   "University at Buffalo School of Medicine Program",
-   "SSM St Mary's Hospital-St Louis Program",
-   "MWU/OPTI/Affiliated Dermatology Program",
-   "A-OPTIC/University of Montana Program",
-   "Sea Mar Community Health Centers Program",
-   "University of South Florida Morsani College of Medicine Program",
-   "Johns Hopkins University/Bayview Medical Center Program",
-   "Mayo Clinic College of Medicine and Science (Arizona) Program",
-   "RowanSOM/Inspira Health Network Program",
-   "OPTI West/Montana Family Medicine Program",
-   "PCOM/Lehigh Valley Health Network Program",
-   "MWU/OPTI/Riverside Medical Center Program",
-   "Kaiser Permanente Medical Group (Northern California/Oakland) Program",
-   "California Pacific Medical Center Program",
-   "Saint Peter's University Hospital/Rutgers Robert Wood Johnson Medical School Program",
-   "Iowa Medical Education Collaborative Program",
-   "University of Oklahoma Health Sciences Center (Lawton) Program",
-   "Main Line Health System/Bryn Mawr Hospital Program",
-   "PCOM/Geisinger Health System Program",
-   "Penn State Milton S Hershey Medical Center Program",
-   "Chippenham and Johnston-Willis Hospitals Program",
-   "Alameda Health System-Highland Hospital Program",
-   "University of California Riverside School of Medicine Program",
-   "University of Kansas School of Medicine Program",
-   "New York University School of Medicine Program",
-   "HonorHealth Program",
-   "University of Central Florida College of Medicine/HCA GME Consortium (Gainesville) Program",
-   "Huntington Memorial Hospital Program",
-   "Heritage Valley Health System Program",
-   "Baptist Health Madisonville Program",
-   "Temple University Hospital Program",
-   "Chicago Medical School at Rosalind Franklin University of Medicine and Science Program",
-   "North Colorado Medical Center Program",
-   "University of Hawaii Program",
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Milwaukee",
-   "University of Connecticut (New Britain) Program",
-   "Tulsa Medical Education Foundation Program",
-   "UCLA David Geffen School of Medicine/UCLA Medical Center Program",
-   "Franciscan St Francis Health Program",
-   "Brown University Program",
-   "Fort Wayne Medical Education Program",
-   "OMECO/Freeman Health System/Ozark Center Program",
-   "University of Texas Health Science Center at Tyler/Good Shepherd Medical Center (Longview) Program",
-   "University of Wisconsin (Wausau) Program",
-   "MWU/OPTI/Adventist Hinsdale Hospital Program",
-   "New York Presbyterian Hospital Program",
-   "Utah Valley Regional Medical Center Program",
-   "HEARTland/Trinity Bettendorf Program",
-   "Sinai Hospital of Baltimore Program",
-   "University of California (San Diego)/San Diego State University Program",
-   "Advocate Health Care (Advocate Children's Hospital/Oak Lawn) Program",
-   "NYCOMEC/Meadowlands Hospital Medical Center Program",
-   "Yale-New Haven Hospital Program",
-   "OMECO/Tahlequah Medical Group Program",
-   "Maimonides Medical Center Program",
-   "UPMC Medical Education (Hamot)  Program",
-   "Tulane University/Ochsner Clinic Foundation Program",
-   "Richmond University Medical Center Program",
-   "Adventist Hinsdale Hospital Program",
-   "Beth Israel Deaconess Medical Center/Harvard Medical School Program",
-   "National Institutes of Health Clinical Center Program",
-   "University of New Mexico (Santa Fe) Rural Program",
-   "St Mary-Corwin Medical Center/Southern Colorado Family Medicine Program",
-   "Newton-Wellesley Hospital Program",
-   "VCU/Riverside Regional Medical Center Program",
-   "OMNEE/Sampson Regional Medical Center Program",
-   "Spectrum Health Program",
-   "Brookwood Baptist Health Program",
-   "Atlantic Health (Morristown) Program",
-   "University of Wyoming (Cheyenne) Program",
-   "Philadelphia College Osteopathic Med Program",
-   "Washington University/B-JH/SLCH Consortium Program",
-   "Delaware Psychiatric Center Program",
-   "Mayo Clinic Health System-Franciscan Healthcare Program",
-   "Stanford Hospital and Clinics Program",
-   "OMNEE/Spartanburg Regional Health Systems Program",
-   "University of South Florida Morsani (James A Haley Veterans Hospital) Program",
-   "Lehigh Valley Health Network Program",
-   "University of Kansas (Wichita)/Wesley Program",
-   "Children's Hospital Boston Program",
-   "SCS/MSUCOM/Sinai Grace Hospital Program",
-   "Suburban Community Hospital Program",
-   "Children's National Medical Center/George Washington University Program",
-   "Loyola University/Cook County Hospital Program",
-   "University of Maryland at Mercy Medical Center Preliminary Program",
-   "OMECO/Oklahoma State University HS Program",
-   "Providence Health & Services - Oregon/Providence Medical Center Program",
-   "Integris Baptist Medical Center/Great Plains Program",
-   "Hofstra Northwell School of Medicine at Glen Cove Hospital Program",
-   "Hackensack University Medical Center Program",
-   "SCS/MSUCOM/Huron Valley Hosp Program",
-   "St. John's Riverside Hospital Program",
-   "LECOMT/Pinnacle Health Community Gen Osteo Hosp Program",
-   "Gundersen Lutheran Medical Foundation Program",
-   "University of Wisconsin Hospital and Clinics Program",
-   "OPTI-West/Good Samaritan Reg Med Ctr Program",
-   "Massachusetts Eye and Ear Infirmary/Harvard Medical School Program",
-   "CORE/St John Medical Center Program",
-   "Advocate Health Care (Advocate Children's Hospital/Park Ridge) Program",
-   "Virginia Commonwealth University Health System Program",
-   "University of Chicago/University of Illinois College of Medicine at Chicago Program",
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Madison",
-   "McLennan County Medical Education and Research Foundation Program",
-   "Beth Israel Deaconess Medical Center Program",
-   "Louisiana State University/Ochsner Clinic Foundation Program",
-   "Centra Health Program",
-   "University of Minnesota/St Cloud Hospital Program",
-   "Meharry Medical College Program A",
-   "Lincoln Medical Education Partnership Program",
-   "CEME/St Vincents Medical Center Program",
-   "Mercy Medical Center (Merced) Program",
-   "CORE/Mercy St Vincent MC Program",
-   "Baton Rouge General Program",
-   "Louisiana State University (Shreveport)/Rapides Regional Medical Center Program",
-   "Baylor College of Medicine (San Antonio)  Program",
-   "STILL OPTI/Center Family Med/SIU Springfield Family Med Program",
-   "LECOMT/United Memorial Medical Center Program",
-   "Georgetown University Hospital/Washington Hospital Center Program",
-   "LECOMT/St John's Episcopal Hospital Program",
-   "New York Medical College at Westchester Medical Center Program",
-   "Loyola University Program",
-   "Kaiser Permanente Southern California (Fontana) Program",
-   "Saint Elizabeths Hospital-DC Department of Behavioral Health Program",
-   "University of Tennessee (Nashville) Program",
-   "Aurora Health Care Program",
-   "Allegheny Health Network Medical Education Consortium (SVH) Program",
-   "Grand Rapids Medical Education Partners/Michigan State University Program",
-   "OPTI-West/Downey Regional MC Program",
-   "A-OPTIC/East Kentucky Osteo Hosp Program",
-   "Christiana Care Health Services Program",
-   "LECOMT/St Vincent Health Center Program",
-   "Universidad Central del Caribe Program",
-   "Allegiance Health Program",
-   "Central Maine Medical Center Program",
-   "Texas Tech University Health Sciences Center (Permian Basin) Program",
-   "Wright State University/Dayton Community Hospitals Program",
-   "LECOMT/Niagara Falls Medical Center Program",
-   "Colorado Health Foundation Presbyterian-St Luke's Medical Center Program",
-   "Kettering Health Network Program",
-   "Wright State University Boonshoft School of Medicine Program",
-   "San Joaquin General Hospital Program",
-   "West Suburban Medical Center Program",
-   "PCOM/Cahaba Medical Care Program",
-   "Lancaster General Hospital Program",
-   "PCOM/Williamsport Hospital/Med Ctr Program",
-   "SCS/MSUCOM/Henry Ford Macomb Hospitals MEP Program",
-   "Hurley Medical Center/Michigan State University Program",
-   "Loyola University Medical Center Program",
-   "Louisiana State University (Baton Rouge) Program",
-   "Still OPTI/Wright Ctr National Family Med-HealthPoint CHC Program",
-   "Baton Rouge General Medical Center Program",
-   "Johns Hopkins University/University of Maryland Program",
-   "Louisiana State University (Lake Charles) Program",
-   "University of Texas RGV (VBMC) Program",
-   "Bassett Medical Center Program",
-   "University of Arkansas for Medical Sciences Regional Centers (Northeast) Program",
-   "John Muir Health Program",
-   "NYCOMEC/Maimonides Med Ctr Program",
-   "SCS/MSUCOM/McLaren Bay Region Program",
-   "KCU-GMEC/Reid Hospital & Health Care Services Program",
-   "CORE/O'Bleness Memorial Hosp Program",
-   "The Medical Center Program",
-   "Georgetown University Hospital Program",
-   "Southern Illinois University (Quincy) Program",
-   "SCS/MSUCOM/Mercy Health Program",
-   "Allegheny Health Network Medical Education Consortium (WPH) Program",
-   "KCU-GMEC/Freeman Health System Program",
-   "West Kendall Baptist Hospital / Florida International University Program",
-   "Florida Atlantic University Charles E. Schmidt College of Medicine Program",
-   "SCS/MSUCOM/St John Providence Health System-Osteo Div Program",
-   "North Central Texas Medical Foundation Program",
-   "A-OPTIC/Methodist Hospital (KY) Program",
-   "LECOMT/UPMC Hamot Program",
-   "Canton Medical Education Foundation/NEOMED Program",
-   "SCS/MSUCOM/Metro Health Hospital Program",
-   "CORE/Fairfield Medical Center Program",
-   "Novant Health Program",
-   "OMECO/St Anthony Hospital Program",
-   "Palmetto Health/University of South Carolina School of Medicine Program",
-   "NYCOMEC/Ellis Hospital McClellan Campus Program",
-   "CEME/Medical College of GA Program",
-   "Providence Sacred Heart Medical Center (Spokane) Program",
-   "Texas Tech University (Amarillo) Health Sciences Center Program",
-   "University of California (San Francisco)/University of California School of Public Health Program",
-   "Southern Regional Area Health Education Center/Duke University Hospital Program",
-   "Carilion Clinic-Virginia Tech Carilion School of Medicine Program",
-   "Providence Health & Services \u2013 Oregon/Hood River Rural Program",
-   "OMNEE/Cape Fear Valley Medical Center Program",
-   "University of Toledo Program",
-   "University of Wisconsin (Baraboo) Rural Program",
-   "New York Methodist Hospital Program",
-   "University of North Dakota School of Medicine and Health Sciences (Hettinger) Program",
-   "George Washington University Program",
-   "University of Arizona College of Medicine-Phoenix Preliminary Program",
-   "MWU/OPTI/Valley Consortium for Medical Education Program",
-   "Emory University Program",
-   "LECOMT/Manatee Memorial Hospital Program",
-   "Spartanburg Regional Healthcare System Program",
-   "KCU-GMEC/UMKC/Truman Medical Center Lakewood Program",
-   "Johns Hopkins University Program",
-   "Texas OPTI/Charlton Methodist Hospital Program",
-   "LECOMT/UH Regional Hospitals Program",
-   "Leonard J Chabert Medical Center Program",
-   "Family Health Centers of San Diego Program",
-   "PCOM/Lower Bucks Hospital Program",
-   "Tallahassee Memorial Healthcare Family Medicine Program",
-   "St Joseph Mercy Livingston Program",
-   "Akron General Medical Center/NEOMED Program",
-   "Coney Island Hospital Program",
-   "Swedish Medical Center/Cherry Hill Program",
-   "Ochsner Clinic Foundation/Louisiana State University Program",
-   "Providence-Providence Park Hospital/MSUCHM Program",
-   "Abbott-Northwestern Hospital Program",
-   "LECOMT/Arnot Ogden Medical Center Program",
-   "MSOPTI/Ohio Valley Medical Center Program",
-   "University of California (San Francisco)/San Francisco General Hospital Program",
-   "UPMC Medical Education (McKeesport Hospital) Program",
-   "Rutgers Robert Wood Johnson Medical School/Capital Health System-Fuld Campus Program",
-   "Long Beach Memorial Medical Center Program",
-   "PCOM/UPMC Altoona Program",
-   "OPTI-West/Puyallup Tribal Health Authority Program",
-   "PCOM/Abington Memorial Hospital Program",
-   "PeaceHealth Southwest Medical Center Program",
-   "LECOMPT/UH Elyria Medical Center Program",
-   "University of Oklahoma Health Sciences Center Program",
-   "Hospital for Special Surgery/Cornell Medical Center Program",
-   "Penn State Milton S Hershey Medical Center/Hershey Program",
-   "Florida State University College of Medicine/Lee Memorial Health System Program",
-   "OMNEE/Johnston Memorial Hospital Program",
-   "Louis A Weiss Memorial Hospital Program",
-   "SCS/MSUCOM/Mercy Memorial Hospital Program",
-   "City of Hope National Medical Center Program",
-   "Hofstra Northwell School of Medicine at Southside Hospital Program",
-   "SUNY Health Science Center at Brooklyn Program",
-   "STILL OPTI/Advocate BroMenn Med Ctr Program",
-   "Spokane Teaching Health Center Rural Program",
-   "Vanderbilt University Medical Center Program",
-   "OMNEE/Lewis Gale Hospital-Montgomery Program",
-   "OMECO/Chickasaw Nation Medical Center Program",
-   "Montana Family Medicine Residency Program",
-   "Damas Hospital/Ponce School of Medicine Program",
-   "MWU/OPTI/West Suburban Hospital Medical Center Program",
-   "Easton Hospital Program",
-   "Olive View/UCLA Medical Center Program",
-   "St Joseph's Hospital Health Center Program",
-   "Poudre Valley Hospital/Fort Collins Family Medicine Program",
-   "SCS/MSUCOM/McLaren Macomb Program",
-   "RMOPTI/St Mary Corwin Hospital Program",
-   "Denver Health Medical Center Program",
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Baraboo Rural",
-   "TriHealth (Bethesda North Hospital) Program",
-   "Wright Center for Graduate Medical Education Program",
-   "Howard University Program",
-   "LECOMT/Florida Osteopathic Educational Institute Program",
-   "Medical College of Wisconsin Affiliated Hospitals (Waukesha) Program",
-   "North Colorado Medical Center Rural Program (Must also apply to ACGME ID 1200711074)",
-   "University of Miami/JFK Medical Center Palm Beach Regional GME Consortium Program",
-   "Integris Baptist Medical Center Program",
-   "William Beaumont Army Medical Center Program",
-   "Still OPTI/Wright Ctr National Family Med-HealthSource Program",
-   "Hartford Hospital Program",
-   "A-OPTIC/University of Mississippi MC Program",
-   "Case Western Reserve Univ/Univ Hosps Cleveland Med Ctr/Rainbow Babies and Childrens Hospital Program",
-   "Mountain Area Health Education Center Program",
-   "University of Kentucky College of Medicine (Morehead) Rural Program",
-   "Mercy Hospital (St Louis) Program",
-   "Rochester General Hospital Program",
-   "Jackson Memorial Hospital/Jackson Health System Program",
-   "Yale-New Haven Medical Center Program",
-   "Wayne State University School of Medicine Program",
-   "Mountain View Hospital Program",
-   "Kingsbrook Jewish Medical Center Program",
-   "Scripps Mercy Hospital Program",
-   "CEME/Community Health of South Florida Program",
-   "Self Regional Healthcare/Greenwood Program",
-   "UMMS-Baystate Program",
-   "OMECO/Mercy Osteopathic GME Consortium Program",
-   "Winthrop-University Hospital Program",
-   "Case Western Reserve University/University Hospitals Cleveland Medical Center Program",
-   "New York Presbyterian Hospital (Columbia Campus) Program",
-   "St Vincent Hospitals and Health Care Center Program",
-   "University of North Dakota (Bismarck) Program",
-   "Icahn School of Medicine at Mount Sinai (Downtown) Program",
-   "Icahn School of Medicine at Mount Sinai Program A",
-   "Athens Regional Medical Center Program",
-   "LECOMT/St. Elizabeth Boardman Hospital Program",
-   "Creedmoor Psychiatric Center Program",
-   "Hofstra Northwell School of Medicine at Lenox Hill Hospital Program",
-   "University at Buffalo Rural Program",
-   "St Mark's Health Care Foundation Program",
-   "CORE/Summa Western Reserve Hospital Program",
-   "OPTI-West/Desert Regional Medical Center Program",
-   "PCOM/Houston Healthcare Program",
-   "AtlantiCare Regional Medical Center Program",
-   "Clinical Center at the National Institutes of Health Program",
-   "University of South Florida Morsani Program",
-   "Icahn School of Medicine at Mount Sinai (Queens Hospital Center) Program",
-   "University of Colorado (HealthONE Swedish Medical Center) Program",
-   "Crozer-Chester Medical Center Program",
-   "St Mary's Hospital (Waterbury) Program",
-   "Texas Tech University Health Sciences Center Paul L Foster School of Medicine Program",
-   "Community Health of Central Washington Program",
-   "University of Illinois College of Medicine at Urbana Program",
-   "Botsford Hospital Program",
-   "University of Mississippi Medical Center Program",
-   "West Virginia University Program",
-   "Tulane University School of Public Health and Tropical Medicine Program",
-   "Oakwood Heritage Hospital Program",
-   "University of Illinois College of Medicine at Rockford Program",
-   "Oakland Physicians Medical Center Program",
-   "University of Rochester/Highland Hospital of Rochester Program",
-   "Albert Einstein Medical Center Program",
-   "Hofstra Northwell School of Medicine at Cohen Children's Medical Center Program",
-   "TOMEC/Mercy Hospital Fort Smith Program",
-   "White Memorial Medical Center Program",
-   "California Department of Public Health Program",
-   "University of Texas at Austin Dell Medical School Program",
-   "Cleveland Clinic Foundation Program",
-   "CORE/Southern Ohio Med Ctr Program",
-   "Texas OPTI/Texoma Medical Center Program",
-   "University of Chicago Program",
-   "Inova Fairfax Medical Campus Program",
-   "Tufts University at Cambridge Health Alliance Program",
-   "Schwab Rehabilitation Hospital and Care Network/University of Chicago Program",
-   "Morehouse School of Medicine Program",
-   "University of Utah Program",
-   "University of Southern California/LAC+USC Medical Center Program",
-   "Virginia Commonwealth University-Bon Secours (St Francis) Program",
-   "University of Rochester Program",
-   "University of Texas RGV Program",
-   "KCU-GMEC/Via Christi Regional Medical Center Program",
-   "OMNEE/Gerald Champion Regional MC Program",
-   "Nationwide Children's Hospital/Doctors Hospital Program",
-   "SCS/MSUCOM/Michigan St U/Col of Osteo Med Program",
-   "Mayo Clinic College of Medicine and Science (Rochester) Program",
-   "O'Connor Hospital (San Jose) Program",
-   "Dignity Health Northridge Hospital Medical Center Program",
-   "Mount Sinai Hospital Medical Center of Chicago Program",
-   "St Vincent Charity Medical Center/Case Western Reserve University Program",
-   "University of Wisconsin (Madison) Program",
-   "Family Medicine Residency of Idaho Program",
-   "CEME/N Broward Hosp District Program",
-   "Providence Hospital Program",
-   "Mercy Medical Center (Mason City) Program",
-   "Detroit Medical Center Corporation Program",
-   "Charleston Area Medical Center Program",
-   "RowanSOM/OPTI/Jersey Shore University Medical Center Program",
-   "Massachusetts General Hospital/Brigham and Women's Hospital/Harvard Medical School Program",
-   "Kaiser Permanente Southern California (Riverside) Program",
-   "Jersey Shore University Medical Center Program",
-   "A-OPTIC/Fort Wayne Medical Ed Program",
-   "CEME/Florida Hosp East Orlando Program",
-   "St Peter Hospital Program",
-   "NYCOMEC/Trinitas Regional MC Program",
-   "SCS/MSUCOM/Munson Medical Center Program",
-   "St Elizabeth Health Center Program",
-   "St Barnabas Hospital Program",
-   "St. Louis University School of Medicine Program",
-   "Grand Rapids Medical Education Partners Program",
-   "LECOMT/St Petersburg General Hospital Program",
-   "Sutter Medical Center of Santa Rosa/University of California (San Francisco) Program",
-   "In His Image at St John Medical Center Program",
-   "SCS/MSUCOM/McLaren Greater Lansing Program",
-   "University of Tennessee Medical Center at Knoxville Program",
-   "NEOMEN/Berkshire Medical Center Program",
-   "Ramon Betances Hospital-Mayaguez Medical Center/Ponce School of Medicine Consortium Program",
-   "MWU/OPTI/Swedish Covenant Hospital Program",
-   "PCOM/Reading Hospital and Med Ctr Program",
-   "OMNEE/La Clinica de Familia Program",
-   "Advocate Health Care (Advocate Christ Medical Center) Program",
-   "PCOM/St Luke's University Hospital Program",
-   "Baylor College of Medicine Program",
-   "University of Minnesota/St Joseph's Hospital Program",
-   "HEARTland/U of Minnesota Mankato Program",
-   "St Francis Hospital Program",
-   "LECOMT/UH Parma Medical Center Program",
-   "Ochsner Clinic Foundation Program",
-   "Orlando Health Program",
-   "HEARTland/Monroe Clinic Program",
-   "University of California (Irvine) Program",
-   "Cincinnati Children's Hospital Medical Center Program",
-   "PCOM/Georgia South-Colquitt Regional Medical Center Program",
-   "University of Louisville (Glasgow) Program",
-   "Montefiore - Mount Vernon Hospital Program",
-   "PCOM/Lankenau Medical Center Program",
-   "Memorial Hospital of Rhode Island/Brown University Program",
-   "Cedars-Sinai Medical Center Program",
-   "University of Tennessee/Methodist Healthcare-Memphis Hospitals Program",
-   "OMECO/Comanche County Memorial Hosp Program",
-   "HEARTland/University of Wisconsin Dept of Family Med Program - Eau Claire",
-   "Greater Lawrence Family Health Center Program",
-   "University of Arizona College of Medicine-Tucson Program",
-   "University of Illinois College of Medicine at Chicago (Metropolitan Group) Program",
-   "Massachusetts General Hospital/Beth Israel Deaconess Medical Center/Brigham and Women's Hosp Program",
-   "OMNEE/CommuniCare Health Centers Program",
-   "NYCOMEC/Sisters of Charity Hosp Program",
-   "PCOM/Wright Center for GME Program",
-   "Saint Peter's University Hospital Program",
-   "STILL OPTI/University of IL College of Med/ Methodist MC Program",
-   "University of Arkansas for Medical Sciences Regional Centers (West) Program",
-   "Billings Clinic Program",
-   "New York Presbyterian Hospital (Cornell Campus) Program",
-   "OMECO/Oklahoma State University Medical Center Program",
-   "Raritan Bay Medical Center Program",
-   "Arrowhead Regional Medical Center/Kaiser Permanente (Fontana) Program",
-   "Ventura County Medical Center Program",
-   "Cahaba Medical Care, P.C. Program",
-   "PCOM/St Joseph Medical Center Program",
-   "STILL OPTI/Des Peres Hospital Program",
-   "LECOMT/Westchester General Hospital Program",
-   "Hofstra Northwell School of Medicine at Plainview Hospital Program",
-   "OMNEE/Mountain View Regional MC Program",
-   "Stony Brook Medicine/University Hospital Program",
-   "TOMEC/Wellmont Holston Valley MC Program",
-   "St Joseph Mercy-Oakland Program",
-   "Texas Department of State Health Services Program",
-   "AnMed Health (Anderson) Program",
-   "MWU/OPTI/John C. Lincoln Health Network Program",
-   "A-OPTIC/East Central Health Net Regional Rural Program",
-   "University of Illinois College of Medicine at Chicago/Advocate Christ Medical Center Program",
-   "Texas Tech University (Amarillo) Program",
-   "Texas Health Presbyterian Dallas Program",
-   "Conroe Medical Education Foundation Program",
-   "Oakwood Hospital Program",
-   "MSOPTI/Camden-Clark Medical Center Program",
-   "University of Iowa (Des Moines) Program",
-   "New York Presbyterian Hospital (Columbia Campus)/New York State Psychiatric Institute Program",
-   "St Vincent Hospital and Health Care Center Program",
-   "Aventura Hospital and Medical Center",
-   "University of Texas Medical Branch Hospitals Program",
-   "Intermountain Medical Center Program",
-   "Carolinas HealthCare System Blue Ridge Program",
-   "University of Arizona College of Medicine-Phoenix Program",
-   "SCS/MSUCOM/Henry Ford Wyandotte Hospital Program",
-   "University of Texas Medical Branch Hospitals (NASA) Program",
-   "University of Nebraska Medical Center Program",
-   "LECOMT/Alta Dermatology Program",
-   "Lehigh Valley Health Network/University of South Florida College of Medicine Program",
-   "Texas A&M; College of Medicine/Scott and White Memorial Hospital Program",
-   "University of Central Florida College of Medicine/HCA GME Consortium (Greater Orlando) Program",
-   "Community Health Network Program",
-   "Kaiser Permanente Medical Group (Northern California)/Santa Clara Program",
-   "PCOM/Gwinnett Health Systems Program",
-   "KCU-GMEC/Freeman Hospitals and Health System Program",
-   "WellStar Kennestone Regional Medical Center Program",
-   "LECOMT/Sacred Heart Health System Program",
-   "STILL OPTI/Medical College of Wisconsin Program",
-   "Central Iowa Health System (Iowa Lutheran Hospital) Program",
-   "Mercy St Vincent Medical Center/Mercy Health Partners Program",
-   "NEOMEN/St Michael's Hospital Program",
-   "CEME/Borinquen Medical Center Program",
-   "PCOM/Heart of Lancaster Regional Medical Center Program",
-   "MWU/OPTI/Illinois Masonic Medical Ctr Program",
-   "Grand Rapids Medical Education Partners/MSU/Helen DeVos Children's Hospital Program",
-   "Thomas Jefferson University Program",
-   "SCS/MSUCOM/Oakwood Healthcare System Osteo Div Program",
-   "PCOM/North Fulton Hospital Medical Campus Program",
-   "University of Arizona College of Medicine at South Campus Program",
-   "UPMC Medical Education (Mercy) Program",
-   "LECOMT/Wellington Regional Med Ctr Program",
-   "University of Miami Miller School of Medicine/Holy Cross Hospital Program",
-   "Detroit Medical Center/Wayne State University (Sinai-Grace) Program",
-   "New York University School of Medicine/Hospital for Joint Diseases Program",
-   "NEOMEN/Berkshire Med Ctr Program",
-   "Jamaica Hospital Medical Center Program",
-   "Chicago Medical School/Rosalind Franklin Univ of Med & Sci Program",
-   "Riverside Regional Medical Center Program",
-   "SCS/MSUCOM/Detroit Metro Urological Surg Consortium Program",
-   "Presence Saint Joseph Hospital (Chicago) Program",
-   "Allegheny Health Network Medical Education Consortium (FH) Program",
-   "LECOMT/Washington Health System Program",
-   "LECOMT/Memorial Hospital Program",
-   "MWU/OPTI/St James Hosp & Health Centers Program",
-   "United Health Services Hospitals Program",
-   "Concord Hospital/New Hampshire-Dartmouth Family Medicine Program",
-   "Baylor College of Medicine (Houston)  Program",
-   "Yale-New Haven Medical Center (Primary Care) Program",
-   "Salem Hospital Program",
-   "University of Massachusetts (Fitchburg) Program",
-   "Texas A&M; College of Medicine-Scott and White Program",
-   "Union Memorial Hospital Program",
-   "HackensackUMC Mountainside Program",
-   "Tidelands Health Program",
-   "A-OPTIC/The Medical Center Program",
-   "Robert Packer Hospital/Guthrie Program",
-   "University of Kansas (Wichita)/Via Christi Hospitals Wichita Program",
-   "Brigham and Women's Hospital/Massachusetts General Hospital Program",
-   "Hofstra Northwell School of Medicine at Long Island Jewish Medical Center Program",
-   "Firelands Regional Medical Center Program",
-   "McLaren Oakland Program",
-   "New York-Presbyterian Hospital (Cornell Campus) Program",
-   "University of Kansas (Wichita) Program",
-   "University of South Dakota School of Medicine Program",
-   "McLaren-Flint/Michigan State University Program",
-   "Valley Children's Healthcare Program",
-   "MidMichigan Medical Center-Midland Program",
-   "Strong Memorial Hospital of the University of Rochester Program",
-   "Montefiore Medical Center/Albert Einstein College of Medicine (Jacobi/Montefiore) Program",
-   "University of Alabama Medical Center (Selma Dallas County) Program",
-   "MWU/OPTI/Carle Foundation Hospital Program",
-   "Jackson Park Hospital Program",
-   "Largo Medical Center Program",
-   "Jamaica Hospital Medical Center/Albert Einstein College of Medicine Program",
-   "Albany Medical Center Program",
-   "NEOMEN/Univ of Connecticut HC Program",
-   "Research Medical Center Program",
-   "St Luke's Hospital/Warren Hospital Program",
-   "MSOPTI/Our Lady of Bellefonte Hospital Program",
-   "Cambridge Health Alliance Program",
-   "RowanSOM/OPTI/Inspira Health Network Program",
-   "Valley Medical Center Program",
-   "OMNEE/Duke/Southern Regional Area Health Ed Ctr Program",
-   "Central Michigan University College of Medicine Program",
-   "PCOM/Geisinger Wyoming Valley Program",
-   "Florida State University College of Medicine (Sarasota) Program",
-   "Burke Rehabilitation Hospital Program",
-   "PCOM/Warren Hospital Div Program",
-   "PCOM/Christiana Care Health System Program",
-   "Henry Ford Hospital/Wayne State University Program",
-   "Still OPTI/Wright Ctr National Family Med-Lutheran Family HC Program",
-   "St. Elizabeth Health Center - Boardman Program",
-   "Hospital de la Concepcion Program",
-   "University of Tennessee College of Medicine-Chattanooga Program",
-   "Brandon Regional Hospital Program",
-   "LECOMT/Mercy Medical Center Program",
-   "MWU/OPTI/Kingman Regional Med Ctr Program",
-   "Oakwood Hospital/Wayne State University Program",
-   "Ohio State University/Mt Carmel Hospital Program",
-   "Jefferson Medical College/Christiana Care Health Services Program",
-   "Kaiser Permanente Southern California Program",
-   "Johns Hopkins All Children's Hospital Program",
-   "Loma Linda University Health Education Consortium Program",
-   "Sparrow Hospital Program",
-   "Memorial Hermann Hospital System Program",
-   "University of Colorado School of Medicine Program",
-   "Presbyterian Intercommunity Hospital Program",
-   "University of Texas M D Anderson Cancer Center Program",
-   "Indiana University School of Medicine Program",
-   "LECOMT/Our Lady of Lourdes Memorial Hosp Program",
-   "RowanSOM/OPTI/Christ Hospital Program",
-   "Virtua Program",
-   "Medical College of Georgia Program",
-   "Cleveland Clinic (Florida) Program",
-   "Grand Strand Regional Medical Center Program",
-   "Carle Foundation Hospital Program",
-   "University of Vermont Health Network-Champlain Valley Physicians Hospital Program",
-   "NYCOMEC/St Barnabas Medical Center Program",
-   "Siouxland Medical Education Foundation Program",
-   "Gwinnett Medical Center Program",
-   "Cone Health Program",
-   "LECOMT/Wright Center for GME Program",
-   "United Hospital Center Program",
-   "Middlesex Hospital Program",
-   "NEOMEN/Univ MA (Fitchburg) Family Medicine Program",
-   "MSOPTI/Wheeling Hospital Program",
-   "Arrowhead Regional Med Ctr/Aspen Dermatology Program",
-   "Mount Auburn Hospital Program",
-   "University of Tennessee/Methodist Healthcare Program",
-   "NYCOMEC/Wyckoff Heights Medical Center Program",
-   "MSOPTI/The Toledo Hospital Program",
-   "Oregon Health & Science University Hospital Program",
-   "Hidalgo Medical Services Program",
-   "SUNY Upstate Medical University Program",
-   "Allegheny Health Network Medical Education Consortium (AGH) Program",
-   "St Anthony Hospital Program",
-   "University of Colorado School of Medicine Program A",
-   "Rutgers Robert Wood Johnson Medical School at CentraState Program",
-   "Cleveland Clinic Florida Program",
-   "Hofstra Northwell School of Medicine at Staten Island University Hospital Program",
-   "Children's Hospital Program",
-   "Mary Free Bed Hospital Program",
-   "LECOMT/Meadville Medical Ctr Program",
-   "University of Wisconsin (Eau Claire) Program",
-   "Community Health Network, Inc. Program",
-   "LECOMT/Conemaugh Valley Mem Hosp Program",
-   "Children's National Medical Center Program",
-   "Magnolia Regional Health Center Program",
-   "University of Colorado (HealthONE Rose Medical Center) Program",
-   "New York Medical College at St Joseph\u2019s Regional Medical Center (Paterson) Program",
-   "University of Minnesota/St John's Hospital Program",
-   "Connecticut Institute For Communities/Greater Danbury Community Health Center Program",
-   "PCOM/Heart of Lancaster Regional Med Center Program",
-   "Kaiser Permanente Medical Group (Northern California)/San Francisco Program",
-   "Brookdale University Hospital and Medical Center Program",
-   "OPTI-West/Community Health Care Program",
-   "University of South Alabama Program",
-   "New York Medical College (Metropolitan) Program",
-   "Hawaii Health Systems Corporation - Hilo Medical Center Program",
-   "University of Florida College of Medicine Jacksonville Program",
-   "JFK Medical Center Program",
-   "Children's Mercy Hospital Program",
-   "SCS/MSUCOM/Genesys Regional Med Ctr-Health Park Program",
-   "Washington Health System  Program",
-   "Icahn School of Medicine at Mount Sinai/St Luke\u2019s-Roosevelt Hospital Center Program",
-   "Methodist Hospital of Sacramento Program",
-   "McGaw Medical Center of Northwestern University (Norwegian American) Program",
-   "SCS/MSUCOM/Detroit Wayne County Health Authority GME Program",
-   "William Beaumont Hospital Program",
-   "Hennepin County Medical Center/Regions Hospital Program",
-   "MWU/OPTI/Resurrection Healthcare Consortium Program",
-   "CORE/South Pointe Hosp/NOEM Consortium Program",
-   "University of Texas Health Science Center at Tyler Rural Program",
-   "LECOMT/UH Elyria Medical Center Program",
-   "Carolinas HealthCare System-NorthEast (Northeast-Cabarrus) Program",
-   "University of Massachusetts Program",
-   "St Vincent Hospital and Health Care Center Preliminary Program",
-   "CORE/Adena Health System Program",
-   "RowanSOM/OPTI/Kennedy Univ Hosp/Our Lady of Lourdes Program",
-   "Seton Hall University School of Health and Medical Sciences Program",
-   "Wright State University Program",
-   "St Vincent Hospital Program",
-   "HEARTland/Mercy Center-North Iowa Program",
-   "St Joseph's Hospital and Medical Center Program",
-   "Henry Ford Allegiance Health Program",
-   "OMECO/Med Ctr Southeastern OK Program",
-   "Children's Hospital of Philadelphia Program",
-   "Family Medicine Residency of Idaho Rural Program",
-   "Western Michigan University Homer Stryker MD School of Medicine Program",
-   "Univ of North Dakota School of Medicine and Health Sciences Program",
-   "NYCOMEC/NYU Hospitals Center Program",
-   "CEME/Lakeside Medical Center Program",
-   "Naples Community Hospital, Inc Program",
-   "University of North Dakota (Minot) Program",
-   "Detroit Wayne County Health Authority (Authority Health) GME Consortium Program",
-   "York Hospital Program",
-   "SCS/MSUCOM/Hamilton Community Health Network Program",
-   "UCLA-San Fernando Valley/VA Greater Los Angeles Program",
-   "Children's Hospital Medical Center of Akron/NEOMED Program",
-   "University of Missouri-Columbia Program",
-   "Fairview Hospital Program",
-   "University of Iowa Hospitals and Clinics Program",
-   "Cooper Medical School of Rowan University/Cooper University Hospital Program",
-   "Boston VA Healthcare System (Brockton-West Roxbury)/Harvard Medical School Program",
-   "MWU/OPTI/Adventist LaGrange Memorial Hosp Program",
-   "CEME/Largo Medical Center Program",
-   "University of Wyoming (Casper) Program",
-   "University of Florida College of Medicine Program",
-   "Halifax Medical Center Program",
-   "University of Mississippi School of Medicine Program",
-   "Tucson Hospitals Medical Education Program",
-   "Samaritan Health Services - Corvallis Program",
-   "Mercy Hospital and Medical Center Program",
-   "RMOPTI/Idaho Physicians Clinic Program",
-   "PCOM/Albert Einstein Med Ctr Program",
-   "CoxHealth Program",
-   "OPTI-West/Sollus Northwest Program",
-   "University of Tennessee/Saint Francis Program",
-   "Atlanta Medical Center Program",
-   "Centers for Disease Control and Prevention Program",
-   "National Human Genome Research Institute/Children's National Medical Center Program",
-   "Kaweah Delta Health Care District (KDHCD) Program",
-   "University of Washington School of Medicine Program",
-   "OMECO/Northeastern Health System Program",
-   "Children's Hospital/Beth Israel Deaconess Medical Center/Harvard Medical School Program",
-   "University of Washington Program",
-   "Bella Vista Hospital Program",
-   "OPTI-West/Casa Colina Centers for Rehab Program",
-   "PinnacleHealth Hospitals Program",
-   "A-OPTIC/Shenandoah Valley Program",
-   "Dr Ramon E Betances Hospital-Mayaguez Medical Center Program",
-   "CORE/SUMMA Akron City Hospital Program",
-   "The University of Montana Program",
-   "MWU/OPTI/Verde Valley Med Center Program",
-   "William Beaumont Hospital-Grosse Pointe Program",
-   "Albert Einstein Healthcare Network Program",
-   "Duke University Hospital Program",
-   "Steward Carney Hospital Program",
-   "Southern Illinois University School of Medicine Program",
-   "Harbor Hospital Center Program",
-   "PCOM/Bryn Mawr Hospital Program",
-   "PCOM/UPMC Mercy Program",
-   "Louisiana State University School of Medicine Program",
-   "Penrose-St Francis Health Services Program",
-   "UPMC Medical Education (Altoona Hospital) Program",
-   "Meharry Medical College Program",
-   "University of Texas Rio Grande Valley Program",
-   "Abington Memorial Hospital Program",
-   "OMNEE/Harnett Health System Program",
-   "University of Missouri at Kansas City Program",
-   "SCS/MSUCOM/WMU Homer Stryker MD School of Med Program",
-   "OPTI-West/PHH/Hemet Valley Medical Center Program",
-   "Still OPTI/Wright Ctr National Family Med-El Rio Program",
-   "RowanSOM/OPTI/AHS Overlook MC Program",
-   "Good Samaritan Reg Med Ctr/Silver Falls Dermatology Program",
-   "MWU/OPTI/Advanced Desert Dermatology Program",
-   "Johns Hopkins Bloomberg School of Public Health Program",
-   "Southern Illinois University Program",
-   "Adventist LaGrange Memorial Hospital Program",
-   "MWU/OPTI/Mountain Vista Medical Center Program",
-   "Advocate Health Care (Advocate Illinois Masonic Medical Center) Program",
-   "Main Line Health System/Lankenau Medical Center Program",
-   "New York-Presbyterian/Queens Program",
-   "University of New Mexico School of Medicine Program",
-   "NEOMEN/Manchester Memorial Hospital Program",
-   "MWU/OPTI/MacNeal Hospital Program",
-   "Montefiore Medical Center/Albert Einstein College of Medicine of Yeshiva University Program",
-   "Inova Fairfax Medical Campus/Inova Children's Hospital Program",
-   "Spaulding Rehabilitation Hospital/Harvard Medical School Program",
-   "New York Medical College (Phelps) Program",
-   "Shasta Community Health Center Program",
-   "Texas Tech University [Lubbock] Program",
-   "Seton Hall University School of Health and Medical Sciences at Englewood Hospital and Medical Center",
-   "University of Central Florida College of Medicine/HCA Graduate Medical Education Consortium Program",
-   "Flushing Hospital Medical Center Program",
-   "University of Maryland Program",
-   "University of Tennessee (Jackson) Program",
-   "NEOMEN/St Joseph's Hospital & Med Ctr Program",
-   "Oakwood Annapolis Hospital Program",
-   "Oregon Health & Science University (Cascades East) Program",
-   "Icahn School of Medicine at Mount Sinai (Elmhurst) Program",
-   "Still OPTI/Wright Ctr National Family Med-Virginia Garcia Program",
-   "Methodist Hospital (Houston) Program",
-   "Citrus Valley Health Partners Program",
-   "MultiCare Health System (East Pierce) Program",
-   "Massachusetts General Hospital Program",
-   "Newark Beth Israel Medical Center (Jersey City) Program",
-   "Thomas Jefferson University/duPont Hospital for Children Program",
-   "Sutter Health Program",
-   "East Tennessee State University (Bristol) Program",
-   "Contra Costa Regional Medical Center Program",
-   "Vidant Medical Center/East Carolina University Program",
-   "Idaho State University Program",
-   "Montefiore Medical Center/Albert Einstein College of Medicine (Wakefield Campus) Program",
-   "University of Alabama Medical Center (Huntsville) Program",
-   "SCS/MSUCOM/Henry Ford Allegiance Health Program",
-   "Mary Hitchcock Memorial Hospital Program",
-   "CORE/South Pointe Hosp Program",
-   "Aultman Hospital/Mercy/NEOMED Program",
-   "Providence Health & Services - Oregon/Milwaukie Hospital Program",
-   "New York Presbyterian Hospital (Columbia and Cornell Campus) Program",
-   "Medical College of Wisconsin Affiliated Hospitals Program",
-   "Indiana University School of Medicine/Methodist Hospital Program",
-   "St Louis University School of Medicine (Belleville) Program",
-   "LECOMT/Samaritan Med Ctr Program",
-   "Aultman Hospital/NEOMED Program",
-   "University of Kentucky College of Medicine (Hazard) Program",
-   "Loma Linda University Health Education Consortium (Rural) Program",
-   "KCU-GMEC/St Anthony Hospital Program",
-   "PCOM/Memorial Hospital Program",
-   "Western Reserve Care System/NEOUCOM Program",
-   "University of Nebraska Medical Center College of Medicine Program",
-   "NYCOMEC/Southampton Hospital Program",
-   "TOMEC/Norton Community Hospital, Inc Program",
-   "Monmouth Medical Center Program",
-   "National Rehabilitation Hospital/Washington Hospital Center/Georgetown University HospitalProgram",
-   "Children's Hospital/Boston Medical Center Program",
-   "OMNEE/Danville Regional Med Ctr Program",
-   "St Mary Mercy Hospital Program",
-   "Genesys Regional Medical Center Program",
-   "McGaw Medical Center of Northwestern University (Lake Forest) Program",
-   "STILL OPTI/Northeast Regional Medical Center Program",
-   "Roger Williams Medical Center Program",
-   "Bon Secours Richmond Health System (Blackstone Rural) Program",
-   "Detroit Medical Center/Wayne State University (Detroit Receiving Hospital) Program",
-   "Plaza Medical Center of Fort Worth Program",
-   "Blake Medical Center Program",
-   "Center for Family Medicine (Sioux Falls) Program",
-   "Montefiore Medical Center/Albert Einstein College of Medicine (Moses and Weiler Campuses) Program",
-   "Texas OPTI/South Texas Osteopathic Dermatology Residency Program",
-   "Riverside Methodist Hospitals (OhioHealth) Program",
-   "Kaiser Foundation/UCSF Program",
-   "Providence Hospital/Georgetown University Hospital Program",
-   "Ellis Hospital of Schenectady Program",
-   "University of Illinois College of Medicine at Chicago Program",
-   "Medical College of Wisconsin Affiliated Hospitals (Northeastern Wisconsin) Program",
-   "University of Arkansas for Medical Sciences Regional Centers (South Central) Program",
-   "Hofstra Northwell School of Medicine at Zucker Hillside Hospital Program",
-   "LECOMT/Millcreek Community Hospital Program",
-   "OMNEE/Laredo Medical Center Program",
-   "Icahn School of Medicine at Mount Sinai (Beth Israel) Program",
-   "Kent Hospital Program",
-   "Texas Tech University Hlth Sci Ctr Paul L. Foster Sch of Med Program",
-   "LECOMT/Clarion Hospital Program",
-   "AnMed Health (Anderson) Rural Program",
-   "Dartmouth-Hitchcock Medical Center Program",
-   "Albert Einstein Healthcare Network Preliminary Program",
-   "Maimonides Medical Center/Infants and Children's Hospital of Brooklyn Program",
-   "RMOPTI/Parkview Medical Center Program",
-   "Allina Health Program",
-   "CEME/Florida Dept of Corrections Program",
-   "Hofstra Northwell School of Medicine at Forest Hills Hospital Program",
-   "Greenwich Hospital Association Program",
-   "LECOMT/Guthrie/Robert Packer Hospital Program",
-   "NYCOMEC/Peconic Bay Medical Center Program",
-   "Children's Hospital-Oakland Program",
-   "Jewish Hospital of Cincinnati Program",
-   "LECOMT/Centerstone of Florida Program",
-   "Bayfront Health St Petersburg Program",
-   "Washington Hospital Center/Georgetown University Hospital Program",
-   "South Nassau Communities Hospital Program",
-   "PCOM/UPMC Shadyside Hospital Program",
-   "CORE/Firelands Regional Medical Center Main Campus Program",
-   "OMNEE/Riverside Regional Medical Ctr Program",
-   "PCOM/AtlantiCare Regional MC Program",
-   "Hunterdon Medical Center Program",
-   "Kendall Regional Medical Center Program",
-   "Rutgers New Jersey Medical School Program",
-   "Pomona Valley Hospital Medical Center Program",
-   "University at Buffalo (Sisters of Charity) Program",
-   "RMOPTI/University of Wyoming Program",
-   "RMOPTI/University of Wyoming-Cheyenne Program",
-   "NYCOMEC/NEA Baptist Memorial Hospital Program",
-   "Greater Baltimore Medical Center Program",
-   "St Vincent's East Program",
-   "Reading Hospital Program",
-   "St Francis Hospital and Medical Center Program",
-   "Mayo Clinic College of Medicine and Science (Eau Claire) Program",
-   "NYCOMEC/Arkansas Methodist MC Program",
-   "Jefferson Medical College/duPont Hospital for Children Program",
-   "Methodist Health System Dallas Program",
-   "St Luke's Hospital Program",
-   "Louisiana State University (Shreveport)/Monroe Program",
-   "Kern Medical Center Program",
-   "Our Lady of The Lake Program",
-   "Louisiana State University Program",
-   "University of Minnesota Medical School Program",
-   "Brown University (Women and Infants Hospital of Rhode Island) Program",
-   "Stanford University Program",
-   "Legacy Emanuel Hospital and Health Center Program",
-   "Drexel University College of Medicine/Hahnemann University Hospital Program",
-   "Albert Einstein College of Medicine at Bronx-Lebanon Hospital Center Program",
-   "OMNEE/New Hanover Regional Med. Ctr. Program",
-   "LECOMT/UPMC Horizon Program",
-   "LECOMT/York Hospital Program",
-   "Berkshire Medical Center Program",
-   "VA Greater Los Angeles Healthcare System Program",
-   "Lutheran Family Health Center Program",
-   "Griffin Memorial Hospital Program",
-   "NYCOMEC/Newark Beth Israel MC/St. Barnabas HS Program",
-   "Capital Health Regional Medical Center Program",
-   "University of Arkansas for Medical Sciences Regional Centers (Northwest) Program",
-   "Cedars-Sinai Medical Center/Harbor/UCLA Program",
-   "Washington Hospital Center Program",
-   "Medical University of South Carolina Program",
-   "PCOM/Hunterdon Medical Center Program",
-   "Atlantic Health Program",
-   "NYCOMEC/Plainview Hospital Program",
-   "University of Arkansas for Medical Sciences Program",
-   "Riverside Community Hospital/University of California Riverside School of Medicine Program",
-   "MultiCare Health System (Tacoma) Program",
-   "Christus Santa Rosa Health Care Program",
-   "Nationwide Children's Hospital/Ohio State University Program",
-   "New York University School of Medicine/Brooklyn Campus Program",
-   "Waterbury Hospital Health Center Program",
-   "LECOMT/UP Health System- Marquette Program",
-   "Children's Mercy Hospital/University of Kansas Medical Center Program",
-   "NEOMEN/Maine-Dartmouth Family Medicine Program",
-   "University of Tennessee College of Medicine (Nashville) Program",
-   "Norwalk Hospital/Yale University Program",
-   "St Joseph's Regional Medical Center (South Bend) Program",
-   "Massachusetts General Hospital/McLean Hospital Program",
-   "OMNEE/Memorial Medical Center Program",
-   "University of Colorado Program",
-   "Citrus Health Network, Inc. Program",
-   "Wyckoff Heights Medical Center Program",
-   "Scripps Clinic/Scripps Green Hospital Program",
-   "Henry Ford Macomb Hospital Program",
-   "RowanSOM/OPTI/Childrens Regional/Cooper University Hosp Program",
-   "Marianjoy Rehabilitation Hospital Program",
-   "University of Nebraska Medical Center College of Medicine Rural Program",
-   "Oak Hill Hospital Program",
-   "MWU/OPTI/Canyon Vista Medical Center Program",
-   "Altru Health System (Grand Forks) Program",
-   "University of Minnesota (Duluth) Program",
-   "Butler Hospital/Brown University Program",
-   "Miami Children's Health System/Nicklaus Children's Hospital Program",
-   "Louisiana State University (Shreveport) Program",
-   "Driscoll Children's Hospital Program",
-   "Toledo Hospital Program",
-   "Medical College of Wisconsin Affiliated Hospitals (Columbia-St Mary's) Program",
-   "St Joseph Mercy Hospital Program",
-   "University of Texas Southwestern Medical School Program",
-   "University of Texas Health Science Center School of Medicine at San Antonio Program",
-   "St Mary Medical Center Program",
-   "PCOM/Good Samaritan Hospital Program",
-   "NYCOMEC/Jersey City Medical Center Program",
-   "Carolinas Medical Center Program",
-   "Providence Sacred Heart Medical Center Program",
-   "UCLA Medical Center Program",
-   "Mayo Clinic Health System in Waycross Program",
-   "RMOPTI/Ogden Regional Medical Center Program",
-   "Larkin Community Hospital Program",
-   "A-OPTIC/Lake Cumberland Regional Hosp Program",
-   "Creighton University Program",
-   "University Hospitals and Clinics/Louisiana State University (Lafayette) Program",
-   "MWU/OPTI/Advocate Christ Hospital Medical Ctr Program",
-   "NEOMEN/Albany Medical College Program",
-   "Medical University of South Carolina College of Medicine Program",
-   "Brigham and Women's Hospital/Children's Hospital/Harvard Medical School Program",
-   "University of Minnesota/Methodist Hospital Program",
-   "University of California (Davis) Health System Program",
-   "Prince George's Hospital Center Program",
-   "OMNEE/Park Avenue Dermatology Program",
-   "Christ Hospital/University of Cincinnati College of Medicine Program",
-   "University of Washington [Boise] Program",
-   "Florida Department of Health Palm Beach County Program",
-   "St Agnes HealthCare Program",
-   "Inspira Medical Center Woodbury Program",
-   "New Hanover Regional Medical Center Program",
-   "PCOM/Mercy Catholic Medical Center Program",
-   "Kadlec Regional Medical Center Program",
-   "Family Medicine Residency of Idaho (Magic Valley) Rural Program",
-   "Medical College of Wisconsin Affiliated Hospitals (St Joseph's) Program",
-   "Scott and White Memorial Hospital (Round Rock) Program",
-   "St. John Macomb-Oakland Hospital Program",
-   "Phoenix Children's Hospital Program",
-   "OPTI-West/Chino Valley Medical Center Program",
-   "University of California (San Francisco)/Fresno Program",
-   "Scripps Mercy Hospital (Chula Vista) Program",
-   "Florida Hospital Medical Center Program"
+    "Aurora Health Care Program",
+    "Institute for Family Health (Harlem) Program",
+    "Franciscan St. James Health Program",
+    "Naples Community Hospital, Inc Program",
+    "Valley Consortium for Medical Education Family Medicine Program",
+    "University of Arkansas for Medical Sciences Regional Centers (Northwest) Program",
+    "Spartanburg Regional Healthcare System Program",
+    "PinnacleHealth Hospitals Program",
+    "University of Southern California/LAC+USC Medical Center Program",
+    "Center for Family Medicine (Sioux Falls) Program",
+    "Louisiana State University (Shreveport) Program",
+    "University of California (San Francisco) School of Medicine Program",
+    "Rutgers Robert Wood Johnson Medical School/Capital Health System-Fuld Campus Program",
+    "Medical University of South Carolina Program",
+    "Conroe Medical Education Foundation Program",
+    "Christiana Care Health Services Inc Program",
+    "Meharry Medical College Program",
+    "Rapid City Regional Hospital Program",
+    "Wright State University Boonshoft School of Medicine Program",
+    "Susquehanna Health System/Williamsport Hospital and Medical Center Program",
+    "University of Illinois College of Medicine (Rockford) Rural Program",
+    "Memorial Health-University Medical Center/Mercer University School of Medicine (Savannah) Program",
+    "TriHealth (Bethesda North Hospital) Program",
+    "Louisiana State University (Baton Rouge) Program",
+    "Brigham and Women's Hospital/Harvard Medical School Program",
+    "University of Rochester Program",
+    "St John's Episcopal Hospital-South Shore Program",
+    "Southern Illinois University Program",
+    "Adventist Medical Center-Hanford Program",
+    "University of Illinois College of Medicine at Rockford Program",
+    "Virginia Commonwealth University-Bon Secours (St Francis) Program",
+    "Howard University Program",
+    "Providence Health & Services - Oregon/Milwaukie Hospital Program",
+    "Marianjoy Rehabilitation Hospital Program",
+    "New York Medical College at St Joseph\u2019s Regional Medical Center (Paterson) Program",
+    "Grand Rapids Medical Education Partners/Michigan State University Program",
+    "Tufts University at Cambridge Health Alliance Program",
+    "Medical College of Wisconsin Affiliated Hospitals, Inc Program",
+    "Northside Hospital Program",
+    "Brigham and Women's Hospital/Massachusetts General Hospital Program",
+    "Rutgers Robert Wood Johnson Medical School Program",
+    "St Vincent Hospital Program",
+    "Kadlec Regional Medical Center Program",
+    "University of Kansas (Wichita)/Salina Program",
+    "University of Texas Health Science Center at Houston Program",
+    "Mayo Clinic College of Medicine and Science (Jacksonville) Program",
+    "HonorHealth Program",
+    "HackensackUMC Mountainside Program",
+    "The University of Montana Program",
+    "Middlesex Hospital Program",
+    "Kaiser Permanente Medical Group (Northern California) Program",
+    "University of Arkansas for Medical Sciences Program",
+    "New York City Department of Health and Mental Hygiene Program",
+    "Hidalgo Medical Services Program",
+    "Texas Tech University (Lubbock) Program",
+    "Lahey Clinic Program",
+    "Children's Mercy Hospital/University of Kansas Medical Center Program",
+    "Steward Carney Hospital Inc. Program",
+    "Cleveland Clinic Florida Program",
+    "Texas Tech University Health Sciences Center at Lubbock Program",
+    "University of Tennessee Medical Center at Knoxville Program",
+    "University of Texas Health Science Center at Tyler Program",
+    "Ohio State University Hospital Program",
+    "University of Wisconsin (Wausau) Program",
+    "University of Wisconsin Program",
+    "Easton Hospital Program",
+    "Children's Hospital-Oakland Program",
+    "Campbell University/Cape Fear Valley Medical Center Program",
+    "MultiCare Health System (Tacoma) Program",
+    "Creedmoor Psychiatric Center Program",
+    "University of Central Florida College of Medicine/HCA GME Consortium (Greater Orlando) Program",
+    "Henry Ford Macomb Hospital Program",
+    "St Elizabeth Boardman Hospital Program",
+    "Salem Hospital Program",
+    "Denver Health Medical Center Program",
+    "Brigham and Women's Hospital/Massachusetts General Hospital/Harvard Medical School Program",
+    "University of New Mexico School of Medicine Program",
+    "UCLA-Kern Medical Center Program",
+    "Kern Medical Center Program",
+    "Orlando Health Program",
+    "Virginia Commonwealth University Health System (Falls Church) Program",
+    "St Mark's Health Care Foundation Program",
+    "Johns Hopkins University Program",
+    "Heritage Valley Health System Program",
+    "Maimonides Medical Center Program",
+    "Penn State Milton S Hershey Medical Center/State College Program",
+    "University of Miami/JFK Medical Center Palm Beach Regional GME Consortium Program",
+    "University of Tennessee/Methodist Healthcare Program",
+    "Centra Health Program",
+    "Valley Health System/Medical College of Virginia/Virginia Commonwealth University Program",
+    "St Mary-Corwin Medical Center Program",
+    "Integris Baptist Medical Center/Great Plains Program",
+    "University of Florida (Orlando) Program",
+    "New York Medical College at St Michael's Medical Center Program",
+    "University at Buffalo (Sisters of Charity) Program",
+    "University of Wisconsin (Madison) Program",
+    "Hofstra Northwell School of Medicine at Staten Island University Hospital Program",
+    "University of Nebraska Medical Center College of Medicine Program",
+    "HealthPartners Institute/Park Nicollet Methodist Hospital/Amery/Westfields Hospitals Program",
+    "Mayo Clinic College of Medicine and Science Program",
+    "Family Medicine Residency of Idaho (Magic Valley) Rural Program",
+    "Lakeland Health Program",
+    "Reading Hospital Program",
+    "Richmond University Medical Center Program",
+    "Unity Health-White County Medical Center Program",
+    "Aventura Hospital and Medical Center",
+    "University of Virginia Program",
+    "Seton Hall University-Hackensack Meridian School of Medicine Program",
+    "Cambridge Health Alliance Program",
+    "St Luke's Hospital/Warren Hospital Program",
+    "University of California (San Diego) Program",
+    "Hofstra Northwell School of Medicine at Glen Cove Hospital Program",
+    "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GMEC) Mesa Program",
+    "Baylor College of Medicine (San Antonio)  Program",
+    "University of Wyoming (Casper) Program",
+    "Kaiser Permanente Southern California (San Diego) Program",
+    "Advocate Health Care (Advocate Christ Medical Center) Program",
+    "Universidad Central del Caribe Program",
+    "Providence Hospital Program",
+    "University Hospitals and Clinics/Louisiana State University (Lafayette) Program",
+    "University of North Dakota (Bismarck) Program",
+    "Kendall Regional Medical Center Program",
+    "Drexel University College of Medicine/Hahnemann University Hospital Program",
+    "Washington University/B-JH/SLCH Consortium Program",
+    "Carilion Clinic-Virginia Tech Carilion School of Medicine Program",
+    "Kingsbrook Jewish Medical Center Program",
+    "Santa Barbara Cottage Hospital Preliminary Program",
+    "University of Wisconsin Hospital and Clinics Program",
+    "Medical College of Wisconsin Affiliated Hospitals (Northeastern Wisconsin) Program",
+    "Icahn School of Medicine at Mount Sinai Program",
+    "Arnot Ogden Medical Center Program",
+    "Family Medicine Residency of Idaho Rural Program",
+    "Valley Medical Center Program",
+    "Contra Costa Regional Medical Center Program",
+    "Lehigh Valley Health Network Program",
+    "Texas Tech University Hlth Sci Ctr Paul L. Foster Sch of Med Program",
+    "North Mississippi Medical Center (Tupelo) Program",
+    "Montefiore Medical Center/Albert Einstein College of Medicine (Moses and Weiler Campuses) Program",
+    "Brown University Program",
+    "Emory University School of Medicine Program",
+    "Baylor College of Medicine Program",
+    "Providence Hospital/Alaska Family Medicine Program",
+    "Danbury Hospital Program",
+    "Maricopa Medical Center Program",
+    "UPMC Medical Education (Erie) Program",
+    "Children's National Medical Center/George Washington University Program",
+    "Lincoln Medical Education Partnership Program",
+    "Wright Center for Graduate Medical Education Program",
+    "JFK Medical Center Program",
+    "University of Colorado Program",
+    "University of California San Francisco (East Bay) Program",
+    "New York Medical College at St Joseph\u2019s Regional Medical Center Program",
+    "Berkshire Medical Center Program",
+    "Dr Ramon E Betances Hospital-Mayaguez Medical Center Program",
+    "Children's Hospital of Los Angeles Program",
+    "Baptist Outreach Services (Montgomery) Program",
+    "McLaren Oakland (Macomb) Program",
+    "Massachusetts General Hospital/Beth Israel Deaconess Medical Center/Brigham and Women's Hosp Program",
+    "McLaren-Flint/Michigan State University Program",
+    "California Hospital Medical Center (Los Angeles)/University of Southern California Program",
+    "University of Minnesota (Duluth) Program",
+    "Kaiser Permanente Hawaii Program",
+    "Adventist Hinsdale Hospital Program",
+    "Jamaica Hospital Medical Center Program",
+    "Hofstra Northwell School of Medicine at Lenox Hill Hospital Program",
+    "Gwinnett Medical Center Program",
+    "Jacobi Medical Center/Albert Einstein College of Medicine Program",
+    "Magnolia Regional Health Center Program",
+    "William Beaumont Hospital-Grosse Pointe Program",
+    "Norwegian American Hospital Program",
+    "Yale-New Haven Medical Center (Primary Care) Program",
+    "Maine-Dartmouth Family Medicine Program",
+    "Concord Hospital/New Hampshire-Dartmouth Family Medicine Program",
+    "Tuscaloosa College of Community Health Science Program",
+    "Greenville Health System/University of South Carolina Program",
+    "Washington Health System  Program",
+    "Presbyterian Intercommunity Hospital Program",
+    "Harlem Hospital Center Program",
+    "Arrowhead Regional Medical Center Program",
+    "Icahn School of Medicine at Mount Sinai (Bronx) Program",
+    "Sacred Heart Hospital/Temple University (Allentown) Program",
+    "Oklahoma State University Center for Health Sciences (Tulsa) Program",
+    "University of Tennessee College of Medicine at Murfreesboro Program",
+    "Michigan State University (Flint) Program",
+    "Tulane University/Ochsner Clinic Foundation Program",
+    "Jamaica Hospital Medical Center/Albert Einstein College of Medicine Program",
+    "Memorial Hospital of Rhode Island/Brown University Program",
+    "Oakland Physicians Medical Center Program",
+    "Medical College of Wisconsin Affiliated Hospitals (Community Memorial) Program",
+    "Bay Area Corpus Christi Medical Center Program",
+    "New York Medical College (Metropolitan) Program",
+    "Oregon Health & Science University (Cascades East) Program",
+    "Providence Sacred Heart Medical Center Program",
+    "East Jefferson General Hospital Program",
+    "Atlanta Medical Center Program",
+    "Dublin Methodist Hospital Program",
+    "University of Missouri at Kansas City Program",
+    "Scripps Mercy Hospital (Chula Vista) Program",
+    "Providence Health & Services - Oregon/St Vincent Hospital and Medical Center Program",
+    "Spectrum Health/Michigan State University Program",
+    "Texas A&M; College of Medicine-Scott and White Program",
+    "Olive View/UCLA Medical Center Program",
+    "University of California (Irvine)/Children's Hospital of Orange County Program",
+    "Allegheny Health Network Medical Education Consortium Program",
+    "Memorial Hermann Hospital System Program",
+    "Aria Health Program",
+    "Strong Memorial Hospital of the University of Rochester Program",
+    "Botsford Hospital Program",
+    "University of Kentucky College of Medicine Program A",
+    "Montefiore - Mount Vernon Hospital Program",
+    "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GME Consortium)/Freeman Program",
+    "Memorial Hospital of South Bend Program",
+    "Inova Fairfax Medical Campus/Inova Fairfax Hospital for Children Program",
+    "New York Presbyterian Hospital (Columbia Campus)/New York State Psychiatric Institute Program",
+    "Santa Clara Valley Medical Center Program",
+    "St. Elizabeth Health Center - Boardman Program",
+    "Baton Rouge General Medical Center Program",
+    "University of California (San Francisco)/University of California School of Public Health Program",
+    "Johns Hopkins Bloomberg School of Public Health Program A",
+    "Western Michigan University Homer Stryker MD School of Medicine Program",
+    "Integris Health Program",
+    "United Health Services Hospitals Program",
+    "Valley Health Team, Inc. Program",
+    "Virginia Mason Medical Center Program",
+    "Family Health Centers of San Diego Program",
+    "Bella Vista Hospital Program",
+    "MountainStar HealthCare/Ogden Regional Medical Center Program",
+    "Carolinas HealthCare System Blue Ridge Program",
+    "Schwab Rehabilitation Hospital and Care Network/University of Chicago Program",
+    "USC/LAC+USC Medical Center Program",
+    "North Colorado Medical Center Sterling Rural Program",
+    "Damas Hospital/Ponce School of Medicine Program",
+    "University of Wyoming (Cheyenne) Program",
+    "St Joseph Mercy Hospital Program",
+    "Rush University Medical Center Program",
+    "Oakwood Annapolis Hospital Program",
+    "St Joseph's Hospital Health Center Program",
+    "Phoenix Children's Hospital Program",
+    "West Virginia University Rural Program",
+    "Scott and White Memorial Hospital (Round Rock) Program",
+    "Mountain Area Health Education Center Program",
+    "Rutgers New Jersey Medical School Program",
+    "University of Arizona College of Medicine-Tucson Program",
+    "TriHealth (Good Samaritan Hospital) Program",
+    "Case Western Reserve University (MetroHealth) Preliminary Program",
+    "Spaulding Rehabilitation Hospital/Harvard Medical School Program",
+    "Rochester Regional Health/Unity Hospital (Rochester) Program",
+    "Johns Hopkins University/University of Maryland Program",
+    "Medical College of Wisconsin Affiliated Hospitals Program",
+    "University of Florida Program",
+    "University of Illinois College of Medicine at Peoria Program",
+    "East Tennessee State University (Bristol) Program",
+    "Our Lady of The Lake Program",
+    "Hospital de la Concepcion Program",
+    "St Joseph's Regional Medical Center (South Bend) Program",
+    "University of Minnesota Medical School Program",
+    "St Louis University School of Medicine Program",
+    "Broward Health Medical Center Program",
+    "John Peter Smith Hospital (Tarrant County Hospital District) Program",
+    "St Mary-Corwin Medical Center/Southern Colorado Family Medicine Program",
+    "St. Agnes Medical Center (Fresno) Program",
+    "PeaceHealth Southwest Medical Center Program",
+    "Texas A&M; College of Medicine/Scott and White Memorial Hospital Program",
+    "McLaren Oakland Program",
+    "Desert Regional Medical Center Program",
+    "Memorial Healthcare System (Hollywood, Florida) Program",
+    "Medical City Fort Worth Program",
+    "Institute of Living/Hartford Hospital Program",
+    "Henry Ford Allegiance Health Program",
+    "UPMC Medical Education Program",
+    "UPMC Medical Education (Mercy) Program",
+    "Newton-Wellesley Hospital Program",
+    "University of Texas Health Science Center at Houston (Memorial Hermann Hospital) Program",
+    "Alameda Health System-Highland Hospital Program",
+    "University of Utah Medical Center Program",
+    "Carolinas HealthCare System-NorthEast (Northeast-Cabarrus) Program",
+    "California Department of Public Health Program",
+    "Palmetto General Hospital Program",
+    "University of Vermont Medical Center Program",
+    "University of Texas Rio Grande Valley (Knapp) Program",
+    "Legacy Emanuel Hospital and Health Center Program",
+    "Kaiser Permanente Southern California (Anaheim) Program",
+    "Rochester General Hospital Program",
+    "University of South Dakota Program",
+    "Florida State University College of Medicine Program",
+    "Memorial Sloan Kettering Cancer Center Program",
+    "Main Line Health System/Bryn Mawr Hospital Program",
+    "University of Colorado School of Medicine Program A",
+    "Advocate Health Care (Advocate Lutheran General Hospital) Program",
+    "Raritan Bay Medical Center Program",
+    "St Vincent Hospitals and Health Care Center Program",
+    "Mercy St Vincent Medical Center/Mercy Health Partners Program",
+    "Aurora Health Care (Milwaukee) Program",
+    "University of Michigan Program",
+    "Mount Sinai Medical Center of Florida Program",
+    "Kaiser Permanente Southern California (Los Angeles) Program",
+    "Franciscan St Francis Health Program",
+    "Clinical Center at the National Institutes of Health Program",
+    "University of Washington School of Medicine Program",
+    "Christ Hospital Program",
+    "Pennsylvania Hospital of the University of Pennsylvania Health System Program",
+    "In His Image at St John Medical Center Program",
+    "Utah Valley Regional Medical Center Program",
+    "University of Mississippi Medical Center Program",
+    "Massachusetts General Hospital Program",
+    "Mercy Medical Center (Mason City) Program",
+    "Allegheny Health Network Medical Education Consortium (WPH) Program",
+    "Charleston Area Medical Center/West Virginia University (Charleston Division) Program",
+    "Akron General Medical Center/NEOMED Program",
+    "Butler Hospital/Brown University Program",
+    "Santa Barbara Cottage Hospital Program",
+    "Louisiana State University School of Medicine Program",
+    "Creighton University Program",
+    "Grant Medical Center (OhioHealth) Program",
+    "Stamford Hospital/Columbia University College of Physicians and Surgeons Program",
+    "Wake Forest University School of Medicine Program",
+    "SUNY Upstate Medical University Program",
+    "White Memorial Medical Center Program",
+    "University of Wisconsin (Baraboo) Rural Program",
+    "Canton Medical Education Foundation/NEOMED Program",
+    "Medical College of Wisconsin Affiliated Hospitals (Fox Valley) Program",
+    "Swedish Medical Center Rural Program",
+    "Brookdale University Hospital and Medical Center Program",
+    "Puerto Rico Children's Hospital Program",
+    "Oregon Health & Science University Hospital Program",
+    "New York University School of Medicine (Brooklyn) Program",
+    "Texas Tech University [Lubbock] Program",
+    "Tufts Medical Center Program",
+    "University of Pennsylvania Health System Program",
+    "Arrowhead Regional Medical Center/Kaiser Permanente (Fontana) Program",
+    "Eastern Virginia Medical School (Ghent) Program",
+    "McLennan County Medical Education and Research Foundation Program",
+    "St Francis Hospital and Medical Center Program",
+    "Medical College of Wisconsin Affiliated Hospitals (St Joseph's) Program",
+    "University of New Mexico Program",
+    "Swedish Medical Center/Cherry Hill Program",
+    "Rowan SOM/Kennedy University/Our Lady of Lourdes Health System Program",
+    "Icahn School of Medicine at Mount Sinai (Downtown) Urban Program",
+    "St Barnabas Hospital Program",
+    "Coliseum Medical Centers Program",
+    "Eastern Idaho Regional Medical Center Program",
+    "St Peter Hospital Program",
+    "University of Massachusetts Program",
+    "Southern Regional Area Health Education Center/Duke University Hospital Program",
+    "University of Minnesota/North Memorial Hospital Program",
+    "Northeast Iowa Medical Education Foundation Program",
+    "Institute for Family Health (Mid-Hudson) Program",
+    "Massachusetts Eye and Ear Infirmary/Harvard Medical School Program",
+    "Valley Children's Healthcare Program",
+    "St Elizabeth Health Center/NEOMED Program",
+    "Medical College of Georgia Program",
+    "University of Nevada Las Vegas (UNLV) School of Medicine Rural Program",
+    "Hofstra Northwell School of Medicine at Forest Hills Hospital Program",
+    "Nationwide Children's Hospital/Ohio State University Program",
+    "Jewish Hospital of Cincinnati Program",
+    "University of Arkansas for Medical Sciences Regional Centers (Northeast) Program",
+    "St Luke's Hospital Program",
+    "University of South Florida Morsani Program",
+    "University of Minnesota/University of Minnesota Medical Center (Fairview) Program",
+    "Mercy Medical Center (Merced) Program",
+    "University of Iowa (Des Moines) Program",
+    "Children's National Medical Center Program",
+    "St. John Macomb-Oakland Hospital Program",
+    "Tulsa Medical Education Foundation Program",
+    "University of Kentucky College of Medicine Program",
+    "Family Medicine Residency of Idaho Program",
+    "AtlantiCare Regional Medical Center Program",
+    "Nationwide Children's Hospital/Doctors Hospital Program",
+    "University of Texas RGV (MMC) Program",
+    "Texas Department of State Health Services Program",
+    "University of Texas Rio Grande Valley Program",
+    "Medical Center of Central Georgia/Mercer University School of Medicine Program",
+    "Icahn School of Medicine at Mount Sinai (Beth Israel) Program",
+    "Nebraska Medical Center/Clarkson Regional Health Service Program",
+    "Hennepin County Medical Center Program",
+    "Shasta Community Health Center Program",
+    "Case Western Reserve University (MetroHealth) Program",
+    "University of Texas RGV (DHR) Program",
+    "Leonard J Chabert Medical Center Program",
+    "Kaiser Permanente Southern California Program",
+    "Hofstra Northwell School of Medicine at Long Island Jewish Medical Center Program",
+    "WellStar Kennestone Regional Medical Center Program",
+    "Valley Baptist Medical Center Program",
+    "Allegheny Health Network Medical Education Consortium (SVH) Program",
+    "Stony Brook Medicine/Southampton Hospital Program",
+    "University of Arkansas for Medical Sciences Regional Centers (West) Program",
+    "Oakwood Hospital Program",
+    "Johns Hopkins Bloomberg School of Public Health Program",
+    "Children's Hospital Program",
+    "Aurora Health Care (Waukesha) Program",
+    "Larkin Community Hospital Program",
+    "Atlantic Health (Morristown) Program",
+    "Florida State University College of Medicine/Lee Memorial Health System Program",
+    "University of Florida College of Medicine Program",
+    "Pine Rest Christian Mental Health Services Program",
+    "Stanford University Program",
+    "San Juan City Hospital Program",
+    "Phoenix Integrated Residency Program",
+    "Southern Illinois University School of Medicine Program",
+    "Interfaith Medical Center Program",
+    "Atlantic Health Program",
+    "Palm Beach Consortium for Graduate Medical Education Program",
+    "West Kendall Baptist Hospital / Florida International University Program",
+    "Lake Erie College of Osteopathic Medicine Program",
+    "Albany Medical Center Program",
+    "Wyckoff Heights Medical Center Program",
+    "Tufts Medical Center/Lemuel Shattuck Hospital Program",
+    "University of Michigan School of Public Health Program",
+    "New York Medical College at St Joseph's Medical Center Program",
+    "Kettering Health Network Program",
+    "Kent Hospital Program",
+    "University of Tennessee College of Medicine at Memphis Program",
+    "University of Nebraska Medical Center Program",
+    "Stony Brook Medicine Program",
+    "University of Tennessee/Saint Francis Program",
+    "University of Maryland Medical Center Midtown Campus  Program",
+    "Massachusetts General Hospital/Brigham and Women's Hospital/Harvard Medical School Program",
+    "Geisinger Health System (Wilkes Barre) Program",
+    "UMMS-Baystate Program",
+    "York Hospital Program",
+    "Loma Linda University Health Education Consortium Program",
+    "Yale-New Haven Medical Center Program",
+    "Chestnut Hill Hospital Program",
+    "Prince George's Hospital Center Program",
+    "Jersey Shore University Medical Center Program",
+    "University of Toledo Program",
+    "Hofstra Northwell School of Medicine at Southside Hospital Program",
+    "Methodist Hospital (Houston) Program",
+    "UCLA-San Fernando Valley/VA Greater Los Angeles Program",
+    "TriHealth (Bethesda North and Good Samaritan Hospitals) Program",
+    "St Francis Hospital Program",
+    "Baptist Memorial Hospital Program",
+    "Hackensack University Medical Center Program",
+    "West Virginia University School of Medicine Program",
+    "National Institutes of Health Clinical Center Program",
+    "Chicago Medical School at Rosalind Franklin University of Medicine and Science Program",
+    "Georgetown University Hospital Program",
+    "William Beaumont Army Medical Center/Texas Tech University (El Paso) Program",
+    "Bergen Regional Medical Center Program",
+    "University of Mississippi School of Medicine Program",
+    "Spokane Teaching Health Center Program",
+    "Hofstra Northwell School of Medicine at Staten Island University Hospital Preliminary Program",
+    "Hofstra Northwell School of Medicine Program",
+    "St Anthony Hospital Program",
+    "Harbor Hospital Center Program",
+    "University of Illinois College of Medicine at Urbana Program",
+    "MacNeal Hospital Program",
+    "Robert Wood Johnson University Hospital Somerset Program",
+    "Mercy Medical Center (Redding) Program",
+    "Central Maine Medical Center Program",
+    "Billings Clinic Program",
+    "University of Oklahoma Health Sciences Center Program",
+    "Genesys Regional Medical Center Program",
+    "University of California Riverside/Riverside Community Hospital Program",
+    "VCU/Riverside Regional Medical Center Program",
+    "University of Tennessee College of Medicine-Chattanooga Program",
+    "Hunterdon Medical Center Program",
+    "University of Minnesota/St Joseph's Hospital Program",
+    "Summa Health System/NEOMED Program",
+    "Adventist LaGrange Memorial Hospital Program",
+    "Allina Health Program",
+    "Christ Hospital/University of Cincinnati College of Medicine Program",
+    "University of Alabama Medical Center Program",
+    "Glendale Adventist Medical Center Program",
+    "University of Chicago/University of Illinois College of Medicine at Chicago Program",
+    "Kaiser Permanente Medical Group (Northern California)/Santa Clara Program",
+    "Abbott-Northwestern Hospital Program",
+    "Inova Fairfax Medical Campus Program",
+    "Medical College of Georgia/Satilla MCG Rural Program",
+    "University of Texas Health Science Center at Tyler/Good Shepherd Medical Center (Longview) Program",
+    "VA Greater Los Angeles Healthcare System Program",
+    "Union Hospital Program",
+    "Orange Park Medical Center Program",
+    "St Mary's Hospital (Waterbury) Program",
+    "Saint Elizabeths Hospital-DC Department of Behavioral Health Program",
+    "Albert Einstein Healthcare Network Preliminary Program",
+    "Rutgers Robert Wood Johnson Medical School at CentraState Program",
+    "Riverside University Health System/University of California Riverside Program",
+    "Iowa Medical Education Collaborative Program",
+    "University of Virginia Medical Center Program",
+    "Florida State University College of Medicine (Sarasota) Program",
+    "Christus Health/Santa Rosa Program",
+    "St Agnes HealthCare Program",
+    "Icahn School of Medicine at Mount Sinai Program A",
+    "Ocean Medical Center Program",
+    "New York-Presbyterian Hospital (Cornell Campus) Program",
+    "Henry Ford Wyandotte Hospital Program",
+    "University of Hawaii Program",
+    "Massachusetts General Hospital/Brigham and Women\u2019s Hospital/Harvard Medical School Program",
+    "Norwalk Hospital Program",
+    "New York-Presbyterian/Queens Program",
+    "Texas Tech University Health Sciences Center (Permian Basin) Program",
+    "University of Puerto Rico Program",
+    "Connecticut Institute For Communities/Greater Danbury Community Health Center Program",
+    "Duke University Hospital Program",
+    "University of California (Irvine) Program",
+    "Inova Fairfax Medical Campus/Inova Children's Hospital Program",
+    "University of Washington Program",
+    "Driscoll Children's Hospital/Texas A&M; College of Medicine Program",
+    "Summa Health System/Barberton Campus Program",
+    "Mercy Hospital (St Louis) Program",
+    "Aultman Hospital/NEOMED Program",
+    "Sutter Medical Center of Santa Rosa/University of California (San Francisco) Program",
+    "Colorado Health Foundation Presbyterian-St Luke's Medical Center Program",
+    "Mayo Clinic College of Medicine and Science (Rochester) Program",
+    "LewisGale Medical Center Program",
+    "St Elizabeth Medical Center Program",
+    "Univ of North Dakota School of Medicine and Health Sciences Rural Program",
+    "Mount Sinai Hospital Medical Center of Chicago Program",
+    "Centers for Disease Control and Prevention Program",
+    "Samaritan Health Services - Corvallis Program",
+    "University of Kansas (Wichita)/Via Christi Hospitals Wichita Program",
+    "Research Medical Center Program",
+    "Bayfront Health St Petersburg Program",
+    "Ramon Betances Hospital-Mayaguez Medical Center/Ponce School of Medicine Consortium Program",
+    "University of Tennessee (Jackson) Program",
+    "Indiana University School of Medicine/Methodist Hospital Program",
+    "Mercy St Vincent Medical Center Program",
+    "Brookwood Baptist Health Program",
+    "Spokane Teaching Health Center Rural Program",
+    "University of Maryland Program",
+    "Eastern Maine Medical Center Program",
+    "Cedars-Sinai Medical Center/Harbor/UCLA Program",
+    "UPMC Medical Education (Presbyterian Shadyside Hospital) Program",
+    "McGaw Medical Center of Northwestern University Program",
+    "Loyola University Medical Center Program",
+    "Tidelands Health Program",
+    "William Beaumont Army Medical Center Program",
+    "East Tennessee State University Program",
+    "University of Texas Medical Branch Hospitals (NASA) Program",
+    "Medical College of Wisconsin Affiliated Hospitals (Central Wisconsin) Program",
+    "Vidant Medical Center/East Carolina University Program",
+    "University of Connecticut (New Britain) Program",
+    "Dignity Health Northridge Hospital Medical Center Program",
+    "New York Presbyterian Hospital Program",
+    "Penrose-St Francis Health Services Program",
+    "Eisenhower Medical Center Program",
+    "Oak Hill Hospital Program",
+    "Wayne State University School of Medicine Program",
+    "Providence-Providence Park Hospital/MSUCHM Program",
+    "Ohio State University/Mt Carmel Hospital Program",
+    "Cleveland Clinic Foundation Program",
+    "University of Central Florida College of Medicine/HCA GME Consortium Program",
+    "Hofstra Northwell School of Medicine at Zucker Hillside Hospital Program",
+    "New York University School of Medicine/Hospital for Joint Diseases Program",
+    "Florida State University College of Medicine (Tallahassee) Program",
+    "Mount Auburn Hospital Program",
+    "Tulane University School of Public Health and Tropical Medicine Program",
+    "New York-Presbyterian Brooklyn Methodist Hospital Program",
+    "Novant Health Program",
+    "Montefiore Medical Center/Albert Einstein College of Medicine of Yeshiva University Program",
+    "Community Health Network Program",
+    "New York Medical College at Metropolitan Hospital Center Program",
+    "Hospital Episcopal San Lucas/Ponce School of Medicine Program",
+    "Grand Strand Regional Medical Center Program",
+    "Fort Wayne Medical Education Program",
+    "UCLA David Geffen School of Medicine/UCLA Medical Center Program",
+    "University of Arkansas for Medical Sciences Regional Centers (Southwest) Program",
+    "Idaho State University Program",
+    "Hofstra Northwell School of Medicine at Cohen Children's Medical Center Program",
+    "Indiana University School of Medicine Program",
+    "National Rehabilitation Hospital/Washington Hospital Center/Georgetown University HospitalProgram",
+    "Oregon Health & Science University Program",
+    "Union Memorial Hospital Program",
+    "AnMed Health (Anderson) Rural Program",
+    "Southeast Alabama Medical Center Program",
+    "Johns Hopkins University School of Medicine Program",
+    "University of Texas Southwestern Medical School Program",
+    "University of Louisville Program",
+    "University of Miami Miller School of Medicine/Holy Cross Hospital Program",
+    "St Vincent's East Program",
+    "University of Texas M D Anderson Cancer Center Program",
+    "Presence Resurrection Medical Center Program",
+    "Penn State Milton S Hershey Medical Center Program",
+    "Sea Mar Community Health Centers Program",
+    "University of Massachusetts Medical School Program",
+    "Ohio State University Hospital Rural Program",
+    "Community Health of Central Washington Program",
+    "Georgetown University Hospital/Washington Hospital Center Program",
+    "UCLA Medical Center Program",
+    "Mercy Health System Program",
+    "West Suburban Medical Center Program",
+    "Latrobe Area Hospital Program",
+    "University of Washington [Boise] Program",
+    "St Vincent Charity Medical Center/Case Western Reserve University Program",
+    "Mercy Health Program",
+    "University of Central Florida College of Medicine/HCA GME Consortium (Gainesville) Program",
+    "Main Line Health System/Lankenau Medical Center Program",
+    "University of Arkansas for Medical Sciences Regional Centers (Magnolia) Rural Program",
+    "SSM St Mary's Hospital-St Louis Program",
+    "University of South Florida Morsani (James A Haley Veterans Hospital) Program",
+    "Case Western Reserve University/University Hospitals Cleveland Medical Center Program",
+    "Gundersen Lutheran Medical Foundation Program",
+    "Nazareth Hospital Program",
+    "Southern Illinois University (Quincy) Program",
+    "San Mateo County Behavioral Health and Recovery Services Program",
+    "SUNY Health Science Center at Brooklyn Program",
+    "New York Presbyterian Hospital (Cornell Campus) Program",
+    "HealthONE/Swedish Medical Center Program",
+    "Temple University Hospital/Fox Chase Cancer Center Program",
+    "Stony Brook Medicine/University Hospital Program",
+    "Ochsner Clinic Foundation Program",
+    "City of Hope National Medical Center Program",
+    "Augusta University/University of Georgia Medical Partnership Program",
+    "Beth Israel Deaconess Medical Center Program",
+    "Cahaba Medical Care, P.C. Program",
+    "Poudre Valley Hospital/Fort Collins Family Medicine Program",
+    "Texas Tech University Health Sciences Center Paul L Foster School of Medicine Program",
+    "Chicago Medical School/Rosalind Franklin Univ of Med & Sci Program",
+    "Central Iowa Health System (Iowa Lutheran Hospital) Program",
+    "Firelands Regional Medical Center Program",
+    "North Central Texas Medical Foundation Program",
+    "Campbell University/Southeastern Regional Medical Center Program",
+    "Redmond Regional Medical Center Program",
+    "Cedars-Sinai Medical Center Program",
+    "Scott and White Memorial Hospital Program",
+    "Long Beach Memorial Medical Center Program",
+    "South Nassau Communities Hospital Program",
+    "Henry Ford Hospital Program",
+    "Brown University/Rhode Island Hospital-Lifespan Program",
+    "New York University School of Medicine Program",
+    "University of Illinois College of Medicine at Chicago (Metropolitan Group) Program",
+    "Loyola University Program",
+    "Brookhaven Memorial Hospital Medical Center Program",
+    "University of Alabama Hospital Program",
+    "St Vincent Hospital and Health Care Center Program",
+    "Southern Illinois University (Decatur) Program",
+    "Kaiser Permanente Southern California (Fontana) Program",
+    "Winthrop-University Hospital Program",
+    "Mount Sinai Medical Center of Florida, Inc Program",
+    "University of Wisconsin (Eau Claire) Program",
+    "Citrus Valley Health Partners Program",
+    "Yuma Regional Medical Center Program",
+    "East Tennessee State University (Kingsport) Program",
+    "Largo Medical Center Program",
+    "Medical University of South Carolina College of Medicine Program",
+    "Phoebe Putney Memorial Hospital (Southwest Georgia) Program",
+    "Emory University Program",
+    "Allegheny Health Network Medical Education Consortium (AGH) Program",
+    "Detroit Medical Center Corporation Program",
+    "Children's Mercy Hospital Program",
+    "Montefiore Medical Center/Albert Einstein College of Medicine (New Rochelle) Program",
+    "McLeod Regional Medical Center Program",
+    "Montefiore Medical Center/Albert Einstein College of Medicine (Jacobi/Montefiore) Program",
+    "Drexel University College of Medicine/Hahnemann University Program",
+    "Scripps Mercy Hospital Program",
+    "Presence Saint Joseph Hospital (Chicago) Program",
+    "Floyd Medical Center Program",
+    "University of North Dakota (Minot) Program",
+    "Kaiser Permanente Washington Program",
+    "MetroHealth Medical Center/Case Western Reserve University Program",
+    "Norton Community Hospital Program",
+    "Baylor Scott & White Medical Center-Garland Program",
+    "University of Tennessee (Nashville) Program",
+    "University of Nebraska Medical Center College of Medicine Rural Program",
+    "Maimonides Medical Center/Infants and Children's Hospital of Brooklyn Program",
+    "St Joseph Mercy-Oakland Program",
+    "Michigan State University Program",
+    "CoxHealth Program",
+    "Charleston Area Medical Center Program",
+    "University of Florida College of Medicine Jacksonville Program",
+    "Medical College of Wisconsin Affiliated Hospitals (Milwaukee) Program",
+    "Eastern Virginia Medical School Program",
+    "University of Central Florida College of Medicine/HCA GME Consortium (Ocala) Program",
+    "Seton Hall University-Hackensack Meridian School of Medicine (St Francis) Program",
+    "University of Chicago Program",
+    "University of Texas Health Science Center at Tyler Rural Program",
+    "University of Texas Health Science Center School of Medicine at San Antonio Program",
+    "Albert Einstein Medical Center Program",
+    "Brandon Regional Hospital Program",
+    "HealthONE Program",
+    "Mary Hitchcock Memorial Hospital Program",
+    "University of South Florida Morsani (Morton Plant Mease Health Care) Program",
+    "Louisiana State University/Ochsner Clinic Foundation Program",
+    "University of Tennessee Program",
+    "St. Louis University School of Medicine Program",
+    "University of Oklahoma Health Sciences Center (Lawton) Program",
+    "Brown University (Women and Infants Hospital of Rhode Island) Program",
+    "Tucson Hospitals Medical Education Program",
+    "Massachusetts General Hospital/McLean Hospital Program",
+    "Aultman Hospital/Mercy/NEOMED Program",
+    "Providence Health & Services \u2013 Oregon/Hood River Rural Program",
+    "Bronx-Lebanon Hospital Center Program",
+    "Western Reserve Care System/NEOUCOM Program",
+    "University of Alabama Medical Center (Huntsville) Program",
+    "Texas Tech University (Amarillo) Program",
+    "Texas A&M; Health Science Center College of Medicine Program",
+    "Sparrow Hospital Program",
+    "Massachusetts General Hospital/Harvard Medical School Program",
+    "Yale-New Haven Medical Center (St. Raphael) Program",
+    "Bon Secours Richmond Health System (Blackstone Rural) Program",
+    "HealthPartners Institute for Education and Research/Regions Hospital Program",
+    "Lehigh Valley Health Network/University of South Florida College of Medicine Program",
+    "Aventura Hospital and Medical Center Program",
+    "Samaritan Medical Center Program",
+    "Texas Tech University (Permian Basin) Program",
+    "University of Oklahoma School of Community Medicine (Tulsa) Program",
+    "University of Minnesota Program",
+    "University of Puerto Rico School of Medicine Program",
+    "Louisiana State University (Shreveport)/Monroe Program",
+    "University of California Riverside School of Medicine Program",
+    "Montana Family Medicine Residency Program",
+    "Allegheny Health Network Medical Education Consortium (AGH/WPH) Program",
+    "University of Texas Medical Branch Hospitals Program",
+    "Bassett Medical Center Program",
+    "Jackson Memorial Hospital/Jackson Health System Program",
+    "Detroit Medical Center/Wayne State University (Sinai Grace) Program",
+    "OPTI West/Community Memorial Hospital Program",
+    "Good Samaritan Hospital Medical Center Program",
+    "Genesis Health System (Quad Cities) Program",
+    "Steward Carney Hospital Program",
+    "St Mary's Hospital and Medical Center Program",
+    "Washington Hospital Center Program",
+    "Hartford Hospital Program",
+    "OPTI West/Chino Valley Medical Center Program",
+    "Kaweah Delta Health Care District (KDHCD) Program",
+    "University of Illinois College of Medicine at Chicago (Mount Sinai) Program",
+    "University of Colorado (HealthONE Rose Medical Center) Program",
+    "Jackson Park Hospital Program",
+    "St John Hospital and Medical Center Program",
+    "University of Nevada Las Vegas (UNLV) School of Medicine Program",
+    "Manatee Memorial Hospital Program",
+    "The Medical Center (Columbus) Program",
+    "Providence Hospital/Georgetown University Hospital Program",
+    "Cooper Hospital-University Medical Center Program",
+    "UPMC Medical Education (McKeesport Hospital) Program",
+    "Abington Memorial Hospital Program",
+    "Seton Hall University-Hackensack Meridian School of Medicine at Englewood Hospital and Med Center Program",
+    "University of Texas RGV (VBMC) Program",
+    "Intermountain Medical Center Program",
+    "Tulane University Program",
+    "Morehouse School of Medicine Program",
+    "Wheeling Hospital Program",
+    "Brooklyn Hospital Center Program",
+    "University of Minnesota/Methodist Hospital Program",
+    "Hospital Dr Alejandro Otero Lopez Program",
+    "Huntington Memorial Hospital Program",
+    "Sunrise Health GME Consortium Program",
+    "Louisiana State University (Shreveport) Rural Program",
+    "New York University School of Medicine/Brooklyn Campus Program",
+    "St. John's Riverside Hospital Program",
+    "Aurora Health Care (Elkhorn) Program",
+    "Riverside Regional Medical Center Program",
+    "Saint Joseph Hospital Program",
+    "Creighton University School of Medicine Program",
+    "St Mary Medical Center Program",
+    "Sparrow Hospital/Michigan State University Program",
+    "UPMC Medical Education (Altoona Hospital) Program",
+    "University of Massachusetts (Fitchburg) Program",
+    "University of Arkansas College of Medicine Program",
+    "Mayo Clinic College of Medicine and Science (Eau Claire) Program",
+    "University of California (San Francisco) Program",
+    "University of Iowa Hospitals and Clinics Program",
+    "Temple University Hospital Program",
+    "Texas Health Presbyterian Dallas Program",
+    "Carle Foundation Hospital Program",
+    "University of Michigan Hospitals and Health Centers Program",
+    "University at Buffalo (Catholic Health System--Sisters of Charity) Program",
+    "Natividad Medical Center Program",
+    "Children's Hospital of Philadelphia Program",
+    "Suburban Community Hospital Program",
+    "Waterbury Hospital Health Center Program",
+    "University of Louisville (Glasgow) Program",
+    "Hoboken University Medical Center/New York Medical College Program",
+    "Detroit Medical Center/Wayne State University (Sinai-Grace) Program",
+    "St. John's Episcopal Hospital-South Shore Program",
+    "Ventura County Medical Center Program",
+    "Riverside University Health System Program",
+    "Lutheran Family Health Center Program",
+    "Children's Hospital/Beth Israel Deaconess Medical Center/Harvard Medical School Program",
+    "Icahn School of Medicine at Mount Sinai (New York Eye and Ear Infirmary at Mount Sinai) Program",
+    "Maine Medical Center Program",
+    "Baylor University Medical Center Program",
+    "Broadlawns Medical Center Program",
+    "University of Alabama Medical Center (Montgomery) Program",
+    "Newark Beth Israel Medical Center Program",
+    "Detroit Medical Center/Wayne State University Program",
+    "University of Chicago Medical Center Program",
+    "University of Florida (Pensacola) Program",
+    "Cook County Hospital Program",
+    "University of Chicago (NorthShore) Program",
+    "McKay-Dee Hospital Center Program",
+    "AnMed Health (Anderson) Program",
+    "Presence Saints Mary and Elizabeth Medical Center Program",
+    "Meharry Medical College Program A",
+    "North Colorado Medical Center Program",
+    "Norwalk Hospital/Yale University Program",
+    "Nassau University Medical Center Program",
+    "MidMichigan Medical Center-Midland Program",
+    "Ponce Health Sciences University Program",
+    "Dignity Health Methodist Hospital of Sacramento Program",
+    "New Hanover Regional Medical Center Program",
+    "Houston Healthcare System Program",
+    "St Vincent's Medical Center Program",
+    "University of Tennessee College of Medicine Program",
+    "West Virginia University Program",
+    "Children's Hospital/Boston Medical Center Program",
+    "University of Rochester/Highland Hospital of Rochester Program",
+    "University of Cincinnati Medical Center/College of Medicine Program",
+    "VA Caribbean Healthcare System Program",
+    "Regional Medical Center Bayonet Point Program",
+    "Marian Regional Medical Center Program",
+    "Resurrection Health Program",
+    "St Mary Mercy Hospital Program",
+    "New York Colleges of Osteopathic Medicine Educational Consortium (NYCOMEC) Program",
+    "Methodist Health System Dallas Program",
+    "St Joseph Mercy Livingston Program",
+    "John H Stroger Hospital of Cook County Program",
+    "Forrest General Hospital Program",
+    "Children's Hospital Medical Center of Akron/NEOMED Program",
+    "Carolinas Medical Center Program",
+    "University of Tennessee College of Medicine at Chattanooga Program",
+    "Kaiser Permanente Southern California (Riverside) Program",
+    "Cedar Rapids Medical Education Foundation Program",
+    "Icahn School of Medicine at Mount Sinai (Queens Hospital Center) Program",
+    "Univ of North Dakota School of Medicine and Health Sciences Program",
+    "Wright State University/Dayton Community Hospitals Program",
+    "Baptist Health Madisonville Program",
+    "Burke Rehabilitation Hospital Program",
+    "Presence Saint Francis Hospital Program",
+    "McLaren-Flint Program",
+    "Clinica Sierra Vista - Bakersfield Program",
+    "Beth Israel Deaconess Medical Center/Harvard Medical School Program",
+    "Harrison Medical Center Program",
+    "UPMC Medical Education (St Margaret Hospital) Program",
+    "University of North Dakota School of Medicine and Health Sciences (Hettinger) Program",
+    "Lincoln Medical and Mental Health Center Program",
+    "Brown University (Butler Hospital) Program",
+    "Louisiana State University (Lake Charles) Program",
+    "Roger Williams Medical Center Program",
+    "University of Pennsylvania Program",
+    "Mercy Memorial Hospital System Program",
+    "Deaconess Hospital Program",
+    "Wright State University Program",
+    "Atlantic Health (Overlook) Program",
+    "Harvard School of Public Health Program",
+    "Texas Tech University (Amarillo) Health Sciences Center Program",
+    "Sutter Health Program",
+    "United Hospital Center Program",
+    "Miami Children's Health System/Nicklaus Children's Hospital Program",
+    "Marshfield Clinic Program",
+    "Advocate Health Care (Advocate Children's Hospital/Oak Lawn) Program",
+    "White River Health System Program",
+    "Altru Health System (Grand Forks) Program",
+    "Temple University Hospital/Moss Rehabilitation Program",
+    "University of Colorado (University Hospital) Program",
+    "Johns Hopkins University/Bayview Medical Center Program",
+    "Christus Health/Texas A&M; College of Medicine/Spohn Hospital Program",
+    "Louis A Weiss Memorial Hospital Program",
+    "UCLA Medical Center/Olive View Program",
+    "Boston University Medical Center Program",
+    "Stanford Health Care-Sponsored Stanford University Program",
+    "Cleveland Clinic (Florida) Program",
+    "Medical College of Wisconsin Affiliated Hospitals (Wheaton Franciscan Healthcare-All Saints) Program",
+    "Penn State Milton S Hershey Medical Center/Hershey Program",
+    "Southern Illinois University (Carbondale) Program",
+    "University of Arizona College of Medicine at South Campus Program",
+    "Johns Hopkins All Children's Hospital Program",
+    "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GMEC) Cuyahoga Falls Program",
+    "DeTar Healthcare System Program",
+    "MetroWest Medical Center Program",
+    "University at Buffalo Rural Program",
+    "St Joseph's Hospital and Medical Center Program",
+    "Greater Lawrence Family Health Center Program",
+    "University of Missouri-Columbia Program",
+    "Hofstra Northwell School of Medicine at Sleepy Hollow/Phelps Hospital Program",
+    "Parkview Medical Center Program",
+    "Pomona Valley Hospital Medical Center Program",
+    "Conemaugh Memorial Medical Center Program",
+    "Sinai Hospital of Baltimore Program",
+    "Mary Free Bed Hospital Program",
+    "Piedmont Athens Regional Program",
+    "Riverside Methodist Hospitals (OhioHealth) Program",
+    "George Washington University Program",
+    "Central Michigan University College of Medicine Program",
+    "Kaiser Permanente Northern California (Santa Rosa) Program",
+    "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GMEC) Program",
+    "Swedish Covenant Hospital Program",
+    "Spectrum Health/Michigan State University Program/Helen DeVos Children's Hospital Program",
+    "Indiana University Health Ball Memorial Hospital Program",
+    "Florida Department of Health Palm Beach County Program",
+    "University of South Dakota School of Medicine Program",
+    "University of California (San Francisco)/San Francisco General Hospital Program",
+    "St Elizabeth's Medical Center Program",
+    "Case Western Reserve Univ/Univ Hosps Cleveland Med Ctr/Rainbow Babies and Childrens Hospital Program",
+    "Allegheny Health Network Medical Education Consortium (FH) Program",
+    "Delaware Psychiatric Center Program",
+    "Monmouth Medical Center Program",
+    "Community Health Network, Inc. Program",
+    "University of Arizona Program",
+    "Mercy Hospital and Medical Center Program",
+    "John Muir Health Program",
+    "University of Colorado School of Medicine Program",
+    "Coney Island Hospital Program",
+    "Geisinger Health System Program",
+    "University of Arkansas for Medical Sciences Regional Centers (South Central) Program",
+    "Doctors Hospital/OhioHealth Program",
+    "Montefiore Medical Center/Albert Einstein College of Medicine (Wakefield Campus) Program",
+    "University of California (San Diego) Medical Center Program",
+    "McGaw Medical Center of Northwestern University/Erie-Swedish Program",
+    "Hofstra Northwell School of Medicine (Southside Hospital) Program",
+    "University of South Alabama Program",
+    "Ellis Hospital of Schenectady Program",
+    "Cooper Medical School of Rowan University/Cooper University Hospital Program",
+    "Medical College of Wisconsin Affiliated Hospitals (Columbia-St Mary's) Program",
+    "St Christopher's Hospital for Children Program",
+    "University of Minnesota/St John's Hospital Program",
+    "Brigham and Women's Hospital/Children's Hospital Program",
+    "Louisiana State University (Bogalusa) Program",
+    "Bridgeport Hospital/Yale University Program",
+    "Self Regional Healthcare/Greenwood Program",
+    "Citrus Health Network, Inc. Program",
+    "Charles R Drew University of Medicine and Science, College of Medicine Program",
+    "Abrazo Central Program",
+    "Swedish Medical Center/First Hill Program",
+    "University of Florida College of Medicine (Pensacola) Program",
+    "University at Buffalo Program",
+    "Mayo Clinic College of Medicine and Science (La Crosse) Program",
+    "Integris Baptist Medical Center Program",
+    "Children's Hospital Boston Program",
+    "Brigham and Women's Hospital/Children's Hospital/Harvard Medical School Program",
+    "Eastern Virginia Medical School (Portsmouth) Program",
+    "Crozer-Chester Medical Center Program",
+    "Griffin Memorial Hospital Program",
+    "Stanford University Hospital/Kaiser Permanente Medical Center Program",
+    "Robert Packer Hospital/Guthrie Program",
+    "Capital Health Regional Medical Center Program",
+    "University of Kentucky College of Medicine (Morehead) Rural Program",
+    "Detroit Wayne County Health Authority (Authority Health) GME Consortium Program",
+    "Mountain Area Health Education Center Rural Program",
+    "North Colorado Medical Center Rural Program (Must also apply to ACGME ID 1200711074)",
+    "Riverside Community Hospital/University of California Riverside School of Medicine Program",
+    "University of California (San Francisco)/Fresno Program",
+    "St Vincent Hospital and Health Care Center Preliminary Program",
+    "Siouxland Medical Education Foundation Program",
+    "St Louis University School of Medicine (Belleville) Program",
+    "University of Texas at Austin Dell Medical School Program",
+    "Virginia Commonwealth University Health System Program",
+    "University of South Florida Morsani College of Medicine Program",
+    "Louisiana State University (Shreveport)/Rapides Regional Medical Center Program",
+    "Icahn School of Medicine at Mount Sinai (Elmhurst) Program",
+    "Los Angeles County-Harbor-UCLA Medical Center Program",
+    "University of Kansas (Wichita)/Wesley Program",
+    "Hospital for Special Surgery/Cornell Medical Center Program",
+    "Icahn School of Medicine at Mount Sinai/St Luke\u2019s-Roosevelt Hospital Center Program",
+    "Sidney Kimmel Medical College at Thomas Jefferson University/TJUH Program",
+    "University of New Mexico (Santa Fe) Rural Program",
+    "University of California Riverside School of Medicine Program/Desert Regional Medical Center Program",
+    "Florida Hospital Medical Center Program",
+    "St Barnabas Medical Center Program",
+    "University of Vermont Health Network-Champlain Valley Physicians Hospital Program",
+    "Munson Medical Center Program",
+    "Griffin Hospital Program",
+    "Community Health Care Program",
+    "Mayo Clinic College of Medicine and Science (Arizona) Program",
+    "Icahn School of Medicine at Mount Sinai (Downtown) Program",
+    "OPTI West/Hemet Valley Medical Center Program",
+    "University of Kansas (Wichita) Program",
+    "Stony Brook Medicine/Mather Hospital Program",
+    "Rush University Medical Center/Copley Memorial Hospital Program",
+    "Newark Beth Israel Medical Center (Jersey City) Program",
+    "Kaiser Permanente Medical Group (Northern California)/San Francisco Program",
+    "Woodhull Medical and Mental Health Center Program",
+    "Oakwood Heritage Hospital Program",
+    "Kaiser Permanente Medical Group (Northern California)/Napa-Solano Program",
+    "Louisiana State University Program",
+    "University at Buffalo School of Medicine Program",
+    "Kansas City University of Medicine & Biosciences-GME Consortium (KCU-GME Consortium)/ADCS-Orlando Program",
+    "Charleston Area Medical Center/West Virginia University Program",
+    "Yale-New Haven Hospital Program",
+    "Trident Medical Center/Medical University of South Carolina Program",
+    "New York Presbyterian Hospital (Columbia Campus) Program",
+    "Saint Peter's University Hospital/Rutgers Robert Wood Johnson Medical School Program",
+    "University of Missouri-Kansas City School of Medicine Program",
+    "Children's Hospital of Michigan Program",
+    "Allegiance Health Program",
+    "Baylor College of Medicine (Houston)  Program",
+    "U P Health System-Marquette Program",
+    "West Virginia University School of Public Health Occupational Medicine Program",
+    "Brigham and Women's Hospital Program",
+    "University of Alabama Medical Center (Selma Dallas County) Program",
+    "Stanford Hospital and Clinics Program",
+    "University of Colorado (HealthONE Swedish Medical Center) Program",
+    "Advocate Health Care (Advocate Children's Hospital/Park Ridge) Program",
+    "Baton Rouge General Program",
+    "Henry Ford Hospital/Wayne State University Program",
+    "University of Tennessee/Methodist Healthcare-Memphis Hospitals Program",
+    "University of North Carolina Hospitals Program",
+    "Mount Carmel Health System Program",
+    "Tallahassee Memorial Healthcare Family Medicine Program",
+    "McGaw Medical Center of Northwestern University (Lake Forest) Program",
+    "Inspira Medical Center Woodbury Program",
+    "New York Presbyterian Hospital (Columbia and Cornell Campus) Program",
+    "Blake Medical Center Program",
+    "Memorial Medical Center (Las Cruces) Program",
+    "Boston VA Healthcare System (Brockton-West Roxbury)/Harvard Medical School Program",
+    "Scripps Clinic/Scripps Green Hospital Program",
+    "William Beaumont Hospital Program",
+    "California Pacific Medical Center Program",
+    "University of Minnesota/St Cloud Hospital Program",
+    "Hofstra Northwell School of Medicine at Plainview Hospital Program",
+    "San Joaquin General Hospital Program",
+    "University of Kentucky College of Medicine (Hazard) Program",
+    "Sierra Vista Program",
+    "Memorial Health System Program",
+    "University of Arizona College of Medicine-Phoenix Preliminary Program",
+    "University of Arizona College of Medicine-Phoenix Program",
+    "MultiCare Health System (East Pierce) Program",
+    "Louisiana State University (Baton Rouge) Preliminary Program",
+    "New York Medical College at Westchester Medical Center Program",
+    "Albert Einstein College of Medicine at Bronx-Lebanon Hospital Center Program",
+    "Vanderbilt University Medical Center Program",
+    "Adena Regional Medical Center Program",
+    "Sidney Kimmel Medical College at Thomas Jefferson University/Christiana Care Health Services Program",
+    "Virtua Program",
+    "Washington Hospital Center/Georgetown University Hospital Program",
+    "University of California Davis Health Program",
+    "University of Texas RGV Program",
+    "Mountain State Osteopathic Postdoctoral Training Institutions, Inc. (MSOPTI) (CornerStone Care Teaching Health Center) Program",
+    "University of Utah Program",
+    "Greater Baltimore Medical Center Program",
+    "Advocate Health Care (Advocate Illinois Masonic Medical Center) Program",
+    "Christiana Care Health Services Program",
+    "University of Kansas School of Medicine Program",
+    "Halifax Medical Center Program",
+    "Montefiore Medical Center/Albert Einstein College of Medicine Program",
+    "MedStar Franklin Square Medical Center Program",
+    "The Medical Center Program",
+    "Mercy Catholic Medical Center Program",
+    "Hurley Medical Center/Michigan State University Program",
+    "University of North Dakota Program",
+    "Kootenai Health Program",
+    "Lancaster General Hospital Program",
+    "Providence Health & Services - Oregon/Providence Medical Center Program",
+    "George Washington University School of Medicine Program",
+    "Providence Sacred Heart Medical Center (Spokane) Program",
+    "University of Tennessee College of Medicine (Nashville) Program",
+    "Mercy Health Grand Rapids Program",
+    "Saint Peter's University Hospital Program",
+    "Central Iowa Health System (Iowa Methodist Medical Center) Program",
+    "Indiana University School of Medicine (Arnett) Program",
+    "University of California (San Diego)/San Diego State University Program",
+    "Louisiana State University (Kenner) Program",
+    "Flushing Hospital Medical Center Program",
+    "Sidney Kimmel Medical College at Thomas Jefferson University/duPont Hospital for Children Program",
+    "Albert Einstein Healthcare Network Program",
+    "Palmetto Health/University of South Carolina School of Medicine Program",
+    "Hennepin County Medical Center/Regions Hospital Program",
+    "St Elizabeth Health Center Program",
+    "Hawaii Health Systems Corporation - Hilo Medical Center Program",
+    "National Human Genome Research Institute/Children's National Medical Center Program",
+    "University of Illinois College of Medicine at Chicago Program",
+    "UPMC Medical Education (Hamot)  Program",
+    "Western Reserve Health Education/NEOMED Program",
+    "Cone Health Program",
+    "University of Connecticut Program",
+    "Detroit Medical Center/Wayne State University (Detroit Receiving Hospital) Program",
+    "Icahn School of Medicine at Mount Sinai (Jamaica) Program",
+    "Florida Atlantic University Charles E. Schmidt College of Medicine Program",
+    "University of Illinois College of Medicine at Chicago/Advocate Christ Medical Center Program",
+    "University of Texas Health Science Center at Houston (Lyndon B Johnson General Hospital) Program",
+    "Garden City Hospital Program",
+    "Greenwich Hospital Association Program",
+    "Cincinnati Children's Hospital Medical Center Program",
+    "Kaiser Foundation/UCSF Program",
+    "Mountain State Osteopathic Postdoctoral Training Institutions, Inc. (MSOPTI) (Ohio Valley Medical Center) Program",
+    "University of Maryland/Sheppard Pratt Program",
+    "Tripler Army Medical Center Program",
+    "University of Nevada Reno School of Medicine Program",
+    "St Joseph's Health/SUNY Health Science Center at Syracuse Program",
+    "University of Minnesota (Mankato) Program",
+    "Kaiser Permanente Southern California (Woodland Hills) Program",
+    "Anne Arundel Medical Center Program",
+    "Kaiser Permanente Medical Group (Northern California/Oakland) Program",
+    "Marshall University School of Medicine Program"
 ];
